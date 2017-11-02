@@ -1,0 +1,177 @@
+# Intel® Joule™
+
+
+Intel® Joule™, Intel’s highest-performing system-on-module, packs powerful compute capabilities in a thumb-sized, low-power package. The Intel® Joule™ 550x/570x developer kit enables developers to rapidly prototype all manner of autonomous robots and IoT applications requiring computer vision or edge processing.
+
+![""](https://developer.android.google.cn/things/images/intel-joule-dev-kit.png)
+
+## Flashing the image
+
+* * *
+
+Before you begin flashing, you will need the following items in addition to your Joule board:
+
+*   Micro-USB cable
+*   USB-C cable
+*   12V 3A power adapter
+*   Micro-HDMI cable
+*   MicroSD card reader
+*   USB keyboard (optional)
+
+To flash Android Things onto your board, download the preview image in the [Android Things Console](https://partner.android.com/things/console) (see the [release notes](https://developer.android.google.cn/things/preview/releases.html#developer_preview_5)) and follow these steps:
+
+### Step 1: Install Fastboot
+
+If this is your first time installing Android Things on the Joule, you need to upgrade the BIOS and bootloader to be Fastboot capable. Follow the Intel [Getting Started Guide](https://software.intel.com/en-us/articles/installing-android-things-on-intel-joule-module) to perform the required one-time setup steps on your board.
+
+### Step 2: Connect the Hardware
+
+Connect the board to your host computer as shown below:
+
+![""](https://developer.android.google.cn/things/images/joule-connections.png)
+
+1.  Connect a 12V adapter to the power input connector.
+2.  Connect a USB-C cable from your host computer for USB OTG.
+3.  Connect a Micro-HDMI cable to an external display.
+4.  Optionally, connect a USB keyboard for BIOS setup.
+
+### Step 3: Flash Android Things
+
+Once you have loaded the proper bootloader on your device, use the following steps to flash the Android image:
+
+1.  Download and install [Android Studio](https://developer.android.google.cn/studio/index.html) or the [`sdkmanager`](https://developer.android.google.cn/studio/command-line/sdkmanager.html) command-line tool. Update the Android SDK Platform Tools to version 25.0.3 or later from the [SDK Manager](https://developer.android.google.cn/studio/intro/update.html#sdk-manager).
+
+    *   Navigate to the Android SDK location on your computer; the path can be found in the system settings for Android Studio. Verify that the `fastboot` binary is installed in the `platform-tools/` directory.
+
+    *   After you have the fastboot tool, add it to your `PATH` [environment variable](https://developer.android.google.cn/studio/command-line/variables.html#set). This command should be similar to the following:
+
+        `export PATH=$PATH:"path/to/fastboot"`
+
+2.  Open a command line terminal and navigate to the unzipped image directory.
+
+3.  Verify that the device has booted into Fastboot mode by executing the following command:
+
+        $ fastboot devices1b2f21d4e1fe0129        fastboot
+
+    <aside class="note">**Note:** <span>Your device will not boot into Fastboot mode if it was previously flashed with Android Things. You need to first execute the following command using the [adb tool](https://developer.android.google.cn/tools/help/adb.html) to reboot the device into Fastboot mode.
+
+        $ adb reboot bootloader</span></aside>
+
+4.  Execute the `flash-all.sh` script. This script installs the necessary bootloader, baseband firmware(s), and operating system. (On Windows systems, use `flash-all.bat` instead).
+
+    <aside class="note">**Note:** <span>The device automatically reboots into Android Things when the process is complete.</span></aside>
+
+5.  To verify that Android is running on the device, discover it using the [adb tool](https://developer.android.google.cn/tools/help/adb.html):
+
+        $ adb wait-for-device...$ adb devicesList of devices attached1b2f21d4e1fe0129        device
+
+## Connecting Wi-Fi
+
+* * *
+
+After flashing your board, it is strongly recommended to connect it to the internet. This allows your device to deliver crash reports and receive updates.
+
+<aside class="note">**Note:** <span>The device doesn't need to be on the same network as your computer.</span></aside>
+
+Before connecting your board to a Wi-Fi network, ensure the provided antennas are attached to the u.FL Wi-Fi connectors on your board as shown:
+
+![""](https://developer.android.google.cn/things/images/joule-antenna.png)
+
+<aside class="note">**Note:** <span>The Joule can't resolve Wi-Fi signals if you proceed without connecting an antenna.</span></aside>
+
+To connect your board to Wi-Fi, first access a shell prompt on the device. You can use either of the following methods:
+
+*   Open a shell over adb with the `adb shell` command.
+*   Connect to the [serial console](#serial_debug_console).
+
+Once you can access a shell prompt, follow these steps:
+
+1.  Send an intent to the Wi-Fi service that includes the SSID of your local network. Your [board](https://developer.android.google.cn/things/hardware/developer-kits.html) must support the network protocol and frequency band of the wireless network in order to establish a connection.
+
+        $ am startservice \    -n com.google.wifisetup/.WifiSetupService \    -a WifiSetupService.Connect
+
+    The following arguments are supported with this command:
+
+    <table>
+
+    <tbody>
+
+    <tr>
+
+    <th style="width: 240px;">Argument</th>
+
+    <th>Description</th>
+
+    </tr>
+
+    <tr>
+
+    <td>`-e ssid <var>network_ssid</var>`</td>
+
+    <td>Connect to the wireless network SSID specified by <var>network_ssid</var>. _This argument is required_.</td>
+
+    </tr>
+
+    <tr>
+
+    <td>`-e passphrase <var>network_pass</var>`</td>
+
+    <td>Optional argument to use the passcode specified by <var>network_pass</var> to connect to the network SSID. This argument is not necessary if your network doesn't require a passcode.</td>
+
+    </tr>
+
+    <tr>
+
+    <td>`-e passphrase64 <var>encoded_pass</var>`</td>
+
+    <td>Optional argument used in place of `passphrase` for passcodes with special characters (`space, !, ", $, &, ', (, ), ;, <, >, `, or |`). Use [base64 encoding](https://www.base64encode.org/) to specify the value for <var>encoded_pass</var>.</td>
+
+    </tr>
+
+    <tr>
+
+    <td>`--ez hidden true`</td>
+
+    <td>Optional argument to indicate that the SSID specified in this command is hidden. If omitted, this value defaults to false.</td>
+
+    </tr>
+
+    </tbody>
+
+    </table>
+
+2.  Verify that the connection was successful through `logcat`:
+
+        $ logcat -d | grep Wifi...V WifiWatcher: Network state changed to CONNECTEDV WifiWatcher: SSID changed: ...I WifiConfigurator: Successfully connected to ...
+
+3.  Test that you can access a remote IP address:
+
+        $ ping 8.8.8.8PING 8.8.8.8 (8.8.8.8) 56(84) bytes of data.64 bytes from 8.8.8.8: icmp_seq=1 ttl=57 time=6.67 ms64 bytes from 8.8.8.8: icmp_seq=2 ttl=57 time=55.5 ms64 bytes from 8.8.8.8: icmp_seq=3 ttl=57 time=23.0 ms64 bytes from 8.8.8.8: icmp_seq=4 ttl=57 time=245 ms
+
+4.  Check that the date and time are set correctly on the device:
+
+        $ date
+
+    <aside class="note">**Note:** <span>An incorrect date or time may cause SSL errors. Restart the device to automatically set the correct date and time from a time server.</span></aside>
+
+If you want to clear all of the saved networks on the board:
+
+    $ am startservice \    -n com.google.wifisetup/.WifiSetupService \    -a WifiSetupService.Reset
+
+## Serial debug console
+
+* * *
+
+The serial console is a helpful tool for debugging your board and reviewing system log information. The console is the default output location for kernel log messages (i.e. `dmesg`), and it also provides access to a full shell prompt that you can use to access commands such as [logcat](https://developer.android.google.cn/tools/help/logcat.html). This is helpful if you are unable to access ADB on your board through other means and have not yet enabled a network connection.
+
+To access the serial console, connect a micro USB cable to the board as shown below.
+
+![""](https://developer.android.google.cn/things/images/joule-console.png)
+
+Open a connection to the USB serial device on your development computer using a terminal program, such as [PuTTY](http://www.putty.org/) (Windows), [Serial](https://www.decisivetactics.com/products/serial/) (Mac OS), or [Minicom](https://en.wikipedia.org/wiki/Minicom) (Linux). The serial port parameters for the console are as follows:
+
+*   **Baud Rate**: 115200
+*   **Data Bits**: 8
+*   **Parity**: None
+*   **Stop Bits**: 1
+
