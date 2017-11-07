@@ -4,7 +4,7 @@
 
 Android Things lets you build professional, mass-market products on a trusted platform, without previous knowledge of embedded system design.
 
-Android Things使你在没有嵌入式系统设计的预备知识的前提下，在可信任的平台上，开发出专业的，用于大众市场的产品。
+Android Things使你在没有嵌入式系统设计的预备知识的前提下，就能够在可信任的平台上开发出专业的，用于大众市场的产品。
 
 ## Turnkey Hardware Solutions
 
