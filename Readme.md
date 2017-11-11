@@ -26,12 +26,14 @@ Google 在 2016 年 12 月发布了智能物联网操作系统 Android Things，
 | #  | Markdown     | Category   |  Translator(s)    |  Current status   | Proofreader(s) |  Final reviewer |
 | - | :-: | -: |  -: |  -: |    -: |  -: |
 |文档编号  |文档链接|所在目录|翻译人员(github帐号)|当前状态 |校对(github帐号) |终审(github帐号) |
-|1  |https://github.com/gdsub/atdocs/blob/master/index.md||lucheng@google.com| | | |
+|1  | [index.md](https://github.com/gdsub/atdocs/blob/master/index.md) ||lucheng@google.com| | | |
 
 表格的Current status状态(未翻译/翻译中/翻译完成/校对中/校对结束/终审中/终审结束)
 
-## 工作方式
-邮件列表？还是群？还是其它？
+## 翻译角色
+
+* 翻译
+* 校对/润稿
 
 问题反馈方式？
 涉及到git的使用问题，提交问题
