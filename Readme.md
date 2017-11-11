@@ -23,31 +23,17 @@ Google 在 2016 年 12 月发布了智能物联网操作系统 Android Things，
 
 ## Contributor.md中的表格介绍
 
-| #  | Markdown     | Category   |  Translator(s)    |  Current status   | Proofreader(s) |  Final reviewer |
-| - | :-: | -: |  -: |  -: |    -: |  -: |
-|文档编号  |文档链接|所在目录|翻译人员(github帐号)|当前状态 |校对(github帐号) |终审(github帐号) |
-|1  | [index.md](https://github.com/gdsub/atdocs/blob/master/index.md) ||lucheng@google.com| | | |
+| #  | Markdown     | Category   |  Translator(s)    |
+| - | :-: | -: |  -: |
+|文档编号  |文档链接|所在目录|翻译人员(github帐号)|
+|1  | [index.md](https://github.com/gdsub/atdocs/blob/master/index.md) ||lucheng@google.com|
 
-表格的Current status状态(未翻译/翻译中/翻译完成/校对中/校对结束/终审中/终审结束)
-
-## 翻译角色
-
-* 翻译
-* 校对/润稿
-
-问题反馈方式？
-涉及到git的使用问题，提交问题
-还有markdown的问题
 
 ## 翻译流程
 
-翻译人员对指定内容进行翻译，并且维护表格中对应的( Current status)一栏的状态：未翻译/翻译中/翻译完成
+翻译详细流程见 [docs](https://github.com/gdsub/atdocs/tree/master/docs)
 
-当翻译人员翻译结束，由校对人员进行教对工作，并且维护表格中对应的( Current status)一栏的状态：校对中/校对结束
-
-当校对完成，由终审人员进行终审工作：并且维护表格中对应的( Current status)一栏的状态：终审中/终审结束
-
-文件的最终状态为：终审结束
+[Issue](https://github.com/gdsub/atdocs/issues) 涵盖两部分功能，一是用来做翻译的跟踪工作，其次是用来提出各种问题。
 
 
 ## 翻译示例 
@@ -56,9 +42,6 @@ Google 在 2016 年 12 月发布了智能物联网操作系统 Android Things，
 * [hardware/index.md](https://github.com/gdsub/atdocs/blob/master/hardware/index.md)
 
 
-
 ## git使用注意事项
 
 请在每次git push之前，确保git pull成功。然后再提交
-
-由于[Contributor.md](https://github.com/gdsub/atdocs/blob/master/Contributor.md) 会有多人使用，确保git pull到最新版本，然后再修改Contributor.md的内容。再上传。

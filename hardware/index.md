@@ -27,6 +27,7 @@ SoMs集成了SoC、RAM、 Flash存储、WiFi、蓝牙和其它的组件到一块
 #### Google BSP
 
 The Board Support Package (BSP) is managed by Google. This gives you a trusted platform to develop on with standard updates and fixes from Google.
+
 Google管理着板级支持包(BSP)，并且提供标准的更新和修复的可信任的平台供你进行开发。
 
 #### Differentiated hardware
