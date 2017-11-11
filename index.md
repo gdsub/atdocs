@@ -1,28 +1,43 @@
 Android Things
-
+Android Things
 
 Build connected devices for a wide variety of consumer, retail, and industrial applications
 
+为广大消费者、零售业和工业界构建物联网设备
 
 [Get the Developer Preview](https://developer.android.google.cn/things/preview/index.html)
 
+[获取开发者预览版](https://developer.android.google.cn/things/preview/index.html)
+
 [![Scroll down to read more](https://developer.android.google.cn/things/images/carrot_black.png)](#android-things)
+
+[![向下滑动阅读更多](https://developer.android.google.cn/things/images/carrot_black.png)](#android-things)
+
 
 ![](https://developer.android.google.cn/things/images/graphic_bugdroid.png)
 
 
 # The ease and power of Android
+# 如 Android 一样，简单而不失强大
 
 If you can build an app, you can build a device
 
+你只要能开发 Android 应用，就同样可以构建智能设备
+
 
 #### The Android ecosystem
+#### Android 开发技术生态系统支撑
 
 Leverage existing Android development tools, APIs, resources, and a thriving developer community.
 
+完善的 Android 开发工具、应用程序接口、资源，以及不断发展的开发者社区，助你的开发事半功倍。
+
 #### New APIs for IoT devices
+#### 为物联网设备新增的应用程序接口
 
 Develop with new Android framework APIs that provide low level I/O and libraries for common components like temperature sensors, display controllers, and more.
+
+新的 Android 框架为你提供了常用组件的底层输入输出接口和开发库，比如温度传感器、显示控制器等。
 
 #### Trusted security
 
