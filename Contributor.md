@@ -1,6 +1,6 @@
 | #  | Markdown     | Category   |  Translator(s)    |
 | - | :-: | -: |  -: |
-|1	|[index.md](https://github.com/gdsub/atdocs/blob/master/index.md)										|			| @ chenglu | 
+|1	|[index.md](https://github.com/gdsub/atdocs/blob/master/index.md)										|			| [chenglu](chenglu) | 
 |2	|[hardware/index.md](https://github.com/gdsub/atdocs/blob/master/hardware/index.md)								|hardware	| @YuChengWang | 
 |3	|[hardware/developer-kits.md)](https://github.com/gdsub/atdocs/blob/master/hardware/developer-kits.md)						|hardware	| |  
 |4	|[hardware/hardware-101.md](https://github.com/gdsub/atdocs/blob/master/hardware/hardware-101.md)						|hardware	| @bill790 | 			
