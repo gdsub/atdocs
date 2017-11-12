@@ -29,12 +29,9 @@ Google 在 2016 年 12 月发布了智能物联网操作系统 Android Things，
 |1  | [index.md](https://github.com/gdsub/atdocs/blob/master/index.md) ||lucheng@google.com|
 
 
-## 翻译流程
+## 操作指南
 
-翻译详细流程见 [docs](https://github.com/gdsub/atdocs/tree/master/docs)
-
-[Issue](https://github.com/gdsub/atdocs/issues) 涵盖两部分功能，一是用来做翻译的跟踪工作，其次是用来提出各种问题。
-
+在进行翻译之前，请先移驾 [wiki](https://github.com/gdsub/atdocs/wiki) 阅读所有的文档，这些文档将帮助您快速的学习翻译流程中碰到的各种问题。
 
 ## 翻译示例 
 
