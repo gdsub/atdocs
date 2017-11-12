@@ -1,18 +1,18 @@
 | #  | Markdown     | Category   |  Translator(s)    |
 | - | :-: | -: |  -: |
-|1	|[index.md](https://github.com/gdsub/atdocs/blob/master/index.md)										|			|lucheng@google.com| 
-|2	|[hardware/index.md](https://github.com/gdsub/atdocs/blob/master/hardware/index.md)								|hardware	| @YuchengWang | 
+|1	|[index.md](https://github.com/gdsub/atdocs/blob/master/index.md)										|			| @ chenglu | 
+|2	|[hardware/index.md](https://github.com/gdsub/atdocs/blob/master/hardware/index.md)								|hardware	| @YuChengWang | 
 |3	|[hardware/developer-kits.md)](https://github.com/gdsub/atdocs/blob/master/hardware/developer-kits.md)						|hardware	| |  
-|4	|[hardware/hardware-101.md](https://github.com/gdsub/atdocs/blob/master/hardware/hardware-101.md)						|hardware	| ||			
-|5	|[hardware/imx6ul.md](https://github.com/gdsub/atdocs/blob/master/hardware/imx6ul.md)								|hardware	| |			
-|6	|[hardware/imx6ul-pico-io.md](https://github.com/gdsub/atdocs/blob/master/hardware/imx6ul-pico-io.md)						|hardware	| |			
-|7	|[hardware/imx7d.md](https://github.com/gdsub/atdocs/blob/master/hardware/imx7d.md)								|hardware	| |			
-|8	|[hardware/mx7d-kit.md](https://github.com/gdsub/atdocs/blob/master/hardware/imx7d-kit.md)							|hardware	| |			
-|9	|[hardware/imx7d-pico-io.md](https://github.com/gdsub/atdocs/blob/master/hardware/imx7d-pico-io.md)						|hardware	| |			
-|10	|[hardware/raspberrypi.md](https://github.com/gdsub/atdocs/blob/master/hardware/raspberrypi.md)							|hardware	| |			
-|11	|[hardware/raspberrypi-kit.md](https://github.com/gdsub/atdocs/blob/master/hardware/raspberrypi-kit.md)						|hardware	| |			
-|12	|[hardware/raspberrypi-io.md](https://github.com/gdsub/atdocs/blob/master/hardware/raspberrypi-io.md)						|hardware	| |			
-|13	|[hardware/raspberrypi-mode-matrix.md](https://github.com/gdsub/atdocs/blob/master/hardware/raspberrypi-mode-matrix.md)				|hardware	| |
+|4	|[hardware/hardware-101.md](https://github.com/gdsub/atdocs/blob/master/hardware/hardware-101.md)						|hardware	| @bill790 | 			
+|5	|[hardware/imx6ul.md](https://github.com/gdsub/atdocs/blob/master/hardware/imx6ul.md)								|hardware	| @bill790 |			
+|6	|[hardware/imx6ul-pico-io.md](https://github.com/gdsub/atdocs/blob/master/hardware/imx6ul-pico-io.md)						|hardware	| @bill790 |			
+|7	|[hardware/imx7d.md](https://github.com/gdsub/atdocs/blob/master/hardware/imx7d.md)								|hardware	| @bill790 |			
+|8	|[hardware/mx7d-kit.md](https://github.com/gdsub/atdocs/blob/master/hardware/imx7d-kit.md)							|hardware	| @bill790 |			
+|9	|[hardware/imx7d-pico-io.md](https://github.com/gdsub/atdocs/blob/master/hardware/imx7d-pico-io.md)						|hardware	| @bill790 |			
+|10	|[hardware/raspberrypi.md](https://github.com/gdsub/atdocs/blob/master/hardware/raspberrypi.md)							|hardware	| @hckerhx |			
+|11	|[hardware/raspberrypi-kit.md](https://github.com/gdsub/atdocs/blob/master/hardware/raspberrypi-kit.md)						|hardware	| @hckerhx |			
+|12	|[hardware/raspberrypi-io.md](https://github.com/gdsub/atdocs/blob/master/hardware/raspberrypi-io.md)						|hardware	| @hckerhx |			
+|13	|[hardware/raspberrypi-mode-matrix.md](https://github.com/gdsub/atdocs/blob/master/hardware/raspberrypi-mode-matrix.md)				|hardware	| @hckerhx |
 |14	|[hardware/edison.md](https://github.com/gdsub/atdocs/blob/master/hardware/edison.md)								|hardware		| |	
 |15	|[hardware/edison-arduino-io.md](https://github.com/gdsub/atdocs/blob/master/hardware/edison-arduino-io.md)					|hardware		| |	
 |16	|[hardware/edison-sparkfun-io.md](https://github.com/gdsub/atdocs/blob/master/hardware/edison-sparkfun-io.md)					|hardware		| |	
@@ -31,20 +31,20 @@
 |29	|[sdk/drivers/input.md](https://github.com/gdsub/atdocs/blob/master/sdk/drivers/input.md)							|sdk/drivers	| |		
 |30	|[sdk/drivers/sensors.md](https://github.com/gdsub/atdocs/blob/master/sdk/drivers/sensors.md)							|sdk/drivers	| |		
 |31	|[sdk/drivers/audio.md](https://github.com/gdsub/atdocs/blob/master/sdk/drivers/audio.md)							|sdk/drivers	| |		
-|32	|[sdk/index.md](https://github.com/gdsub/atdocs/blob/master/sdk/index.md)									|sdk			| | 
-|33	|[sdk/driver-library.md](https://github.com/gdsub/atdocs/blob/master/sdk/driver-library.md)							|sdk			| |
-|34	|[sdk/samples.md](https://github.com/gdsub/atdocs/blob/master/sdk/samples.md)									|sdk			| | 
-|35	|[training/first-device/index.md](https://github.com/gdsub/atdocs/blob/master/training/first-device/index.md)					|training/first-device		| |	
-|36	|[training/first-device/create-studio-project.md](https://github.com/gdsub/atdocs/blob/master/training/first-device/create-studio-project.md)	|training/first-device		| |	
-|37	|[training/first-device/connect-hardware.md](https://github.com/gdsub/atdocs/blob/master/training/first-device/connect-hardware.md)		|training/first-device		| |	
-|38	|[training/first-device/peripherals.md](https://github.com/gdsub/atdocs/blob/master/training/first-device/peripherals.md)			|training/first-device		| |	
-|39	|[training/first-device/drivers.md](https://github.com/gdsub/atdocs/blob/master/training/first-device/drivers.md)				|training/first-device		| |	
-|40	|[training/doorbell/index.md](https://github.com/gdsub/atdocs/blob/master/training/doorbell/index.md)						|training/doorbell			| | 
-|41	|[training/doorbell/button-input.md](https://github.com/gdsub/atdocs/blob/master/training/doorbell/button-input.md)				|training/doorbell		|	| 
-|42	|[training/doorbell/camera-input.md](https://github.com/gdsub/atdocs/blob/master/training/doorbell/camera-input.md)				|training/doorbell		|	| 
-|43	|[training/doorbell/cloud-vision.md](https://github.com/gdsub/atdocs/blob/master/training/doorbell/cloud-vision.md)				|training/doorbell		|	| 
-|44	|[training/doorbell/firebase-db.md](https://github.com/gdsub/atdocs/blob/master/training/doorbell/firebase-db.md)				|training/doorbell		|	| 
-|45	|[training/doorbell/companion-app.md](https://github.com/gdsub/atdocs/blob/master/training/doorbell/companion-app.md)				|training/doorbell	|		| 
+|32	|[sdk/index.md](https://github.com/gdsub/atdocs/blob/master/sdk/index.md)									|sdk			| @Crazy-Ann | 
+|33	|[sdk/driver-library.md](https://github.com/gdsub/atdocs/blob/master/sdk/driver-library.md)							|sdk			| @Crazy-Ann |
+|34	|[sdk/samples.md](https://github.com/gdsub/atdocs/blob/master/sdk/samples.md)									|sdk			| @Crazy-Ann | 
+|35	|[training/first-device/index.md](https://github.com/gdsub/atdocs/blob/master/training/first-device/index.md)					|training/first-device		| @Zheaoli |	
+|36	|[training/first-device/create-studio-project.md](https://github.com/gdsub/atdocs/blob/master/training/first-device/create-studio-project.md)	|training/first-device | @Zheaoli |	
+|37	|[training/first-device/connect-hardware.md](https://github.com/gdsub/atdocs/blob/master/training/first-device/connect-hardware.md)		|training/first-device		|  @Zheaoli |	
+|38	|[training/first-device/peripherals.md](https://github.com/gdsub/atdocs/blob/master/training/first-device/peripherals.md)			|training/first-device		| @Zheaoli |	
+|39	|[training/first-device/drivers.md](https://github.com/gdsub/atdocs/blob/master/training/first-device/drivers.md)				|training/first-device		| @Zheaoli |	
+|40	|[training/doorbell/index.md](https://github.com/gdsub/atdocs/blob/master/training/doorbell/index.md)						|training/doorbell			| @haoyh | 
+|41	|[training/doorbell/button-input.md](https://github.com/gdsub/atdocs/blob/master/training/doorbell/button-input.md)				|training/doorbell		| @haoyh | 
+|42	|[training/doorbell/camera-input.md](https://github.com/gdsub/atdocs/blob/master/training/doorbell/camera-input.md)				|training/doorbell		| @haoyh | 
+|43	|[training/doorbell/cloud-vision.md](https://github.com/gdsub/atdocs/blob/master/training/doorbell/cloud-vision.md)				|training/doorbell		| @haoyh | 
+|44	|[training/doorbell/firebase-db.md](https://github.com/gdsub/atdocs/blob/master/training/doorbell/firebase-db.md)				|training/doorbell		| @haoyh | 
+|45	|[training/doorbell/companion-app.md](https://github.com/gdsub/atdocs/blob/master/training/doorbell/companion-app.md)				|training/doorbell	| @haoyh | 
 |46	|[preview/index.md](https://github.com/gdsub/atdocs/blob/master/preview/index.md)								|preview		| | 	
 |47	|[console/index.md](https://github.com/gdsub/atdocs/blob/master/console/index.md)								|console		| |	
 |48	|[console/create.md](https://github.com/gdsub/atdocs/blob/master/console/create.md)								|console		| |	
