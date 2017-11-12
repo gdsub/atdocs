@@ -52,4 +52,4 @@
 |50	|[console/build.md](https://github.com/gdsub/atdocs/blob/master/console/build.md)																|console				| [vincgao](https://github.com/vincgao)|	
 |51	|[console/app_bundle.md](https://github.com/gdsub/atdocs/blob/master/console/app_bundle.md)														|console				| [vincgao](https://github.com/vincgao)|	
 |52	|[console/update.md](https://github.com/gdsub/atdocs/blob/master/console/update.md)																|console				| [vincgao](https://github.com/vincgao)|	
-|53	|[preview/releases.md](https://github.com/gdsub/atdocs/blob/master/preview/releases.md)															|preview				|  |	
+|53	|[preview/releases.md](https://github.com/gdsub/atdocs/blob/master/preview/releases.md)															|preview				| [ttoommbb](https://github.com/ttoommbb) |	
