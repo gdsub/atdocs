@@ -45,11 +45,11 @@
 |43	|[training/doorbell/cloud-vision.md](https://github.com/gdsub/atdocs/blob/master/training/doorbell/cloud-vision.md)								|training/doorbell		| [haoyh](https://github.com/haoyh) | 
 |44	|[training/doorbell/firebase-db.md](https://github.com/gdsub/atdocs/blob/master/training/doorbell/firebase-db.md)								|training/doorbell		| [haoyh](https://github.com/haoyh) | 
 |45	|[training/doorbell/companion-app.md](https://github.com/gdsub/atdocs/blob/master/training/doorbell/companion-app.md)							|training/doorbell		| [haoyh](https://github.com/haoyh) | 
-|46	|[preview/index.md](https://github.com/gdsub/atdocs/blob/master/preview/index.md)																|preview				| | 	
-|47	|[console/index.md](https://github.com/gdsub/atdocs/blob/master/console/index.md)																|console				| |	
-|48	|[console/create.md](https://github.com/gdsub/atdocs/blob/master/console/create.md)																|console				| |	
-|49	|[console/configure.md](https://github.com/gdsub/atdocs/blob/master/console/configure.md)														|console				| |	
-|50	|[console/build.md](https://github.com/gdsub/atdocs/blob/master/console/build.md)																|console				| |	
-|51	|[console/app_bundle.md](https://github.com/gdsub/atdocs/blob/master/console/app_bundle.md)														|console				| |	
-|52	|[console/update.md](https://github.com/gdsub/atdocs/blob/master/console/update.md)																|console				| |	
-|53	|[preview/releases.md](https://github.com/gdsub/atdocs/blob/master/preview/releases.md)															|preview				| |	
+|46	|[preview/index.md](https://github.com/gdsub/atdocs/blob/master/preview/index.md)																|preview				| [vincgao](https://github.com/vincgao)| 	
+|47	|[console/index.md](https://github.com/gdsub/atdocs/blob/master/console/index.md)																|console				| [vincgao](https://github.com/vincgao)|	
+|48	|[console/create.md](https://github.com/gdsub/atdocs/blob/master/console/create.md)																|console				| [vincgao](https://github.com/vincgao)|	
+|49	|[console/configure.md](https://github.com/gdsub/atdocs/blob/master/console/configure.md)														|console				| [vincgao](https://github.com/vincgao)|	
+|50	|[console/build.md](https://github.com/gdsub/atdocs/blob/master/console/build.md)																|console				| [vincgao](https://github.com/vincgao)|	
+|51	|[console/app_bundle.md](https://github.com/gdsub/atdocs/blob/master/console/app_bundle.md)														|console				| [vincgao](https://github.com/vincgao)|	
+|52	|[console/update.md](https://github.com/gdsub/atdocs/blob/master/console/update.md)																|console				| [vincgao](https://github.com/vincgao)|	
+|53	|[preview/releases.md](https://github.com/gdsub/atdocs/blob/master/preview/releases.md)															|preview				|  |	
