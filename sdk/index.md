@@ -193,7 +193,7 @@ Each release of Android Things bundles the latest stable version of [Google Play
 
 每一批发布Android Things的 [Google Play Services](https://developer.android.google.cn/google/play-services/index.html) 最新稳定版，要求客户端SDK版本至少是**11.0.0**。Android Things不包括  [Google Play Store](https://developer.android.google.cn/distribute/googleplay/index.html)，其负责自动更新设备上的Google Play Services。因为设备上的Google Play Services版本是静态的，所以应用程序不能标记客户端SDK版本大雨目标发布的捆绑版本。
 
-<aside class="note">**Note:** <span>During developer preview, the bundled version for each release is listed in the [release notes](https://developer.android.google.cn/things/preview/releases.html).</span></aside>  
+<aside class="note">**Note:** <span>During developer preview, the bundled version for each release is listed in the [release notes](https://developer.android.google.cn/things/preview/releases.html).</span></aside>   
 
 <aside class="note">**Note:** <span>在开发者预览版中, 每个版本的捆绑版本都列在了 [release notes](https://developer.android.google.cn/things/preview/releases.html) 中。</span></aside>
 
