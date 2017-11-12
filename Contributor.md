@@ -26,11 +26,11 @@
 |24	|[sdk/pio/uart.md](https://github.com/gdsub/atdocs/blob/master/sdk/pio/uart.md)													| sdk/pio	| |
 |25	|[sdk/pio/i2s.md](https://github.com/gdsub/atdocs/blob/master/sdk/pio/i2s.md)													| sdk/pio	| |
 |26	|[sdk/pio/native.md](https://github.com/gdsub/atdocs/blob/master/sdk/pio/native.md)												| sdk/pio	| |	
-|27	|[sdk/drivers/index.md](https://github.com/gdsub/atdocs/blob/master/sdk/drivers/index.md)										|sdk/drivers| |		
-|28	|[sdk/drivers/gps.md](https://github.com/gdsub/atdocs/blob/master/sdk/drivers/gps.md)											|sdk/drivers| |		
-|29	|[sdk/drivers/input.md](https://github.com/gdsub/atdocs/blob/master/sdk/drivers/input.md)										|sdk/drivers| |		
-|30	|[sdk/drivers/sensors.md](https://github.com/gdsub/atdocs/blob/master/sdk/drivers/sensors.md)									|sdk/drivers| |		
-|31	|[sdk/drivers/audio.md](https://github.com/gdsub/atdocs/blob/master/sdk/drivers/audio.md)										|sdk/drivers| |		
+|27	|[sdk/drivers/index.md](https://github.com/gdsub/atdocs/blob/master/sdk/drivers/index.md)										|sdk/drivers| [jamweak](https://github.com/jamweak) |		
+|28	|[sdk/drivers/gps.md](https://github.com/gdsub/atdocs/blob/master/sdk/drivers/gps.md)											|sdk/drivers| [jamweak](https://github.com/jamweak) |		
+|29	|[sdk/drivers/input.md](https://github.com/gdsub/atdocs/blob/master/sdk/drivers/input.md)										|sdk/drivers| [jamweak](https://github.com/jamweak) |		
+|30	|[sdk/drivers/sensors.md](https://github.com/gdsub/atdocs/blob/master/sdk/drivers/sensors.md)									|sdk/drivers| [jamweak](https://github.com/jamweak) |		
+|31	|[sdk/drivers/audio.md](https://github.com/gdsub/atdocs/blob/master/sdk/drivers/audio.md)										|sdk/drivers| [jamweak](https://github.com/jamweak) |		
 |32	|[sdk/index.md](https://github.com/gdsub/atdocs/blob/master/sdk/index.md)														|sdk		| [Crazy-Ann](https://github.com/Crazy-Ann) | 
 |33	|[sdk/driver-library.md](https://github.com/gdsub/atdocs/blob/master/sdk/driver-library.md)										|sdk		| [Crazy-Ann](https://github.com/Crazy-Ann) |
 |34	|[sdk/samples.md](https://github.com/gdsub/atdocs/blob/master/sdk/samples.md)													|sdk		| [Crazy-Ann](https://github.com/Crazy-Ann) | 
