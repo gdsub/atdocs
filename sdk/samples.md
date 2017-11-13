@@ -43,7 +43,7 @@ peripherals. You can get started with the following samples:</p>
     Smart doorbell that captures a camera image, analyzes it, and sends it to a
     companion app using the Google Cloud Platform and Firebase.</li>
 <li><a href="https://github.com/androidthings/doorbell"><strong>门铃</strong></a> -
-    智能门铃捕获摄像头图像，分析它，并且将其发送到使用 Google Cloud 平台和 Firebase 的配套应用程序。</li>
+    智能门铃捕获摄像头图像，分析它，并且将其发送到使用 Google Cloud 平台和 Firebase 的配套应用程序。</li>
 
 <li><a href="https://github.com/androidthings/weatherstation"><strong>Weather Station</strong></a> -
     Integration of multiple peripheral sensors to analyze and display current
