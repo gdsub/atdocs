@@ -4,7 +4,7 @@
 
 The Intel® Edison compute module is a modular, small and powerful system on a chip (SoC) that includes a CPU, MCU, memory, storage and dual-band Wi-Fi and Bluetooth. The module can be mounted onto a system of expansion boards, enabling quick adoption and prototyping for the consumer and light industrial IoT applications.
 
-Intel® Edison 计算模块是一款模块化，体积小而且强大的片上系统（SoC），它包括CPU，MCU，内存，存储器，双频Wi-Fi和蓝牙。该模块可以安装到扩展板的系统上，「让消费者以及轻工业物联网应用能够快速采用以及建立原型」。
+Intel® Edison 计算模块是一款模块化，体积小而且强大的片上系统（SoC），它包括CPU，MCU，内存，存储器，双频Wi-Fi和蓝牙。该模块可以安装到扩展板的系统上，使消费者和轻工业物联网应用的快速采用和原型化成为可能。
 
 ![](https://developer.android.google.cn/things/images/intel-edison-arduino-kit.png) ![](https://developer.android.google.cn/things/images/intel-edison-sparkfun-kit.png)
 
@@ -56,7 +56,7 @@ Connect the board to your host computer:
 ![""](https://developer.android.google.cn/things/images/edison-arduino-connections.png)
 
 1.  Ensure switch **SW1** is in the position _towards_ the micro USB ports.
-1.  确保 **SW1** 开关被置于 **朝向** Micro-USB 口的方向。
+1.  确保 **SW1** 开关被置于 **朝向** Micro-USB 口的方向。
 2.  Press the **FW** button and keep it pressed.
 2.  长按 **FW** 键。
 3.  Connect a USB cable to **J16**.
@@ -87,16 +87,16 @@ Once you have loaded the proper bootloader on your device, use the following ste
 
     *   Navigate to the Android SDK location on your computer; the path can be found in the system settings for Android Studio. Verify that the `fastboot` binary is installed in the `platform-tools/` directory.
 
-    *   切换到计算机上 Android SDK 的位置，该位置的路径可以从 Android Studio 的系统配置中可以找到。确认 `fastboot` 二进制文件已经安装到`platform-tools/` 目录下。
+    *   切换到计算机上 Android SDK 的位置，该位置的路径可以从 Android Studio 的系统配置中可以找到。确认 `fastboot` 二进制文件已经安装到`platform-tools/` 目录下。
 
     *   After you have the fastboot tool, add it to your `PATH` [environment variable](https://developer.android.google.cn/studio/command-line/variables.html#set). This command should be similar to the following:
 
-    *   确认了 fastboot 工具之后，把它添加到您的环境变量 `PATH` [环境变量](https://developer.android.google.cn/studio/command-line/variables.html#set) 中。添加的命令参考如下。
+    *   确认了 fastboot 工具之后，把它添加到您的环境变量 `PATH` [环境变量](https://developer.android.google.cn/studio/command-line/variables.html#set) 中。添加的命令参考如下。
 
         `export PATH=$PATH:"path/to/fastboot"`
 
 2.  Open a command line terminal and navigate to the unzipped image directory.
-2.  打开终端命令行并切换到已解压的镜像目录。
+2.  打开终端命令行并切换到已解压的镜像目录。
 
 3.  Verify that the device has booted into Fastboot mode by executing the following command:
 3.  通过执行以下命令来验证设备是否已启动到 Fastboot 模式
@@ -140,10 +140,10 @@ After flashing your board, it is strongly recommended to connect it to the inter
 
 To connect your board to Wi-Fi, first access a shell prompt on the device. You can use either of the following methods:
 
-开发板连接Wi-Fi之前需要先访问设备的shell终端。 您可用通过以下任意一种方式来访问:
+开发板连接Wi-Fi之前需要先访问设备的shell终端。 您可用通过以下任意一种方式来访问:
 
 *   Open a shell over adb with the `adb shell` command.
-*   使用 `adb shell` 来打开基于adb的终端。
+*   使用 `adb shell` 来打开基于adb的终端。
 *   Connect to the [serial console](#serial_debug_console).
 *   连接到串口调试终端 [串口终端](#串口调试终端)。
 
@@ -153,7 +153,7 @@ Once you can access a shell prompt, follow these steps:
 
 1.  Send an intent to the Wi-Fi service that includes the SSID of your local network. Your [board](https://developer.android.google.cn/things/hardware/developer-kits.html) must support the network protocol and frequency band of the wireless network in order to establish a connection.
 
-1.  发送一条包含本地无线网络 SSID 的「intent消息」到Wi-Fi。 您的 [开发板](https://developer.android.google.cn/things/hardware/developer-kits.html) 必须支持该无线网络的协议以及频段才能够建立网络连接。
+1.  发送一条包含本地无线网络 SSID 等参数的消息到Wi-Fi服务。 您的 [开发板](https://developer.android.google.cn/things/hardware/developer-kits.html) 必须支持该无线网络的协议以及频段才能够建立网络连接。
 
         $ am startservice \    -n com.google.wifisetup/.WifiSetupService \    -a WifiSetupService.Connect
 
@@ -233,7 +233,7 @@ Once you can access a shell prompt, follow these steps:
 
     <td>`-e passphrase <var>network_pass</var>`</td>
 
-    <td>通过 <var>network_pass</var> 来指定被连接无线网络（SSID）的密码。 该参数不是必要参数，因为无线网络可以不配置密码。</td>
+    <td>通过 <var>network_pass</var> 来指定被连接无线网络（SSID）的密码。 该参数不是必要参数，因为无线网络可以不配置密码。</td>
 
     </tr>
 
@@ -241,7 +241,7 @@ Once you can access a shell prompt, follow these steps:
 
     <td>`-e passphrase64 <var>encoded_pass</var>`</td>
 
-    <td>通过 `passphrase` 来指定包含特殊字符 (`space, !, ", $, &, ', (, ), ;, <, >, `, 或者 |`) 的密码。 参数值 <var>encoded_pass</var> 采用 [base64编码](https://www.base64encode.org/)。</td>
+    <td>通过 `passphrase` 来指定包含特殊字符 (`space, !, ", $, &, ', (, ), ;, <, >, `, 或者 |`) 的密码。 参数值 <var>encoded_pass</var> 采用 [base64编码](https://www.base64encode.org/)。</td>
 
     </tr>
 
@@ -293,7 +293,7 @@ The serial console is a helpful tool for debugging your board and reviewing syst
 
 To access the serial console, connect a micro USB cable to the board as follows:
 
-连接 micro USB 线到开发板并按照以下步骤来访问串口终端:
+连接 micro USB 线到开发板并按照以下步骤来访问串口终端:
 
 **For Arduino Breakout:** Connect to **J3**.
 
