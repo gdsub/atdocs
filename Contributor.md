@@ -2,7 +2,7 @@
 | - | :-: | -: |  -: |
 |1	|[index.md](https://github.com/gdsub/atdocs/blob/master/index.md)																|			| [chenglu](https://github.com/chenglu) | 
 |2	|[hardware/index.md](https://github.com/gdsub/atdocs/blob/master/hardware/index.md)												| hardware	| [YuchengWang](https://github.com/YuchengWang) | 
-|3	|[hardware/developer-kits.md)](https://github.com/gdsub/atdocs/blob/master/hardware/developer-kits.md)							| hardware	| |  
+|3	|[hardware/developer-kits.md)](https://github.com/gdsub/atdocs/blob/master/hardware/developer-kits.md)							| hardware	| [mtk54101](https://github.com/mtk54101)|  
 |4	|[hardware/hardware-101.md](https://github.com/gdsub/atdocs/blob/master/hardware/hardware-101.md)								| hardware	| [bill790](https://github.com/bill790) | 			
 |5	|[hardware/imx6ul.md](https://github.com/gdsub/atdocs/blob/master/hardware/imx6ul.md)											| hardware	| [bill790](https://github.com/bill790) |			
 |6	|[hardware/imx6ul-pico-io.md](https://github.com/gdsub/atdocs/blob/master/hardware/imx6ul-pico-io.md)							| hardware	| [bill790](https://github.com/bill790) |			
@@ -13,11 +13,11 @@
 |11	|[hardware/raspberrypi-kit.md](https://github.com/gdsub/atdocs/blob/master/hardware/raspberrypi-kit.md)							| hardware	| [hckerhx](https://github.com/hckerhx) |			
 |12	|[hardware/raspberrypi-io.md](https://github.com/gdsub/atdocs/blob/master/hardware/raspberrypi-io.md)							| hardware	| [hckerhx](https://github.com/hckerhx) |			
 |13	|[hardware/raspberrypi-mode-matrix.md](https://github.com/gdsub/atdocs/blob/master/hardware/raspberrypi-mode-matrix.md)			| hardware	| [hckerhx](https://github.com/hckerhx) |
-|14	|[hardware/edison.md](https://github.com/gdsub/atdocs/blob/master/hardware/edison.md)											| hardware	| |	
-|15	|[hardware/edison-arduino-io.md](https://github.com/gdsub/atdocs/blob/master/hardware/edison-arduino-io.md)						| hardware	| |	
-|16	|[hardware/edison-sparkfun-io.md](https://github.com/gdsub/atdocs/blob/master/hardware/edison-sparkfun-io.md)					| hardware	| |	
-|17	|[hardware/joule.md](https://github.com/gdsub/atdocs/blob/master/hardware/joule.md)												| hardware	| |	
-|18	|[hardware/joule-io.md](https://github.com/gdsub/atdocs/blob/master/hardware/joule-io.md)										| hardware	| |	
+|14	|[hardware/edison.md](https://github.com/gdsub/atdocs/blob/master/hardware/edison.md)											| hardware	| [riclava](https://github.com/riclava) |	
+|15	|[hardware/edison-arduino-io.md](https://github.com/gdsub/atdocs/blob/master/hardware/edison-arduino-io.md)						| hardware	| [riclava](https://github.com/riclava) |	
+|16	|[hardware/edison-sparkfun-io.md](https://github.com/gdsub/atdocs/blob/master/hardware/edison-sparkfun-io.md)					| hardware	| [riclava](https://github.com/riclava) |	
+|17	|[hardware/joule.md](https://github.com/gdsub/atdocs/blob/master/hardware/joule.md)												| hardware	| [mtk54101](https://github.com/mtk54101)|	
+|18	|[hardware/joule-io.md](https://github.com/gdsub/atdocs/blob/master/hardware/joule-io.md)										| hardware	| [mtk54101](https://github.com/mtk54101)|	
 |19	|[sdk/pio/index.md](https://github.com/gdsub/atdocs/blob/master/sdk/pio/index.md)												| sdk/pio	| [minipanda](https://github.com/minipanda)|	
 |20	|[sdk/pio/gpio.md](https://github.com/gdsub/atdocs/blob/master/sdk/pio/gpio.md)													| sdk/pio	| [minipanda](https://github.com/minipanda)|	
 |21	|[sdk/pio/pwm.md](https://github.com/gdsub/atdocs/blob/master/sdk/pio/pwm.md)													| sdk/pio	| [minipanda](https://github.com/minipanda)|	
