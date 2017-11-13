@@ -83,7 +83,7 @@ Android Things 支持同于传统Android应用程序提供的 [UI工具包](http
 
 However, Android Things does not _require_ a display. On devices where a graphical display is not present, activities are still a primary component of your Android Things app. This is because the framework delivers all [input events](https://developer.android.google.cn/guide/topics/ui/ui-events.html) to the foreground activity, which has focus. Your app cannot receive key events or motion events through any other application component, such as a [service](https://developer.android.google.cn/guide/components/services.html).
 
-然而， Android Things 不要求展示，在不存在图形显示的设备上，活动依然是Android Things应用程序的主要组件。这是因为框架将所有的 [input events](https://developer.android.google.cn/guide/topics/ui/ui-events.html) 传递给获取焦点的前台Activity。
+然而， Android Things 不要求展示，在不存在图形显示的设备上，活动依然是Android Things应用程序的主要组件。这是因为框架将所有的 [输入事件](https://developer.android.google.cn/guide/topics/ui/ui-events.html) 传递给获取焦点的前台Activity。
 
 ### Home activity support
 
