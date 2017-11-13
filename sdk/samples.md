@@ -95,7 +95,7 @@ peripherals. You can get started with the following samples:</p>
     the spoken request from a connected microphone and plays back the Assistant's
     spoken response on a connected speaker.</li>
 <li><a href="https://github.com/androidthings/sample-googleassistant"><strong>Google 助手接口</strong></a> -
-    展示如何从设备调用 Google 助手 gRPC 接口。记录口头向一个来自被连接的麦克风的发起请求并且在一个被连接的扬声器上回放助手的口头响应。</li>
+    展示如何从设备调用 Google 助手 gRPC 接口。记录口头向一个来自被连接的麦克风的发起请求并且在一个被连接的扬声器上回放助手的口头响应。</li>
 
 <li><a href="https://github.com/androidthings/drivers-samples"><strong>Drivers</strong></a> -
     Sample peripheral drivers for Android Things. Includes drivers for an OLED
