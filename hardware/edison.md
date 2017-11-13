@@ -273,6 +273,7 @@ Once you can access a shell prompt, follow these steps:
         $ date
 
     <aside class="note">**Note:** <span>An incorrect date or time may cause SSL errors. Restart the device to automatically set the correct date and time from a time server.</span></aside>
+
     <aside class="note">**注意：** <span>日期或者时间错误可能导致SSL错误。 通过重启可以让设备自动从远程时间服务器进行日期和时间的同步</span></aside>
 
 If you want to clear all of the saved networks on the board:
