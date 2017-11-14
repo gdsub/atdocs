@@ -5,15 +5,15 @@
 ## 本文包括下面内容
 
 1.  [Hardware platforms](#hardware_platforms)
-2.  [硬件平台](#hardware_platforms)
-3.  [Featured peripherals](#featured_peripherals)
-4.  [特色外设](#featured_peripherals)
-5.  [Where to buy](#where_to_buy)
-6.  [哪里购买](#where_to_buy)
+1.  [硬件平台](#hardware_platforms)
+2.  [Featured peripherals](#featured_peripherals)
+2.  [特色外设](#featured_peripherals)
+3.  [Where to buy](#where_to_buy)
+3.  [哪里购买](#where_to_buy)
 
 
 Discover the hardware platforms supported by Android Things as well as developer kits to help you quickly get started with the [code samples](https://developer.android.google.cn/things/sdk/samples.html) and [tutorials](https://developer.android.google.cn/things/training/first-device/index.html). Learn more about each platform below and choose the one that best fits your app.
-研究 Android Things 所支持的硬件平台以及开发工具有助于开发者快速的学习[示例代码](https://developer.android.google.cn/things/sdk/samples.html) 和 [教程](https://developer.android.google.cn/things/training/first-device/index.html)。您可以了解下面每一个硬件平台，再来选择最适合您应用程序得那一个。
+研究 Android Things 所支持的硬件平台以及开发工具有助于开发者快速的学习[示例代码](https://developer.android.google.cn/things/sdk/samples.html) 和[教程](https://developer.android.google.cn/things/training/first-device/index.html)。您可以了解下面每一个硬件平台，再来选择最适合您应用程序得那一个。
 
 
 ## Hardware platforms
