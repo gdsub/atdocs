@@ -6,9 +6,9 @@
 
 1.  [Hardware platforms](#hardware_platforms)  
 [硬件平台](#hardware_platforms)
-2.  [Featured peripherals](#featured_peripherals)
+2.  [Featured peripherals](#featured_peripherals)  
 [特色外设](#featured_peripherals)
-3.  [Where to buy](#where_to_buy)
+3.  [Where to buy](#where_to_buy)  
 [哪里购买](#where_to_buy)
 
 
