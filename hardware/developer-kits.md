@@ -13,7 +13,7 @@
 
 
 Discover the hardware platforms supported by Android Things as well as developer kits to help you quickly get started with the [code samples](https://developer.android.google.cn/things/sdk/samples.html) and [tutorials](https://developer.android.google.cn/things/training/first-device/index.html). Learn more about each platform below and choose the one that best fits your app.  
-研究 Android Things 所支持的硬件平台以及开发工具有助于开发者快速的学习[示例代码](https://developer.android.google.cn/things/sdk/samples.html)和[教程](https://developer.android.google.cn/things/training/first-device/index.html)。您可以了解下面每一个硬件平台，再来选择最适合您应用程序得那一个。
+研究 Android Things 所支持的硬件平台以及开发工具，有助于开发者快速的学习[示例代码](https://developer.android.google.cn/things/sdk/samples.html)和[教程](https://developer.android.google.cn/things/training/first-device/index.html)。开发者可以先了解下面的硬件平台，再依据您的应用场景做出选择。
 
 
 ## Hardware platforms
@@ -45,7 +45,7 @@ Discover the hardware platforms supported by Android Things as well as developer
 [Get Started - i.MX7D](https://developer.android.google.cn/things/hardware/imx7d.html)  
 [入门 - i.MX7D](https://developer.android.google.cn/things/hardware/imx7d.html)
 
-[入门 - Pico Pro Maker Kit](https://developer.android.google.cn/things/hardware/imx7d-kit.html)  
+[Get Started - Pico Pro Maker Kit](https://developer.android.google.cn/things/hardware/imx7d-kit.html)  
 [入门 - Pico Pro 开发套件](https://developer.android.google.cn/things/hardware/imx7d-kit.html)
 
 </td>
@@ -79,6 +79,7 @@ Discover the hardware platforms supported by Android Things as well as developer
 
 [Get Started](https://developer.android.google.cn/things/hardware/imx6ul.html)
 [入门](https://developer.android.google.cn/things/hardware/imx6ul.html)
+
 </td>
 
 <td style="width: 23%">
@@ -360,7 +361,7 @@ Bluetooth® 4.1</td>
 ### 传统的硬件平台
 
 Long-term support for the hardware in this section has ended. Developers may still target these platforms in the [Android Things Console](https://partner.android.com/things/console), but they will not receive the latest platform updates.  
-平台已经停止了对下面硬件的长期支持。开发者依然可以在  [Android thing 控制台](https://partner.android.com/things/console)上使用这些硬件，但它们将不会接收到平台的最新更新。
+平台已经停止了对下面硬件的长期支持。开发者依然可以在[Android thing 控制台](https://partner.android.com/things/console)上使用这些硬件，但它们将不会接收到平台的最新更新。
 
 <table style="width: 55%">
 
@@ -508,14 +509,14 @@ Bluetooth® 4.2</td>
 * * *
 
 The following developer kits are designed to work with the Android Things [code samples](https://developer.android.google.cn/things/sdk/samples.html).  
-下面的开发者工具是用于和 Android Things 协同工作 [示例代码](https://developer.android.google.cn/things/sdk/samples.html).
+下面的开发者工具用于和 Android Things [示例代码](https://developer.android.google.cn/things/sdk/samples.html)协同工作.
 
 ![](https://developer.android.google.cn/things/images/peripheral-kit.jpg)
 
 ### Adafruit Project Kit
 ### Adafruit 项目工具包
 
-**For all supported boards**
+**For all supported boards**  
 **对于所有支持的板子**
 
 The project kit provides a flexible way of getting started on all supported boards.  
@@ -524,10 +525,10 @@ Adafruit 项目工具包提供了灵活的入门方法。
 
 ![](https://developer.android.google.cn/things/images/rainbow-hat.png)
 
-### Pimoroni Rainbow HAT
+### Pimoroni Rainbow HAT  
 ### Pimoroni 彩虹帽
 
-**For Raspberry Pi**
+**For Raspberry Pi**  
 **对于 Raspberry Pi**
 
 The Rainbow HAT offers a plug and play solution for getting started on Raspberry Pi.  
@@ -535,10 +536,10 @@ The Rainbow HAT offers a plug and play solution for getting started on Raspberry
 
 ![](https://developer.android.google.cn/things/images/project-kit.jpg)
 
-### Sparkfun Project Kit
+### Sparkfun Project Kit  
 ### Sparkfun 项目工具包
 
-**For Intel® Edison**
+**For Intel® Edison**  
 **对于 Intel® Edison 的板子**
 
 The Sparkfun kit is a version of the project kit targeted at the Intel® Edison.  
