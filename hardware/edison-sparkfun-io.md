@@ -6,7 +6,7 @@
 interfaces available to your apps running on the
 <a href="https://www.sparkfun.com/products/13044">Raspberry Pi Block for Intel® Edison</a>.</p>
 
-<p>本节介绍了<a href="https://www.sparkfun.com/products/13044">适用于 Intel® Edison 的 Raspberry Pi 模块</a>的应用程序<a href="https://developer.android.google.cn/things/sdk/pio/index.html">外设 I/O</a>
+<p>本节介绍了<a href="https://www.sparkfun.com/products/13044">适用于 Intel® Edison 的 Raspberry Pi 模块</a>的应用程序<a href="https://developer.android.google.cn/things/sdk/pio/index.html">外设 I/O</a>
 接口。</p>
 
 <p><img src="https://developer.android.google.cn/things/images/sparkfun-pi-block.jpg" height="240px"></p>
