@@ -1,27 +1,26 @@
-Developer Kits
+# Developer Kits
+# 开发者工具
 
-开发者工具
+## In this document
+## 本文包括下面内容
 
-In this document
+1.  [Hardware platforms](#hardware_platforms)
+2.  [硬件平台](#hardware_platforms)
+3.  [Featured peripherals](#featured_peripherals)
+4.  [特色外设](#featured_peripherals)
+5.  [Where to buy](#where_to_buy)
+6.  [哪里购买](#where_to_buy)
 
-本文包括下面内容
 
-1. Hardware platforms
-2. 硬件平台
-3. Featured peripherals
-4. 特色外设
-5. Where to buy
-6. 哪里购买
+Discover the hardware platforms supported by Android Things as well as developer kits to help you quickly get started with the [code samples](https://developer.android.google.cn/things/sdk/samples.html) and [tutorials](https://developer.android.google.cn/things/training/first-device/index.html). Learn more about each platform below and choose the one that best fits your app.
+研究 Android Things 所支持的硬件平台以及开发工具有助于开发者快速的学习[示例代码](https://developer.android.google.cn/things/sdk/samples.html) 和 [教程](https://developer.android.google.cn/things/training/first-device/index.html)。您可以了解下面每一个硬件平台，再来选择最适合您应用程序得那一个。
 
-Discover the hardware platforms supported by Android Things as well as developer kits to help you quickly get started with the code samples and tutorials. Learn more about each platform below and choose the one that best fits your app.
 
-研究 Android Things 所支持的硬件平台以及开发工具有助于开发者快速的学习示例代码 和 教程。您可以了解下面每一个硬件平台，再来选择最适合您应用程序得那一个。
+## Hardware platforms
+## 硬件平台
 
-Hardware platforms
 
-硬件平台
-
-- - *
+* * *
 
 <table>
 
@@ -30,91 +29,71 @@ Hardware platforms
 <tr>
 
 <th>Platform</th>
-
 <th>平台</th>
 
 <td style="width: 23%">
+**NXP Pico i.MX7D**  
 
-NXP Pico i.MX7D  
+![](https://developer.android.google.cn/things/images/nxp-pico7-module.png)
 
+[Learn More](http://www.nxp.com/AndroidThingsGS)
+[了解更多](http://www.nxp.com/AndroidThingsGS)
 
+[Where to buy](http://www.technexion.com/solutions/iot-development-platform/android-things/)
+[哪里购买](http://www.technexion.com/solutions/iot-development-platform/android-things/)
 
-Learn More
+[Get Started - i.MX7D](https://developer.android.google.cn/things/hardware/imx7d.html)
+[入门 - i.MX7D](https://developer.android.google.cn/things/hardware/imx7d.html)
 
-了解更多
-
-Where to buy
-
-哪里购买
-
-Get Started - i.MX7D
-
-入门 - i.MX7D
-
-入门 - Pico Pro Maker Kit
-
-入门 - Pico Pro 开发套件
+[入门 - Pico Pro Maker Kit](https://developer.android.google.cn/things/hardware/imx7d-kit.html)
+[入门 - Pico Pro 开发套件](https://developer.android.google.cn/things/hardware/imx7d-kit.html)
 
 </td>
 
 <td style="width: 23%">
+**NXP Pico i.MX6UL**  
 
-NXP Pico i.MX6UL  
+![](https://developer.android.google.cn/things/images/nxp-pico-module.png)  
 
-  
+[Learn More](http://www.nxp.com/AndroidThingsGS)  
+[了解更多](http://www.nxp.com/AndroidThingsGS) 
 
-Learn More  
+[Where to buy](http://www.technexion.com/solutions/iot-development-platform/android-things/)  
+[哪里购买](http://www.technexion.com/solutions/iot-development-platform/android-things/)  
 
-了解更多 
-
-Where to buy  
-
-哪里购买  
-
-Get Started
-
-入门
+[Get Started](https://developer.android.google.cn/things/hardware/imx6ul.html)
+[入门](https://developer.android.google.cn/things/hardware/imx6ul.html)
 
 </td>
 
 <td style="width: 23%">
+**NXP Argon i.MX6UL**  
 
-NXP Argon i.MX6UL  
+![](https://developer.android.google.cn/things/images/nxp-argon-module.png)  
 
-  
+[Learn More](http://www.nxp.com/AndroidThingsGS)  
+[了解更多](http://www.nxp.com/AndroidThingsGS)  
 
-Learn More  
+[Where to buy](http://www.argonboards.com/Argon-imx6UL-SOM.php)  
+[哪里购买](http://www.argonboards.com/Argon-imx6UL-SOM.php) 
 
-了解更多  
-
-Where to buy  
-
-哪里购买 
-
-Get Started
-
-入门
-
+[Get Started](https://developer.android.google.cn/things/hardware/imx6ul.html)
+[入门](https://developer.android.google.cn/things/hardware/imx6ul.html)
 </td>
 
 <td style="width: 23%">
+**NXP SprIoT i.MX6UL**  
 
-NXP SprIoT i.MX6UL  
+![](https://developer.android.google.cn/things/images/nxp-spriot-module.png)  
 
-  
+[Learn More](http://wireless.murata.com/eng/products/wireless-connectivity-platforms/iot-system-on-module/spriot-6ul.html)  
+[了解更多](http://wireless.murata.com/eng/products/wireless-connectivity-platforms/iot-system-on-module/spriot-6ul.html)  
 
-Learn More  
+[Where to buy](http://www.mouser.com/ProductDetail/Murata/WSC-WB242-ADA-SM1DK/)  
+[哪里购买](http://www.mouser.com/ProductDetail/Murata/WSC-WB242-ADA-SM1DK/)  
 
-了解更多  
-
-Where to buy  
-
-哪里购买  
-
-Get Started
-
-入门
-
+[Get Started](https://developer.android.google.cn/things/hardware/imx6ul.html)
+[入门](https://developer.android.google.cn/things/hardware/imx6ul.html)
 </td>
 
 </tr>
@@ -125,33 +104,33 @@ Get Started
 
 <td>
 
-- NXP i.MX7D
-- 1GHz dual-core ARM Cortex A7
-- 512MB RAM
+*   NXP i.MX7D
+*   1GHz dual-core ARM Cortex A7
+*   512MB RAM
 
 </td>
 
 <td>
 
-- NXP i.MX6Ultralite
-- 500MHz ARM Cortex A7
-- 512MB RAM
+*   NXP i.MX6Ultralite
+*   500MHz ARM Cortex A7
+*   512MB RAM
 
 </td>
 
 <td>
 
-- NXP i.MX6Ultralite
-- 500MHz ARM Cortex A7
-- 512MB RAM
+*   NXP i.MX6Ultralite
+*   500MHz ARM Cortex A7
+*   512MB RAM
 
 </td>
 
 <td>
 
-- NXP i.MX6Ultralite
-- 500MHz ARM Cortex A7
-- 512MB RAM
+*   NXP i.MX6Ultralite
+*   500MHz ARM Cortex A7
+*   512MB RAM
 
 </td>
 
@@ -232,27 +211,19 @@ Get Started
 <th>Networking</th>
 
 <td>10/100/1000 Ethernet  
-
 Wi-Fi 802.11ac (2.4/5.0GHz)  
-
 Bluetooth® 4.1</td>
 
 <td>10/100 Ethernet  
-
 Wi-Fi 802.11n (2.4GHz)  
-
 Bluetooth® 4.1</td>
 
 <td>10/100 Ethernet  
-
 Wi-Fi 802.11n (2.4GHz)  
-
 Bluetooth® 4.1</td>
 
 <td>10/100 Ethernet  
-
 Wi-Fi 802.11n (2.4GHz)  
-
 Bluetooth® 4.1</td>
 
 </tr>
@@ -262,19 +233,15 @@ Bluetooth® 4.1</td>
 <th>USB</th>
 
 <td>1x USB 2.0 Host  
-
 1x USB 2.0 OTG</td>
 
 <td>1x USB 2.0 Host  
-
 1x USB 2.0 OTG</td>
 
 <td>1x USB 2.0 Host  
-
 1x USB 2.0 OTG</td>
 
 <td>1x USB 2.0 Host  
-
 1x USB 2.0 OTG</td>
 
 </tr>
@@ -292,26 +259,21 @@ Bluetooth® 4.1</td>
 <th>Platform</th>
 
 <td style="width: 92%">
+**Raspberry Pi 3**  
 
-Raspberry Pi 3  
+![](https://developer.android.google.cn/things/images/raspberry-pi-3-board.png)  
 
-  
+[Learn More](https://www.raspberrypi.org/products/raspberry-pi-3-model-b/)  
+[了解更多](https://www.raspberrypi.org/products/raspberry-pi-3-model-b/) 
 
-Learn More  
+[Where to buy](#where_to_buy)  
+[哪里购买](#where_to_buy) 
 
-了解更多 
+[Get Started](https://developer.android.google.cn/things/hardware/raspberrypi.html)  
+[入门](https://developer.android.google.cn/things/hardware/raspberrypi.html)  
 
-Where to buy  
-
-哪里购买 
-
-Get Started  
-
-入门  
-
-Get Started - Raspberry Pi 3 Starter Kit</td>
-
-入门 - 树莓派 3 初学者套件</td>
+[Get Started - Raspberry Pi 3 Starter Kit](https://developer.android.google.cn/things/hardware/raspberrypi-kit.html)</td>
+[入门 - 树莓派 3 初学者套件](https://developer.android.google.cn/things/hardware/raspberrypi-kit.html)</td>
 
 </tr>
 
@@ -321,9 +283,9 @@ Get Started - Raspberry Pi 3 Starter Kit</td>
 
 <td>
 
-- Broadcom BCM2837
-- 1.2GHz quad-core ARM Cortex A53
-- 1GB RAM
+*   Broadcom BCM2837
+*   1.2GHz quad-core ARM Cortex A53
+*   1GB RAM
 
 </td>
 
@@ -366,7 +328,6 @@ Get Started - Raspberry Pi 3 Starter Kit</td>
 <th>Audio</th>
 
 <td>USB 2.0  
-
 3.5mm Analog Output</td>
 
 </tr>
@@ -376,9 +337,7 @@ Get Started - Raspberry Pi 3 Starter Kit</td>
 <th>Networking</th>
 
 <td>10/100 Ethernet  
-
 Wi-Fi 802.11n (2.4GHz)  
-
 Bluetooth® 4.1</td>
 
 </tr>
@@ -395,13 +354,11 @@ Bluetooth® 4.1</td>
 
 </table>
 
-Legacy platforms
+### Legacy platforms
+### 传统的硬件平台
 
-传统的硬件平台
-
-Long-term support for the hardware in this section has ended. Developers may still target these platforms in the Android Things Console, but they will not receive the latest platform updates.
-
-平台已经停止了对下面硬件的长期支持。开发者依然可以在  Android thing 控制台上使用这些硬件，但它们将不会接收到平台的最新更新。
+Long-term support for the hardware in this section has ended. Developers may still target these platforms in the [Android Things Console](https://partner.android.com/things/console), but they will not receive the latest platform updates.
+平台已经停止了对下面硬件的长期支持。开发者依然可以在  [Android thing 控制台](https://partner.android.com/things/console)上使用这些硬件，但它们将不会接收到平台的最新更新。
 
 <table style="width: 55%">
 
@@ -412,42 +369,34 @@ Long-term support for the hardware in this section has ended. Developers may sti
 <th>Platform</th>
 
 <td style="width: 41%">
+**Intel® Edison**  
 
-Intel® Edison  
+![](https://developer.android.google.cn/things/images/intel-edison-module.png)  
 
-  
+[Learn More](https://software.intel.com/en-us/iot/android-things)  
+[了解更多](https://software.intel.com/en-us/iot/android-things) 
 
-Learn More  
+[Where to buy](#where_to_buy)  
+[哪里购买](#where_to_buy)  
 
-了解更多 
-
-Where to buy  
-
-哪里购买  
-
-Get Started  
-
-入门  
+[Get Started](https://developer.android.google.cn/things/hardware/edison.html)  
+[入门](https://developer.android.google.cn/things/hardware/edison.html)  
 
 </td>
 
 <td style="width: 41%">
+**Intel® Joule**  
 
-Intel® Joule  
+![](https://developer.android.google.cn/things/images/intel-joule-module.png)  
 
-  
+[Learn More](https://software.intel.com/en-us/iot/android-things)  
+[了解更多](https://software.intel.com/en-us/iot/android-things)  
 
-Learn More  
+[Where to buy](https://www.intel.com/buy/us/en/product/emergingtechnologies/intel-joule-570x-developer-kit-541737#where_to_buy)  
+[哪里购买](https://www.intel.com/buy/us/en/product/emergingtechnologies/intel-joule-570x-developer-kit-541737#where_to_buy)  
 
-了解更多  
-
-Where to buy  
-
-哪里购买  
-
-Get Started  
-
-入门  
+[Get Started](https://developer.android.google.cn/things/hardware/joule.html)  
+[入门](https://developer.android.google.cn/things/hardware/joule.html)  
 
 </td>
 
@@ -459,17 +408,17 @@ Get Started
 
 <td>
 
-- Intel® Atom™
-- 500MHz dual-core x86
-- 1GB RAM
+*   Intel® Atom™
+*   500MHz dual-core x86
+*   1GB RAM
 
 </td>
 
 <td>
 
-- Intel® Atom™
-- 1.5GHz/1.7GHz quad-core x86
-- 3GB/4GB RAM
+*   Intel® Atom™
+*   1.5GHz/1.7GHz quad-core x86
+*   3GB/4GB RAM
 
 </td>
 
@@ -530,11 +479,9 @@ Get Started
 <th>Networking</th>
 
 <td>Wi-Fi 802.11n (2.4/5.0GHz)  
-
 Bluetooth® 4.0</td>
 
 <td>Wi-Fi 802.11ac (2.4/5.0GHz)  
-
 Bluetooth® 4.2</td>
 
 </tr>
@@ -546,7 +493,6 @@ Bluetooth® 4.2</td>
 <td>1x USB 2.0 OTG</td>
 
 <td>2x USB 2.0 Host  
-
 1x USB 3.0 OTG</td>
 
 </tr>
@@ -555,74 +501,62 @@ Bluetooth® 4.2</td>
 
 </table>
 
-Featured peripherals
+## Featured peripherals
+## 特色外设
+* * *
 
-特色外设
+The following developer kits are designed to work with the Android Things [code samples](https://developer.android.google.cn/things/sdk/samples.html).
+下面的开发者工具是用于和 Android Things 协同工作 [示例代码](https://developer.android.google.cn/things/sdk/samples.html).
 
-- - *
+![](https://developer.android.google.cn/things/images/peripheral-kit.jpg)
 
-The following developer kits are designed to work with the Android Things code samples.
+### Adafruit Project Kit
+### Adafruit 项目工具包
 
-下面的开发者工具是用于和 Android Things 协同工作 示例代码.
-
-
-
-Adafruit Project Kit
-
-Adafruit 项目工具包
-
-For all supported boards
-
-对于所有支持的板子
+**For all supported boards**
+**对于所有支持的板子**
 
 The project kit provides a flexible way of getting started on all supported boards.
-
 Adafruit 项目工具包提供了灵活的入门方法。
 
 
+![](https://developer.android.google.cn/things/images/rainbow-hat.png)
 
-Pimoroni Rainbow HAT
+### Pimoroni Rainbow HAT
+### Pimoroni 彩虹帽
 
-Pimoroni 彩虹帽
-
-For Raspberry Pi
-
-对于所有的树莓派
+**For Raspberry Pi**
+**对于所有的树莓派**
 
 The Rainbow HAT offers a plug and play solution for getting started on Raspberry Pi.
-
 彩虹帽提供了一个即插即用的解决方案。
 
+![](https://developer.android.google.cn/things/images/project-kit.jpg)
 
+### Sparkfun Project Kit
+### Sparkfun 项目工具包
 
-Sparkfun Project Kit
-
-Sparkfun 项目工具包
-
-For Intel® Edison
-
-对于 Intel® Edison 的板子
+**For Intel® Edison**
+**对于 Intel® Edison 的板子**
 
 The Sparkfun kit is a version of the project kit targeted at the Intel® Edison.
-
 Sparkfun 提供了一个版本的项目工具包.
 
-Where to buy
 
-哪里购买
+## Where to buy
+## 哪里购买
 
-- - *
+* * *
 
 To purchase supported developer hardware, visit one of the following distributors.
-
 如果要购买上面的开发者工具，请访问下列分销商。
 
 
+[![](https://developer.android.google.cn/things/images/adafruit-logo.png)](https://www.adafruit.com/androidthings)
 
+[![](https://developer.android.google.cn/things/images/pimoroni-logo.jpg)](http://pimoroni.com/androidthings)
 
+[![](https://developer.android.google.cn/things/images/sparkfun-logo.jpg)](https://www.sparkfun.com/androidthings)
 
-
-
-
-
+[![](https://developer.android.google.cn/things/images/digikey-logo.png)](http://www.digikey.com/androidthings)
 
