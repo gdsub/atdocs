@@ -103,7 +103,7 @@ Discover the hardware platforms supported by Android Things as well as developer
 <tr>
 
 <th>CPU & Memory  
-  中央处理器 & 存储器</th>
+中央处理器 & 存储器</th>
 
 <td>
 
@@ -155,7 +155,7 @@ Discover the hardware platforms supported by Android Things as well as developer
 
 <tr>
 
-<th>Storage  
+<th>Storage  
 存储</th>
 
 <td>4GB eMMC</td>
@@ -170,7 +170,7 @@ Discover the hardware platforms supported by Android Things as well as developer
 
 <tr>
 
-<th>Display  
+<th>Display  
 显示</th>
 
 <td>DSI</td>
@@ -185,7 +185,7 @@ Discover the hardware platforms supported by Android Things as well as developer
 
 <tr>
 
-<th>Camera  
+<th>Camera  
 照相</th>
 
 <td>CSI-2</td>
@@ -200,7 +200,7 @@ Discover the hardware platforms supported by Android Things as well as developer
 
 <tr>
 
-<th>Audio  
+<th>Audio  
 音频</th>
 
 <td>3.5mm Analog</td>
