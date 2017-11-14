@@ -28,8 +28,9 @@ Discover the hardware platforms supported by Android Things as well as developer
 
 <tr>
 
-<th>Platform</th>
-<th>平台</th>
+<th>Platform  
+平台</th>
+
 
 <td style="width: 23%">
 **NXP Pico i.MX7D**  
@@ -101,7 +102,8 @@ Discover the hardware platforms supported by Android Things as well as developer
 
 <tr>
 
-<th>CPU & Memory</th>
+<th>CPU & Memory  
+中央处理器 & 存储器</th>
 
 <td>
 
@@ -153,7 +155,8 @@ Discover the hardware platforms supported by Android Things as well as developer
 
 <tr>
 
-<th>Storage</th>
+<th>Storage  
+存储</th>
 
 <td>4GB eMMC</td>
 
@@ -167,7 +170,8 @@ Discover the hardware platforms supported by Android Things as well as developer
 
 <tr>
 
-<th>Display</th>
+<th>Display  
+显示</th>
 
 <td>DSI</td>
 
@@ -181,7 +185,8 @@ Discover the hardware platforms supported by Android Things as well as developer
 
 <tr>
 
-<th>Camera</th>
+<th>Camera  
+照相</th>
 
 <td>CSI-2</td>
 
@@ -195,7 +200,8 @@ Discover the hardware platforms supported by Android Things as well as developer
 
 <tr>
 
-<th>Audio</th>
+<th>Audio  
+音频</th>
 
 <td>3.5mm Analog</td>
 
@@ -209,7 +215,8 @@ Discover the hardware platforms supported by Android Things as well as developer
 
 <tr>
 
-<th>Networking</th>
+<th>Networking  
+网络</th>
 
 <td>10/100/1000 Ethernet  
 Wi-Fi 802.11ac (2.4/5.0GHz)  
@@ -231,7 +238,8 @@ Bluetooth® 4.1</td>
 
 <tr>
 
-<th>USB</th>
+<th>USB  
+通用串形总线架构</th>
 
 <td>1x USB 2.0 Host  
 1x USB 2.0 OTG</td>
@@ -257,7 +265,8 @@ Bluetooth® 4.1</td>
 
 <tr>
 
-<th>Platform</th>
+<th>Platform  
+平台</th>
 
 <td style="width: 92%">
 **Raspberry Pi 3**  
