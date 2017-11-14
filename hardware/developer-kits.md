@@ -77,7 +77,7 @@ Discover the hardware platforms supported by Android Things as well as developer
 [Where to buy](http://www.argonboards.com/Argon-imx6UL-SOM.php)  
 [哪里购买](http://www.argonboards.com/Argon-imx6UL-SOM.php) 
 
-[Get Started](https://developer.android.google.cn/things/hardware/imx6ul.html)
+[Get Started](https://developer.android.google.cn/things/hardware/imx6ul.html)  
 [入门](https://developer.android.google.cn/things/hardware/imx6ul.html)
 
 </td>
@@ -509,7 +509,7 @@ Bluetooth® 4.2</td>
 * * *
 
 The following developer kits are designed to work with the Android Things [code samples](https://developer.android.google.cn/things/sdk/samples.html).  
-下面的开发者工具用于和 Android Things [示例代码](https://developer.android.google.cn/things/sdk/samples.html)协同工作.
+下面的开发工具包可用于和 Android Things [示例代码](https://developer.android.google.cn/things/sdk/samples.html)协同工作.
 
 ![](https://developer.android.google.cn/things/images/peripheral-kit.jpg)
 
@@ -520,7 +520,7 @@ The following developer kits are designed to work with the Android Things [code 
 **对于所有支持的板子**
 
 The project kit provides a flexible way of getting started on all supported boards.  
-Adafruit 项目工具包提供了灵活的入门方法。
+Adafruit 项目工具包提供了一套灵活的入门方法。
 
 
 ![](https://developer.android.google.cn/things/images/rainbow-hat.png)
@@ -532,7 +532,7 @@ Adafruit 项目工具包提供了灵活的入门方法。
 **对于 Raspberry Pi**
 
 The Rainbow HAT offers a plug and play solution for getting started on Raspberry Pi.  
-彩虹帽提供了一个即插即用的解决方案。
+彩虹帽提供了一套即插即用的解决方案。
 
 ![](https://developer.android.google.cn/things/images/project-kit.jpg)
 
@@ -543,7 +543,7 @@ The Rainbow HAT offers a plug and play solution for getting started on Raspberry
 **对于 Intel® Edison 的板子**
 
 The Sparkfun kit is a version of the project kit targeted at the Intel® Edison.  
-Sparkfun 提供了一个版本的项目工具包.
+Sparkfun 提供了一套版本的项目工具包.
 
 
 ## Where to buy
