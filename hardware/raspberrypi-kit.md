@@ -360,7 +360,7 @@ Follow these instructions to download and run a [sample](https://github.com/andr
 
  project to the directory of your choice.
 
-1.	下载并解压 [sample-button](https://github.com/androidthings/sample-button/archive/master.zip) 程序到你指定的文件地址
+下载并解压 [sample-button](https://github.com/androidthings/sample-button/archive/master.zip) 程序到你指定的文件地址
 
 2.  Run the project using either of the following:
     用以下两种方法任选其一来运行程序
