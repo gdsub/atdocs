@@ -102,10 +102,7 @@ Discover the hardware platforms supported by Android Things as well as developer
 
 <tr>
 
-<th>
-CPU & Memory  
-中央处理器 & 存储器
-</th>
+<th>CPU & Memory</th>
 
 <td>
 
@@ -157,8 +154,7 @@ CPU & Memory
 
 <tr>
 
-<th>Storage  
-存储</th>
+<th>Storage</th>
 
 <td>4GB eMMC</td>
 
@@ -172,8 +168,7 @@ CPU & Memory
 
 <tr>
 
-<th>Display  
-显示</th>
+<th>Display</th>
 
 <td>DSI</td>
 
@@ -187,8 +182,7 @@ CPU & Memory
 
 <tr>
 
-<th>Camera  
-照相</th>
+<th>Camera</th>
 
 <td>CSI-2</td>
 
@@ -202,8 +196,7 @@ CPU & Memory
 
 <tr>
 
-<th>Audio  
-音频</th>
+<th>Audio</th>
 
 <td>3.5mm Analog</td>
 
@@ -217,8 +210,7 @@ CPU & Memory
 
 <tr>
 
-<th>Networking  
-网络</th>
+<th>Networking</th>
 
 <td>10/100/1000 Ethernet  
 Wi-Fi 802.11ac (2.4/5.0GHz)  
@@ -240,8 +232,7 @@ Bluetooth® 4.1</td>
 
 <tr>
 
-<th>USB  
-通用串形总线架构</th>
+<th>USB</th>
 
 <td>1x USB 2.0 Host  
 1x USB 2.0 OTG</td>
@@ -267,8 +258,7 @@ Bluetooth® 4.1</td>
 
 <tr>
 
-<th>Platform  
-平台</th>
+<th>Platform</th>
 
 <td style="width: 92%">
 **Raspberry Pi 3**  
