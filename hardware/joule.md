@@ -96,7 +96,7 @@ Once you have loaded the proper bootloader on your device, use the following ste
          $ fastboot devices1b2f21d4e1fe0129        fastboot
      <aside class="note">**Note:** <span>Your device will not boot into Fastboot mode if it was previously flashed with Android Things. You need to first execute the following command using the [adb tool](https://developer.android.google.cn/tools/help/adb.html) to reboot the device into Fastboot mode.   
 
-     <aside class="note">**注:** <span>如果设备之前烧录过 android Things ，设备开机将不会进入 Fastboot 模式。您需要使用 [adb 工具](https://developer.android.google.cn/tools/help/adb.html) 执行以下命令，重启设备进入 Fastboot 模式。
+     <br /><aside class="note">**注:** <span>如果设备之前烧录过 android Things ，设备开机将不会进入 Fastboot 模式。您需要使用 [adb 工具](https://developer.android.google.cn/tools/help/adb.html) 执行以下命令，重启设备进入 Fastboot 模式。
 
 
         $ adb reboot bootloader</span></aside>
@@ -130,7 +130,7 @@ After flashing your board, it is strongly recommended to connect it to the inter
 
 <aside class="note">**Note:** <span>The device doesn't need to be on the same network as your computer.</span></aside>  
 
-<aside class="note">**注:** <span>设备和计算机不需要在同一个网络中</span></aside>
+<br /><aside class="note">**注:** <span>设备和计算机不需要在同一个网络中</span></aside>
 
 Before connecting your board to a Wi-Fi network, ensure the provided antennas are attached to the u.FL Wi-Fi connectors on your board as shown:  
 
@@ -140,7 +140,7 @@ Before connecting your board to a Wi-Fi network, ensure the provided antennas ar
 
 <aside class="note">**Note:** <span>The Joule can't resolve Wi-Fi signals if you proceed without connecting an antenna.</span></aside>  
 
-<aside class="note">**注:** <span>如果您没有连接天线， Joule 就无法接收 Wi-Fi 信号。</span></aside>
+<br /><aside class="note">**注:** <span>如果您没有连接天线， Joule 就无法接收 Wi-Fi 信号。</span></aside>
 
 To connect your board to Wi-Fi, first access a shell prompt on the device. You can use either of the following methods:  
 
