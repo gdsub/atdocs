@@ -102,8 +102,10 @@ Discover the hardware platforms supported by Android Things as well as developer
 
 <tr>
 
-<th>CPU & Memory  
-中央处理器 & 存储器</th>
+<th>
+CPU & Memory  
+中央处理器 & 存储器
+</th>
 
 <td>
 
