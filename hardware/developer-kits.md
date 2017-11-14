@@ -102,8 +102,8 @@ Discover the hardware platforms supported by Android Things as well as developer
 
 <tr>
 
-<th>CPU & Memory  
-中央处理器 & 存储器</th>
+<th>CPU & Memory  
+  中央处理器 & 存储器</th>
 
 <td>
 
@@ -215,11 +215,11 @@ Discover the hardware platforms supported by Android Things as well as developer
 
 <tr>
 
-<th>Networking  
+<th>Networking  
 网络</th>
 
-<td>10/100/1000 Ethernet  
-Wi-Fi 802.11ac (2.4/5.0GHz)  
+<td>10/100/1000 Ethernet  
+Wi-Fi 802.11ac (2.4/5.0GHz)  
 Bluetooth® 4.1</td>
 
 <td>10/100 Ethernet  
