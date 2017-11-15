@@ -1,4 +1,5 @@
 # Raspberry Pi 3 Function Mode Matrix
+# Raspberry Pi 3 函数模式矩阵
 
 The following modes in each table are mutually exclusive on the Raspberry Pi 3.
 
