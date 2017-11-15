@@ -93,9 +93,9 @@ To send the data to Cloud Vision for processing:
 
 2. 使用 `Vision.Builder` 创建一个新的 `Vision` 实例并且为支持 Android 平台配置 HTTP 和 JSON 实例。
 
-<aside class="note">**Note:** <span>The `Vision` object represents the API endpoint and internally handles the HTTP transport and JSON parsing logic for each request and response.</span></aside>
+> **Note:** <span>The `Vision` object represents the API endpoint and internally handles the HTTP transport and JSON parsing logic for each request and response.
 
-<aside class="note">**注意:** <span> `Vision` 对象象征 API 端对每次请求和响应中的 HTTP 传输和 JSON 解析的内部处理逻辑。</span></aside>
+> **注意:** <span> `Vision` 对象象征 API 端对每次请求和响应中的 HTTP 传输和 JSON 解析的内部处理逻辑。
 
 3. Encode the image data into an `Image` instance. Pass that to an `AnnotateImageRequest` and activate the `LABEL_DETECTION` request feature.
 
