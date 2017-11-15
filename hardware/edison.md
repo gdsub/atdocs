@@ -317,6 +317,6 @@ Open a connection to the USB serial device on your development computer using a 
 *   **Data Bits**: 8
 *   **数据位**: 8
 *   **Parity**: None
-*   **优先级**: 无
+*   **奇偶校验**: 无
 *   **Stop Bits**: 1
 *   **停止位**: 1
