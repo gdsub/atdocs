@@ -12,7 +12,7 @@ Intel® Joule™ 是英特尔性能最卓越的模块化系统，其在一个拇
 * * *
 
 Before you begin flashing, you will need the following items in addition to your Joule board:  
-开发者烧录镜像前，需要准备下面的工具:
+开发者烧录镜像前，需要准备以下的工具:
 
 
 *   Micro-USB cable
@@ -42,7 +42,7 @@ To flash Android Things onto your board, download the preview image in the [Andr
 ### 第一步：安装 Fastboot
 
 If this is your first time installing Android Things on the Joule, you need to upgrade the BIOS and bootloader to be Fastboot capable. Follow the Intel [Getting Started Guide](https://software.intel.com/en-us/articles/installing-android-things-on-intel-joule-module) to perform the required one-time setup steps on your board.   
-如果您是第一次在 Joule 上安装 Android Things ，就需要更新模块的 BIOS (基本输入输出系统)和 bootloader (引导程序)来安装快速启动功能。具体可参考 Intel  [入门手册](https://software.intel.com/en-us/articles/installing-android-things-on-intel-joule-module) ，在模组上执行一次性设置步骤。
+如果您是第一次在 Joule 上安装 Android Things ，需要更新 BIOS (基本输入输出系统)和 bootloader (引导程序)模块，来安装快速启动功能。您可以参考 Intel  [入门手册](https://software.intel.com/en-us/articles/installing-android-things-on-intel-joule-module) ，在模组上执行一次性设置步骤。
 
 ### Step 2: Connect the Hardware
 ### 第二步: 连接硬件
@@ -73,8 +73,9 @@ Joule 和计算机的连接方法，请参考以下步骤:
 Once you have loaded the proper bootloader on your device, use the following steps to flash the Android image:  
 一旦您在设备上加载了正确的 bootloader ，请使用以下步骤来烧录 Android Things 镜像：
 
-1.  Download and install [Android Studio](https://developer.android.google.cn/studio/index.html) or the [`sdkmanager`](https://developer.android.google.cn/studio/command-line/sdkmanager.html) command-line tool. Update the Android SDK Platform Tools to version 25.0.3 or later from the [SDK Manager](https://developer.android.google.cn/studio/intro/update.html#sdk-manager).
-       下载和安装 [Android Studio](https://developer.android.google.cn/studio/index.html) 或 [`sdkmanager`](https://developer.android.google.cn/studio/command-line/sdkmanager.html) 命令行工具。从 [SDK 管理器](https://developer.android.google.cn/studio/intro/update.html#sdk-manager) 中获取 Android SDK 平台工具，将其版本更新到 25.0.3 或者更高。  
+1.  Download and install [Android Studio](https://developer.android.google.cn/studio/index.html) or the [`sdkmanager`](https://developer.android.google.cn/studio/command-line/sdkmanager.html) command-line tool. Update the Android SDK Platform Tools to version 25.0.3 or later from the [SDK Manager](https://developer.android.google.cn/studio/intro/update.html#sdk-manager).   
+
+    下载和安装 [Android Studio](https://developer.android.google.cn/studio/index.html) 或 [`sdkmanager`](https://developer.android.google.cn/studio/command-line/sdkmanager.html) 命令行工具。从 [SDK 管理器](https://developer.android.google.cn/studio/intro/update.html#sdk-manager) 中获取 Android SDK 平台工具，将其版本更新到 25.0.3 或者更高。  
 
     *   Navigate to the Android SDK location on your computer; the path can be found in the system settings for Android Studio. Verify that the `fastboot` binary is installed in the `platform-tools/` directory.   
 
@@ -82,7 +83,7 @@ Once you have loaded the proper bootloader on your device, use the following ste
 
     *   After you have the fastboot tool, add it to your `PATH` [environment variable](https://developer.android.google.cn/studio/command-line/variables.html#set). This command should be similar to the following:  
 
-          将 fastboot 工具增添到计算机的 `PATH` [环境变量](https://developer.android.google.cn/studio/command-line/variables.html#set)里面。命令行可参考如下：  
+          将 fastboot 工具增添到计算机的 `PATH` [环境变量](https://developer.android.google.cn/studio/command-line/variables.html#set)里面。 可参考如下命令行：  
 
 
           `export PATH=$PATH:"path/to/fastboot"`
@@ -96,27 +97,25 @@ Once you have loaded the proper bootloader on your device, use the following ste
        通过执行以下命令，验证设备已经进入 Fastboot 模式。  
 
           $ fastboot devices1b2f21d4e1fe0129        fastboot
-      <aside class="note">**Note:** <span>Your device will not boot into Fastboot mode if it was previously flashed with Android Things. You need to first execute the following command using the [adb tool](https://developer.android.google.cn/tools/help/adb.html) to reboot the device into Fastboot mode.   
-
-      <br /><aside class="note">**注:** <span>如果设备之前烧录过 android Things ，设备开机将不会进入 Fastboot 模式。您需要使用 [adb 工具](https://developer.android.google.cn/tools/help/adb.html) 执行以下命令，重启设备进入 Fastboot 模式。
+      <aside class="note">**Note:** <span>Your device will not boot into Fastboot mode if it was previously flashed with Android Things. You need to first execute the following command using the [adb tool](https://developer.android.google.cn/tools/help/adb.html) to reboot the device into Fastboot mode. <br />**注:** 如果设备曾经烧录过 android Things ，设备开机将不会进入 Fastboot 模式。您需要使用 [adb 工具](https://developer.android.google.cn/tools/help/adb.html) 执行以下命令，重启设备并进入 Fastboot 模式。
 
 
-        $ adb reboot bootloader</span></aside>
+
+     $ adb reboot bootloader</span></aside>
 
 1.  Execute the `flash-all.sh` script. This script installs the necessary bootloader, baseband firmware(s), and operating system. (On Windows systems, use `flash-all.bat` instead).
 
        执行 `flash-all.sh` 脚本，安装 bootloader ，基带固件和操作系统。( Windows 系统可以使用 `flash-all.bat` 脚本)。  
 
-      <aside class="note">**Note:** <span>The device automatically reboots into Android Things when the process is complete.</span></aside>  
+      <aside class="note">**Note:** <span>The device automatically reboots into Android Things when the process is complete.</span></aside> <br /> <aside class="note">**注:** <span>安装完成后，设备将自动重启并进入 android thing。</span></aside>
 
-      <br /> <aside class="note">**注:** <span>安装完成后，设备将自动重启并进入 android thing。</span></aside>
 
 
 1.  To verify that Android is running on the device, discover it using the [adb tool](https://developer.android.google.cn/tools/help/adb.html):
 
-       使用 [adb tool](https://developer.android.google.cn/tools/help/adb.html) 去验证 Android 是否已经在设备在运行。
+       使用 [adb tool](https://developer.android.google.cn/tools/help/adb.html) 去验证 Android Things 是否已经在设备在运行。
 
-          $ adb wait-for-device...$ adb devicesList of devices attached1b2f21d4e1fe0129        device
+         $ adb wait-for-device...$ adb devicesList of devices attached1b2f21d4e1fe0129        device
 
 ## Connecting Wi-Fi
 
@@ -130,9 +129,7 @@ After flashing your board, it is strongly recommended to connect it to the inter
 
 
 
-<aside class="note">**Note:** <span>The device doesn't need to be on the same network as your computer.</span></aside>  
-
-<br /><aside class="note">**注:** <span>设备和计算机不需要在同一个网络中</span></aside>
+<aside class="note">**Note:** <span>The device doesn't need to be on the same network as your computer.</span></aside> <br /><aside class="note">**注:** <span>设备和计算机不需要在同一个网络中</span></aside>
 
 Before connecting your board to a Wi-Fi network, ensure the provided antennas are attached to the u.FL Wi-Fi connectors on your board as shown:  
 
@@ -140,13 +137,11 @@ Before connecting your board to a Wi-Fi network, ensure the provided antennas ar
 
 ![""](https://developer.android.google.cn/things/images/joule-antenna.png)
 
-<aside class="note">**Note:** <span>The Joule can't resolve Wi-Fi signals if you proceed without connecting an antenna.</span></aside>  
-
-<br /><aside class="note">**注:** <span>如果您没有连接天线， Joule 就无法接收 Wi-Fi 信号。</span></aside>
+<aside class="note">**Note:** <span>The Joule can't resolve Wi-Fi signals if you proceed without connecting an antenna.</span></aside> <br /><aside class="note">**注:** <span>如果您没有连接天线， Joule 就无法接收 Wi-Fi 信号。</span></aside>
 
 To connect your board to Wi-Fi, first access a shell prompt on the device. You can use either of the following methods:  
 
-在设备上访问 shell 提示符，将设备连接到 Wi-Fi 。您可以使用以下任何一种方法：  
+您可以使用以下任何一种方法，在设备上访问 shell 提示符，将设备连接到 Wi-Fi 。  
 
 *   Open a shell over adb with the `adb shell` command.  
 
@@ -222,22 +217,20 @@ Once you can access a shell prompt, follow these steps:
 
     使用`logcat` 命令，验证 Wi-Fi 连接是否成功。
 
-                  $ logcat -d | grep Wifi...V WifiWatcher: Network state changed to CONNECTEDV WifiWatcher: SSID changed: ...I WifiConfigurator: Successfully connected to ...
+        $ logcat -d | grep Wifi...V WifiWatcher: Network state changed to CONNECTEDV WifiWatcher: SSID changed: ...I WifiConfigurator: Successfully connected to ...
 
 3.  Test that you can access a remote IP address:
 
     使用`ping` 命令，测试设备是否可以访问远程网络。
 
-                  $ ping 8.8.8.8PING 8.8.8.8 (8.8.8.8) 56(84) bytes of data.64 bytes from 8.8.8.8: icmp_seq=1 ttl=57 time=6.67 ms64 bytes from 8.8.8.8: icmp_seq=2 ttl=57 time=55.5 ms64 bytes from 8.8.8.8: icmp_seq=3 ttl=57 time=23.0 ms64 bytes from 8.8.8.8: icmp_seq=4 ttl=57 time=245 ms
+        $ ping 8.8.8.8PING 8.8.8.8 (8.8.8.8) 56(84) bytes of data.64 bytes from 8.8.8.8: icmp_seq=1 ttl=57 time=6.67 ms64 bytes from 8.8.8.8: icmp_seq=2 ttl=57 time=55.5 ms64 bytes from 8.8.8.8: icmp_seq=3 ttl=57 time=23.0 ms64 bytes from 8.8.8.8: icmp_seq=4 ttl=57 time=245 ms
 
 4.  Check that the date and time are set correctly on the device:
 
     使用`date` 命令，检查设备的日期和时间是否准确。
 
-                  $ date
-    <aside class="note">**Note:** <span>An incorrect date or time may cause SSL errors. Restart the device to automatically set the correct date and time from a time server.</span></aside>
-
-     <br /><aside class="note">**注:** <span>错误的日期或时间可能会导致 SSL 连接错误。可以通过重新启动设备的方式，自动从时间服务器获取正确的日期和时间。</span></aside>
+        $ date
+    <aside class="note">**Note:** <span>An incorrect date or time may cause SSL errors. Restart the device to automatically set the correct date and time from a time server.</span></aside> <br /><aside class="note">**注:** <span>错误的日期或时间可能会导致 SSL 连接错误。可以通过重新启动设备的方式，自动从时间服务器获取正确的日期和时间。</span></aside>
 
 If you want to clear all of the saved networks on the board:
 
