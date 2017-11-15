@@ -36,13 +36,13 @@ Before you begin flashing, you will need the following items in addition to your
 
 To flash Android Things onto your board, download the preview image in the [Android Things Console](https://partner.android.com/things/console) (see the [release notes](https://developer.android.google.cn/things/preview/releases.html#developer_preview_5)) and follow these steps:
 
-在 [Android Things 控制台](https://partner.android.com/things/console) 中下载 Android Things 镜像(请参阅[发行说明](https://developer.android.google.cn/things/preview/releases.html#developer_preview_5)) ，再按照以下步骤完成镜像烧录。
+先在 [Android Things 控制台](https://partner.android.com/things/console) 中下载 Android Things 镜像(请参阅[发行说明](https://developer.android.google.cn/things/preview/releases.html#developer_preview_5)) ，再按照以下步骤完成镜像烧录。
 
 ### Step 1: Install Fastboot
 ### 第一步：安装 Fastboot
 
 If this is your first time installing Android Things on the Joule, you need to upgrade the BIOS and bootloader to be Fastboot capable. Follow the Intel [Getting Started Guide](https://software.intel.com/en-us/articles/installing-android-things-on-intel-joule-module) to perform the required one-time setup steps on your board.   
-如果您是第一次在 Joule 上安装 Android Things ，需要更新 BIOS (基本输入输出系统)和 bootloader (引导程序)模块，来安装快速启动功能。您可以参考 Intel  [入门手册](https://software.intel.com/en-us/articles/installing-android-things-on-intel-joule-module) ，在模组上执行一次性设置步骤。
+如果您是第一次在 Joule 上安装 Android Things ，需要更新 BIOS (基本输入输出系统)和 bootloader (引导程序)模块，来实现 Fastboot 功能。您可以参考 Intel  [入门手册](https://software.intel.com/en-us/articles/installing-android-things-on-intel-joule-module) ，在模组上执行一次性设置步骤。
 
 ### Step 2: Connect the Hardware
 ### 第二步: 连接硬件
@@ -101,7 +101,7 @@ Once you have loaded the proper bootloader on your device, use the following ste
 
 
 
-     $ adb reboot bootloader</span></aside>
+        $ adb reboot bootloader</span></aside>
 
 1.  Execute the `flash-all.sh` script. This script installs the necessary bootloader, baseband firmware(s), and operating system. (On Windows systems, use `flash-all.bat` instead).
 
