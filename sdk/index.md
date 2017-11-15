@@ -97,7 +97,24 @@ For ease of development, this same activity should include a [CATEGORY_LAUNCHER]
 
 为了便于开发，这一 Activity 应包含一个 [CATEGORY_LAUNCHER](https://developer.android.google.cn/reference/android/content/Intent.html#CATEGORY_LAUNCHER) 意图过滤器， Android Studio 在部署和调试的时候可以将其作为默认 Activity 启动。
 
-    <application    android:label="@string/app_name">    <activity android:name=".HomeActivity">        <!-- Launch activity as default from Android Studio -->        <intent-filter>            <action android:name="android.intent.action.MAIN"/>            <category android:name="android.intent.category.LAUNCHER"/>        </intent-filter>        <!-- Launch activity automatically on boot -->        <intent-filter>            <action android:name="android.intent.action.MAIN"/>            <category android:name="android.intent.category.IOT_LAUNCHER"/>            <category android:name="android.intent.category.DEFAULT"/>        </intent-filter>    </activity></application>
+~~~Java
+    <application    
+        android:label="@string/app_name">    
+        <activity android:name=".HomeActivity">        
+            <!-- Launch activity as default from Android Studio -->        
+            <intent-filter>            
+                <action android:name="android.intent.action.MAIN"/>            
+                <category android:name="android.intent.category.LAUNCHER"/>       
+            </intent-filter>        
+            <!-- Launch activity automatically on boot -->        
+            <intent-filter>            
+                <action android:name="android.intent.action.MAIN"/>            
+                <category android:name="android.intent.category.IOT_LAUNCHER"/>            
+                <category android:name="android.intent.category.DEFAULT"/>        
+             </intent-filter>    
+        </activity>
+    </application>
+~~~
 
 ### Support for Google services
 
@@ -184,6 +201,83 @@ Android Things 支持 [Google APIs for Android](https://developers.google.cn/and
 </table>
 
 <sup id="fn1">1\. Does not include the open source FirebaseUI Auth component.</sup>
+
+
+<table>
+
+<tbody>
+
+<tr>
+
+<th>支持的接口</th>
+
+<th>不可用的接口</th>
+
+</tr>
+
+<tr>
+
+<td style="width: 50%;">
+
+[Awareness](https://developers.google.cn/awareness/)  
+
+[Cast](https://developers.google.cn/cast/)  
+
+[Google Analytics for Firebase](https://firebase.google.cn/docs/analytics/)  
+
+[Firebase Authentication](https://firebase.google.cn/docs/auth/)<sup>1</sup>  
+
+[Firebase Cloud Messaging (FCM)](https://firebase.google.cn/docs/cloud-messaging/)  
+
+[Firebase Crash Reporting](https://firebase.google.cn/docs/crash/)  
+
+[Firebase Realtime Database](https://firebase.google.cn/docs/database/)  
+
+[Firebase Remote Config](https://firebase.google.cn/docs/remote-config/)  
+
+[Firebase Storage](https://firebase.google.cn/docs/storage/)  
+
+[Fit](https://developers.google.cn/fit/)  
+
+[Instance ID](https://developers.google.cn/instance-id/)  
+
+[Location](https://developers.google.cn/location-context/)  
+
+[Maps](https://developers.google.cn/maps/)  
+
+[Nearby](https://developers.google.cn/nearby/)  
+
+[Places](https://developers.google.cn/places/)  
+
+[Mobile Vision](https://developers.google.cn/vision/)  
+
+[SafetyNet](https://developer.android.google.cn/training/safetynet/index.html)</td>
+
+<td style="width: 50%;">
+
+[AdMob](https://firebase.google.cn/docs/admob/)  
+
+[Android Pay](https://developers.google.cn/android-pay/)  
+
+[Drive](https://developers.google.cn/drive/)  
+
+[Firebase App Indexing](https://firebase.google.cn/docs/app-indexing/)  
+
+[Firebase Dynamic Links](https://firebase.google.cn/docs/dynamic-links/)  
+
+[Firebase Invites](https://firebase.google.cn/docs/invites/)  
+
+[Firebase Notifications](https://firebase.google.cn/docs/notifications/)  
+
+[Play Games](https://developers.google.cn/games/services/)  
+
+[Sign-In](https://developers.google.cn/identity/)</td>
+
+</tr>
+
+</tbody>
+
+</table>
 
 <sup id="fn1">1\. 不包括开源 FirebaseUI 认证组件。</sup>
 
