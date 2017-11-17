@@ -361,8 +361,7 @@ Bluetooth® 4.1</td>
 ### 传统的硬件平台
 
 Long-term support for the hardware in this section has ended. Developers may still target these platforms in the [Android Things Console](https://partner.android.com/things/console), but they will not receive the latest platform updates.  
-平台已经停止了对下面硬件的长期支持。开发者依然可以在[Android thing 控制台](https://partner.android.com/things/console)上使用这些硬件，但它们将不会接收到平台的最新更新。
-
+平台已经停止了对这部分硬件的长期支持。开发者依然可以在[Android thing 控制台](https://partner.android.com/things/console)上使用这些硬件，但它们将不会接收到最新的平台更新。
 <table style="width: 55%">
 
 <tbody>
