@@ -8,21 +8,11 @@ Follow these instructions to set up your [Pico Pro Maker Kit](https://www.techne
 
 ## What's in the box
 
-## 套件包装内容
-
 * * *
 
 Open the box and make sure you have all of the components in the kit. You will also need a small Phillips screwdriver (not provided).
 
 <aside class="note">**Note:** <span>Some versions of the Pico Pro Maker Kit do not include the Rainbow HAT, camera, and/or multi-touch display. The full kit is shown below.</span></aside>
-
-* * *
-
-打开包装后请先确认所有部件齐全。另外您还需要有一把小型十字螺丝刀（套件中不含此工具）。
-
-<aside class="note">**Note:** <span>Some versions of the Pico Pro Maker Kit do not include the Rainbow HAT, camera, and/or multi-touch display. The full kit is shown below.</span></aside>
-
-<aside class="note">**注意:** <span>某些版本的 Pico Pro 开发者套件不包含彩虹外接调试板, 摄像头, 或者多点触摸屏幕。完整套件如下图所示。</span></aside>
 
 ![inventory](https://developer.android.google.cn/things/images/imx7d-kit/inventory.jpg)
 
@@ -115,6 +105,14 @@ Display 6-wire cable</td>
 
 </table>
 
+
+## 套件包装内容
+
+* * *
+
+打开包装后请先确认所有部件齐全。另外您还需要有一把小型十字螺丝刀（套件中不含此工具）。
+
+<aside class="note">**注意:** <span>某些版本的 Pico Pro 开发者套件不包含彩虹外接调试板, 摄像头, 或者多点触摸屏幕。完整套件如下图所示。</span></aside>
 
 <table>
 
@@ -214,7 +212,7 @@ Connect the parts in the following order. Note that some versions of the Pico Pr
 
 * * *
 
-按照以下步骤连接各部件。注意某些版本的 Pico Pro 开发者套件不包含彩虹外接调试板，摄像头，和/或者 多点触摸屏幕。
+按照以下步骤连接各部件。注意某些版本的 Pico Pro 开发者套件不包含彩虹外接调试板，摄像头，及多点触摸屏幕。
 
 
 ### Wifi antenna
@@ -317,7 +315,7 @@ Connect the camera to the development board:
 
 ![camera_step1](https://developer.android.google.cn/things/images/imx7d-kit/camera_step1.jpg)
 
-<span style="font-size:1.2em; vertical-align: middle;">①</span>固定摄像头模组和数据线。将开发板翻过来可以在班子的边缘看到白色的连接器。向上旋起黑色固定卡子。将摄像头模组排线的一端插入白色连接器中。排线上的银色插销应该朝下摁入连接器。然后将固定卡子按回原位，以保证排线卡到位。</td>
+<span style="font-size:1.2em; vertical-align: middle;">①</span>固定摄像头模组和数据线。将开发板翻过来可以在板子的边缘看到白色的连接器。向上旋起黑色固定卡子。将摄像头模组排线的一端插入白色连接器中。排线上的银色插销应该朝下摁入连接器。然后将固定卡子按回原位，以保证排线卡到位。</td>
 
 <td style="width:450px;">
 
@@ -391,7 +389,7 @@ Connect the Rainbow HAT to the development board:
 
 ![hat_step1](https://developer.android.google.cn/things/images/imx7d-kit/hat_step1.jpg)
 
-<span style="font-size:1.2em; vertical-align: middle;">①</span> 定位支架和螺丝。如上图所示，用两颗螺丝将支架固定在开发板上。一个螺丝孔在usb-c连接器旁边；另一个螺丝孔在音频连接器旁边。</td>
+<span style="font-size:1.2em; vertical-align: middle;">①</span> 定位支架和螺丝。如上图所示，用两颗螺丝将支架固定在开发板上。一个螺丝孔在USB-C连接器旁边；另一个螺丝孔在音频连接器旁边。</td>
 
 <td style="width:450px;">
 
@@ -407,7 +405,7 @@ Connect the Rainbow HAT to the development board:
 
 ![hat_step3](https://developer.android.google.cn/things/images/imx7d-kit/hat_step3.jpg)
 
-<span style="font-size:1.2em; vertical-align: middle;">③</span>轻轻按下彩虹外接调试板背面的连接器到开发板上的连接器上。一定要垂直按下。 请注意，调试板不应与开发板接触，特别是连接在主板上的模块（SoM）板上的小方块系统。</td>
+<span style="font-size:1.2em; vertical-align: middle;">③</span>轻轻按下彩虹外接调试板背面的连接器到开发板上的连接器上。一定要垂直按下。 请注意，调试板不应与开发板接触，特别是在主板上的模块（SoM）板上的小方块系统。</td>
 
 <td>
 
@@ -472,7 +470,7 @@ Connect the display to the development board:
 
 将触摸显示屏连接到开发板上：
 
-<aside class="note">**注意:** <span>为了便于说明，已经连接好的摄像头模组没有出现在在以下演示图片中。</span></aside>
+<aside class="note">**注意:** <span>为了便于说明，已经连接好的摄像头模组没有出现在以下演示图片中。</span></aside>
 
 <table>
 
