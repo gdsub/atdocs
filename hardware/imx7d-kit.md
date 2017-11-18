@@ -559,11 +559,11 @@ If you have a Rainbow HAT, follow these instructions to download and run a [samp
 
 * * *
 
-如果您有一块彩虹外接调试板，按照以下步骤写入并启动一个[例子程序](https://github.com/androidthings/sample-button/) 例子可以点亮调试板上的一个LED灯。 如果您没有彩虹外接调试板，您可以参考例子[连接LED和按钮](https://developer.android.google.cn/things/training/first-device/connect-hardware.html) 来开发调试这个例子程序。
+如果您有一块彩虹外接调试板，按照以下步骤写入并启动一个[例子程序](https://github.com/androidthings/sample-button/) 该例子可以点亮调试板上的一个LED灯。 如果您没有彩虹外接调试板，您可以参考例子[连接LED和按钮](https://developer.android.google.cn/things/training/first-device/connect-hardware.html) 来开发调试此例子程序。
 
-1.  下载并解压[按钮例程](https://github.com/androidthings/sample-button/archive/master.zip) 到您指定的项目目录下。
+1.  下载并解压[按钮例程](https://github.com/androidthings/sample-button/archive/master.zip) 到您指定的工程目录下。
 
-2.  按照以下步骤启动项目:
+2.  按照以下步骤启动工程:
 
     *   在 Android Studio 中，选择 **文件 > 打开** 并选择您刚才解压路径。 选择 **启动 > 启动 '应用'**.
 
