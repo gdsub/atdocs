@@ -323,7 +323,7 @@ Connect the camera to the development board:
 
 ![camera_step2](https://developer.android.google.cn/things/images/imx7d-kit/camera_step2.jpg)
 
-<span style="font-size:1.2em; vertical-align: middle;">②</span> Turn over the camera module to reveal a white connector near the edge of the board. Swivel the black retaining clip upward. Insert one end of the camera module cable into the white connector. The silver pins on the cable should be facing down. Swivel the retaining clip back down to hold the cable in place.翻转摄像头模组，露出靠近板子边缘的白色连接器。向上旋起黑色固定卡子。将摄像头模组排线的一端插入白色连接器中。排线上的银色插销应该朝下摁入连接器。然后将固定卡子按回原位，以保证排线卡到位</td>
+<span style="font-size:1.2em; vertical-align: middle;">②</span>翻转摄像头模组，露出靠近板子边缘的白色连接器。向上旋起黑色固定卡子。将摄像头模组排线的一端插入白色连接器中。排线上的银色插销应该朝下摁入连接器。然后将固定卡子按回原位，以保证排线卡到位</td>
 
 </tr>
 
@@ -397,7 +397,7 @@ Connect the Rainbow HAT to the development board:
 
 ![hat_step2](https://developer.android.google.cn/things/images/imx7d-kit/hat_step2.jpg)
 
-<span style="font-size:1.2em; vertical-align: middle;">②</span> Locate the Rainbow HAT and turn it over. The HAT has a 40-pin female connector. The development board has a 40-pin male connector. You will connect these together in the next step.将彩虹外接调板翻过来，调试板有一个40针脚的母连接器。 开发板上有一个40针脚的公连接器。 您将在下一步中将它们连接在一起。</td>
+<span style="font-size:1.2em; vertical-align: middle;">②</span>将彩虹外接调板翻过来，调试板有一个40针脚的母连接器。 开发板上有一个40针脚的公连接器。 您将在下一步中将它们连接在一起。</td>
 
 </tr>
 
@@ -407,7 +407,7 @@ Connect the Rainbow HAT to the development board:
 
 ![hat_step3](https://developer.android.google.cn/things/images/imx7d-kit/hat_step3.jpg)
 
-<span style="font-size:1.2em; vertical-align: middle;">③</span> Gently press the connector on the back of the Rainbow HAT onto the connector on the development board. Be sure to press straight down. Note that the HAT should not come in contact with the development board, especially the small, square system on a module (SoM) board attached to the main board.轻轻按下彩虹外接调试板背面的连接器到开发板上的连接器上。一定要垂直按下。 请注意，调试板不应与开发板接触，特别是连接在主板上的模块（SoM）板上的小方块系统。</td>
+<span style="font-size:1.2em; vertical-align: middle;">③</span>轻轻按下彩虹外接调试板背面的连接器到开发板上的连接器上。一定要垂直按下。 请注意，调试板不应与开发板接触，特别是连接在主板上的模块（SoM）板上的小方块系统。</td>
 
 <td>
 
@@ -490,7 +490,7 @@ Connect the display to the development board:
 
 ![display_step2](https://developer.android.google.cn/things/images/imx7d-kit/display_step2.jpg)
 
-<span style="font-size:1.2em; vertical-align: middle;">②</span> Locate the multi-touch display and turn it over. The display has a flat ribbon cable connected to it; you may need to remove some tape securing it to the back of the display. Insert the flat ribbon cable into the white connector on the board. Swivel the retaining clip back down to hold the cable in place.拿起多点触摸显示屏并把它翻过来。显示器有一条连接到它的扁平带状排线；您可能需要用一些胶带把排线固定到显示器的背面。将扁平带状排线插入板上的白色连接器中。将固定卡子按回原位，以保持排线连接到位。</td>
+<span style="font-size:1.2em; vertical-align: middle;">②</span>拿起多点触摸显示屏并把它翻过来。显示器有一条连接到它的扁平带状排线；您可能需要用一些胶带把排线固定到显示器的背面。将扁平带状排线插入板上的白色连接器中。将固定卡子按回原位，以保持排线连接到位。</td>
 
 </tr>
 
@@ -500,7 +500,7 @@ Connect the display to the development board:
 
 ![display_step3](https://developer.android.google.cn/things/images/imx7d-kit/display_step3.jpg)
 
-<span style="font-size:1.2em; vertical-align: middle;">③</span> Locate the 6-wire cable for the display. Insert one end of the cable into the connector perpendicular to the ribbon cable connector. The gold contacts on the cable should be facing up.找到显示器的6线排线。 排线上的金触点朝上，将排线的一端垂直于排线连接器并插入。</td>
+<span style="font-size:1.2em; vertical-align: middle;">③</span>找到显示器的6线排线。 排线上的金触点朝上，将排线的一端垂直于排线连接器并插入。</td>
 
 <td>
 
