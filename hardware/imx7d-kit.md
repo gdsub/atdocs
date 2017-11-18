@@ -1,10 +1,10 @@
 # Pico Pro Maker Kit
 
-# Pico Pro 开发者套件
-
 Follow these instructions to set up your [Pico Pro Maker Kit](https://www.technexion.com/solutions/iot-development-platform/android-things/).
 
-按照以下指导设置您的[Pico Pro 开发者套件](https://www.technexion.com/solutions/iot-development-platform/android-things/).
+# Pico Pro 开发者套件
+
+按照以下教程设置您的[Pico Pro 开发者套件](https://www.technexion.com/solutions/iot-development-platform/android-things/).
 
 ## What's in the box
 
