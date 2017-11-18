@@ -110,7 +110,7 @@ Display 6-wire cable</td>
 
 * * *
 
-打开包装后请先确认所有部件齐全。另外您还需要有一把小型十字螺丝刀（套件中不含此工具）。
+打开包装后请先确认所有部件齐全。另外您还需要有一把小型十字镙丝刀（套件中不含此工具）。
 
 <aside class="note">**注意:** <span>某些版本的 Pico Pro 开发者套件不包含彩虹外接调试板, 摄像头, 或者多点触摸屏幕。完整套件如下图所示。</span></aside>
 
@@ -131,7 +131,7 @@ Pico i.MX7Dual 开发板
 
 ![Bubble_number_02](https://developer.android.google.cn/things/images/common/bubble-numbers/Bubble_number_02.png)
 
-彩虹外接调试板的 2个支架 和 5颗螺钉</td>
+彩虹外接调试板的 2个支架 和 5颗镙丝</td>
 </tr>
 
 <tr>
@@ -389,7 +389,7 @@ Connect the Rainbow HAT to the development board:
 
 ![hat_step1](https://developer.android.google.cn/things/images/imx7d-kit/hat_step1.jpg)
 
-<span style="font-size:1.2em; vertical-align: middle;">①</span> 定位支架和螺丝。如上图所示，用两颗螺丝将支架固定在开发板上。一个螺丝孔在USB-C连接器旁边；另一个螺丝孔在音频连接器旁边。</td>
+<span style="font-size:1.2em; vertical-align: middle;">①</span> 定位支架和镙丝。如上图所示，用两颗镙丝将支架固定在开发板上。一个镙丝孔在USB-C连接器旁边；另一个镙丝孔在音频连接器旁边。</td>
 
 <td style="width:450px;">
 
@@ -411,7 +411,7 @@ Connect the Rainbow HAT to the development board:
 
 ![hat_step4](https://developer.android.google.cn/things/images/imx7d-kit/hat_step4.jpg)
 
-<span style="font-size:1.2em; vertical-align: middle;">④</span>使用两个螺丝将支架固定在彩虹外接调试板上。</td>
+<span style="font-size:1.2em; vertical-align: middle;">④</span>使用两个镙丝将支架固定在彩虹外接调试板上。</td>
 
 </tr>
 
