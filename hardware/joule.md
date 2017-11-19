@@ -73,10 +73,9 @@ Connect the board to your host computer as shown below:
 Once you have loaded the proper bootloader on your device, use the following steps to flash the Android image:  
 一旦您在设备上加载了正确的 bootloader ，请使用以下步骤来烧录 Android Things 镜像：
 
-1.  Download and install [Android Studio](https://developer.android.google.cn/studio/index.html) or the [`sdkmanager`](https://developer.android.google.cn/studio/command-line/sdkmanager.html) command-line tool. Update the Android SDK Platform Tools to version 25.0.3 or later from the [SDK Manager](https://developer.android.google.cn/studio/intro/update.html#sdk-manager).   
-
-    下载和安装 [Android Studio](https://developer.android.google.cn/studio/index.html) 或 [`sdkmanager`](https://developer.android.google.cn/studio/command-line/sdkmanager.html) 命令行工具。在 [SDK 管理器](https://developer.android.google.cn/studio/intro/update.html#sdk-manager) 中将 Android SDK 平台工具更新到 25.0.3 或以后的版本。
-
+1.  Download and install [Android Studio](https://developer.android.google.cn/studio/index.html) or the [`sdkmanager`](https://developer.android.google.cn/studio/command-line/sdkmanager.html) command-line tool. Update the Android SDK Platform Tools to version 25.0.3 or later from the [SDK Manager](https://developer.android.google.cn/studio/intro/update.html#sdk-manager).  
+    下载和安装 [Android Studio](https://developer.android.google.cn/studio/index.html) 或 [`sdkmanager`](https://developer.android.google.cn/studio/command-line/sdkmanager.html) 命令行工具。在 [SDK 管理器](https://developer.android.google.cn/studio/intro/update.html#sdk-manager) 中将 Android SDK 平台工具更新到 25.0.3 或以后的版本。
+    
     *   Navigate to the Android SDK location on your computer; the path can be found in the system settings for Android Studio. Verify that the `fastboot` binary is installed in the `platform-tools/` directory.   
 
           使用计算机导航到 Android SDK 所在路径，验证 `fastboot` 二进制文件是否已经安装在 `platform-tools/` 目录下。Android SDK 路径可以在 Android Studio 的系统设置中找到。  
