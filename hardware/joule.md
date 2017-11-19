@@ -48,7 +48,7 @@ If this is your first time installing Android Things on the Joule, you need to u
 ### 第二步: 连接硬件
 
 Connect the board to your host computer as shown below:  
-Joule 和计算机的连接方法，请参考以下步骤:
+按照下面的方法将Joule连接到您的计算机：
 
 ![""](https://developer.android.google.cn/things/images/joule-connections.png)
 
@@ -75,7 +75,7 @@ Once you have loaded the proper bootloader on your device, use the following ste
 
 1.  Download and install [Android Studio](https://developer.android.google.cn/studio/index.html) or the [`sdkmanager`](https://developer.android.google.cn/studio/command-line/sdkmanager.html) command-line tool. Update the Android SDK Platform Tools to version 25.0.3 or later from the [SDK Manager](https://developer.android.google.cn/studio/intro/update.html#sdk-manager).   
 
-    下载和安装 [Android Studio](https://developer.android.google.cn/studio/index.html) 或 [`sdkmanager`](https://developer.android.google.cn/studio/command-line/sdkmanager.html) 命令行工具。从 [SDK 管理器](https://developer.android.google.cn/studio/intro/update.html#sdk-manager) 中获取 Android SDK 平台工具，将其版本更新到 25.0.3 或者更高。  
+    下载和安装 [Android Studio](https://developer.android.google.cn/studio/index.html) 或 [`sdkmanager`](https://developer.android.google.cn/studio/command-line/sdkmanager.html) 命令行工具。在 [SDK 管理器](https://developer.android.google.cn/studio/intro/update.html#sdk-manager) 中将 Android SDK 平台工具更新到 25.0.3 或以后的版本。
 
     *   Navigate to the Android SDK location on your computer; the path can be found in the system settings for Android Studio. Verify that the `fastboot` binary is installed in the `platform-tools/` directory.   
 
@@ -133,7 +133,7 @@ After flashing your board, it is strongly recommended to connect it to the inter
 
 Before connecting your board to a Wi-Fi network, ensure the provided antennas are attached to the u.FL Wi-Fi connectors on your board as shown:  
 
-设备连接 Wi-Fi 网络前，需要确保天线已经连接到u.FL Wi-Fi 连接器上，如下图所示：
+在你的设备连接到 Wi-Fi 网络前，请先确保天线已经连接到你设备的 u.FL Wi-Fi 连接器上，如下所示：
 
 ![""](https://developer.android.google.cn/things/images/joule-antenna.png)
 
@@ -245,7 +245,7 @@ If you want to clear all of the saved networks on the board:
 
 The serial console is a helpful tool for debugging your board and reviewing system log information. The console is the default output location for kernel log messages (i.e. `dmesg`), and it also provides access to a full shell prompt that you can use to access commands such as [logcat](https://developer.android.google.cn/tools/help/logcat.html). This is helpful if you are unable to access ADB on your board through other means and have not yet enabled a network connection.  
 
-串口控制台是一款非常有用的工具，用来调试设备和检查系统日志。控制台是内核日志消息的默认输出位置(例如 dmesg )，同时它也提供了一套完整的 shell 访问命令，如logcat。
+串口控制台是一款非常有用的工具，用来调试设备和检查系统日志。控制台是内核日志消息（如dmesg ）的默认输出位置，同时它也提供了一套完整的 shell 访问命令，你可以用它来访问 logcat 等命令。如果你无法在你的设备上通过其他方式获取 ADB 且没有网络连接，这将为你提供帮助。
 
 To access the serial console, connect a micro USB cable to the board as shown below.
 
