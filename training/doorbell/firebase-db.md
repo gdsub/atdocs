@@ -8,11 +8,11 @@
 
 1.  Initialize Firebase Realtime Database
 
-1. 初始化 Firebase 实时数据库
+2.  初始化 Firebase 实时数据库
 
-1.  Write data into a shared database
+3.  Write data into a shared database
 
-2. 写入数据到一个共享数据库
+4.  写入数据到一个共享数据库
 
 ## Try it out
 
@@ -23,11 +23,11 @@
 
 A smart doorbell should publish the captured events and images to the cloud to allow other clients to connect and display the data, or to enable further analysis.
 
-一个聪明的门铃可以发布拍照事件和图像到云中并允许其他客户端进行连接和查看数据或进一步的分析。
+智能门铃应该将拍照事件和图像发布到云端，以便允许其他客户端进行连接并展示数据，或者进一步的分析。
 
 In this lesson, you will use Firebase Realtime Database to persist and publish events that are consumed by a mobile companion app.
 
-本节课中，你将使用 Firebase 实时数据库保存和发布配套应用所消费的事件。
+本节课中，你将使用 Firebase 实时数据库保存和发布配套应用所使用的门铃事件。
 
 ## Add Firebase to your project
 
@@ -41,11 +41,12 @@ To enable Firebase Realtime Database for your project:
 
 1.  Install the [Firebase Android SDK](https://firebase.google.cn/docs/android/setup) into your app project.
 
-1. 在你的工程中安装 [Firebase Android SDK](https://firebase.google.cn/docs/android/setup) 
-2. In the [Firebase console](https://firebase.google.cn/console/), select _Import Google Project_ to import the Google Cloud project you created for Cloud Vision into Firebase.
+
+1.  在你的工程中安装 [Firebase Android SDK](https://firebase.google.cn/docs/android/setup) 
+2.  In the [Firebase console](https://firebase.google.cn/console/), select _Import Google Project_ to import the Google Cloud project you created for Cloud Vision into Firebase.
 
 
-2. 在 [Firebase 控制台](https://firebase.google.cn/console/) 选择导入 Google 工程，将你为 Cloud Vision 创建的 Google Cloud 工程导入 Firebase 中。
+2. 在 [Firebase 控制台](https://firebase.google.cn/console/) 选择 _Import Google Project_  来将你为 Cloud Vision 创建的 Google Cloud 工程导入 Firebase 中。
 3. Download and install the `google-services.json` file as described in the instructions.
 
 
@@ -76,11 +77,12 @@ You need to specify who can read and write to your Firebase Realtime Database. T
 
 1.  In the [Firebase console](https://firebase.google.cn/console/), on the page for your project, click **Database**.
 
-1. 在 [Firebase 控制台](https://firebase.google.cn/console/) ，在你的工程页，点击  **数据库**。
-2. Click **Rules**, and update the database rules to allow public read/write access:
+
+1.  在 [Firebase 控制台](https://firebase.google.cn/console/) ，在你的工程页，点击  **Database**。
+2.  Click **Rules**, and update the database rules to allow public read/write access:
 
 
-2. 点击 **规则** ，然后更新数据库规则为允许所有人有权读/写：
+2. 点击 **Rules** ，然后更新数据库规则为所有人拥有读写权限：
 
    ```json
    {
@@ -108,7 +110,7 @@ For more information on setting database rules, see [Getting Started with Databa
 
 Upon each doorbell event, the app captures the following pieces of data and stores them in Firebase:
 
-根据每次门铃事件，应用拍摄图像数据并将他们存入 Firebase：
+应用将会有如下一系列数据并将他们存入 Firebase：
 
 *   Camera image data
 *   相机图像数据
@@ -137,6 +139,7 @@ To write the captured data into a Firebase database:
 将拍摄的数据存入 Firebase 数据库中：
 
 1.  Initialize an instance of the database with `FirebaseDatabase.getInstance()`:
+
 
 1. 使用 `FirebaseDatabase.getInstance()` 初始化一个数据库实例：
 
@@ -207,11 +210,11 @@ To write the captured data into a Firebase database:
 
 > **Note:** The `push()` method creates a new node referenced by a unique key.
 
-> 注意：`push()` 方法将会根据索引值创建一个新的节点引用。
+> 注意：`push()` 方法将会根据唯一的键值创建一个新的节点。
 
 Your app will now write each captured image and the associated image analysis to a Firebase database! Go ahead and try it with the sample code.
 
-你的应用将每次拍摄的图像和对应的图像分析写入到 Firebase 数据库中！继续下去并尝试使用示例代码。
+你的应用将每次拍摄的图像和对应的图像标记数据写入到 Firebase 数据库中！继续下去并尝试使用示例代码。
 
 ## Verify the synchronized data
 
@@ -226,11 +229,11 @@ Firebase 会自动将更改同步到本地数据库中。下面来验证你的�
 1.  In the [Firebase console](https://firebase.google.cn/console/), on the page for your project, click **Database**.
 
 
-1. 在 [Firebase 控制台](https://firebase.google.cn/console/)，在你工程中，点击 **数据库**。
+1. 在 [Firebase 控制台](https://firebase.google.cn/console/)，在你工程中，点击 **Database**。
 2. Click **Data**.
 
 
-2. 点击 **数据**。
+2. 点击 **Data**。
 3. Observe that a new entry was created under the "logs" node.
 
 
