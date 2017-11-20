@@ -313,7 +313,7 @@ Each release of Android Things bundles the latest stable version of [Google Play
 你需要在你的应用程序中的 manifest 文件中 [声明权限](https://developer.android.google.cn/guide/topics/permissions/requesting.html#permissions)。在安装时授予 [正常权限](https://developer.android.google.cn/guide/topics/permissions/requesting.html#normal-dangerous)。在下一个设备重启时授予危险权限，不需要 [运行时校验](https://developer.android.google.cn/training/permissions/requesting.html)。这适用于新应用程序安装和更新现有应用程序的 `<uses-permission>` 元素。
 
 <aside class="note">**Note:**<span>During development, dangerous permissions are granted at install time when using Android Studio 3.0 and later.</span></aside><br />
-
+<br />
 <aside class="note">**注意:** <span>在开发过程中，当使用 Android Studio 3.0 及后续版本中危险权限在安装时授予。</span></aside><br />  
 
 ### Notifications
