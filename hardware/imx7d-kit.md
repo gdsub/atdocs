@@ -106,7 +106,7 @@ Display 6-wire cable</td>
 </table>
 
 
-## 套件包装内容
+## 套件包含内容
 
 * * *
 
