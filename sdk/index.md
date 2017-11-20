@@ -118,7 +118,7 @@ For ease of development, this same activity should include a [CATEGORY_LAUNCHER]
 
 ### Support for Google services
 
-### 支持Google Services
+### 支持 Google Services
 
 Android Things supports a subset of the [Google APIs for Android](https://developers.google.cn/android/). The following table breaks down API support in Android Things:
 
@@ -300,7 +300,7 @@ Each release of Android Things bundles the latest stable version of [Google Play
 
 [Cloud IoT Core](http://cloud.google.com/iot-core) is a fully managed service that allows you to easily and securely connect, manage, and ingest data from millions of globally dispersed devices. Cloud IoT Core, in combination with other services on Google Cloud IoT platform, provides a complete solution for collecting, processing, analyzing, and visualizing IoT data in real time to support improved operational efficiency.
 
-[Cloud IoT Core](http://cloud.google.com/iot-core) 是一个完整的可以让你轻松，安全地链接，管理，并从全球数以百万计的分布式设备中获取数据的托管服务。云物联网核心，与 Google 云物联网平台上的其他服务结合，提供了一个以支持提高经营效率的用于实时收集，处理，分析和可视化物联网数据的解决方案。
+[云物联网核心](http://cloud.google.com/iot-core) 是一个完整的可以让你轻松，安全地链接，管理，并从全球数以百万计的分布式设备中获取数据的托管服务。云物联网核心，与 Google 云物联网平台上的其他服务结合，提供了一个以支持提高经营效率的用于实时收集，处理，分析和可视化物联网数据的解决方案。
 
 ### Permissions
 
@@ -308,7 +308,7 @@ Each release of Android Things bundles the latest stable version of [Google Play
 
 [Declare permissions](https://developer.android.google.cn/guide/topics/permissions/requesting.html#permissions) that you need in your app's manifest file. [Normal permissions](https://developer.android.google.cn/guide/topics/permissions/requesting.html#normal-dangerous) are granted at install time. Dangerous permissions are granted on the next device reboot and do not require [run time checks](https://developer.android.google.cn/training/permissions/requesting.html). This applies to new app installs and updated `<uses-permission>` elements in existing apps.
 
-你需要在你的应用程序中的 manifest 文件中 [Declare permissions](https://developer.android.google.cn/guide/topics/permissions/requesting.html#permissions)。在安装时授予 [Normal permissions](https://developer.android.google.cn/guide/topics/permissions/requesting.html#normal-dangerous)。在下一个设备重启时授予危险权限，不需要 [run time checks](https://developer.android.google.cn/training/permissions/requesting.html)。这适用于新应用程序安装和更新现有应用程序的 `<uses-permission>` 元素。
+你需要在你的应用程序中的 manifest 文件中 [声明权限](https://developer.android.google.cn/guide/topics/permissions/requesting.html#permissions)。在安装时授予 [正常权限](https://developer.android.google.cn/guide/topics/permissions/requesting.html#normal-dangerous)。在下一个设备重启时授予危险权限，不需要 [运行时校验](https://developer.android.google.cn/training/permissions/requesting.html)。这适用于新应用程序安装和更新现有应用程序的 `<uses-permission>` 元素。
 
 <aside class="note">**Note:**<span>During development, dangerous permissions are granted at install time when using Android Studio 3.0 and later.</span></aside><br />
 
