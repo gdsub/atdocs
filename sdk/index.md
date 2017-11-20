@@ -322,4 +322,4 @@ Each release of Android Things bundles the latest stable version of [Google Play
 
 Since there is no system-wide status bar and window shade in Android Things, [notifications](https://developer.android.google.cn/guide/topics/ui/notifiers/notifications.html) are not supported. Avoid calling the [NotificationManager](https://developer.android.google.cn/reference/android/app/NotificationManager.html) APIs in your apps.
 
-由于在 Android Things 中没有系统范围的状态栏和窗口阴影，[通知](https://developer.android.google.cn/guide/topics/ui/notifiers/notifications.html) 不被支持. 在你的应用程序用避免调用 [NotificationManager](https://developer.android.google.cn/reference/android/app/NotificationManager.html) 接口。
+由于在 Android Things 中没有系统范围的状态栏和窗口阴影，[通知](https://developer.android.google.cn/guide/topics/ui/notifiers/notifications.html) 不被支持. 在你的应用程序避免调用 [NotificationManager](https://developer.android.google.cn/reference/android/app/NotificationManager.html) 接口。
