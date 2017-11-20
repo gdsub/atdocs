@@ -30,7 +30,7 @@
 
 The Android Doorbell sample demonstrates how to create a “smart” doorbell. The sample captures a doorbell button press from a user, obtains an image of the user via a camera peripheral, processes the image data using Google’s Cloud Vision API, and uploads the image and event data to a cloud database where it can be viewed by a companion app.
 
-Android 门铃例子演示了如果创建一个“聪明”的门铃。例子会捕捉用户按下门铃按钮，获取一张用户通过相机外设获取的图片，使用 Google’s Cloud Vision API 处理图片数据，并且上传图片和事件数据到可以通过配套应用查看的云数据库中。
+Android 门铃例子演示了如果创建一个“智能”的门铃。在实例中，我们的设备会捕捉用户按下门铃按钮，获取一张用户通过相机外设获取的用户照片，使用 Google’s Cloud Vision API 处理图片数据，并且上传图片和事件数据到可以通过配套应用查看的云数据库中。
 
 By walking through the steps to create this sample, you’ll learn:
 
