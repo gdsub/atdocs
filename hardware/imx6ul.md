@@ -309,17 +309,20 @@ To access the serial console:
 **For Pico i.MX6UL:** Connect a micro USB cable to the debug interface as shown below.
 
 **对 Pico i.MX6UL板:** 如下连 micro USB 线连到调试接口上
+
 ![""](https://developer.android.google.cn/things/images/pico7-console.png)
 
 **For SprIoT i.MX6UL:** Connect a Micro-USB cable to the board as shown below.
 
 
 **对 SprIoT i.MX6UL板:** 如下把 Micro-USB 线连到板子上。
+
 ![""](https://developer.android.google.cn/things/images/spriot-console.png)
 
 **For Argon i.MX6UL:** Connect a USB Type B cable to the board as shown below.
 
 **对 Argon i.MX6UL板:** 如下把 USB Type B 线连到板子上。
+
 ![""](https://developer.android.google.cn/things/images/vvdn-console.png)
 
 Open a connection to the USB serial device on your development computer using a terminal program, such as [PuTTY](http://www.putty.org/) (Windows), [Serial](https://www.decisivetactics.com/products/serial/) (Mac OS), or [Minicom](https://en.wikipedia.org/wiki/Minicom) (Linux). The serial port parameters for the console are as follows:
