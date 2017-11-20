@@ -4,12 +4,12 @@
 
 ## This lesson teaches you to
 
-##这节课你将学习
+##本节课你将学习
 
 1.  Create a companion app module
 
-1. 创建一个配套应用模块
-2. Display database entries with Firebase UI
+2.  创建一个配套应用模块
+3.  Display database entries with Firebase UI
 
 
 2. 使用 Firebase 可视化页面显示数据
@@ -19,11 +19,11 @@
 ##试一试
 
 *   [Doorbell sample app](https://github.com/androidthings/doorbell)
-*   [门铃例子应用](https://github.com/androidthings/doorbell)
+*   [门铃例示例应用](https://github.com/androidthings/doorbell)
 
 A smart doorbell might or might not have a local display. A companion app for mobile devices allows the user to remotely and automatically see new doorbell ring events and images as they are inserted by the embedded device.
 
-一个聪明的门铃可能会有也可能不会有一个本地的显示。一个移动设备的配套应用允许用户远程并且自动查看新的门铃按铃事件以及他们感兴趣的图片。
+智能的门铃可能会或可能没有本地显示设备。与之配套的移动设备应用程序允许用户远程自动查看新的门铃按铃事件和拍摄到的图片。
 
 In this lesson, you will build an Android mobile app containing a Firebase Realtime Database that is synchronized with the doorbell database.
 
@@ -41,8 +41,9 @@ Create a second module in your project alongside the embedded doorbell app. To c
 
 1.  Follow the instructions to [Create a New Module](https://developer.android.google.cn/studio/projects/add-app-module.html) in Android Studio.
 
-1. 在 Android Studio 中跟随这个教程 [创建一个新的模块](https://developer.android.google.cn/studio/projects/add-app-module.html)。
-2. Create a new **Phone & Tablet Module**.
+
+1.  在 Android Studio 中跟随这个教程 [创建一个新的模块](https://developer.android.google.cn/studio/projects/add-app-module.html)。
+2.  Create a new **Phone & Tablet Module**.
 
 
 2. 创建一个新的 **手机 & 平板模块**。
@@ -55,12 +56,13 @@ Create a second module in your project alongside the embedded doorbell app. To c
 
 To enable Firebase Realtime Database for your companion app module:
 
-使你的应用模块支持 Firebase 实时数据库，需要：
+为了让你的应用模块支持 Firebase 实时数据库，你需要：
 
 1.  Install the [Firebase Android SDK](https://firebase.google.cn/docs/android/setup) into your app module.
 
-1. 在你的应用模块中安装 [Firebase Android SDK](https://firebase.google.cn/docs/android/setup)。
-2. Download and install the `google-services.json` file as described in the instructions.
+
+1.  在你的应用模块中安装 [Firebase Android SDK](https://firebase.google.cn/docs/android/setup)。
+2.  Download and install the `google-services.json` file as described in the instructions.
 
 
 2. 根据说明和介绍下载并安装 `google-services.json` 文件。
@@ -92,7 +94,7 @@ To enable Firebase Realtime Database for your companion app module:
 
 To simplify the interaction with the Firebase data model, create a `DoorbellEntry` model class that contains the same properties described in the JSON schema.
 
-为了简化 Firebase 数据模型的交互，创建一个包含属性同 JSON 结构属性相同的  `DoorbellEntry`  模型类。
+为了简化 Firebase 数据模型的交互，请一个  `DoorbellEntry`  模型类，其包含与之前 JSON 文件结构相同的属性。
 
 ```java
 public class DoorbellEntry {
@@ -125,11 +127,11 @@ public class DoorbellEntry {
 ```
 The `FirebaseRecyclerAdapter` from the [FirebaseUI](https://github.com/firebase/FirebaseUI-Android) library simplifies binding Firebase data to a `Recyclerview` for display. Subclasses of the adapter must override `populateViewHolder()` and provide the logic to bind the data from the model into the provided `ViewHolder`.
 
-[FirebaseUI](https://github.com/firebase/FirebaseUI-Android)  中的 `FirebaseRecyclerAdapter` 简化了 Firebase 数据在 `Recyclerview` 中显示。适配器的子类必须重写 `populateViewHolder()` 方法并且需要提供在 `ViewHolder` 中绑定数据的逻辑。
+[FirebaseUI](https://github.com/firebase/FirebaseUI-Android)  中的 `FirebaseRecyclerAdapter` 简化了在 `Recyclerview` 中展示 Firebase 数据的操作。适配器的子类必须重写 `populateViewHolder()` 方法并且需要提供在 `ViewHolder` 中进行数据绑定的逻辑。
 
 The following `DoorbellEntryAdapter` binds data from a `DoorbellEntry` instance into a `DoorbellEntryViewHolder`:
 
-下面的 `DoorbellEntryAdapter` 适配器将 `DoorbellEntry` 实例的数据绑定给 `DoorbellEntryViewHolder`：
+在下面代码中， `DoorbellEntryAdapter` 适配器将 `DoorbellEntry` 实例的数据绑定到 `DoorbellEntryViewHolder` 上：
 
 ```java
 public class DoorbellEntryAdapter extends FirebaseRecyclerAdapter<DoorbellEntry, DoorbellEntryAdapter.DoorbellEntryViewHolder> {
@@ -196,7 +198,7 @@ public class DoorbellEntryAdapter extends FirebaseRecyclerAdapter<DoorbellEntry,
 ```
 Create an instance of the `DoorbellEntryAdapter` and attach it to a `RecyclerView` in your activity. The FirebaseUI adapters automatically register event listeners with the database. To avoid memory leaks, initialize the adapter in `onStart()` and call its `cleanup()` method in `onStop()`.
 
-创建一个  `DoorbellEntryAdapter`  实例并且将它绑定给你页面中的  `RecyclerView`。FirebaseUI 适配器自动注册数据事件监听事件。为了避免内存泄漏，在 `onStart()` 中初始化适配器并且在 `onStop()` 中调用适配器的 `cleanup()` 方法。
+创建一个  `DoorbellEntryAdapter`  实例并且将它关联给你页面的  `RecyclerView`。FirebaseUI 适配器自动为数据库注册数据监听器。为了避免内存泄漏，在 `onStart()` 中初始化适配器并且在 `onStop()` 中调用适配器的 `cleanup()` 方法。
 
 To ensure that each new doorbell event is visible to the user, scroll the list to the latest item on each data set change. You can listen for changes events using an `AdapterDataObserver` attached to your adapter.
 
