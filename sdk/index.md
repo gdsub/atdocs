@@ -282,13 +282,15 @@ Android Things 支持 [Google APIs for Android](https://developers.google.cn/and
 <sup id="fn1">1\. 不包括开源 FirebaseUI 认证组件。</sup>
 
 <aside class="note">**Note:** <span>As a general rule, APIs that require user input or authentication credentials aren't available to apps.</span></aside><br />
+<br />
 <aside class="note">**注意:** <span>一般来说，需要用户输入或身份验证凭证的接口不适用于应用程序。</span></aside><br />
 <br />
 Each release of Android Things bundles the latest stable version of [Google Play Services](https://developer.android.google.cn/google/play-services/index.html), and requires at least version **11.0.0** of the client SDK. Android Things does not include the [Google Play Store](https://developer.android.google.cn/distribute/googleplay/index.html), which is responsible for automatically updating Play Services on the device. Because the Play Services version on the device is static, apps cannot target a client SDK greater than the version bundled with the target release.<br />
 <br />
-每一批发布 Android Things 的 [Google Play Services](https://developer.android.google.cn/google/play-services/index.html) 最新稳定版，要求客户端SDK版本至少是**11.0.0**。 Android Things 不包括 [Google Play Store](https://developer.android.google.cn/distribute/googleplay/index.html)，其负责自动更新设备上 的Google Play Services。因为设备上的 Google Play Services 版本是静态的，所以应用程序不能标记客户端SDK版本大雨目标发布的捆绑版本。
-
+每一批发布 Android Things 的 [Google Play Services](https://developer.android.google.cn/google/play-services/index.html) 最新稳定版，要求客户端SDK版本至少是**11.0.0**。 Android Things 不包括 [Google Play Store](https://developer.android.google.cn/distribute/googleplay/index.html)，其负责自动更新设备上 的Google Play Services。因为设备上的 Google Play Services 版本是静态的，所以应用程序不能标记客户端SDK版本大雨目标发布的捆绑版本。<br />
+<br />
 <aside class="note">**Note:** <span>During developer preview, the bundled version for each release is listed in the [release notes](https://developer.android.google.cn/things/preview/releases.html).</span></aside><br />
+<br />
 <aside class="note">**注意:** <span>在开发者预览版中, 每个版本的捆绑版本都列在了 [release notes](https://developer.android.google.cn/things/preview/releases.html) 中。</span></aside><br /><br />  
 
 
