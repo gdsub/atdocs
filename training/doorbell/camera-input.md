@@ -4,12 +4,12 @@
 
 ## This lesson teaches you to
 
-##本节课你讲学到
+##本节课你将学到
 
 1.  Connect a CSI-2 peripheral
 
-1. 连接一个 CSI-2 外设
-2. Add camera features to an app
+2.  连接一个 CSI-2 外设
+3.  Add camera features to an app
 
 
 2. 在应用中添加相机功能
@@ -31,17 +31,19 @@
 ##试试看
 
 *   [Doorbell sample app](https://github.com/androidthings/doorbell)
-*   [门铃例子应用](https://github.com/androidthings/doorbell)
+*   [门铃示例应用](https://github.com/androidthings/doorbell)
 
 A smart doorbell should capture an image of who (or what) is at the door, allowing the owner to remotely make a decision about whether or not to answer.
 
-一个聪明的门铃应该在门外有人或物时拍摄图像，使所有者能够远程的控制是否应答。
+一个智能的门铃应该在门外有人或物时自动拍摄图像，使主人能够远程查看，并决定是否应答。
 
 Because Android Things builds on the Android framework, you can access the same robust camera APIs that an Android mobile developer would use. In this lesson, you’ll access the camera peripheral using Android camera APIs and capture an image for later processing.
 
-由于 Android Things 基于 Android 框架进行编构建，你可以使用 Android 移动开发者所使用的稳定的相机 APIs 。在本节课，你将使用 Android 相机 APIs 进行控制相机外设然后捕捉图像进行下一步的处理。
+由于 Android Things 基于 Android 框架进行构建，你可以使用 Android 移动开发者所使用的稳定的相机 APIs 。在本节课，你将使用 Android 相机 APIs 来控制相机外设然后为后续处理拍摄一张图片。
 
 ## Connect the camera
+
+##连接摄像头
 
 * * *
 
@@ -72,7 +74,7 @@ Add the required permissions to your app's manifest file:
 
 Communicating with peripheral hardware introduces blocking operations into the flow of your app. To avoid blocking the app's main thread, and thus delaying framework events, create a background worker thread to process input and handle commands. The `HandlerThread` works very nicely for this purpose.
 
-于外设硬件通信将阻塞你的应用。为了避免应用的主线程被阻塞，从而延迟框架事件。创建一个后台工作的线程来处理输入和处理指令。在这种情况下`HandlerThread`是非常友好的。
+同外设硬件通信将阻塞你的应用。为了避免应用的主线程被阻塞，从而导致框架事件被延迟，所以创建一个后台工作的线程来处理输入和处理指令。 `HandlerThread` 对象非常适合处理这种情况。
 
 ```java
 public class DoorbellActivity extends Activity {
@@ -114,8 +116,8 @@ The first step to capture a camera image is to discover the hardware and open a 
 
 1.  Use the `CameraManager` system service to discover the list of available camera devices with `getCameraIdList()`.
 
-1. 使用 `CameraManager` 系统服务中的 `getCameraIdList()` 方法找到的可用的相机设备列表。
 
+1. 使用 `CameraManager` 系统服务中的 `getCameraIdList()` 方法找到的可用的相机设备列表。
 
 2. Create an `ImageReader` instance to process the raw camera data and produce a JPEG-encoded image to your app. The reader processes data asynchronously, and invokes the provided `OnImageAvailableListener` when the image is ready.
 
@@ -124,7 +126,7 @@ The first step to capture a camera image is to discover the hardware and open a 
 3. Open a connection to the appropriate camera device using `openCamera()`.
 
 
-3. 使用 `openCamera()` 方法对一个合适的相机进行连接。
+3. 使用 `openCamera()` 方法来连接一个合适的相机。
 4. The `CameraDevice.StateCallback` reports that the camera was opened successfully through the `onOpened()` callback method.
 
 
@@ -132,7 +134,7 @@ The first step to capture a camera image is to discover the hardware and open a 
 5. Close the `CameraDevice` when it is not in use to free the system resources:
 
 
-5. 当不在使用时使用 `CameraDevice` 方法关闭相机并释放系统资源：
+5. 当不在使用相机时使用 `CameraDevice` 方法关闭相机来释放系统资源：
 
 ```java
 public class DoorbellCamera {
@@ -205,18 +207,18 @@ public class DoorbellCamera {
 
 ## Trigger an image capture
 
-## 触发图像拍摄
+## 触发图像拍摄事件
 
 * * *
 
 Once the camera device connection is active, create a `CameraCaptureSession` to facilitate image requests from the hardware. To open a capture session:
 
-一旦相机设备连接处于活动状态，创建一个 `CameraCaptureSession` 来帮助来自硬件对图片的请求。打开一个拍摄会话：
+一旦相机设备连接处于活动状态，创建一个 `CameraCaptureSession` 类来处理硬件拍摄图片的请求。开始一个拍摄会话：
 
 1.  Build a new `CameraCaptureSession` instance with the `createCaptureSession()` method.
 
-1. 创建一个新的 `CameraCaptureSession` 实例并实现 `createCaptureSession()` 方法。
-2. Pass the method a list of potential target surfaces for individual image requests. For this example, pass the surface connected to the `ImageReader` constructed previously.
+2.  创建一个新的 `CameraCaptureSession` 实例并实现 `createCaptureSession()` 方法。
+3.  Pass the method a list of potential target surfaces for individual image requests. For this example, pass the surface connected to the `ImageReader` constructed previously.
 
 
 2. 一系列潜在的目标预览被当作特定的图像请求。在本例中，通过之前构造的 `ImageReader` 获取预览。
@@ -277,8 +279,8 @@ Your app can now use the active `CameraCaptureSession` to request image data fro
 
 1.  Initialize a new `CaptureRequest` using the builder interface. To capture a single still image, use the `TEMPLATE_STILL_CAPTURE` parameter.
 
-1. 使用建造者接口初始化一个新的 `CaptureRequest`。使用 `TEMPLATE_STILL_CAPTURE` 参数拍摄一张静态图像。
-2. Indicate the target surface for the request. For this example, this is the same `ImageReader` surface provided to the capture session.
+2.  使用建造者接口初始化一个新的 `CaptureRequest`。使用 `TEMPLATE_STILL_CAPTURE` 参数拍摄一张静态图像。
+3.  Indicate the target surface for the request. For this example, this is the same `ImageReader` surface provided to the capture session.
 
 
 2. 指出请求的目标图像。在本例中，同获取图像预览和拍照会话是同一个 `ImageReader`。
@@ -348,18 +350,18 @@ public class DoorbellCamera {
 
 From your activity, initialize the camera and invoke the `takePicture()` method when the doorbell button is pressed. During capture, the camera hardware streams the image data to the provided `ImageReader` surface and invokes the `OnImageAvailableListener` with the result.
 
-在你的界面，初始化相机并且当门铃按钮被按下时调用 `takePicture()` 方法。在拍摄期间，相机硬件将图像数据给到 `ImageReader`  预览并且调用  `OnImageAvailableListener`  获取结果。
+在你的界面，初始化相机并且当门铃按钮被按下时调用 `takePicture()` 方法。在拍照时，使用 `ImageReader` 对象预览相机图像数据并在  `OnImageAvailableListener`  监听方法中获取图片。
 
 To obtain the image after capture completes:
 
 1.  Obtain the latest `Image` from the `ImageReader` provided to the `onImageAvailable()` method.
 
 
-1. 从 `ImageReader` 提供的 `onImageAvailable()` 方法中获取最新的 `Image`。
+1. 使用 `ImageReader` 对象提供的 `onImageAvailable()` 方法获取最新的 `Image`。
 2. Retrieve the JPEG-encoded image as a `byte[]` from the buffer returned by the `getBuffer()` method:
 
 
-2. 使用 `getBuffer()`  方法将缓冲返回的  JPEG-encoded 图像转为 `byte[]`。
+2. 使用 `getBuffer()`  方法将缓冲返回的  JPEG-encoded 图像转为 `byte[]` 格式。
 
 ```java
 public class DoorbellActivity extends Activity {
