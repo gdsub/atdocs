@@ -128,7 +128,6 @@ To connect your board to Wi-Fi, first access a shell prompt on the device. You c
 Once you can access a shell prompt, follow these steps:
 
 一旦连到一个 shell 终端, 按下面步骤来:
-Once you can access a shell prompt, follow these steps:
 
 1.  Send an intent to the Wi-Fi service that includes the SSID of your local network. Your [board](https://developer.android.google.cn/things/hardware/developer-kits.html) must support the network protocol and frequency band of the wireless network in order to establish a connection.
 
