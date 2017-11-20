@@ -45,7 +45,7 @@ To create a bundle for your product:
 
 
 
-1. 如果您还没有准备好，请先打开 [Android Things 管理中心](https://partner.android.com/things/console)，点击您之前所[配置](https://developer.android.google.cn/things/console/configure.html)的产品，然后点击 **FACTORY IMAGES** 标签。
+1. 如果您还没有处在本标签，请先打开 [Android Things 管理中心](https://partner.android.com/things/console)，点击您之前所[配置](https://developer.android.google.cn/things/console/configure.html)的产品，然后点击 **FACTORY IMAGES** 标签。
 
 2. 点击 **UPLOAD** 上传您的[捆绑包](https://developer.android.google.cn/things/console/app_bundle.html)。上传完毕之后，请在 **Bundles** 表格中，点击 bundle ID 一旁的按钮以选中该捆绑包。
 

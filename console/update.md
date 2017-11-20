@@ -49,7 +49,7 @@ To push a build for your product:
 
 
 
-1. 如果您还没有准备好，请先打开 [Android Things 管理中心](https://partner.android.com/things/console)，点击您之前已准备好[构建文件](https://developer.android.google.cn/things/console/build.html)的产品项，然后点击 **OTA UPDATES** 标签。
+1. 如果您还没有处在本标签，请先打开 [Android Things 管理中心](https://partner.android.com/things/console)，点击您之前已准备好[构建文件](https://developer.android.google.cn/things/console/build.html)的产品项，然后点击 **OTA UPDATES** 标签。
 
 2. 请点击 **START A NEW UPDATE**。
 
@@ -62,9 +62,9 @@ To push a build for your product:
 
    <aside class="note">**注意：** <span>您所选择的操作系统版本不能低于您之前进行推送时的系统版本（比如，在此之前您选择过为版本号为 0.5 的操作系统进行了推送，这次更新试图选择版本号为 0.4.1的操作系统）。</span></aside>
 
-5. 点击 **PUSH UPDATE**。会提示您验证所选推送。
+5. 点击 **PUSH UPDATE**，并确认信息无误。
 
-6. 点击 **PUSH**。该构建文件会被推送到所有的设备上，让所有设备进行更新可能会花上几个小时的时间。您可以在 **Current build** 表格查看构建文件的详情，包括收到更新推送的设备数。
+6. 点击 **PUSH**。该构建文件会被推送到所有的设备上，更新所有设备一般需要几个小时的时间。您可以在 **Current build** 表格查看构建文件的详情，包括已更新的设备数量等。
 
    ![View current
    build](https://developer.android.google.cn/things/images/console/current_build_list.png)

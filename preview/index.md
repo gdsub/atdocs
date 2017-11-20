@@ -4,7 +4,7 @@
 
 Welcome to the Android Things SDK Preview! Android Things development is very similar to traditional Android mobile development and involves writing apps using the Android framework and tools. All you need is a development board flashed with the Android Things OS and the required peripherals for your device.
 
-欢迎使用 Android Things SDK 预览版！Android Things 的开发与传统的 Android 开发非常相似，同样会用到 Android 框架和相关工具进行应用的编写。您所要准备的就是一块刷入 Android Things 操作系统的开发板和设备所需的外设。
+欢迎使用 Android Things SDK 预览版！Android Things 的开发与传统的 Android 开发非常相似，都需要应用 Android 框架和工具来编写应用程序。您只需要准备一块刷入 Android Thing 操作系统的开发板，和设备必需的外设即可。
 
 This guide gives you all the information you need to get started quickly with a supported board and set up your initial development environment.
 
@@ -42,7 +42,7 @@ Because Android Things has a few key differences compared to the core Android OS
 
 Before you begin, you need a supported development board. You can compare the available boards on the [Developer Kits](https://developer.android.google.cn/things/hardware/developer-kits.html) page.
 
-在开始之前，您还需要一块开发板。您可以浏览[开发者套件](https://developer.android.google.cn/things/hardware/developer-kits.html)参照已获得支持的开发板。
+在开始之前，您还需要一块受支持的开发板。您可以在[开发者套件](https://developer.android.google.cn/things/hardware/developer-kits.html)页参照可用的开发板。
 
 ## Flash Android Things
 
@@ -94,7 +94,7 @@ Once you select a board, flash and bring up your hardware with the instructions 
 2. 打开 Android Studio 并创建一个新项目。在新项目向导中，一切均可保持默认设置，但选择机型时需作如下更改：
     *   选择 **Android Things** 作为您运行应用程序的机型。
     *   选择 **API 26: Android 8.0 (Oreo)**。
-3.  使用 `adb` 命令连接您的开发板并验证您是否可以操作该设备：
+3.  连接您的开发板，并使用 `adb` 命令验证您是否可以操作该设备：
 
         $ adb devicesList of devices attached4560736843791520041    device
 
