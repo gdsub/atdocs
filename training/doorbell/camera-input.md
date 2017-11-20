@@ -49,7 +49,7 @@ Because Android Things builds on the Android framework, you can access the same 
 
 Connect a supported camera module to the CSI-2 camera port on your board. Ensure that the cable is fully inserted and sits evenly before closing the connector latch.
 
-将一个支持相机的模块连接到你的开发板的 CSI-2 相机端口。在封锁连接器之前确认电缆完全插入并且结合处平整。
+将一个开发板所支持相机的模块连接到你的开发板的 CSI-2 相机端口。在固定连接器之前确认线缆完全插入并且结合处平整。
 
 ![""](https://developer.android.google.cn/things/images/doorbell-camera-wiring.png)
 
