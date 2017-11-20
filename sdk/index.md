@@ -282,7 +282,7 @@ Android Things 支持 [Google APIs for Android](https://developers.google.cn/and
 <sup id="fn1">1\. 不包括开源 FirebaseUI 认证组件。</sup>
 
 <aside class="note">**Note:** <span>As a general rule, APIs that require user input or authentication credentials aren't available to apps.</span></aside><br />
-<aside class="note">**注意:** <span>一般来说，需要用户输入或身份验证凭证的接口不适用于应用程序。</span></aside>
+<aside class="note">**注意:** <span>一般来说，需要用户输入或身份验证凭证的接口不适用于应用程序。</span></aside><br />
 
 Each release of Android Things bundles the latest stable version of [Google Play Services](https://developer.android.google.cn/google/play-services/index.html), and requires at least version **11.0.0** of the client SDK. Android Things does not include the [Google Play Store](https://developer.android.google.cn/distribute/googleplay/index.html), which is responsible for automatically updating Play Services on the device. Because the Play Services version on the device is static, apps cannot target a client SDK greater than the version bundled with the target release.
 
@@ -320,4 +320,4 @@ Each release of Android Things bundles the latest stable version of [Google Play
 
 Since there is no system-wide status bar and window shade in Android Things, [notifications](https://developer.android.google.cn/guide/topics/ui/notifiers/notifications.html) are not supported. Avoid calling the [NotificationManager](https://developer.android.google.cn/reference/android/app/NotificationManager.html) APIs in your apps.
 
-由于在 Android Things 中没有系统范围的状态栏和窗口阴影，[notifications](https://developer.android.google.cn/guide/topics/ui/notifiers/notifications.html) 不被支持. 在你的应用程序用避免调用 [NotificationManager](https://developer.android.google.cn/reference/android/app/NotificationManager.html) 接口。
+由于在 Android Things 中没有系统范围的状态栏和窗口阴影，[通知](https://developer.android.google.cn/guide/topics/ui/notifiers/notifications.html) 不被支持. 在你的应用程序用避免调用 [NotificationManager](https://developer.android.google.cn/reference/android/app/NotificationManager.html) 接口。
