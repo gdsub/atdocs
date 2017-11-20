@@ -27,11 +27,11 @@ Android Things 平台也被简化为单一应用程序使用，不再提供系�
 
 ### Peripheral I/O API
 
-### 外围 I/O 接口
+### 外设 I/O 接口
 
 The Peripheral I/O APIs let your apps communicate with sensors and actuators using industry standard protocols and interfaces. The following interfaces are supported: GPIO, PWM, I2C, SPI, UART.
 
-外围 I/O 接口让你的应用程序使用工业标准协议和接口与传感器和执行器通讯。支持下列接口：GPIO, PWM, I2C, SPI, UART。
+外设 I/O 接口让你的应用程序使用工业标准协议和接口与传感器和执行器通讯。支持下列接口：GPIO, PWM, I2C, SPI, UART。
 
 See the [Peripheral I/O API Guides](https://developer.android.google.cn/things/sdk/pio/index.html) for more information on how to use the APIs.
 
@@ -83,11 +83,11 @@ Android Things 支持同于传统Android应用程序提供的 [UI工具包](http
 
 However, Android Things does not _require_ a display. On devices where a graphical display is not present, activities are still a primary component of your Android Things app. This is because the framework delivers all [input events](https://developer.android.google.cn/guide/topics/ui/ui-events.html) to the foreground activity, which has focus. Your app cannot receive key events or motion events through any other application component, such as a [service](https://developer.android.google.cn/guide/components/services.html).
 
-然而， Android Things 不要求展示，在不存在图形显示的设备上，活动依然是Android Things应用程序的主要组件。这是因为框架将所有的 [输入事件](https://developer.android.google.cn/guide/topics/ui/ui-events.html) 传递给获取焦点的前台Activity。
+然而， Android Things 不要求展示，在不存在图形显示的设备上，Activity 依然是Android Things应用程序的主要组件。这是因为框架将所有的 [输入事件](https://developer.android.google.cn/guide/topics/ui/ui-events.html) 传递给获取焦点的前台Activity。你的应用程序无法通过诸如  [service](https://developer.android.google.cn/guide/components/services.html) 等其他任何应用组件接收关键事件或动作事件。
 
 ### Home activity support
 
-### Home activity支持
+### Home activity 支持
 
 Android Things expects one application to expose a "home activity" in its manifest as the main entry point for the system to automatically launch on boot. This activity must contain an intent filter that includes both [CATEGORY_DEFAULT](https://developer.android.google.cn/reference/android/content/Intent.html#CATEGORY_DEFAULT) and `IOT_LAUNCHER`.
 
@@ -281,17 +281,15 @@ Android Things 支持 [Google APIs for Android](https://developers.google.cn/and
 
 <sup id="fn1">1\. 不包括开源 FirebaseUI 认证组件。</sup>
 
-<aside class="note">**Note:** <span>As a general rule, APIs that require user input or authentication credentials aren't available to apps.</span></aside>
-
-<aside class="note">**Note:** <span>一般来说，需要用户输入或身份验证凭证的接口不适用于应用程序。</span></aside>
+<aside class="note">**Note:** <span>As a general rule, APIs that require user input or authentication credentials aren't available to apps.</span></aside><br />
+<aside class="note">**注意:** <span>一般来说，需要用户输入或身份验证凭证的接口不适用于应用程序。</span></aside>
 
 Each release of Android Things bundles the latest stable version of [Google Play Services](https://developer.android.google.cn/google/play-services/index.html), and requires at least version **11.0.0** of the client SDK. Android Things does not include the [Google Play Store](https://developer.android.google.cn/distribute/googleplay/index.html), which is responsible for automatically updating Play Services on the device. Because the Play Services version on the device is static, apps cannot target a client SDK greater than the version bundled with the target release.
 
 每一批发布 Android Things 的 [Google Play Services](https://developer.android.google.cn/google/play-services/index.html) 最新稳定版，要求客户端SDK版本至少是**11.0.0**。 Android Things 不包括 [Google Play Store](https://developer.android.google.cn/distribute/googleplay/index.html)，其负责自动更新设备上 的Google Play Services。因为设备上的 Google Play Services 版本是静态的，所以应用程序不能标记客户端SDK版本大雨目标发布的捆绑版本。
 
-<aside class="note">**Note:** <span>During developer preview, the bundled version for each release is listed in the [release notes](https://developer.android.google.cn/things/preview/releases.html).</span></aside>
-
-<aside class="note">**Note:** <span>在开发者预览版中, 每个版本的捆绑版本都列在了 [release notes](https://developer.android.google.cn/things/preview/releases.html) 中。</span></aside>
+<aside class="note">**Note:** <span>During developer preview, the bundled version for each release is listed in the [release notes](https://developer.android.google.cn/things/preview/releases.html).</span></aside><br />
+<aside class="note">**注意:** <span>在开发者预览版中, 每个版本的捆绑版本都列在了 [release notes](https://developer.android.google.cn/things/preview/releases.html) 中。</span></aside>
 
 
 #### Cloud IoT Core
@@ -312,9 +310,10 @@ Each release of Android Things bundles the latest stable version of [Google Play
 
 你需要在你的应用程序中的 manifest 文件中 [Declare permissions](https://developer.android.google.cn/guide/topics/permissions/requesting.html#permissions)。在安装时授予 [Normal permissions](https://developer.android.google.cn/guide/topics/permissions/requesting.html#normal-dangerous)。在下一个设备重启时授予危险权限，不需要 [run time checks](https://developer.android.google.cn/training/permissions/requesting.html)。这适用于新应用程序安装和更新现有应用程序的 `<uses-permission>` 元素。
 
-<aside class="note">**Note:** <span>During development, dangerous permissions are granted at install time when using Android Studio 3.0 and later.</span></aside>
+<aside class="note">**
+    :** <span>During development, dangerous permissions are granted at install time when using Android Studio 3.0 and later.</span></aside>  
 
-<aside class="note">**Note:** <span>在开发过程中，当使用 Android Studio 3.0 及后续版本中危险权限在安装时授予。</span></aside>
+<aside class="note">**注意:** <span>在开发过程中，当使用 Android Studio 3.0 及后续版本中危险权限在安装时授予。</span></aside>
 
 ### Notifications
 
