@@ -54,7 +54,8 @@ You should have a basic understanding of the relationships between voltage, curr
 
 [Breadboards](https://en.wikipedia.org/wiki/Breadboard) are a common tool for quickly prototyping circuits without needing to solder components together. This allows you to make wiring changes during development until the design is stable. Breadboards can also be useful in testing, by allowing you to connect instrumentation easily and probe various connections in the circuit.
 
-[面包板](https://en.wikipedia.org/wiki/Breadboard) 是常用的用来快速做电路原型的工具，这样可能不用把原件焊接到一起。用面包板可以让你开发当中做线路改变直到电路设计稳定下来。
+[面包板](https://en.wikipedia.org/wiki/Breadboard) 是常用的用来快速做电路原型的工具，这样可以不用把原件焊接到一起。用面包板可以让你开发当中做线路改变直到电路设计稳定下来。
+
 ![""](https://developer.android.google.cn/things/images/breadboard-connections.png)
 
 The holes of a breadboard are internally connected together in rows and columns to allow multiple components to share the same connection point. The outer rows are connected perpendicular to the rest of the board and form a single bus in each row across the top and bottom. These rows are typically used to connect power and ground, or other common signals needed across the entire circuit.
