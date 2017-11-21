@@ -82,6 +82,7 @@ Embedded devices contain active circuitry, which means they need an external pow
 
 <dt>V<sub>CC</sub> 或者 V<sub>DD</sub></dt>
 
+
 <dd>Internal regulated voltage powering the components on the board. Common power supply voltages are +5V, +3.3V, and +1.8V.</dd>
 
 <dd>内部稳压给板子上的元件供电。 通常的供电电压有 +5V, +3.3V, and +1.8V.</dd>
@@ -89,6 +90,7 @@ Embedded devices contain active circuitry, which means they need an external pow
 <dt>Ground (GND)</dt>
 
 <dt>地 (GND)</dt>
+
 
 <dd>Reference point for 0 volts on the board. All other voltages are measured with respect to ground. Voltages measured below ground are considered negative.</dd>
 
