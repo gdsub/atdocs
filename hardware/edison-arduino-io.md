@@ -4,7 +4,7 @@
 
 This section describes the [Peripheral I/O](https://developer.android.google.cn/things/sdk/pio/index.html) interfaces available to your apps running on the [Intel® Edison kit for Arduino](http://www.intel.com/buy/us/en/product/emergingtechnologies/intel-edison-kit-462187).
 
-本节介绍了 [适用于 Intel® Edison 的 Arduino 开发套件](https://developer.android.google.cn/things/sdk/pio/index.html) 的应用程序 [外设 I/O](http://www.intel.com/buy/us/en/product/emergingtechnologies/intel-edison-kit-462187)。
+本节介绍了适用于那些运行在 [Intel® Edison kit for Arduino](http://www.intel.com/buy/us/en/product/emergingtechnologies/intel-edison-kit-462187) 上的应用程序 [Peripheral I/O](https://developer.android.google.cn/things/sdk/pio/index.html) 接口。
 
 ![](https://developer.android.google.cn/things/images/intel-edison-arduino-kit.png)
 
