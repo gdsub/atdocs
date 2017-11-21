@@ -23,11 +23,11 @@
 
 Get up and running quickly with pre-built drivers from the [Peripheral Driver Library](https://developer.android.google.cn/things/sdk/driver-library.html). These drivers abstract the low-level communication details associated with many common hardware peripherals.
 
-通过从 [Peripheral Driver Library](https://developer.android.google.cn/things/sdk/driver-library.html) 获取的已经构建好的驱动，你可以快速的启动并允许 Android Things 应用。这些驱动将一些常见的操作外设硬件的细节进行了抽象。
+通过从 [Peripheral Driver Library](https://developer.android.google.cn/things/sdk/driver-library.html) 获取的已经构建好的驱动，你可以快速的启动并允许 Android Things 应用。这些驱动可以将那些与很多常见硬件外设相关联的底层通信细节抽象化。
 
 In this lesson, you will learn to integrate library drivers into your app and bind peripherals to the Android framework through the `UserDriverManager`.
 
-在这节课里，你将学会将驱动库整合进你的应用中，并通过利用 `UserDriverManager` 将它们和 Android Framework 进行绑定。
+在这节课里，你将学会如何将驱动库整合进你的应用中，并通过利用 `UserDriverManager` 将外设绑定到 Android Framework 之中。
 
 ## 初始化驱动库
 
@@ -55,7 +55,7 @@ To import a library driver into your app:
 
 >   Different drivers may require different permissions. If you aren't sure which permissions are required for a specific driver, locate the driver's README file. See [User-Space Drivers](https://developer.android.google.cn/things/sdk/drivers/index.html) for more information.
 
-> 不同的驱动可能需要不同的权限。如果你不知道某些驱动具体需要什么权限，你可以在驱动的 README 文件或者从 [User-Space Drivers](https://developer.android.google.cn/things/sdk/drivers/index.html) 获取更多信息。
+> 不同的驱动可能需要不同的权限。如果你不知道某些驱动具体需要什么权限，你可以在驱动的 README 文件查看相关信息。详情请见 [User-Space Drivers](https://developer.android.google.cn/things/sdk/drivers/index.html)。
 
 4.  Initialize the driver class with the appropriate Peripheral I/O resources.
 
