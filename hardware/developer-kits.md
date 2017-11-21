@@ -361,7 +361,7 @@ Bluetooth® 4.1</td>
 ### 传统的硬件平台
 
 Long-term support for the hardware in this section has ended. Developers may still target these platforms in the [Android Things Console](https://partner.android.com/things/console), but they will not receive the latest platform updates.  
-平台已经停止了对这部分硬件的长期支持。开发者依然可以在[Android thing 控制台](https://partner.android.com/things/console)上使用这些硬件，但它们将不会接收到最新的平台更新。
+平台已经停止了对这部分硬件的长期支持。开发者依然可以在[Android thing 控制台](https://partner.android.com/things/console)上使用这些硬件，但它们将不会接收到平台推送的更新固件。
 <table style="width: 55%">
 
 <tbody>
@@ -525,13 +525,13 @@ Adafruit 项目工具包提供了一套灵活的入门方法。
 ![](https://developer.android.google.cn/things/images/rainbow-hat.png)
 
 ### Pimoroni Rainbow HAT  
-### Pimoroni 彩虹帽
+### Pimoroni Rainbow HAT
 
 **For Raspberry Pi**  
 **对于 Raspberry Pi**
 
 The Rainbow HAT offers a plug and play solution for getting started on Raspberry Pi.  
-彩虹帽提供了一套即插即用的解决方案。
+Rainbow HAT提供了一套即插即用的解决方案。
 
 ![](https://developer.android.google.cn/things/images/project-kit.jpg)
 
@@ -542,7 +542,7 @@ The Rainbow HAT offers a plug and play solution for getting started on Raspberry
 **对于 Intel® Edison 的板子**
 
 The Sparkfun kit is a version of the project kit targeted at the Intel® Edison.  
-Sparkfun 提供了一套版本的项目工具包.
+Sparkfun 提供了一套针对Intel® Edison的项目工具包.
 
 
 ## Where to buy
