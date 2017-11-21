@@ -36,9 +36,10 @@ Key events indicate a momentary press and release of an input switch. They are g
 
 1.  使用 `InputDriver.Builder` 创建一个新的驱动实例，并将源类型声明为 `SOURCE_CLASS_BUTTON`。
 2.  使用 `UserDriverManager` 注册该驱动实例。
-```
+``` java
 import com.google.android.things.userdriver.InputDriver;
 import com.google.android.things.userdriver.UserDriverManager;
+...
 
 public class ButtonDriverService extends Service {
 
@@ -75,8 +76,9 @@ public class ButtonDriverService extends Service {
 3.  当硬件事件发生时，使用当前的键值和输入动作为每个状态改变构建一个新的 `KeyEvent`。
 
 4.  使用 `emit()` 方法将这个事件注入到驱动中。
-```
+``` java
 public class ButtonDriverService extends Service {
+    ...
 
     // A state change has occurred
     private void triggerEvent(boolean pressed) {
@@ -90,8 +92,9 @@ public class ButtonDriverService extends Service {
 }
 ```
 5.  当按键事件不再需要时，取消注册该驱动。
-```
+``` java
 public class ButtonDriverService extends Service {
+    ...
 
     @Override
     public void onDestroy() {
@@ -101,7 +104,6 @@ public class ButtonDriverService extends Service {
         manager.unregisterInputDriver(mDriver);
     }
 }
-
 ```
 
 ## Motion Events
@@ -135,8 +137,9 @@ Input drivers can also emit motion events to connect a pointing device to the fr
 
 1.  使用 `InputDriver.Builder` 创建一个新的驱动实例，并将源类型声明为 `SOURCE_TOUCHPAD`。
 2.  使用 `UserDriverManager` 注册该驱动实例。
-```
+``` java
 import com.google.android.things.userdriver.InputDriver;
+...
 
 public class TouchpadDriverService extends Service {
 
@@ -168,9 +171,10 @@ public class TouchpadDriverService extends Service {
 }
 ```
 3.  当硬件事件发生时，使用 `emit()` 方法将新坐标注入到驱动中。
-```
+``` java
 public class TouchpadDriverService extends Service {
-  
+    ...
+
     // A state change has occurred
     private void triggerEvent(int x, int y, boolean pressed) {
 
@@ -181,8 +185,9 @@ public class TouchpadDriverService extends Service {
 }
 ```
 4.  当不在需要指针事件时，取消注册该驱动。
-```
+``` java
 public class TouchpadDriverService extends Service {
+    ...
 
     @Override
     public void onDestroy() {
@@ -203,7 +208,7 @@ public class TouchpadDriverService extends Service {
 Android delivers input events to the foreground activity through various callback methods. Your app receives key events through the `onKeyDown()` and `onKeyUp()` methods, and all other input events through the `onGenericMotionEvent()` method.
 
 Android 通过多种回调方法传递输入事件给前台活动。你的应用通过使用 `onKeyDown()` 和 `onKeyUp()` 方法接收按键事件,以及通过 `onGenericMotionEvent()` 方法接收所有其它输入事件。
-```
+``` java
 public class HomeActivity extends Activity {
 
     @Override
