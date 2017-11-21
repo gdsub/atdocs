@@ -5,11 +5,11 @@
 
 The Android [sensor framework](https://developer.android.google.cn/guide/topics/sensors/sensors_overview.html) supports a wide variety of sensor types to measure the conditions of the physical environment and read the raw data from apps. Using sensor drivers, your apps can extend this framework and add new sensor devices connected over [Peripheral I/O](https://developer.android.google.cn/things/sdk/pio/index.html).
 
-Android 的[传感器框架](https://developer.android.google.cn/guide/topics/sensors/sensors_overview.html)支持大量类型的传感器，使用该框架可以测量物理环境的状态，以及从应用中读取原始数据。而通过使用传感器驱动，你的应用可以扩展这个框架，并且可以添加连接到 [Peripheral I/O](https://developer.android.google.cn/things/sdk/pio/index.html) 上的新设备。
+Android 的[传感器框架](https://developer.android.google.cn/guide/topics/sensors/sensors_overview.html)支持的传感器类型相对广泛，使用该框架可以测量物理环境的状态并从应用中读取原始数据。而通过使用传感器驱动，你的应用可以扩展这个框架，并且可以添加连接到 [Peripheral I/O](https://developer.android.google.cn/things/sdk/pio/index.html) 上的新设备。
 
 The data from these sensors is delivered through the same [SensorManager](https://developer.android.google.cn/reference/android/hardware/SensorManager.html) APIs as the built-in Android sensors. Your app can implement a driver to connect a new sensor of a known type, such as an accelerometer, or a sensor type that Android doesn't currently define, such as a blood glucose sensor.
 
-从这些传感器中获取的数据被通过 和 Android 内置传感器相同的 [SensorManager](https://developer.android.google.cn/reference/android/hardware/SensorManager.html) APIs 传递。 你的应用可以实现一个驱动，来连接已知类型的传感器设备，例如加速度计，或者是当前 Android 未定义的设备，比如血糖传感器。
+从这些传感器中获取的数据被通过 和 Android 内置传感器相同的 [SensorManager](https://developer.android.google.cn/reference/android/hardware/SensorManager.html) APIs 传递。 你的应用可以实现一个驱动，用来连接一个新的已知类型的传感器设备，例如加速度计，或者是当前 Android 未定义的设备类型，比如血糖传感器。
 
 ## Implementing the driver
 
@@ -28,7 +28,7 @@ The framework polls your driver periodically when listeners are registered for s
 The framework may call `read()` at a time when the driver is not able to produce a sensor reading. When this occurs, your driver should throw an `IOException`.
 
 当传感器驱动不能产生数据更新时，framework 也可能会调用 `read()` 方法，当这种情况出现时，你的驱动应当抛出一个 `IOException`。
-```
+``` java
 UserSensorDriver mDriver = new UserSensorDriver() {
     // Sensor data values
     float x, y, z;
@@ -50,8 +50,8 @@ UserSensorDriver mDriver = new UserSensorDriver() {
 
 If your sensor supports low power or sleep modes, override the `setEnabled()` method of your driver implementation to activate them. The framework calls this method to indicate that sensors should be ramped up to deliver readings or put to sleep to save power:
 
-如果你的传感器支持低功耗或睡眠模式，覆写驱动实现中的 `setEnabled()` 方法来激活该功能。Framework 调用这个方法来表征这个传感器应当被唤起传递数据或是进入睡眠模式节能：
-```
+如果你的传感器支持低功耗或睡眠模式，重写驱动实现中的 `setEnabled()` 方法来激活该功能。Framework 调用这个方法来表征这个传感器应当被唤起传递数据或是进入睡眠模式节能：
+``` java
 UserSensorDriver mDriver = new UserSensorDriver() {
     ...
 
@@ -103,7 +103,7 @@ To add a new sensor driver to the Android framework:
 
 3.  在构建器中提供你的传感器的范围，分辨率，更新频率（延迟），以及能耗需求（如果可用的话）。这些值可以帮助 framework 根据 [SensorManager](https://developer.android.google.cn/reference/android/hardware/SensorManager.html) 收到的需求选择最佳的传感器。
 4.  使用 `setDriver()` 方法添加你的  `UserSensorDriver` 实现。
-```
+``` java
 UserSensor accelerometer = UserSensor.builder()
         .setName("GroveAccelerometer")
         .setVendor("Seeed")
@@ -128,7 +128,7 @@ When implementing a sensor for which Android does not have a defined type:
 2.  提供一个数值为 `TYPE_DEVICE_PRIVATE_BASE` 或更大的数字型传感器类型。
 3.  为传感器类型提供一个唯一的字符名。这个名称应当在系统范围内唯一，因此推荐使用倒置的域名记号。
 4.  提供传感器的上报模式。
-```
+``` java
 UserSensor custom = UserSensor.builder()
         .setName("MySensor")
         .setVendor("MyCompany")
@@ -149,7 +149,7 @@ UserSensor custom = UserSensor.builder()
 Connect your new sensor to the framework by registering it with the `UserDriverManager`:
 
 使用 `UserDriverManager` 将新传感器注册到 framework 中：
-```
+``` java
 public class SensorDriverService extends Service {
 
     UserSensor mAccelerometer;
@@ -183,8 +183,8 @@ With the driver properly registered, apps can receive updates from the associate
 
 The registration process can take some time before the sensor is available to clients. Apps interested in a user sensor should register a [DynamicSensorCallback](https://developer.android.google.cn/reference/android/hardware/SensorManager.DynamicSensorCallback.html) to be notified when it is available before registering a listener for sensor readings:
 
-在传感器可用之前，注册过程可能会需要一些时间。对用户传感器敏感的应用应当注册一个 [DynamicSensorCallback](https://developer.android.google.cn/reference/android/hardware/SensorManager.DynamicSensorCallback.html)，在注册传感器数据监听器之前，一旦传感器变为可用时，它将会告知应用：
-```
+在传感器可用之前，注册过程可能会需要一些时间。在注册传感器数据监听器之前，对用户传感器敏感的应用应当注册一个 [DynamicSensorCallback](https://developer.android.google.cn/reference/android/hardware/SensorManager.DynamicSensorCallback.html)，这样，当传感器可用时，它将会告知应用：
+``` java
 public class SensorActivity extends Activity implements SensorEventListener {
 
     private SensorManager mSensorManager;
@@ -231,7 +231,6 @@ public class SensorActivity extends Activity implements SensorEventListener {
         }
     }
 }
-
 ```
 
 ## Adding the required permission
