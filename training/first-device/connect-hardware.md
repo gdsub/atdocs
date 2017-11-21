@@ -12,25 +12,25 @@
 
 ## You should also read
 
-## 你需要阅读
+## 你还需要阅读
 
 *   [Hardware 101](https://developer.android.google.cn/things/hardware/hardware-101.html)
 
 Before writing any code, you need to connect peripherals from your development kit to your board.
 
-在开始写代码之前，你需要从开发者套件中将外设连接至开发板上。
+在开始写代码之前，你需要将外设从开发者套件中连接至开发板上。
 
 In this lesson, you will learn to wire a pushbutton switch and LED from a breadboard to your device. To connect the peripherals to your board:
 
-在这节课中，你将学会怎样将一个按键开关和LED从线路板上连接到设备上。为了将外设连接到你的开发板上，你需要做如下一些事情：
+在这节课中，你将学会怎样将一个按键开关和 LED 从线路板上连接到设备上。为了将外设连接到你的开发板上，你需要做如下一些事情：
 
 1.  Connect one side of the button to the chosen GPIO input pin, and the other side to ground.
 
-1. 将按键的一端连接到选择好的 GPIO 输入引脚上，另一端接地。
+1. 将按键的一端连接到选择好的 GPIO 输入引脚上，另一端接 GND 。
 
 2.  Connect the same GPIO input pin to +3.3V through a pull-up resistor.
 
-2. 用一个上拉电阻将这个 GPIO 引脚连接到 +3.3v 的电源上。
+2. 用一个上拉电阻将这个 GPIO 引脚连接到 +3.3v 的 VCC 上。
 
 3.  Connect the chosen GPIO output pin to one side of a series resistor.
 
@@ -42,7 +42,7 @@ In this lesson, you will learn to wire a pushbutton switch and LED from a breadb
 
 5.  Connect the cathode side (shorter lead) of the LED to ground.
 
-5. 将 LED 的阴极（较短）的一侧接地。
+5. 将 LED 的阴极（较短的一侧）的一侧接 GND。
 
 See [Hardware 101](https://developer.android.google.cn/things/hardware/hardware-101.html) for more detail on connecting input and output components.
 
@@ -50,7 +50,7 @@ See [Hardware 101](https://developer.android.google.cn/things/hardware/hardware-
 
 For this lesson, the following GPIO pins are assumed on each board:
 
-在这节课中，我们假定每个开发板上都会存在着 GPIO 引脚：
+在这节课中，我们假定每个开发板上都存在 GPIO 引脚：
 
 [Intel Edison Arduino](https://developer.android.google.cn/things/hardware/edison-arduino-io.html)
 
