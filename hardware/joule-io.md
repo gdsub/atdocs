@@ -2,7 +2,7 @@
 
 This section describes the [Peripheral I/O](https://developer.android.google.cn/things/sdk/pio/index.html) interfaces available to your apps running on the [Intel® Joule™ 570x Developer Kit](http://www.intel.com/buy/us/en/product/emergingtechnologies/intel-joule-570x-developer-kit-541737).
 
-本节介绍了适用于 [Intel® Joule™ 570x Developer Kit](http://www.intel.com/buy/us/en/product/emergingtechnologies/intel-joule-570x-developer-kit-541737) 的应用程序 [Peripheral I/O](https://developer.android.google.cn/things/sdk/pio/index.html) 接口。
+本节介绍了适用于运行在 [Intel® Joule™ 570x Developer Kit](http://www.intel.com/buy/us/en/product/emergingtechnologies/intel-joule-570x-developer-kit-541737) 的 [Peripheral I/O](https://developer.android.google.cn/things/sdk/pio/index.html) 应用程序接口。
 
 The following pinout diagram illustrates the locations of the available ports exposed by the breakout connectors of this board:
 
