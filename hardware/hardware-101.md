@@ -38,7 +38,7 @@
 
 This page provides an overview of the basic electronics concepts you should be familiar with to safely connect peripherals to devices and begin writing apps that bring them to life.
 
-本页面综述了需要熟悉的基本电子概念，以便安全地连接外设设备并开始写实际的应用程序。
+本页面综述了所需要熟悉的基本电子概念，以便安全地连接外设设备并开始写实际的应用程序。
 
 You should have a basic understanding of the relationships between voltage, current, resistance, and power before moving on, so you might find [DC Circuit Theory](http://www.electronics-tutorials.ws/dccircuits/dcp_1.html) and [Ohms Law and Power](http://www.electronics-tutorials.ws/dccircuits/dcp_2.html) helpful if you need more detail on these topics first.
 
