@@ -290,7 +290,7 @@ If you want to clear all of the saved networks on the board:
 
 The serial console is a helpful tool for debugging your board and reviewing system log information. The console is the default output location for kernel log messages (i.e. `dmesg`), and it also provides access to a full shell prompt that you can use to access commands such as [logcat](https://developer.android.google.cn/tools/help/logcat.html). This is helpful if you are unable to access ADB on your board through other means and have not yet enabled a network connection.
 
-串口终端是调试开发板和查看系统日志信息的有用工具。 该终端是内核日志输出的默认终端 (比如 `dmesg`)，并且还提供对完整shell命令行，您可以在其中使用 [logcat](https://developer.android.google.cn/tools/help/logcat.html) 工具命令. 如果您无法通过其他方式访问开发板上的ADB并且没有开启网络连接，这将会很有帮助。
+串口终端是调试开发板和查看系统日志信息的有用工具。该终端是内核日志输出的默认终端 (比如 `dmesg`)，并且还提供对完整 shell 命令行的访问，您可以使用该命令行访问诸如 [logcat](https://developer.android.google.cn/tools/help/logcat.html) 这样的命令。 如果您无法通过其他方式访问开发板上的 ADB 且没有网络连接，这将为您提供帮助。
 
 To access the serial console, connect a micro USB cable to the board as follows:
 
