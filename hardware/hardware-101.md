@@ -80,6 +80,8 @@ Embedded devices contain active circuitry, which means they need an external pow
 
 <dt>V<sub>CC</sub> or V<sub>DD</sub></dt>
 
+<dt>V<sub>CC</sub> 或者 V<sub>DD</sub></dt>
+
 <dd>Internal regulated voltage powering the components on the board. Common power supply voltages are +5V, +3.3V, and +1.8V.</dd>
 
 <dd>内部稳压给板子上的元件供电。 通常的供电电压有 +5V, +3.3V, and +1.8V.</dd>
