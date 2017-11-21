@@ -19,7 +19,7 @@
 
 The power of Android Things is realized when developers begin connecting hardware peripherals directly to apps.
 
-当Android开发者开始将硬件外设直接连接到应用程序时，Android Things的功能就实现了。
+当 Android 开发者开始将硬件外设直接连接到应用程序时，Android Things 的功能就实现了。
 
 In this lesson, you will learn how to use the basic Peripheral I/O APIs to discover and communicate with General Purpose Input Ouput (GPIO) ports.
 
@@ -153,7 +153,7 @@ To execute a blinking pattern on an LED connected to GPIO:
 
 1.  Use `PeripheralManagerService` to open a connection with the GPIO port wired to the LED.
 
-1. 利用 `PeripheralManagerService` 开启 GPIO 端口与 LED 的连接
+1. 利用 `PeripheralManagerService` 开启 GPIO 端口与 LED 的连接。
 
 2.  Configure the port with `DIRECTION_OUT_INITIALLY_LOW`.
 
@@ -165,7 +165,7 @@ To execute a blinking pattern on an LED connected to GPIO:
 
 4.  Use a `Handler` to schedule an event to toggle the GPIO again after a short delay.
 
-4. 利用一个 `Handler` 来设定一个在短暂的延迟之后再次切换GPIO的事件。
+4. 利用一个 `Handler` 来设定一个在短暂的延迟之后再次切换 GPIO 状态的事件。
 
 5.  When the application no longer needs the GPIO connection, close the `Gpio` resource.
 
