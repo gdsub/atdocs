@@ -28,11 +28,11 @@ Gather the following information:
 请准备好以下内容：
 
 *   **Google account**—A Google account to associate with the product
-*   **Google 账号** — 准备一个 Google 账号用于和产品取得关联
+*   **Google 账号** — 准备一个 Google 账号用于关联产品
 *   **Product name**—The internal name you want to use to refer to your product. We recommend that this name be different from the final marketing name. Developers can see this name in the console, but consumers don't see it. Maximum characters: 70
-*   **产品名** — 一个您希望内部来使用的产品名。我们推荐将产品名和最终发售时的名字区分开来。产品名在管理中心中对开发者可见，但对用户不可见。字数上限：70 个字符
+*   **产品名称** — 一个您希望内部使用的产品名称。我们推荐将内部产品名称和最终发售时的产品名称区分开来。产品名称在管理中心中对开发者可见，但对用户不可见。字数上限：70 个字符
 *   **System on Module (SOM) type**—[Hardware platform](https://developer.android.google.cn/things/hardware/developer-kits.html) on which you are building your Android Things product
-*   **系统模块 (SOM) 类型** — 选择在哪一个[硬件平台](https://developer.android.google.cn/things/hardware/developer-kits.html)之上开发 Android Things 产品
+*   **模块化系统 (SOM) 类型** — 选择在哪一个[硬件平台](https://developer.android.google.cn/things/hardware/developer-kits.html)之上开发 Android Things 产品
 *   **Product description**—A brief paragraph that provides more detail to identify the product and its function. Maximum characters: 100
 *   **产品描述** — 一小段对产品和其功能的描述。字数上限：100 个字符
 
@@ -84,7 +84,7 @@ To create your product:
 
 1. 打开 [Android Things 管理中心](https://partner.android.com/things/console)。
 
-2. 如果显示**欢迎**页面，请先登录，同意服务条款，然后点击 **Continue** 按钮。
+2. 如果显示**欢迎**页面，请先登录，并同意服务条款，然后点击 **Continue** 按钮。
 
     请选择希望与您 Android Things 产品相关联的 Google 账号进行登录。
 
@@ -94,13 +94,13 @@ To create your product:
 
     会弹出 **Create new product** 对话框。
 
-4. 输入产品名。
+4. 输入产品名称。
 
-    这是一个内部产品代号，对用户不可见。相互协作的开发者们可以在正式产品名确定之前使用该名字。项目创建之后，您仍可以在任何时间修改产品名。
+    这是一个内部产品代号，对用户不可见。相互协作的开发者们可以在正式产品名称确定之前使用该名称。项目创建之后，您仍可以在任何时间修改产品名称。
 
 5. 从 **SOM type** 列表中选择硬件平台。
 
-6. （可跳过）选中对话框以包含 Google Play 服务。
+6. （可选项）选中对话框以包含 Google Play 服务。
 
     Google Play 服务是一套由 Google 提供的服务和 API，各种 Android 应用都依赖于它，但 Google Play 服务并不在 Android 开放源代码平台之中。
 
@@ -108,7 +108,7 @@ To create your product:
 
     <aside class="note">**注意：** <span>在您的产品创建完成之后，您不可以再修改 SOM 类型、是否包含 Google Play 服务，以及 OEM 分区大小。</span></aside>
 
-8. （可跳过）输入您的产品描述
+8. （可选项）输入您的产品描述
 
     如果需要，您可以之后再做更改。
 
@@ -126,7 +126,7 @@ If you delete a product, the product information is deleted. Deletions cannot be
 
 After deletion, devices flashed from that product will no longer receive [updates](https://developer.android.google.cn/things/console/update.html).
 
-执行了删除操作之后，刷入该产品的设备不会再收到[更新提醒](https://developer.android.google.cn/things/console/update.html)。
+执行了删除操作之后，写入该产品的设备不会再收到[更新提醒](https://developer.android.google.cn/things/console/update.html)。
 
 To delete a product:
 
@@ -145,8 +145,8 @@ To delete a product:
 1. 打开 [Android Things 管理中心](https://partner.android.com/things/console)。
 2. 在产品列表中找到要删除的产品项。以下两种操作任选其一：
 
-    *   将鼠标移动到产品名上。点击出现的垃圾桶图标。
-    *   点击产品名进入详情。点击屏幕上部出现的垃圾桶图标。
+    *   将鼠标移动到产品名称上。点击出现的垃圾桶图标。
+    *   点击产品名称进入详情。点击屏幕上部出现的垃圾桶图标。
 3. 在**产品删除**对话框中，点击 **Delete**。
 
 ## What's next

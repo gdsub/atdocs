@@ -1,6 +1,6 @@
 # Update Builds for an Android Things Product
 
-## Android Things 产品映像的升级
+## Android Things 产品镜像的升级
 
 ## In this document
 
@@ -53,7 +53,7 @@ To push a build for your product:
 
 2. 请点击 **START A NEW UPDATE**。
 
-3. 在 **Bundles** 表格中，选中一个已有的捆绑包或者点击 **UPLOAD** 上传一个[新的捆绑包](https://developer.android.google.cn/things/console/app_bundle.html)。请注意，空的捆绑包不支持无线更新。
+3. 在 **Bundles** 表格中，选中一个已有的 Bundle 或者点击 **UPLOAD** 上传一个[新的 Bundle](https://developer.android.google.cn/things/console/app_bundle.html)。请注意，空 Bundle 不支持无线更新。
 
    ![Update a
    build](https://developer.android.google.cn/things/images/console/update_push.png)
@@ -99,7 +99,7 @@ The following sequence describes the update process:
 
 4. `update_engine` 发出信号，表示设备可以重新启动。
 
-5. 设备重新启动，进入新版本的映像。
+5. 设备重新启动，进入新版本的镜像。
 
    <aside class="note">**注意：** <span>现阶段，您需要手动重新启动设备，执行 `adb shell` 命令，紧接着执行 `reboot` 命令。</span></aside>
 

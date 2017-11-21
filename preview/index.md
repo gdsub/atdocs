@@ -118,5 +118,4 @@ Now that you have your environment set up, see the [Building Your First Device](
 
 For assistance building more complex applications with Android Things, review additional examples in the [Samples](https://developer.android.google.cn/things/sdk/samples.html) section.
 
-为了帮助您能够开发出更庞大的 Android Things 应用，可在[示例](https://developer.android.google.cn/things/sdk/samples.html)部分中查阅更多的示例。
-
+为了帮助您能够开发出更强大的 Android Things 应用，可在[示例](https://developer.android.google.cn/things/sdk/samples.html)部分中查阅更多的示例。

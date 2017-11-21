@@ -32,4 +32,4 @@ To configure your product:
 
 The next step is to [build the device image](https://developer.android.google.cn/things/console/build.html).
 
-下一步是[配置设备映像](https://developer.android.google.cn/things/console/build.html)。
+下一步是[生成设备镜像文件](https://developer.android.google.cn/things/console/build.html)。

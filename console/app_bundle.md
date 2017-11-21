@@ -1,14 +1,14 @@
 # Create a Bundle
 
-## 创建一个捆绑包
+## 创建一个 Bundle
 
 Bundles are saved to the OEM partition on the device.
 
-捆绑包保存在设备的 OEM 分区中。
+Bundle 保存在设备的 OEM 分区中。
 
 A bundle is a zip file that contains the following:
 
-捆绑包是一个 zip 文件，里面包括：
+Bundle 是一个 zip 文件，里面包括：
 
 *   `bootanimation.zip`—[Boot animation](https://source.android.google.cn/devices/tech/ota/device_code#boot-animation) located in the root directory
 *   `<var><user-space driver></var>.apk`—User-space driver as a service (`action=BOOT_COMPLETED`)
