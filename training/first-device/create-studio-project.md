@@ -25,7 +25,7 @@
 
 Things apps use the same structure as those designed for phones and tablets. This similarity means you can modify your existing apps to also run on embedded things or create new apps based on what you already know about building apps for Android.
 
-Android Things 应用的结构和其余为手机或平板所设计的应用的结构一样。它们之间的相似性意味着你可以将一个你曾经写过的应用移植在嵌入式 Android Things 设备上，或者是可以基于你对 Android 应用开发的认知来创建一个全新的 Android Things 应用。
+Android Things 应用的结构和为手机或平板所设计的应用的结构一样。它们之间的相似性意味着你可以把你现存的应用修改并移植在嵌入式 Android Things 设备上，或者是可以基于你对 Android 应用开发的认知来创建一个全新的 Android Things 应用。
 
 This lesson describes how to prepare your development environment for Android Things, and the required changes to enable app to run on embedded things.
 
@@ -78,7 +78,7 @@ The new project wizard automatically adds two necessary items to your Android St
 
 Android Things devices expose APIs through support libraries that are not part of the Android SDK. The new project wizard automatically adds a dependency to the support library to your app-level `build.gradle` file:
 
-Android Things 通过利用不属于 Android SDK 一部分的支持库来暴露 API 接口。新建项目引导将自动在应用层的 `build.gradle` 添加支持库的依赖关系。
+Android Things 利用不属于 Android SDK 一部分的支持库来暴露 API 接口。新建项目引导将自动在应用层的 `build.gradle` 添加支持库的依赖关系。
 
 ```
 dependencies {
@@ -96,7 +96,7 @@ The wizard adds `<uses-library>` to your app's manifest file to make this prebui
 
 An application intending to run on an embedded device must declare an activity in its manifest as the main entry point after the device boots. Note that the wizard applies an intent filter containing the following attributes:
 
-一个为嵌入式设备所构建的应用，需要在其 `mainfest` 文件中指定一个主页面作为设备启动后的入口。请注意，向导通过包含下面这些属性来申请一个 `intent filter` ：(请校对者帮忙参考)
+一个为嵌入式设备所构建的应用，需要在其 `mainfest` 文件中指定一个主页面作为设备启动后的入口。请注意，向导通过包含下面这些属性去申请一个 `intent filter` ：(请校对者帮忙参考)
 
 *   **Action**: [ACTION_MAIN](https://developer.android.google.cn/reference/android/content/Intent.html#ACTION_MAIN)
 *   **Category**: [CATEGORY_DEFAULT](https://developer.android.google.cn/reference/android/content/Intent.html#CATEGORY_DEFAULT)
@@ -104,7 +104,7 @@ An application intending to run on an embedded device must declare an activity i
 
 For ease of development, this same activity includes a [CATEGORY_LAUNCHER](https://developer.android.google.cn/reference/android/content/Intent.html#CATEGORY_LAUNCHER) intent filter so Android Studio can launch it as the default activity when deploying or debugging.
 
-为了便于开发, 这些相同的页面都包含这个 [CATEGORY_LAUNCHER](https://developer.android.google.cn/reference/android/content/Intent.html#CATEGORY_LAUNCHER) `intent filter` ， 所以在部署或者调试时，Android Studio 可以加载这个页面作为默认页面。
+为了便于开发, 相同的页面包括了这个 [CATEGORY_LAUNCHER](https://developer.android.google.cn/reference/android/content/Intent.html#CATEGORY_LAUNCHER) `intent filter` ， 所以在部署或者调试时，Android Studio 可以加载这个页面作为默认页面。
 
 ~~~xml
 
