@@ -124,7 +124,7 @@ An `IOException` error is thrown if you try to open an active pin (from above) u
 
 The Raspberry Pi uses a shared clock signal for the PWM drivers and the audio subsystem (I2S and analog). Analog audio is transmitted through the 3.5mm audio jack. The following modes are supported:
 
-Raspberry Pi 上的 PWM 驱动和音频系统 (I2S 和 analog)使用一个共享的时钟信号。Analog 音频信号通过3.5毫米的音频接口输出。以下是所有支持的音频模式：
+Raspberry Pi 上的 PWM 驱动和音频系统 (I2S 和模拟)使用一个共享的时钟信号。模拟音频信号通过3.5毫米的音频接口输出。以下是所有支持的音频模式：
 
 <table>
 
@@ -142,7 +142,7 @@ Raspberry Pi 上的 PWM 驱动和音频系统 (I2S 和 analog)使用一个共享
 
 <th>Analog Audio
 
-Analog 音频</th>
+模拟音频</th>
 
 <th>Pin Functions
 
