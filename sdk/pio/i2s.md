@@ -8,7 +8,7 @@ The [Inter-IC Sound](https://en.wikipedia.org/wiki/I%C2%B2S) (IIS or I<sup>2</su
 
 I<sup>2</sup>S is a **_synchronous_** serial interface, which means it relies on shared clock signals to synchronize data transfer between devices. An I<sup>2</sup>S master device drives communication and timing through the primary **bit clock (BCLK)** signal, similar to [I2C](https://developer.android.google.cn/things/sdk/pio/i2c.html) or [SPI](https://developer.android.google.cn/things/sdk/pio/spi.html). I<sup>2</sup>S also includes a separate **left-right clock (LRCLK)** signal, which the master uses to select the proper audio channel for data (left or right).
 
-I<sup>2</sup>S 是 **_synchronous_同步** 串行接口，意味着它要通过共享的时钟信号在设备之间同步数据。与 [I2C](https://developer.android.google.cn/things/sdk/pio/i2c.html) 或者是 [SPI](https://developer.android.google.cn/things/sdk/pio/spi.html) 类似， I<sup>2</sup>S 主设备驱动通过 **bit clock (BCLK) 位时钟** 信号校准时钟。 I<sup>2</sup>S 也包括了一个独立的 **left-right clock (LRCLK) 左右时钟** 信号，控制器用这个时钟来选择数据声道(左声道或者右声道)。
+I<sup>2</sup>S 是 **_同步_** 串行接口，意味着它要通过共享的时钟信号在设备之间同步传输数据。与 [I2C](https://developer.android.google.cn/things/sdk/pio/i2c.html) 或者是 [SPI](https://developer.android.google.cn/things/sdk/pio/spi.html) 类似， I<sup>2</sup>S 主设备驱动通过 **bit clock (BCLK) 位时钟** 信号校准时钟。 I<sup>2</sup>S 也包括了一个独立的 **left-right clock (LRCLK) 左右时钟** 信号，控制器用这个时钟来选择数据声道(左声道或者右声道)。
 
 ![""](https://developer.android.google.cn/things/images/i2s-connections.png)
 
@@ -19,7 +19,7 @@ I<sup>2</sup>S 是 **_synchronous_同步** 串行接口，意味着它要通过�
 
 I<sup>2</sup>S devices contain at least one **Serial Data (SD)** signal. This is common with peripherals, which generally only produce or consume audio data. Master devices are more likely to have dedicated lines for receive (**SDIN**) and transmit (**SDOUT**) to support **_full-duplex_** communication. This allows you to connect to multiple peripherals to send and receive audio data simultaneously.
 
- I<sup>2</sup>S 设备至少包括 **Serial Data (SD)串行数据** 信号。这是一个通用的外设信号，一般用来输入或者是输出音频数据。主设备一般可以选择 接收 (**SDIN**) 或者是发送 (**SDOUT**) 通道来支持 **全双工** 通信。 这种通信方式可以让你连接多个外设，并且同时接收或者发送数据。
+ I<sup>2</sup>S 设备至少包括一个 **Serial Data (SD)串行数据** 信号。这是一个通用的外设信号，一般用来输入或者是输出音频数据。主设备一般可以选择 接收 (**SDIN**) 或者是发送 (**SDOUT**) 通道来支持 **全双工** 通信。 这种通信方式可以让你连接多个外设，并且同时接收或者发送数据。
 
 <aside class="note">**Note:** <span>Multiple peripherals sharing the same **BCLK** and **LRCLK** lines must use the same audio encoding and sample rate parameters.</span></aside>
 
@@ -33,7 +33,7 @@ I<sup>2</sup>S devices contain at least one **Serial Data (SD)** signal. This is
 
 In order to open a connection to a particular I<sup>2</sup>S device, you need to know the unique name of the bus. During the initial stages of development, or when porting an app to new hardware, it's helpful to discover all the available device names from `PeripheralManagerService` using `getI2sDeviceList()`:
 
-如果要打开一个特定的 I<sup>2</sup>S 设备， 就需要总线上唯一的名称。在开发的最初阶段，或者是把一个新的硬件导入到应用中。最有效的办法是使用 `PeripheralManagerService` 下的 `getI2sDeviceList()` 方法来发现所有的设备
+如果要打开一个特定的 I<sup>2</sup>S 设备， 就需要知道总线的唯一名称。在开发的最初阶段，或者当移植一款应用到新的硬件的时候。最有效的办法是使用 `getI2sDeviceList()` 方法从 `PeripheralManagerService` 中来发现所有的设备：
 
 ~~~java
     PeripheralManagerService manager = new PeripheralManagerService();
@@ -47,7 +47,7 @@ In order to open a connection to a particular I<sup>2</sup>S device, you need to
 
 Once you know the target device name, use `PeripheralManagerService` to connect to that device and supply the audio parameters of the PCM data. You can provide these as discrete parameters, or as an [AudioFormat](https://developer.android.google.cn/reference/android/media/AudioFormat.html). When you are done communicating with the peripheral device, close the connection to free up resources. Additionally, you cannot open a new connection to the device until the existing connection is closed. To close the connection, use the device's `close()` method.
 
-当你知道的目标设备的名称，就可以用 `PeripheralManagerService` 连接设备并且设定 PCM 的数据的音频参数。 可以依据 [AudioFormat](https://developer.android.google.cn/reference/android/media/AudioFormat.html) 提供音频离散参数。 当你已经完成外设的数据传输时，记行关闭连接来释放资源。 直到正在使用的连接关闭之后，才可以打开一个新的连接。 用设备的 `close()` `方法可以关闭连接。
+一旦你知道了目标设备的名称，就可以用 `PeripheralManagerService` 连接设备并且设定 PCM 的数据的音频参数。 可以依据 [AudioFormat](https://developer.android.google.cn/reference/android/media/AudioFormat.html) 或一个 [AudioFormat](https://developer.android.google.cn/reference/android/media/AudioFormat.html) 来提供音频离散参数。 当你已经完成外设的数据传输时，记行关闭连接来释放资源。除此之外，除非现有连接已经关闭，否则请不要打开一个新的设备连接。要想关闭连接，可以使用设备中的 `close()` 方法。
 
 ~~~java
     public class HomeActivity extends Activity {    
