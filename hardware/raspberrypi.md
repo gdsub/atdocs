@@ -10,12 +10,12 @@ See [Raspberry Pi I/O](https://developer.android.google.cn/things/hardware/raspb
 
 参照 [Raspberry Pi I/O](https://developer.android.google.cn/things/hardware/raspberrypi-io.html) 获取更多此板 [外围 I/O](https://developer.android.google.cn/things/sdk/pio/index.html) 的信息
 ## Flashing the image
-## 在开发板上编译图片
+## 在开发板上烧录程序映像
 * * *
 
 Before you begin flashing, you will need the following items in addition to your Raspberry Pi:
 
-在开始之前，除了 Raspberry Pi 之外，你还需要以下设备
+在开始烧录之前，除了 Raspberry Pi 以外，你还需要以下设备
 
 *   HDMI cable
 
@@ -35,14 +35,14 @@ Before you begin flashing, you will need the following items in addition to your
 
 To flash Android Things onto your board, download the latest preview image in the [Android Things Console](https://partner.android.com/things/console) (see the [release notes](https://developer.android.google.cn/things/preview/releases.html)) and follow these steps:
 
-为了在板上显示 Android Things ，请从 [Android Things 控制台](https://partner.android.com/things/console) 下载最新的预览图片 (参见 [更新注释](https://developer.android.google.cn/things/preview/releases.html) 然后参照以下步骤：
+为了在板上烧录 Android Things ，请从 [Android Things 控制台](https://partner.android.com/things/console) 下载最新的预览版映像 (参见 [更新注释](https://developer.android.google.cn/things/preview/releases.html) 然后参照以下步骤：
 
 1.  Insert an 8 GB or larger microSD card into your development computer.
 
     在你的用于开发的电脑上插入 8 GB 或更大的 microSD 卡
 2.  Unzip the downloaded image archive on your development computer. Navigate to the unzipped image file.
 
-    解压缩你的电脑上下载的图片。找到解压缩图片的文件。
+    解压缩你的电脑上下载的映像。找到解压缩映像的文件。
 
     <aside class="note">**Note:** <span>The compressed image file expands to over 4GB. This can cause problems for the built-in tools on some platforms. If you are unable to unzip the archive, or see a message stating that it's corrupt, use [7-Zip](http://www.7-zip.org/download.html) (Windows) or [The Unarchiver](http://unarchiver.c3.cx/unarchiver) (Mac OS) instead.</span></aside>
     
@@ -50,14 +50,14 @@ To flash Android Things onto your board, download the latest preview image in th
 
 3.  Follow the official Raspberry Pi instructions for writing the image to the SD card:
 
-    按照以下官方 Raspberry Pi 指南将图片写入 SD 卡：
+    按照以下官方 Raspberry Pi 指南将映像写入 SD 卡：
 
     *   [Linux](https://www.raspberrypi.org/documentation/installation/installing-images/linux.md)
     *   [Mac](https://www.raspberrypi.org/documentation/installation/installing-images/mac.md)
     *   [Windows](https://www.raspberrypi.org/documentation/installation/installing-images/windows.md)
 4.  Insert the flashed microSD card into your board.
 
-    将闪存 microSD 卡插入到你的开发板中 
+    将烧录好的 microSD 卡插入到你的开发板中 
 5.  Make the following connections to your board:
 
     按照以下指南连接开发板上的接口
@@ -97,7 +97,7 @@ To flash Android Things onto your board, download the latest preview image in th
         $ adb connect <ip-address>connected to <ip-address>:5555
 
     <aside class="note">**Note:** <span>Raspberry Pi broadcasts the hostname `Android.local` over Multicast DNS. If your host platform supports MDNS, you can also connect to the board using the following command:
-						**注意** Raspberry Pi 会覆盖 Multicast DNS 传输主机名称 `Android.local` 。如果你的寄存平台支持 MDNS，你也可以通过以下操作连接开发板：
+						**注意** Raspberry Pi 会覆盖组播 DNS 传输主机名称 `Android.local` 。如果你的寄存平台支持 MDNS，你也可以通过以下操作连接开发板：
     
         $ adb connect Android.local</span></aside>
 
@@ -109,7 +109,7 @@ To flash Android Things onto your board, download the latest preview image in th
 
 After flashing your board, it is strongly recommended to connect it to the internet. This allows your device to deliver crash reports and receive updates.
 
-在编译完你的开发板之后，强烈推荐将它连上网。这可以让你的设备发送崩溃报告和获取更新。
+在烧录完你的开发板之后，强烈推荐将它连上网。这可以让你的设备发送崩溃报告和获取更新。
 
 <aside class="note">**Note:** <span>The device doesn't need to be on the same network as your computer.</span>
 					**注意**你的设备不必和你的电脑使用相同的网络。</aside>
@@ -130,7 +130,7 @@ Once you can access a shell prompt, follow these steps:
 访问 Shell prompt 后，参照以下步骤：
 1.  Send an intent to the Wi-Fi service that includes the SSID of your local network. Your [board](https://developer.android.google.cn/things/hardware/developer-kits.html) must support the network protocol and frequency band of the wireless network in order to establish a connection.
 
-    向 Wi-Fi 服务发送带有你的本地网络 SSID 的请求。你的 [开发板](https://developer.android.google.cn/things/hardware/developer-kits.html) 必须支持无线网络协定和无线网络频率以建立连接。
+    向 Wi-Fi 服务发送带有你的本地网络 SSID 的请求。你的 [开发板](https://developer.android.google.cn/things/hardware/developer-kits.html) 必须支持无线网络协议和无线网络频段以建立连接。
 
         $ am startservice \    -n com.google.wifisetup/.WifiSetupService \    -a WifiSetupService.Connect
 
@@ -170,7 +170,7 @@ Once you can access a shell prompt, follow these steps:
 
     <td>Optional argument to use the passcode specified by <var>network_pass</var> to connect to the network SSID. This argument is not necessary if your network doesn't require a passcode.
 	
-	可选操作，通过 <var>network_pass</var> 指定的密码来连接网络 SSID 。不必要操作如果你的网络不需要密码。</td>
+	可选参数，通过 <var>network_pass</var> 指定的密码来连接网络 SSID 。如果你的网络不需要密码，无需添加此参数。</td>
 
     </tr>
 
@@ -180,7 +180,7 @@ Once you can access a shell prompt, follow these steps:
 
     <td>Optional argument used in place of `passphrase` for passcodes with special characters (`space, !, ", $, &, ', (, ), ;, <, >, `, or |`). Use [base64 encoding](https://www.base64encode.org/) to specify the value for <var>encoded_pass</var>.
 	
-	可选操作，设置密码 `passphrase` 可用特殊字符 (`space, !, ", $, &, ', (, ), ;, <, >, `, or |`)。使用 [base64 encoding](https://www.base64encode.org/) 来指定 <var>encoded_pass</var> 的值</td>
+	可选参数，设置密码 `passphrase` 可用特殊字符 (`space, !, ", $, &, ', (, ), ;, <, >, `, or |`)。使用 [base64 encoding](https://www.base64encode.org/) 来指定 <var>encoded_pass</var> 的值</td>
 
     </tr>
 
@@ -190,7 +190,7 @@ Once you can access a shell prompt, follow these steps:
 
     <td>Optional argument to indicate that the SSID specified in this command is hidden. If omitted, this value defaults to false.
 	
-	可选操作，用来表明此命令中的 SSID 不可见。如果省略，此值会被默认为 false</td>
+	可选参数，用来表明此命令中的 SSID 不可见。如果省略，此值会被默认为 false</td>
 
     </tr>
 
@@ -221,7 +221,7 @@ Once you can access a shell prompt, follow these steps:
 
 If you want to clear all of the saved networks on the board:
 
-如果你要清空开发板上所有已存的网络：
+如果你要清空开发板上所有已存的网络，使用以下命令：
 
     $ am startservice \    -n com.google.wifisetup/.WifiSetupService \    -a WifiSetupService.Reset
 
