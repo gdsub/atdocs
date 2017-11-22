@@ -58,9 +58,11 @@ To flash Android Things onto your board, download the latest preview image in th
 4.  Insert the flashed microSD card into your board.
 
     将烧录好的 microSD 卡插入到你的开发板中 
+    
 5.  Make the following connections to your board:
 
     按照以下指南连接开发板上的接口
+
 
     ![""](https://developer.android.google.cn/things/images/raspberrypi-connections.png)
 
@@ -134,69 +136,67 @@ Once you can access a shell prompt, follow these steps:
 
         $ am startservice \    -n com.google.wifisetup/.WifiSetupService \    -a WifiSetupService.Connect
 
-    The following arguments are supported with this command:
-	
-	此命令支持以下参数：
+The following arguments are supported with this command:
 
-    <table>
+此命令支持以下参数：
 
-    <tbody>
 
-    <tr>
+<table>
 
-    <th style="width: 240px;">Argument
-	
-	参数</th>
+<tbody>
 
-    <th>Description
-	
-	具体细节</th>
+<tr>
 
-    </tr>
+<th style="width: 240px;">Argument
 
-    <tr>
+参数</th>
 
-    <td>`-e ssid <var>network_ssid</var>`</td>
+<th>Description
 
-    <td>Connect to the wireless network SSID specified by <var>network_ssid</var>. _This argument is required_.
-	
+具体细节</th>
+
+</tr>
+
+<tr>
+
+<td>`-e ssid <var>network_ssid</var>`</td>
+
+<td>Connect to the wireless network SSID specified by <var>network_ssid</var>. _This argument is required_.
 	连接到由 <var>network_ssid</var> 指定的无线网络 SSID 。此参数为必须参数</td>
 
-    </tr>
+</tr>
 
-    <tr>
+<tr>
 
-    <td>`-e passphrase <var>network_pass</var>`</td>
+<td>`-e passphrase <var>network_pass</var>`</td>
 
-    <td>Optional argument to use the passcode specified by <var>network_pass</var> to connect to the network SSID. This argument is not necessary if your network doesn't require a passcode.
-	
-	可选参数，通过 <var>network_pass</var> 指定的密码来连接网络 SSID 。如果你的网络不需要密码，无需添加此参数。</td>
+<td>Optional argument to use the passcode specified by <var>network_pass</var> to connect to the network SSID. This argument is not necessary if your network doesn't require a passcode.
 
-    </tr>
+可选参数，通过 <var>network_pass</var> 指定的密码来连接网络 SSID 。如果你的网络不需要密码，无需添加此参数。</td>
 
-    <tr>
+</tr>
 
-    <td>`-e passphrase64 <var>encoded_pass</var>`</td>
+<tr>
 
-    <td>Optional argument used in place of `passphrase` for passcodes with special characters (`space, !, ", $, &, ', (, ), ;, <, >, `, or |`). Use [base64 encoding](https://www.base64encode.org/) to specify the value for <var>encoded_pass</var>.
-	
-	可选参数，设置密码 `passphrase` 可用特殊字符 (`space, !, ", $, &, ', (, ), ;, <, >, `, or |`)。使用 [base64 encoding](https://www.base64encode.org/) 来指定 <var>encoded_pass</var> 的值</td>
+<td>`-e passphrase64 <var>encoded_pass</var>`</td>
 
-    </tr>
+<td>Optional argument used in place of `passphrase` for passcodes with special characters (`space, !, ", $, &, ', (, ), ;, <, >, `, or |`). Use [base64 encoding](https://www.base64encode.org/) to specify the value for <var>encoded_pass</var>. 
+可选参数，设置密码 `passphrase` 可用特殊字符 (`space, !, ", $, &, ', (, ), ;, <, >, `, or |`)。使用 [base64 encoding](https://www.base64encode.org/) 来指定 <var>encoded_pass</var> 的值</td>
 
-    <tr>
+</tr>
 
-    <td>`--ez hidden true`</td>
+<tr>
 
-    <td>Optional argument to indicate that the SSID specified in this command is hidden. If omitted, this value defaults to false.
-	
-	可选参数，用来表明此命令中的 SSID 不可见。如果省略，此值会被默认为 false</td>
+<td>`--ez hidden true`</td>
 
-    </tr>
+<td>Optional argument to indicate that the SSID specified in this command is hidden. If omitted, this value defaults to false.
+可选参数，用来表明此命令中的 SSID 不可见。如果省略，此值会被默认为 false</td>
 
-    </tbody>
+</tr>
 
-    </table>
+</tbody>
+
+</table>
 
 2.  Verify that the connection was successful through `logcat`:
 
