@@ -13,7 +13,7 @@ Follow these instructions to set up your [Raspberry Pi 3 Starter Kit](https://sh
 
 Open the box and make sure you have all of the components in the kit.
 
-打开包装盒确认你有套件中的所有配件
+打开包装盒确认所有配件齐全
 
 ![inventory](https://developer.android.google.cn/things/images/rpi-starter-kit/inventory.jpg)
 
@@ -343,7 +343,7 @@ Follow the hardware setup [instructions](https://developer.android.google.cn/thi
  
 按照硬件设置 [指南](https://developer.android.google.cn/things/hardware/raspberrypi.html)
 
- 在你的 Raspberry Pi 开发板上来点亮最新版的 Android Things
+ 在你的 Raspberry Pi 开发板上来烧录最新版的 Android Things
 
 ## Blink an LED
 ## 闪烁 LED
