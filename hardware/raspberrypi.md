@@ -2,7 +2,7 @@
 # Raspberry Pi 3
 Raspberry Pi 3 Model B is the latest iteration of the world's most popular single board computer. It provides a quad-core 64-bit ARM Cortex-A53 CPU running at 1.2GHz, four USB 2.0 ports, wired and wireless networking, HDMI and composite video output, and a 40-pin GPIO connector for physical interfacing projects.
 
-Raspberry Pi 3 B 型是这个全世界最受欢迎单片计算机系列的最新型号。它有一个四核64位 ARM Cortex-A53 1.2GHz 处理器、四个 USB 2.0 接口、支持有线和无线网络、HDMI口和复合端子输出、以及用来连接外界交互设备的一个40针的 GPIO 接口 
+Raspberry Pi 3B 型是这个全世界最受欢迎单片计算机系列的最新型号。它有一个四核64位 ARM Cortex-A53 1.2GHz 处理器、四个 USB 2.0 接口、支持有线和无线网络、HDMI口和复合端子输出、以及用来连接外界交互设备的一个40针的 GPIO 接口 
 
 ![""](https://developer.android.google.cn/things/images/raspberry-pi-3-board.png)
 
