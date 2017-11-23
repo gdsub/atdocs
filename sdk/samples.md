@@ -43,33 +43,33 @@ peripherals. You can get started with the following samples:</p>
     Smart doorbell that captures a camera image, analyzes it, and sends it to a
     companion app using the Google Cloud Platform and Firebase.</li>
 <li><a href="https://github.com/androidthings/doorbell"><strong>门铃</strong></a> -
-    智能门铃捕获摄像头图像，分析它，并且将其发送到使用 Google Cloud 平台和 Firebase 的配套应用程序。</li>
+    智能门铃捕获摄像头图像并分析它，将分析结果发送到使用 Google Cloud 平台和 Firebase 的配套应用程序。</li>
 
 <li><a href="https://github.com/androidthings/weatherstation"><strong>Weather Station</strong></a> -
     Integration of multiple peripheral sensors to analyze and display current
     weather information. Data can optionally push to the Google Cloud Platform
     for further analysis.</li>
 <li><a href="https://github.com/androidthings/weatherstation"><strong>气象站</strong></a> -
-    集成多个外围传感设备分析和显示当前的天气信息。数据可以随意地推送到 Google Cloud 平台进行更进一步分析。 </li>
+    集成多个外围传感设备分析并显示当前的天气信息。数据可以随意地推送到 Google Cloud 平台进行更进一步分析。 </li>
 
 <li><a href="https://github.com/androidthings/sample-tensorflow-imageclassifier"><strong>TensorFlow</strong></a> -
     Demonstrates accessing the camera, performing object recognition and image
     classification using machine learning, and speaking out the results using
     text-to-speech (TTS).</li>
-<li><a href="https://github.com/androidthings/sample-tensorflow-imageclassifier"><strong>张力流</strong></a> -
+<li><a href="https://github.com/androidthings/sample-tensorflow-imageclassifier"><strong>TensorFlow</strong></a> -
     展示通过摄像头，使用机器学习进行对象识别和图像分类，并且使用文本到语音（TTS）说出结果。</li>
 
 <li><a href="https://github.com/androidthings/sample-bluetooth-audio"><strong>Bluetooth Audio</strong></a> -
     Enables a Bluetooth device to connect to a peer device and play audio
     on it (and vice-versa).</li>
 <li><a href="https://github.com/androidthings/sample-bluetooth-audio"><strong>蓝牙音频</strong></a> -
-    使一个蓝牙设备连接到匹配的设备上并能够在其上面播放声音（反之亦然）。</li>
+    启动一个蓝牙设备连接到匹配的设备上并能够使其播放声音（反之亦然）。</li>
 
 <li><a href="https://github.com/androidthings/sample-bluetooth-le-gattserver"><strong>Bluetooth GATT Server</strong></a> -
     Exposes time information to client Bluetooth devices. The Android client
     receives a notification when the time is changed on the server.</li>
 <li><a href="https://github.com/androidthings/sample-bluetooth-le-gattserver"><strong>蓝牙 GATT 服务器</strong></a> -
-    向蓝牙客户端设备公开时间信息。当服务器上面的时间发生变化时 Android 客户端会接收到通知。</li>
+    与蓝牙客户端设备共享时间信息。当服务器上面的时间发生变化时 Android 客户端会接收到通知。</li>
 
 <li><a href="https://github.com/androidthings/sample-usbenum"><strong>USB Enumerator</strong></a> -
     Iterates over all the USB devices discovered by the host and prints their
@@ -95,13 +95,13 @@ peripherals. You can get started with the following samples:</p>
     the spoken request from a connected microphone and plays back the Assistant's
     spoken response on a connected speaker.</li>
 <li><a href="https://github.com/androidthings/sample-googleassistant"><strong>Google 助手接口</strong></a> -
-    展示如何从设备调用 Google 助手 gRPC 接口。记录口头向一个来自被连接的麦克风的发起请求并且在一个被连接的扬声器上回放助手的口头响应。</li>
+    展示如何从设备调用 Google 助手 gRPC 接口。记录来自被连接的麦克风发起的语音请求并且在一个连接的扬声器上回应播放助理设备的语音响应。</li>
 
 <li><a href="https://github.com/androidthings/drivers-samples"><strong>Drivers</strong></a> -
     Sample peripheral drivers for Android Things. Includes drivers for an OLED
     screen, GPS, accelerometer, and more.</li>
 <li><a href="https://github.com/androidthings/drivers-samples"><strong>驱动程序</strong></a> -
-    Android Things 外围设备驱动示例。包括一个 OLED 屏幕，GPS，加速器等。</li>
+    Android Things 外围设备驱动示例。包括一个 OLED 屏幕，GPS，加速器等等。</li>
 </ul>
 <p>You can find additional code samples at the
 <a class="external-link" href="https://github.com/androidthings">Android Things page</a>
