@@ -291,7 +291,6 @@ than the version bundled with the target release.
 
 每一批发布 Android Things 的 [Google Play Services](https://developer.android.google.cn/google/play-services/index.html) 最新稳定版，要求客户端SDK版本至少是 **11.0.0** 。 Android Things 不包括 [Google Play Store](https://developer.android.google.cn/distribute/googleplay/index.html) ，其负责自动更新设备上 的Google Play Services。因为设备上的 Google Play Services 版本是静态的，所以应用程序不能标记客户端SDK版本大于目标发布的捆绑版本。
 
-
  **Note:** During developer preview, the bundled version for each release is listed in the [release notes](https://developer.android.google.cn/things/preview/releases.html).
     
  **注意:** 在开发者预览版中, 每个版本的捆绑版本都列在了 [发行说明](https://developer.android.google.cn/things/preview/releases.html) 中。 
@@ -305,7 +304,7 @@ than the version bundled with the target release.
 
 [Cloud IoT Core](http://cloud.google.com/iot-core) is a fully managed service that allows you to easily and securely connect, manage, and ingest data from millions of globally dispersed devices. Cloud IoT Core, in combination with other services on Google Cloud IoT platform, provides a complete solution for collecting, processing, analyzing, and visualizing IoT data in real time to support improved operational efficiency.
 
-[云物联网核心](http://cloud.google.com/iot-core) 是一个完整的可以让你轻松，安全地链接，管理，并从全球数以百万计的分布式设备中获取数据的托管服务。云物联网核心，与 Google 云物联网平台上的其他服务结合，提供了一个以支持提高经营效率的用于实时收集，处理，分析和可视化物联网数据的解决方案。
+[云物联网核心](http://cloud.google.com/iot-core) 是一个完整的可以让你轻松，安全地链接，管理，并从全球数以百万计的分布式设备中获取数据的托管服务。云物联网核心，与 Google 云物联网平台上的其他服务结合，提供了一个以支持提高应用效率的用于实时收集，处理，分析和可视化物联网数据的解决方案。
 
 ### Permissions
 
@@ -318,7 +317,7 @@ than the version bundled with the target release.
 <aside class="note">**Note:**<span>During development, dangerous permissions are granted at install time when using Android Studio 3.0 and later.</span></aside><br />
 <br />
 
-**注意:** 在开发过程中，当使用 Android Studio 3.0 及后续版本中危险权限在安装时授予。
+**注意:** 用 Android Studio 3.0 及后续版本开发应用时，危险权限只能在安装时授予。
 
 ### Notifications
 
@@ -326,4 +325,4 @@ than the version bundled with the target release.
 
 Since there is no system-wide status bar and window shade in Android Things, [notifications](https://developer.android.google.cn/guide/topics/ui/notifiers/notifications.html) are not supported. Avoid calling the [NotificationManager](https://developer.android.google.cn/reference/android/app/NotificationManager.html) APIs in your apps.
 
-由于在 Android Things 中没有系统的状态栏和窗口阴影，[通知](https://developer.android.google.cn/guide/topics/ui/notifiers/notifications.html) 不被支持。 在你的应用程序中不要调用 [NotificationManager](https://developer.android.google.cn/reference/android/app/NotificationManager.html) 接口。
+由于在 Android Things 中没有系统的状态栏和窗口阴影，[通知](https://developer.android.google.cn/guide/topics/ui/notifiers/notifications.html) 不被支持，在你的应用程序中不要调用 [NotificationManager](https://developer.android.google.cn/reference/android/app/NotificationManager.html) 接口。
