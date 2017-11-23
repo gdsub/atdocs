@@ -83,6 +83,8 @@ Once you have loaded the proper bootloader on your device, use the following ste
 
 1.  Download and install [Android Studio](https://developer.android.google.cn/studio/index.html) or the [`sdkmanager`](https://developer.android.google.cn/studio/command-line/sdkmanager.html) command-line tool. Update the Android SDK Platform Tools to version 25.0.3 or later from the [SDK Manager](https://developer.android.google.cn/studio/intro/update.html#sdk-manager).
 
+***
+
 1. 下载并安装 [Android Studio](https://developer.android.google.cn/studio/index.html) 或者 [`sdkmanager`](https://developer.android.google.cn/studio/command-line/sdkmanager.html) 命令行工具。 使用 [SDK Manager](https://developer.android.google.cn/studio/intro/update.html#sdk-manager) 来更新 Android SDK 平台工具到 25.0.3 或者更新的版本。
 
     *   Navigate to the Android SDK location on your computer; the path can be found in the system settings for Android Studio. Verify that the `fastboot` binary is installed in the `platform-tools/` directory.
@@ -96,9 +98,15 @@ Once you have loaded the proper bootloader on your device, use the following ste
         `export PATH=$PATH:"path/to/fastboot"`
 
 2.  Open a command line terminal and navigate to the unzipped image directory.
+
+***
+
 2.  打开终端命令行并切换到已解压的镜像目录。
 
 3.  Verify that the device has booted into Fastboot mode by executing the following command:
+
+***
+
 3.  通过执行以下命令来验证设备是否已启动到 Fastboot 模式
 
         $ fastboot devices1b2f21d4e1fe0129        fastboot
@@ -114,6 +122,9 @@ Once you have loaded the proper bootloader on your device, use the following ste
     </span></aside>
 
 4.  Execute the `flash-all.sh` script. This script installs the necessary bootloader, baseband firmware(s), and operating system. (On Windows systems, use `flash-all.bat` instead).
+
+***
+
 4.  执行 `flash-all.sh` 脚本。该脚本会安装必要的 bootloader，基带固件以及操作系统。（Windows 操作系统使用 `flash-all.bat` 替代）
 
     <aside class="note">**Note:** <span>The device automatically reboots into Android Things when the process is complete.</span></aside>
@@ -121,6 +132,9 @@ Once you have loaded the proper bootloader on your device, use the following ste
     <aside class="note">**注意：** <span>该过程完成后，设备会自动重新引导到 Android Things</span></aside>
 
 5.  To verify that Android is running on the device, discover it using the [adb tool](https://developer.android.google.cn/tools/help/adb.html):
+
+***
+
 5.  要验证 Android 已经在该设备上运行, 可以使用 [adb tool](https://developer.android.google.cn/tools/help/adb.html):
 
         $ adb wait-for-device...$ adb devicesList of devices attached1b2f21d4e1fe0129        device
@@ -152,6 +166,16 @@ Once you can access a shell prompt, follow these steps:
 连接到终端命令行以后, 接着做以下步骤:
 
 1.  Send an intent to the Wi-Fi service that includes the SSID of your local network. Your [board](https://developer.android.google.cn/things/hardware/developer-kits.html) must support the network protocol and frequency band of the wireless network in order to establish a connection.
+
+
+
+2.  Verify that the connection was successful through `logcat`:
+
+3.  Test that you can access a remote IP address:
+
+4.  Check that the date and time are set correctly on the device:
+
+***
 
 1.  发送一条包含本地无线网络 SSID 等参数的消息到Wi-Fi服务。 您的 [开发板](https://developer.android.google.cn/things/hardware/developer-kits.html) 必须支持该无线网络的协议以及频段才能够建立网络连接。
 
@@ -257,17 +281,14 @@ Once you can access a shell prompt, follow these steps:
 
     </table>
 
-2.  Verify that the connection was successful through `logcat`:
 2.  通过 `logcat` 来验证网络连接是否成功建立：
 
         $ logcat -d | grep Wifi...V WifiWatcher: Network state changed to CONNECTEDV WifiWatcher: SSID changed: ...I WifiConfigurator: Successfully connected to ...
 
-3.  Test that you can access a remote IP address:
 3.  测试是否可以访问远程IP地址:
 
         $ ping 8.8.8.8PING 8.8.8.8 (8.8.8.8) 56(84) bytes of data.64 bytes from 8.8.8.8: icmp_seq=1 ttl=57 time=6.67 ms64 bytes from 8.8.8.8: icmp_seq=2 ttl=57 time=55.5 ms64 bytes from 8.8.8.8: icmp_seq=3 ttl=57 time=23.0 ms64 bytes from 8.8.8.8: icmp_seq=4 ttl=57 time=245 ms
 
-4.  Check that the date and time are set correctly on the device:
 4.  检查设备的日期和时间是否已经正确配置:
 
         $ date

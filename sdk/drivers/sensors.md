@@ -28,7 +28,8 @@ The framework polls your driver periodically when listeners are registered for s
 The framework may call `read()` at a time when the driver is not able to produce a sensor reading. When this occurs, your driver should throw an `IOException`.
 
 当传感器驱动不能产生数据更新时，framework 也可能会调用 `read()` 方法，当这种情况出现时，你的驱动应当抛出一个 `IOException`。
-``` java
+
+~~~ java
 UserSensorDriver mDriver = new UserSensorDriver() {
     // Sensor data values
     float x, y, z;
@@ -46,12 +47,12 @@ UserSensorDriver mDriver = new UserSensorDriver() {
         }
     }
 };
-```
+~~~
 
 If your sensor supports low power or sleep modes, override the `setEnabled()` method of your driver implementation to activate them. The framework calls this method to indicate that sensors should be ramped up to deliver readings or put to sleep to save power:
 
 如果你的传感器支持低功耗或睡眠模式，重写驱动实现中的 `setEnabled()` 方法来激活该功能。Framework 调用这个方法来表征这个传感器应当被唤起传递数据或是进入睡眠模式节能：
-``` java
+~~~ java
 UserSensorDriver mDriver = new UserSensorDriver() {
     ...
 
@@ -65,7 +66,7 @@ UserSensorDriver mDriver = new UserSensorDriver() {
         }
     }
 };
-```
+~~~
 
 <aside class="note">**Note:** <span>Sensors without low power modes can still use this callback to increase or reduce the reporting frequency of the data in order to manage power consumption.</span></aside>
 
@@ -90,7 +91,14 @@ To add a new sensor driver to the Android framework:
 3.  Apply the range, resolution, update frequency (delay), and power requirements (if available) of your sensor to the builder. These values assist the framework in selecting the best sensor based on the requests received by [SensorManager](https://developer.android.google.cn/reference/android/hardware/SensorManager.html).
 4.  Attach your `UserSensorDriver` implementation with the `setDriver()` method.
 
-        UserSensor accelerometer = UserSensor.builder()        .setName("GroveAccelerometer")        .setVendor("Seeed")        .setType(Sensor.TYPE_ACCELEROMETER)        .setDriver(mDriver)        .build();
+~~~ java
+UserSensor accelerometer = UserSensor.builder()
+        .setName("GroveAccelerometer")
+        .setVendor("Seeed")
+        .setType(Sensor.TYPE_ACCELEROMETER)
+        .setDriver(mDriver)
+        .build();
+~~~
         
 * * *
 1.  使用 `UserSensor.Builder` 来声明一种传感器类型。
@@ -103,14 +111,14 @@ To add a new sensor driver to the Android framework:
 
 3.  在构建器中提供你的传感器的范围，分辨率，更新频率（延迟），以及能耗需求（如果可用的话）。这些值可以帮助 framework 根据 [SensorManager](https://developer.android.google.cn/reference/android/hardware/SensorManager.html) 收到的需求选择最佳的传感器。
 4.  使用 `setDriver()` 方法添加你的  `UserSensorDriver` 实现。
-``` java
+~~~ java
 UserSensor accelerometer = UserSensor.builder()
         .setName("GroveAccelerometer")
         .setVendor("Seeed")
         .setType(Sensor.TYPE_ACCELEROMETER)
         .setDriver(mDriver)
         .build();
-```
+~~~
 
 When implementing a sensor for which Android does not have a defined type:
 
@@ -120,15 +128,7 @@ When implementing a sensor for which Android does not have a defined type:
 2.  Provide a numeric sensor type that is `TYPE_DEVICE_PRIVATE_BASE` or larger.
 3.  Include a unique string name for the sensor type. This name should be unique system-wide, so using reverse domain notation is recommended.
 4.  Include the sensor reporting mode.
-
-        UserSensor custom = UserSensor.builder()        .setName("MySensor")        .setVendor("MyCompany")        .setCustomType(Sensor.TYPE_DEVICE_PRIVATE_BASE,                "com.example.mysensor",                Sensor.REPORTING_MODE_CONTINUOUS)        .setDriver(mDriver)        .build();
-        
-* * *
-1.  在构建器中使用 `setCustomType()` 替换`setType()`。
-2.  提供一个数值为 `TYPE_DEVICE_PRIVATE_BASE` 或更大的数字型传感器类型。
-3.  为传感器类型提供一个唯一的字符名。这个名称应当在系统范围内唯一，因此推荐使用倒置的域名记号。
-4.  提供传感器的上报模式。
-``` java
+~~~ java
 UserSensor custom = UserSensor.builder()
         .setName("MySensor")
         .setVendor("MyCompany")
@@ -138,7 +138,24 @@ UserSensor custom = UserSensor.builder()
         .setDriver(mDriver)
         .build();
 
-```
+~~~
+
+* * *
+1.  在构建器中使用 `setCustomType()` 替换`setType()`。
+2.  提供一个数值为 `TYPE_DEVICE_PRIVATE_BASE` 或更大的数字型传感器类型。
+3.  为传感器类型提供一个唯一的字符名。这个名称应当在系统范围内唯一，因此推荐使用倒置的域名记号。
+4.  提供传感器的上报模式。
+~~~ java
+UserSensor custom = UserSensor.builder()
+        .setName("MySensor")
+        .setVendor("MyCompany")
+        .setCustomType(Sensor.TYPE_DEVICE_PRIVATE_BASE,
+                "com.example.mysensor",
+                Sensor.REPORTING_MODE_CONTINUOUS)
+        .setDriver(mDriver)
+        .build();
+
+~~~
 
 ## Registering the sensor
 
@@ -149,7 +166,7 @@ UserSensor custom = UserSensor.builder()
 Connect your new sensor to the framework by registering it with the `UserDriverManager`:
 
 使用 `UserDriverManager` 将新传感器注册到 framework 中：
-``` java
+~~~ java
 public class SensorDriverService extends Service {
 
     UserSensor mAccelerometer;
@@ -175,7 +192,7 @@ public class SensorDriverService extends Service {
         manager.unregisterSensor(mAccelerometer);
     }
 }
-```
+~~~
 
 With the driver properly registered, apps can receive updates from the associated device using the existing Android [sensor framework services](https://developer.android.google.cn/guide/topics/sensors/sensors_overview.html).
 
@@ -184,7 +201,7 @@ With the driver properly registered, apps can receive updates from the associate
 The registration process can take some time before the sensor is available to clients. Apps interested in a user sensor should register a [DynamicSensorCallback](https://developer.android.google.cn/reference/android/hardware/SensorManager.DynamicSensorCallback.html) to be notified when it is available before registering a listener for sensor readings:
 
 在传感器可用之前，注册过程可能会需要一些时间。在注册传感器数据监听器之前，对用户传感器敏感的应用应当注册一个 [DynamicSensorCallback](https://developer.android.google.cn/reference/android/hardware/SensorManager.DynamicSensorCallback.html)，这样，当传感器可用时，它将会告知应用：
-``` java
+~~~ java
 public class SensorActivity extends Activity implements SensorEventListener {
 
     private SensorManager mSensorManager;
@@ -231,7 +248,7 @@ public class SensorActivity extends Activity implements SensorEventListener {
         }
     }
 }
-```
+~~~
 
 ## Adding the required permission
 

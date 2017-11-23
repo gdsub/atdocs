@@ -171,7 +171,7 @@ Add the required permission for the user driver to your app's manifest file:
 
 在你应用的清单文件中添加用户驱动所需的权限：
 
-``` java
+``` xml
 <uses-permission android:name="com.google.android.things.permission.MANAGE_AUDIO_DRIVERS" />
 ```
 

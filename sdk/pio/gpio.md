@@ -21,13 +21,52 @@ In order to open a connection to a GPIO port, you need to know the unique port n
 
 当需要对某个GPIO接口进行连接是，你需要获知对应的GPIO端口号。在开发的早期阶段，或者当你在将应用移植到某个新硬件的时候，你可以通过由`PeripheralManagerService`提供的 `getGpioList()`来发现所有可用的GPIO端口号：
 
-    PeripheralManagerService manager = new PeripheralManagerService();List<String> portList = manager.getGpioList();if (portList.isEmpty()) {    Log.i(TAG, "No GPIO port available on this device.");} else {    Log.i(TAG, "List of available ports: " + portList);}
+~~~java
+    
+PeripheralManagerService manager = new PeripheralManagerService();
+List<String> portList = manager.getGpioList();
+if (portList.isEmpty()) {    
+    Log.i(TAG, "No GPIO port available on this device.");
+    } else {    
+        Log.i(TAG, "List of available ports: " + portList);
+}
+~~~
 
 Once you know the target name, use `PeripheralManagerService` to connect to that port. When you're done communicating with the GPIO port, close the connection to free up resources. Additionally, you cannot open a new connection to the same port until the existing connection is closed. To close the connection, use the port's `close()` method.
 
 当你获得了端口名称后，可以使用`PeripheralManagerService`来连接到这个端口。在你完成对这个GPIO端口的通信后，请记得及时关闭连接以便释放相关资源。另外请注意，对同一个GPIO端口只能建立一个连接，在该连接关闭前你无法再对同一个GPIO端口发起新的连接。如需关闭连接，调用端口的`close()`方法。
 
-    public class HomeActivity extends Activity {    // GPIO Pin Name    private static final String GPIO_NAME = ...;    private Gpio mGpio;    @Override    protected void onCreate(Bundle savedInstanceState) {        super.onCreate(savedInstanceState);        // Attempt to access the GPIO        try {            PeripheralManagerService manager = new PeripheralManagerService();            mGpio = manager.openGpio(GPIO_NAME);        } catch (IOException e) {             Log.w(TAG, "Unable to access GPIO", e);        }    }    @Override    protected void onDestroy() {        super.onDestroy();        if (mGpio != null) {            try {                mGpio.close();                mGpio = null;            } catch (IOException e) {                Log.w(TAG, "Unable to close GPIO", e);            }        }    }}
+~~~java
+public class HomeActivity extends Activity {    
+    // GPIO Pin Name    
+    private static final String GPIO_NAME = ...;    
+    private Gpio mGpio;    
+    @Override    
+    protected void onCreate(Bundle savedInstanceState) {        
+        super.onCreate(savedInstanceState);        
+        // Attempt to access the GPIO        
+        try {            
+            PeripheralManagerService manager = new PeripheralManagerService();            
+            mGpio = manager.openGpio(GPIO_NAME);        
+        } catch (IOException e) {             
+            Log.w(TAG, "Unable to access GPIO", e);        
+        }    
+    }    
+    @Override    
+    protected void onDestroy() {        
+        super.onDestroy();        
+        if (mGpio != null) {            
+            try {                
+                mGpio.close();                
+                mGpio = null;            
+            } catch (IOException e) {                
+                Log.w(TAG, "Unable to close GPIO", e);            
+            }        
+        }    
+    }
+}
+
+~~~
 
 ## Reading from an input
 ## 获得输入
@@ -51,7 +90,21 @@ The following code shows you how to set up an input with an active state associa
 
 以下代码为设置GPIO端口的方向为输入并配置使能状态为高电平。
 
-    public void configureInput(Gpio gpio) throws IOException {    // Initialize the pin as an input    gpio.setDirection(Gpio.DIRECTION_IN);    // High voltage is considered active    gpio.setActiveType(Gpio.ACTIVE_HIGH);    ...    // Read the active high pin state    if (gpio.getValue()) {        // Pin is HIGH    } else {        // Pin is LOW    }}
+~~~java
+    
+public void configureInput(Gpio gpio) throws IOException {    
+    // Initialize the pin as an input    
+    gpio.setDirection(Gpio.DIRECTION_IN);    
+    // High voltage is considered active    
+    gpio.setActiveType(Gpio.ACTIVE_HIGH);    
+      // Read the active high pin state    
+    if (gpio.getValue()) {        
+        // Pin is HIGH    
+    } else {        
+    // Pin is LOW    
+    }
+}
+~~~
 
 ### Listening for input state changes
 ### 获得输入状态的变化
@@ -84,13 +137,56 @@ GPIO端口可以被配置为输入状态时可以在端口状态高低变化时�
     The following code registers an interrupt listener for all state changes on the given input port:
   如下代码为给定的用于输入的端口注册了相应的中断监听：
 
-        public void configureInput(Gpio gpio) throws IOException {    // Initialize the pin as an input    gpio.setDirection(Gpio.DIRECTION_IN);    // Low voltage is considered active    gpio.setActiveType(Gpio.ACTIVE_LOW);    // Register for all state changes    gpio.setEdgeTriggerType(Gpio.EDGE_BOTH);    gpio.registerGpioCallback(mGpioCallback);}private GpioCallback mGpioCallback = new GpioCallback() {    @Override    public boolean onGpioEdge(Gpio gpio) {        // Read the active low pin state        if (gpio.getValue()) {            // Pin is LOW        } else {            // Pin is HIGH        }        // Continue listening for more interrupts        return true;    }    @Override    public void onGpioError(Gpio gpio, int error) {        Log.w(TAG, gpio + ": Error event " + error);    }};
+~~~java
+public void configureInput(Gpio gpio) throws IOException {    
+    // Initialize the pin as an input    
+    gpio.setDirection(Gpio.DIRECTION_IN);    
+    // Low voltage is considered active    
+    gpio.setActiveType(Gpio.ACTIVE_LOW);    
+    // Register for all state changes    
+    gpio.setEdgeTriggerType(Gpio.EDGE_BOTH);    
+    gpio.registerGpioCallback(mGpioCallback);
+}
+    private GpioCallback mGpioCallback = new GpioCallback() {    
+        @Override    
+        public boolean onGpioEdge(Gpio gpio) {        
+            // Read the active low pin state        
+            if (gpio.getValue()) {            
+                // Pin is LOW        
+                } else {            
+                    // Pin is HIGH        
+                }        
+                // Continue listening for more interrupts        
+            return true;    
+        }    
+        @Override    
+        public void onGpioError(Gpio gpio, int error) {        
+            Log.w(TAG, gpio + ": Error event " + error);    
+        }
+    };
+~~~
 
 4.  Unregister any interrupt handlers when your app is no longer listening for incoming events:
 
 *4. 当你的应用不再对某一GPIO端口的状态变化进行监听时，请及时注销掉相关的中断处理函数。
 
-        public class HomeActivity extends Activity {    private Gpio mGpio;    ...    @Override    protected void onStart() {        super.onStart();        // Begin listening for interrupt events        mGpio.registerGpioCallback(mGpioCallback);    }    @Override    protected void onStop() {        super.onStop();        // Interrupt events no longer necessary        mGpio.unregisterGpioCallback(mGpioCallback);    }}
+~~~java
+public class HomeActivity extends Activity {    
+    private Gpio mGpio;    
+    @Override    
+    protected void onStart() {        
+        super.onStart();        
+        // Begin listening for interrupt events        
+        mGpio.registerGpioCallback(mGpioCallback);    
+    }    
+    @Override    
+    protected void onStop() {        
+        super.onStop();        
+        // Interrupt events no longer necessary        
+        mGpio.unregisterGpioCallback(mGpioCallback);    
+    }
+}
+~~~
 
 ## Writing to an output
 ## 提供输出
@@ -117,5 +213,13 @@ The following code shows you how to set up an output to initially be high, then 
 
 以下代码为配置GPIO端口起始状态为高，然后通过调用`setValue()`方法切换状态为低：
 
-    public void configureOutput(Gpio gpio) throws IOException {    // Initialize the pin as a high output    gpio.setDirection(Gpio.DIRECTION_OUT_INITIALLY_HIGH);    // Low voltage is considered active    gpio.setActiveType(Gpio.ACTIVE_LOW);    ...    // Toggle the value to be LOW    gpio.setValue(true);}
+~~~java
+public void configureOutput(Gpio gpio) throws IOException {    
+    // Initialize the pin as a high output    
+    gpio.setDirection(Gpio.DIRECTION_OUT_INITIALLY_HIGH);    
+    // Low voltage is considered active    
+    gpio.setActiveType(Gpio.ACTIVE_LOW);   
+     // Toggle the value to be LOW    
+     gpio.setValue(true);
+}
 

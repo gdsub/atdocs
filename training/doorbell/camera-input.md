@@ -63,9 +63,9 @@ Add the required permissions to your app's manifest file:
 
 在你应用的 manifest 文件中添加必要的权限：
 
-```html
+~~~html
     <uses-permission android:name="android.permission.CAMERA" />
-```
+~~~
 ## Set up an I/O thread
 
 ##创建一个 I/O 线程
@@ -76,7 +76,7 @@ Communicating with peripheral hardware introduces blocking operations into the f
 
 与外设硬件通信将阻塞你的应用。为了避免应用的主线程被阻塞，从而导致框架事件被延迟，新开启一个后台线程来处理输入和处理指令无疑是一个很好的方法。在这种情况下，  `HandlerThread` 将会是一个很好的选择。
 
-```java
+~~~java
 public class DoorbellActivity extends Activity {
     /**
      * A Handler for running tasks in the background.     
@@ -103,7 +103,7 @@ public class DoorbellActivity extends Activity {
         mCameraThread.quitSafely();
     }
 }
-```
+~~~
 ## Initialize the camera session
 
 ##初始化相机会话
@@ -136,7 +136,7 @@ The first step to capture a camera image is to discover the hardware and open a 
 
 5. 当不在使用相机时使用 `CameraDevice` 方法关闭相机来释放系统资源：
 
-```java
+~~~java
 public class DoorbellCamera {
 
     // Camera image parameters (device-specific)
@@ -203,7 +203,7 @@ public class DoorbellCamera {
         }
     }
 }
-```
+~~~
 
 ## Trigger an image capture
 
@@ -227,7 +227,7 @@ Once the camera device connection is active, create a `CameraCaptureSession` to 
 
 3. 当配置和激活成功后将会回调 `CameraCaptureSession.StateCallback` 中的 `onConfigured()` 方法。
 
-```java
+~~~java
 public class DoorbellCamera {
 
     ...
@@ -271,7 +271,7 @@ public class DoorbellCamera {
             }
     };
 }
-```
+~~~
 
 Your app can now use the active `CameraCaptureSession` to request image data from the camera hardware. To begin an image capture request inside the capture session:
 
@@ -300,7 +300,7 @@ Your app can now use the active `CameraCaptureSession` to request image data fro
 
 5. 当拍摄完成，关闭会话。
 
-```java
+~~~java
 public class DoorbellCamera {
 
     // Active camera device connection
@@ -341,7 +341,7 @@ public class DoorbellCamera {
             }
         };
 }
-```
+~~~
 
 ## Handle the image result
 
@@ -366,7 +366,7 @@ To obtain the image after capture completes:
 
 2. 使用 `getBuffer()`  方法将缓冲区中返回的  JPEG-encoded 图像转为 `byte[]` 格式。
 
-```java
+~~~java
 public class DoorbellActivity extends Activity {
 
     /**
@@ -424,4 +424,4 @@ public class DoorbellActivity extends Activity {
         }
     }
 }
-```
+~~~

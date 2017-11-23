@@ -88,7 +88,7 @@ Once you select a board, flash and bring up your hardware with the instructions 
 
 4.  [Deploy](https://developer.android.google.cn/studio/run/index.html) the sample project to your board and verify that you can see the activity messages with `logcat`.
 
-
+***
 
 1. [下载](https://developer.android.google.cn/studio/index.html)或更新最新版本的 Android Studio。
 2. 打开 Android Studio 并创建一个新项目。在新项目向导中，一切均可保持默认设置，但选择机型时需作如下更改：

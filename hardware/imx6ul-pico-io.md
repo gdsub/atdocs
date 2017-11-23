@@ -12,7 +12,7 @@
     
 2.  [Wandboard I/O](#wandboard-imx6-io)
 
-      [Wandboard I/O 脚定义](#wandboard-imx6-io)
+    [Wandboard I/O 脚定义](#wandboard-imx6-io)
     
 </div>
 

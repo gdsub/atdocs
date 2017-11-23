@@ -9,6 +9,7 @@
 1.  [Push a build](#push-a-build)
 2.  [View push history](#view-all-updates)
 
+***
 
 1. [推送一个构建文件](#推送一个构建文件)
 2. [查看推送历史记录](#查看推送历史记录)
@@ -38,7 +39,7 @@ To push a build for your product:
 
 4.  In the **Android Things versions** table, select an OS version.
 
-    <aside class="note">**Note:** <span>You cannot select an OS version that is earlier than one selected for a previous update (for example, trying to select OS version 0.4.1 after pushing an update containing OS version 0.5).</span></aside>
+    **Note:** You cannot select an OS version that is earlier than one selected for a previous update (for example, trying to select OS version 0.4.1 after pushing an update containing OS version 0.5).
 
 5.  Click **PUSH UPDATE**. Verify that the information is correct.
 
@@ -47,7 +48,7 @@ To push a build for your product:
     ![View current
     build](https://developer.android.google.cn/things/images/console/current_build_list.png)
 
-
+***
 
 1. 如果您还没有处在本标签，请先打开 [Android Things 管理中心](https://partner.android.com/things/console)，点击您之前已准备好[构建文件](https://developer.android.google.cn/things/console/build.html)的产品项，然后点击 **OTA UPDATES** 标签。
 
@@ -60,7 +61,7 @@ To push a build for your product:
 
 4. 在 **Android Things versions** 表格中，选择操作系统版本。
 
-   <aside class="note">**注意：** <span>您所选择的操作系统版本不能低于您之前进行推送时的系统版本（比如，在此之前您选择过为版本号为 0.5 的操作系统进行了推送，这次更新试图选择版本号为 0.4.1的操作系统）。</span></aside>
+   **注意：** 您所选择的操作系统版本不能低于您之前进行推送时的系统版本（比如，在此之前您选择过为版本号为 0.5 的操作系统进行了推送，这次更新试图选择版本号为 0.4.1的操作系统）。
 
 5. 点击 **PUSH UPDATE**，并确认信息无误。
 
@@ -87,7 +88,7 @@ The following sequence describes the update process:
 
 5.  The device reboots to the new version.
 
-    <aside class="note">**Note:** <span>Currently, you must trigger the reboot on the device. Run `adb shell` followed by `reboot`.</span></aside>
+    **Note:** Currently, you must trigger the reboot on the device. Run `adb shell` followed by `reboot`.
 
 
 
@@ -101,7 +102,7 @@ The following sequence describes the update process:
 
 5. 设备重新启动，进入新版本的镜像。
 
-   <aside class="note">**注意：** <span>现阶段，您需要手动重新启动设备，执行 `adb shell` 命令，紧接着执行 `reboot` 命令。</span></aside>
+   **注意：** 现阶段，您需要手动重新启动设备，执行 `adb shell` 命令，紧接着执行 `reboot` 命令。
 
 OTA updates for OEM apps are ignored if apps are sideloaded. When the device is rebooting, the operating system checks if a main apk (with `action=MAIN, category=IOT_LAUNCHER`) exists in the user data partition. If one exists, the device runs this apk. If one does not exist, the system checks for an apk in the OEM partition.
 
@@ -109,7 +110,7 @@ OTA updates for OEM apps are ignored if apps are sideloaded. When the device is 
 
 To make sure the device uses the updated apk, remove a sideloaded apk with `adb uninstall <var>package_name</var>` and reboot the device.
 
-为了确保设备使用的是更新过的 apk，请将线刷的 apk 通过 `adb uninstall <var>package_name</var>` 命令移除，并重启设备。
+为了确保设备使用的是更新过的 apk，请将线刷的 apk 通过 `adb uninstall package_name` 命令移除，并重启设备。
 
 OS updates are not ignored.
 
