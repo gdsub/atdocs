@@ -5,7 +5,7 @@ Android Things provides Peripheral I/O APIs to communicate with sensors and actu
 Android Things提供了一组外围设备输入输出的API用于和外围设备用于和传感器以及执行器进行通信的工业标准协议与接口。
 
 **[General Purpose Input/Output](https://developer.android.google.cn/things/sdk/pio/gpio.html) (GPIO)** - Use this API for simple sensors such as motion detectors, proximity detectors, and level switches that report their current state as a binary value—high or low.
-**[General Purpose Input/Output](https://developer.android.google.cn/things/sdk/pio/gpio.html) (GPIO)** - 这套API用于获取如动作探测器，近距离传感器和信号电平开关-状态在高或低电平间切换等简单传感器的输出与输入。
+**[General Purpose Input/Output](https://developer.android.google.cn/things/sdk/pio/gpio.html) (GPIO)** - 这套API用于获取如运动探测器，近距离传感器和信号电平开关-状态在高或低电平间切换等简单传感器的输出与输入。
 
 **[Pulse Width Modulation](https://developer.android.google.cn/things/sdk/pio/pwm.html) (PWM)** - Use this API for servo motors, DC motors, and lights that require a proportional signal to provide fine-grained control over the output.
 **[Pulse Width Modulation](https://developer.android.google.cn/things/sdk/pio/pwm.html) (PWM)** - 这套API用于和舵机，直流电机和环境光传感器等需要获得等比例信号输出来进行细粒度控制的传感器进行通信。
