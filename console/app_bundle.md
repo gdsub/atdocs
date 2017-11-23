@@ -17,7 +17,7 @@ Bundle 是一个 zip 文件，里面包括：
 
 
 
-- `bootanimation.zip` — 位于根目录的[启动动画](https://source.android.google.cn/devices/tech/ota/device_code#boot-animation)
+- `bootanimation.zip` — 位于根目录的 [启动动画](https://source.android.google.cn/devices/tech/ota/device_code#boot-animation)
 - `<var><user-space driver></var>.apk `— 作为服务 (`action=BOOT_COMPLETED`) 的用户级驱动
-- `<var><main></var>.apk` — （必须包含）主入口 apk 文件(`action=MAIN, category=IOT_LAUNCHER`)
+- `<var><main></var>.apk` — （必须包含）主入口 apk 文件 (`action=MAIN, category=IOT_LAUNCHER`)
 - `<var><sub></var>.apk` — 由主 apk 启动的若干 apk 文件
