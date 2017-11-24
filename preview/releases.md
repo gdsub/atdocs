@@ -40,7 +40,7 @@ Please file tickets in the Android issue tracker for issues discovered in the sy
 
 <aside class="note">**Note:** <span>Before filing a bug, please check this page for known issues and ensure you are running the [latest version](https://partner.android.com/things/console) of the preview system image.</span></aside>
 
-<aside class="note">**注意:** <span>在提交 bug 之前，请查看本页面核对已知问题，并确保您正在运行 [最新版本](https://partner.android.com/things/console) 的预览版系统镜像。</span></aside>
+**注意：** 在提交 bug 之前，请查看本页面核对已知问题，并确保您正在运行 [最新版本](https://partner.android.com/things/console) 的预览版系统镜像。
 
 To ask questions and discuss ideas with other developers working on Android Things, join the [IoT Developers Google+ community](http://g.co/iotdev).
 
