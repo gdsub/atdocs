@@ -13,9 +13,9 @@ GPS modules typically connect to the host system via [UART](https://developer.an
 
 GPS 模块通常使用 [UART](https://developer.android.google.cn/things/sdk/pio/uart.html) 连接到设备系统, 也有可能使用其它类型的 [Peripheral I/O](https://developer.android.google.cn/things/sdk/pio/index.html)。例如，它们可能额外地包含 [GPIO](https://developer.android.google.cn/things/sdk/pio/gpio.html) 针脚来进行电源管理，或者上报设备何时获得或失去定位。
 
-<aside class="note">**Note:** <span>The framework only supports a single source for GPS location data. You cannot register multiple GPS drivers.</span></aside>
+**Note:** The framework only supports a single source for GPS location data. You cannot register multiple GPS drivers.
 
-<aside class="note">**注意:** <span>Framework 仅支持单一的 GPS 位置信息数据源。你不能注册多个 GPS 驱动。</span></aside>
+**注意:** Framework 仅支持单一的 GPS 位置信息数据源。你不能注册多个 GPS 驱动。
 
 ## Creating the driver
 
@@ -118,9 +118,9 @@ import android.location.Location;
     }
 ```
     
-<aside class="note">**Note:** <span>Drivers should send every update discovered from the GPS hardware. The framework filters updates delivered to apps based on their request criteria.</span></aside>
+**Note:** Drivers should send every update discovered from the GPS hardware. The framework filters updates delivered to apps based on their request criteria.
 
-<aside class="note">**注意:** <span>驱动应当在每次从 GPS 硬件发现数据更新时将数据发出。Framework 中的过滤器会按照各个应用所需的更新频率标准去发送数据更新。</span></aside>
+**注意:** 驱动应当在每次从 GPS 硬件发现数据更新时将数据发出。Framework 中的过滤器会按照各个应用所需的更新频率标准去发送数据更新。
 
 The following table describes the `Location` attributes that a GPS driver can report to the framework. Attributes marked _required_ must be included or the framework will reject the location update:
 
@@ -140,15 +140,21 @@ The following table describes the `Location` attributes that a GPS driver can re
 
 <tr>
 
-<td>[Accuracy](https://developer.android.google.cn/reference/android/location/Location.html#getAccuracy())  
+<td>
+
+[Accuracy](https://developer.android.google.cn/reference/android/location/Location.html#getAccuracy())  
 [Timestamp](https://developer.android.google.cn/reference/android/location/Location.html#getTime())  
 [Latitude](https://developer.android.google.cn/reference/android/location/Location.html#getLatitude())  
 [Longitude](https://developer.android.google.cn/reference/android/location/Location.html#getLongitude())  
+
 </td>
 
-<td>[Altitude](https://developer.android.google.cn/reference/android/location/Location.html#getAltitude())  
+<td>
+
+[Altitude](https://developer.android.google.cn/reference/android/location/Location.html#getAltitude())  
 [Bearing](https://developer.android.google.cn/reference/android/location/Location.html#getBearing())  
 [Speed](https://developer.android.google.cn/reference/android/location/Location.html#getSpeed())  
+
 </td>
 
 </tr>
@@ -171,15 +177,21 @@ The following table describes the `Location` attributes that a GPS driver can re
 
 <tr>
 
-<td>[准确率](https://developer.android.google.cn/reference/android/location/Location.html#getAccuracy())  
+<td>
+
+[准确率](https://developer.android.google.cn/reference/android/location/Location.html#getAccuracy())  
 [时间戳](https://developer.android.google.cn/reference/android/location/Location.html#getTime())  
 [纬度](https://developer.android.google.cn/reference/android/location/Location.html#getLatitude())  
 [经度](https://developer.android.google.cn/reference/android/location/Location.html#getLongitude())  
+
 </td>
 
-<td>[高度](https://developer.android.google.cn/reference/android/location/Location.html#getAltitude())  
+<td>
+
+[高度](https://developer.android.google.cn/reference/android/location/Location.html#getAltitude())  
 [方位](https://developer.android.google.cn/reference/android/location/Location.html#getBearing())  
 [速度](https://developer.android.google.cn/reference/android/location/Location.html#getSpeed())  
+
 </td>
 
 </tr>

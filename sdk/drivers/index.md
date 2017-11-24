@@ -8,9 +8,9 @@ To allow app developers to register new device drivers with the framework, Andro
 
 ![](https://developer.android.google.cn/things/images/driver-stack.png)
 
-<aside class="note">**Note:** <span>You cannot customize the behavior of device drivers in the [Linux kernel](https://source.android.google.cn/devices/#Linux%20kernel) or [Hardware Abstraction Layer](https://source.android.google.cn/devices/#Hardware%20Abstraction%20Layer) (HAL) to add new functionality to a device.</span></aside>
+**Note:** You cannot customize the behavior of device drivers in the [Linux kernel](https://source.android.google.cn/devices/#Linux%20kernel) or [Hardware Abstraction Layer](https://source.android.google.cn/devices/#Hardware%20Abstraction%20Layer) (HAL) to add new functionality to a device.
 
-<aside class="note">**注意:** <span>你不能在 [Linux kernel](https://source.android.google.cn/devices/#Linux%20kernel) 中定制设备驱动的行为或者在 [硬件抽象层](https://source.android.google.cn/devices/#Hardware%20Abstraction%20Layer) (HAL) 为设备添加新的功能。</span></aside>
+**注意:** 你不能在 [Linux kernel](https://source.android.google.cn/devices/#Linux%20kernel) 中定制设备驱动的行为或者在 [硬件抽象层](https://source.android.google.cn/devices/#Hardware%20Abstraction%20Layer) (HAL) 为设备添加新的功能。
 
 ## Benefits
 

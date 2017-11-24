@@ -60,10 +60,6 @@ Once you select a board, flash and bring up your hardware with the instructions 
 *   [Intel Edison](https://developer.android.google.cn/things/hardware/edison.html)
 *   [Intel Joule](https://developer.android.google.cn/things/hardware/joule.html)
 
-
-
-
-
 - [NXP i.MX7D](https://developer.android.google.cn/things/hardware/imx7d.html)
 - [NXP i.MX6UL](https://developer.android.google.cn/things/hardware/imx6ul.html)
 - [Raspberry Pi 3](https://developer.android.google.cn/things/hardware/raspberrypi.html)
@@ -78,27 +74,29 @@ Once you select a board, flash and bring up your hardware with the instructions 
 
 1.  [Download](https://developer.android.google.cn/studio/index.html) or update to the latest version of Android Studio.
 
+	[下载](https://developer.android.google.cn/studio/index.html)或更新最新版本的 Android Studio。
+
 2.  Open Android Studio and start a new project. In the new project wizard, keep the default settings except for the form factors:
+
+	打开 Android Studio 并创建一个新项目。在新项目向导中，一切均可保持默认设置，但选择机型时需作如下更改：
+
     *   Select **Android Things** as the form factor on which to run your application.
+
+    *   选择 **Android Things** 作为您运行应用程序的机型。
+
     *   Select **API 26: Android 8.0 (Oreo)**.
 
+    *   选择 **API 26: Android 8.0 (Oreo)**。
+
 3.  Connect your board and verify you can access the device via `adb`:
+
+	连接您的开发板，并使用 `adb` 命令验证您是否可以操作该设备：
 
         $ adb devicesList of devices attached4560736843791520041    device
 
 4.  [Deploy](https://developer.android.google.cn/studio/run/index.html) the sample project to your board and verify that you can see the activity messages with `logcat`.
 
-
-
-1. [下载](https://developer.android.google.cn/studio/index.html)或更新最新版本的 Android Studio。
-2. 打开 Android Studio 并创建一个新项目。在新项目向导中，一切均可保持默认设置，但选择机型时需作如下更改：
-    *   选择 **Android Things** 作为您运行应用程序的机型。
-    *   选择 **API 26: Android 8.0 (Oreo)**。
-3.  连接您的开发板，并使用 `adb` 命令验证您是否可以操作该设备：
-
-        $ adb devicesList of devices attached4560736843791520041    device
-
-4.  将示例项目[部署](https://developer.android.google.cn/studio/run/index.html)到您的开发板上，并验证是否可以在 `logcat` 中看到 Activity 的消息。
+	将示例项目[部署](https://developer.android.google.cn/studio/run/index.html)到您的开发板上，并验证是否可以在 `logcat` 中看到 Activity 的消息。
 
 ## Build your First Device
 
