@@ -12,6 +12,7 @@
 4.  [Delete a bundle or build](#delete_a_bundle_or_build)
 5.  [What's next](#whats-next)
 
+***
 
 1.  [创建一个 Bundle](#创建一个 Bundle)
 2.  [创建一个构建文件](#创建一个构建文件)
@@ -43,7 +44,7 @@ To create a bundle for your product:
 
 3.  In the **Android Things versions** table, select an OS version.
 
-
+***
 
 1. 如果您还没有处在本标签，请先打开 [Android Things 管理中心](https://partner.android.com/things/console)，点击您之前所 [配置](https://developer.android.google.cn/things/console/configure.html)的产品，然后点击 **FACTORY IMAGES** 标签。
 
