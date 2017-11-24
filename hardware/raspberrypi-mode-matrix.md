@@ -232,5 +232,5 @@ BCM18 口用为 [I2S](https://developer.android.google.cn/things/sdk/pio/i2s.htm
 
 <aside class="note">**Note:** <span>Switching from PWM0 mode to Audio mode requires a device reboot due to limitations of the hardware.</span></aside>
 
-<aside class="note">**注意:** <span>由于硬件局限，从 PWM0 模式切换到音频模式需要设备重启。</span></aside>
+**注意：** 由于硬件局限，从 PWM0 模式切换到音频模式需要设备重启。
 
