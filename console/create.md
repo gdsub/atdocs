@@ -107,7 +107,7 @@ To create your product:
 
 7. 输入所需的 OEM 分区大小。
 
-    **注意：**在您的产品创建完成之后，您不可以再修改 SOM 类型、是否包含 Google Play 服务，以及 OEM 分区大小。
+    **注意：** 在您的产品创建完成之后，您不可以再修改 SOM 类型、是否包含 Google Play 服务，以及 OEM 分区大小。
 
 8. （可选项）输入您的产品描述
 
@@ -148,7 +148,7 @@ To delete a product:
 
     *   将鼠标移动到产品名称上。点击出现的垃圾桶图标。
     *   点击产品名称进入详情。点击屏幕上部出现的垃圾桶图标。
-3. 在**产品删除**对话框中，点击 **Delete**。
+3. 在 **产品删除** 对话框中，点击 **Delete**。
 
 ## What's next
 
@@ -158,5 +158,5 @@ To delete a product:
 
 The next step is to [configure the product settings](https://developer.android.google.cn/things/console/configure.html).
 
-下一步是[产品配置](https://developer.android.google.cn/things/console/configure.html)。
+下一步是 [产品配置](https://developer.android.google.cn/things/console/configure.html)。
 
