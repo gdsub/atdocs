@@ -99,9 +99,9 @@ After a connection is established with the SPI bus, configure the data transfer 
 
 在于SPI总线的连接建立之后，接下来需要配置数据传输速率和操作模式用以匹配连接到该总线上的从设备。为了保证数据能够成功的传输，所有连接到该SPI总线上的设备都应该工作在相同的时钟频率并保持数据格式一致性。
 
-<aside class="note">**Note:** <span>Some slave devices cannot configure their SPI operation mode, so refer to the documentation for your hardware when choosing peripheral devices.</span></aside>
+> **Note:** Some slave devices cannot configure their SPI operation mode, so refer to the documentation for your hardware when choosing peripheral devices.
 
-<aside class="note">**注意：** <span>有些从设备无法配置SPI的操作模式，所以当连接外设时请先请查阅你设备硬件的相关文档。</span></aside>
+> **注意：** 有些从设备无法配置SPI的操作模式，所以当连接外设时请先请查阅你设备硬件的相关文档。
 
 1.  Set the SPI mode, which defines the polarity and phase of the clock signal. The mode you choose is based on three attributes:
 
