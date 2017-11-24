@@ -121,7 +121,7 @@ Analog devices produce voltage that's proportional to the physical conditions th
 
 Analog inputs translate a discrete voltage level into a proportional integer value using an [analog-to-digital converter](https://en.wikipedia.org/wiki/Analog-to-digital_converter) (ADC). The range of integers used to express the voltage level is based on the _resolution_ of the ADC, expressed in bits. A 10-bit ADC, for example, can express the input voltage as a value between 0-1023 (for example, 2<sup>10</sup> discrete steps).
 
-模拟输入使用[模数转换器](https://en.wikipedia.org/wiki/Analog-to-digital_converter) (ADC) 把离散的电压值转换成一个成比例的整数值。用来表示电压的整数范围基于按位表示的 ADC 的分辨率。例如，一个10位 ADC可以表示在 0-1023之间的值(例如, 2<sup>10</sup> 离散值).
+模拟输入使用 [模数转换器](https://en.wikipedia.org/wiki/Analog-to-digital_converter) (ADC) 把离散的电压值转换成一个成比例的整数值。用来表示电压的整数范围基于按位表示的 ADC 的分辨率。例如，一个10位 ADC可以表示在 0-1023之间的值(例如, 2<sup>10</sup> 离散值).
 
 ### Digital
 
@@ -259,7 +259,7 @@ Peripherals typically use digital I/O in a few common ways:
 
 For more information on analog and digital I/O, see [Sensors and Transducers](http://www.electronics-tutorials.ws/io/io_1.html) and [Binary Numbers](http://www.electronics-tutorials.ws/binary/bin_1.html).
 
-要获得模拟和数字 I/O 的更多信息, 可以看[各种传感器](http://www.electronics-tutorials.ws/io/io_1.html)和[二进制数](http://www.electronics-tutorials.ws/binary/bin_1.html).
+要获得模拟和数字 I/O 的更多信息, 可以看 [各种传感器](http://www.electronics-tutorials.ws/io/io_1.html) 和 [二进制数](http://www.electronics-tutorials.ws/binary/bin_1.html).
 ## Pull-ups and pull-downs
 
 ## 上拉 和 下拉
@@ -278,7 +278,7 @@ A digital input that is not actively connected to any signal is a _floating inpu
 
 As an example, think of a button or switch. A switch is a pair of contacts that connects an input pin to a high or low voltage when closed, but leaves the input floating when open. In addition, many digital transducers use [open collector](https://en.wikipedia.org/wiki/Open_collector) (or open drain) outputs to report a state change. These outputs act like a simple switch and require and external source to drive the input when the switch is open.
 
-作为一个例子, 考虑一个按键或开关. 开关是一对继电器，当关的时候连接一个输入PIN脚到一个高电压或低电压上，当开的时候输入处于漂浮态。 另外, 许多 数字传感器使用[开集](https://en.wikipedia.org/wiki/Open_collector) (或开漏) 输出来报告状态改变。 这些输入就如同一个简单开关，当开关打开时需要外部资源去 驱动输入。
+作为一个例子, 考虑一个按键或开关. 开关是一对继电器，当关的时候连接一个输入PIN脚到一个高电压或低电压上，当开的时候输入处于漂浮态。 另外, 许多 数字传感器使用 [开集](https://en.wikipedia.org/wiki/Open_collector) (或开漏) 输出来报告状态改变。 这些输入就如同一个简单开关，当开关打开时需要外部资源去 驱动输入。
 
 ### Resistor strength
 
@@ -290,7 +290,7 @@ The resistor values you choose affect the system in different ways. Low value re
 
 <aside class="note">**Note:** <span>Pull-up and pull-down resistor values are typically between 1kΩ and 10kΩ.</span></aside>
 
-<aside class="note">**Note:** <span>上拉和下拉电阻阻值一般在 1kΩ 和 10kΩ 之间</span></aside>
+**注意：** 上拉和下拉电阻阻值一般在 1kΩ 和 10kΩ 之间。
 
 As an example, the I<sup>2</sup>C serial bus uses pull-up resistors to keep the clock and data lines stable when the bus is idle. Each device added to the bus loads down these lines, making it harder for the pull-up to keep the line at the appropriate level. As the number of devices on the bus increases, the strength of the pull-ups must also increase to handle the added load.
 
@@ -317,7 +317,7 @@ To correct this problem, you must _debounce_ the signal using hardware or softwa
 
 To debounce your input with hardware, add a simple RC circuit (so-named because it contains a resistor and capacitor) between the input pin and the device. When the input device changes state, the capacitor will charge and discharge at a rate proportional to the size of the input resistor, effectively slowing down the transitions seen by the input pin.
 
-为了用硬件去抖, 在输入PIN脚和设备之间增加一个简单的 RC电路 (这样叫是因为它包含一个电阻和电容)。 当输入设备改变状态, 电容会以正比于输入阻抗的速率充电和放电, effectively可以有效的减缓输入PIN脚的状态改变。
+为了用硬件去抖, 在输入PIN脚和设备之间增加一个简单的 RC 电路 (这样叫是因为它包含一个电阻和电容)。 当输入设备改变状态, 电容会以正比于输入阻抗的速率充电和放电, effectively可以有效的减缓输入PIN脚的状态改变。
 
 See [Input Interfacing Circuits](http://www.electronics-tutorials.ws/io/input-interfacing-circuits.html) for more information on calculating debounce and other techniques for connecting input signals to your device.
 
@@ -337,7 +337,7 @@ Each output pin has a limited capability to source (when high) or sink (when low
 
 <aside class="note">**Note:** <span>Series resistor values are typically between 100Ω and 300Ω.</span></aside>
 
-<aside class="note">**Note:** <span>串阻值通常在 100Ω 和 300Ω 之间。</span></aside>
+**注意：** 串阻值通常在 100Ω 和 300Ω 之间。
 
 To control higher power transducers, such as motors, buffer the load from the output pin using a transistor or similar electronically controlled switch and power the transducer directly from the power supply.
 
@@ -345,7 +345,7 @@ To control higher power transducers, such as motors, buffer the load from the ou
 
 <aside class="note">**Note:** <span>The source/sink capacity of I/O pins will vary by device. Check your hardware documentation to better understand what your board can support.</span></aside>
 
-<aside class="note">**Note:** <span> I/O PIN脚的拉/灌能力因设备而不同。 看你的硬件文档来更好的理解什么是你的板子能支持的。</span></aside>
+**注意：** I/O PIN脚的拉/灌能力因设备而不同。 看你的硬件文档来更好的理解什么是你的板子能支持的。
 
 All I/O pins are designed to safely operate with in the voltage range between 0V and V<sub>CC</sub>. Connecting any pin to a voltage higher than the power supply for that component will likely damage it. Always verify that the voltage levels generated by your sensors and transducers match their connected I/O pins. To connect devices of variable supplies together, use a [logic level converter](https://www.sparkfun.com/products/12009) circuit.
 
