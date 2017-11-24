@@ -31,9 +31,9 @@ You can adjust the duty cycle to increase or decrease the average "on" time of t
 
 ![](https://developer.android.google.cn/things/images/pwm-duty.png)
 
-<aside class="note">**Note:** <span>Most PWM hardware has to toggle at least once per cycle, so even duty values of 0% and 100% will have a small transition at the beginning of each cycle.</span></aside>
+> **Note:** Most PWM hardware has to toggle at least once per cycle, so even duty values of 0% and 100% will have a small transition at the beginning of each cycle.
 
-<aside class="note"> **注意:** <span>由于大多数 PWM 硬件必须每个周期至少切换一次，所以即使是占空比的值为 0% 或者是 100% ，仍然会在每个周期开始时，有一个小的过渡。</span></aside>
+> **注意:** 由于大多数 PWM 硬件必须每个周期至少切换一次，所以即使是占空比的值为 0% 或者是 100% ，仍然会在每个周期开始时，有一个小的过渡。
 
 ## Managing the connection
 
@@ -113,4 +113,4 @@ The following example configures the PWM to cycle at 120Hz (period of 8.33ms) wi
 			// Enable the PWM signal    
 			pwm.setEnabled(true);
 }
-
+~~~

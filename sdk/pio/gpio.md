@@ -9,9 +9,9 @@ You can configure GPIO pins as an input or output with either a high or low stat
 
 你可以配置GPIO管脚来定义数据传输方向输入或输出高电平或低电平。当管脚做为输入使用时，可以检测到外部信号源的状态变化，你的应用程序可以获得当前状态或者对状态变化做出反应。当管脚做为输出使用时，你的应用程序可以对管脚状态的高低进行配置。
 
-<aside class="note">**Note:** <span>To avoid damage to the GPIO pins, review the input and output limits of your hardware before making wire connections. See [Hardware 101](https://developer.android.google.cn/things/hardware/hardware-101.html) and consult the documentation for your hardware.</span></aside>
+> **Note:** To avoid damage to the GPIO pins, review the input and output limits of your hardware before making wire connections. See [Hardware 101](https://developer.android.google.cn/things/hardware/hardware-101.html) and consult the documentation for your hardware.
 
-**注意：** 为避免造成对GPIO管脚的损坏，请在对你的硬件进行接线时检查有关GPIO输入和输出的限制。查看[硬件 101](https://developer.android.google.cn/things/hardware/hardware-101.html) 并查阅你的硬件的相关文档。
+> **注意：** 为避免造成对GPIO管脚的损坏，请在对你的硬件进行接线时检查有关GPIO输入和输出的限制。查看[硬件 101](https://developer.android.google.cn/things/hardware/hardware-101.html) 并查阅你的硬件的相关文档。
 
 ## Managing the connection
 ## 管理连接
@@ -134,8 +134,8 @@ GPIO端口可以被配置为输入状态时可以在端口状态高低变化时�
 
 *3. 当`onGpioEdge()`返回为`true`时，即代表监听程序需要继续接收相关端口的状态变化事件。
   
-    The following code registers an interrupt listener for all state changes on the given input port:
-  如下代码为给定的用于输入的端口注册了相应的中断监听：
+The following code registers an interrupt listener for all state changes on the given input port:
+如下代码为给定的用于输入的端口注册了相应的中断监听：
 
 ~~~java
 public void configureInput(Gpio gpio) throws IOException {    
