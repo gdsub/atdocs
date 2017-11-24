@@ -15,7 +15,7 @@ GPS 模块通常使用 [UART](https://developer.android.google.cn/things/sdk/pio
 
 <aside class="note">**Note:** <span>The framework only supports a single source for GPS location data. You cannot register multiple GPS drivers.</span></aside>
 
-<aside class="note">**注意:** <span>Framework 仅支持单一的 GPS 位置信息数据源。你不能注册多个 GPS 驱动。</span></aside>
+**注意:** Framework 仅支持单一的 GPS 位置信息数据源。你不能注册多个 GPS 驱动。
 
 ## Creating the driver
 
@@ -145,7 +145,7 @@ import android.location.Location;
     
 <aside class="note">**Note:** <span>Drivers should send every update discovered from the GPS hardware. The framework filters updates delivered to apps based on their request criteria.</span></aside>
 
-<aside class="note">**注意:** <span>驱动应当在每次从 GPS 硬件发现数据更新时将数据发出。Framework 中的过滤器会按照各个应用所需的更新频率标准去发送数据更新。</span></aside>
+**注意：** 驱动应当在每次从 GPS 硬件发现数据更新时将数据发出。Framework 中的过滤器会按照各个应用所需的更新频率标准去发送数据更新。
 
 The following table describes the `Location` attributes that a GPS driver can report to the framework. Attributes marked _required_ must be included or the framework will reject the location update:
 

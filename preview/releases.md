@@ -42,6 +42,7 @@ Please file tickets in the Android issue tracker for issues discovered in the sy
 
 **注意:** 在提交 bug 之前，请查看本页面核对已知问题，并确保您正在运行 [最新版本](https://partner.android.com/things/console) 的预览版系统镜像。
 
+
 To ask questions and discuss ideas with other developers working on Android Things, join the [IoT Developers Google+ community](http://g.co/iotdev).
 
 要与其他开发 Android Things 的开发者讨论问题或想法, 请加入 [Google+ 物联网开发者社区](http://g.co/iotdev).

@@ -90,7 +90,7 @@ The following sequence describes the update process:
 
     **Note:** Currently, you must trigger the reboot on the device. Run `adb shell` followed by `reboot`.
 
-
+***
 
 1. 当您推送了一个更新，新版本就会变为待下载状态。
 
