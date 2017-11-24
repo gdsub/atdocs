@@ -21,9 +21,9 @@ The framework polls your driver periodically when listeners are registered for s
 
 当监听器已被注册接收传感器更新时，framework 会间歇性地拉取你的驱动。为了响应拉取请求以提供新的数据，需要继承 `UserSensorDriver` 类并覆写 `read()` 方法。每次调用这个方法时，应当返回包含当前传感器数据的 `UserSensorReading` 实例。
 
-<aside class="note">**Note:** <span>For more information on the data format expected for known sensor types, see [sensor event values](https://developer.android.google.cn/reference/android/hardware/SensorEvent.html#values).</span></aside>
+> **Note:** For more information on the data format expected for known sensor types, see [sensor event values](https://developer.android.google.cn/reference/android/hardware/SensorEvent.html#values).
 
-**注意：** 想要获取更多关于已知传感器类型的数据格式信息，查阅 [传感器事件值](https://developer.android.google.cn/reference/android/hardware/SensorEvent.html#values).
+> **注意：** 想要获取更多关于已知传感器类型的数据格式信息，查阅 [传感器事件值](https://developer.android.google.cn/reference/android/hardware/SensorEvent.html#values).
 
 The framework may call `read()` at a time when the driver is not able to produce a sensor reading. When this occurs, your driver should throw an `IOException`.
 
@@ -68,9 +68,9 @@ UserSensorDriver mDriver = new UserSensorDriver() {
 };
 ~~~
 
-<aside class="note">**Note:** <span>Sensors without low power modes can still use this callback to increase or reduce the reporting frequency of the data in order to manage power consumption.</span></aside>
+> **Note:** Sensors without low power modes can still use this callback to increase or reduce the reporting frequency of the data in order to manage power consumption.
 
-**注意：** 没有低功耗模式的传感器同样能使用这个回调方法来提高或降低数据的上报频率以便管理节点的能耗。
+> **注意：** 没有低功耗模式的传感器同样能使用这个回调方法来提高或降低数据的上报频率以便管理节点的能耗。
 
 ## Describing the sensor
 
@@ -259,6 +259,7 @@ public class SensorActivity extends Activity implements SensorEventListener {
 Add the required permission for the user driver to your app's manifest file:
 
 在你应用的清单文件中添加用户驱动所需的权限：
-
-        <uses-permission android:name="com.google.android.things.permission.MANAGE_SENSOR_DRIVERS" />
+~~~xml
+<uses-permission android:name="com.google.android.things.permission.MANAGE_SENSOR_DRIVERS" />
+~~~
 

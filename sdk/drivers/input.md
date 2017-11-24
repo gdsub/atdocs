@@ -160,9 +160,9 @@ Input drivers can also emit motion events to connect a pointing device to the fr
 
 输入驱动还能产生运动事件用来配合连接一个指向性设备到 framework 中，例如触控板或鼠标。这些设备以 x/y 坐标系的形式上报它们的绝对位置。每个事件还包含一个可选的按压状态，用以表明在那个位置时设备是否处于“按压”或“点击”状态。
 
-<aside class="note">**Note:** <span>You must report all coordinates as positive integer values.</span></aside>
+> **Note:** You must report all coordinates as positive integer values.
 
-<aside class="note">**注意:** <span>你上报的坐标必须是正整数值。</span></aside>
+> **注意:** 你上报的坐标必须是正整数值。
 
 1.  Create a new driver instance using the `InputDriver.Builder` and the source type `SOURCE_TOUCHPAD`.
 2.  Register the driver with the `UserDriverManager`.
@@ -329,5 +329,6 @@ Add the required permission for the user driver to your app's manifest file:
 
 在你应用的清单文件中添加用户驱动所需的权限：
 
-        <uses-permission android:name="com.google.android.things.permission.MANAGE_INPUT_DRIVERS" />
-
+~~~xml
+<uses-permission android:name="com.google.android.things.permission.MANAGE_INPUT_DRIVERS" />
+~~~
