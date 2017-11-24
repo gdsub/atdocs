@@ -20,7 +20,7 @@ To configure your product:
 
 ***
 
-1. 如果您还没有打开本标签页，请进入 [Android Things 管理中心](https://partner.android.com/things/console)并点击您之前所[创建的项目](https://developer.android.google.cn/things/console/create.html)。**产品设置**页如图所示。
+1. 如果您还没有打开本标签页，请进入 [Android Things 管理中心](https://partner.android.com/things/console)并点击您之前所 [创建的项目](https://developer.android.google.cn/things/console/create.html)。**产品设置** 页如图所示。
 2. 如果需要，您可以编辑产品名或产品描述。编辑完成后，请务必点击 **SAVE CHANGES**。
 3. 点击 **CREATE STARTER BUILD**。
 
@@ -32,4 +32,4 @@ To configure your product:
 
 The next step is to [build the device image](https://developer.android.google.cn/things/console/build.html).
 
-下一步是[生成设备镜像文件](https://developer.android.google.cn/things/console/build.html)。
+下一步是 [生成设备镜像文件](https://developer.android.google.cn/things/console/build.html)。

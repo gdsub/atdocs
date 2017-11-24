@@ -50,7 +50,7 @@ In order to open a connection to a particular SPI slave, you need to know the un
 
 SPI controllers that support multiple hardware chip selects will report each available slave port as a separate device name. For example, a board that supports _CS0_, _CS1_, and _CS2_ on the same SPI bus will return names similar to `"SPI0.0"`, `"SPI0.1"`, and `"SPI0.2"` from `getSpiBusList()`.
 
-支持多个硬件片选的SPI控制器将把每一个从端口当做一个独立的设备名来汇报。例如在一块支持将_CS0_, _CS1_, 和_CS2_练到同一个SPI总线上的板子上，`getSpiBusList()`将返回形如`"SPI0.0"`, `"SPI0.1"`, 和`"SPI0.2"`的设备名称。
+支持多个硬件片选的SPI控制器将把每一个从端口当做一个独立的设备名来汇报。例如在一块支持将_CS0_, _CS1_, 和_CS2_连到同一个SPI总线上的板子上，`getSpiBusList()`将返回形如`"SPI0.0"`, `"SPI0.1"`, 和`"SPI0.2"`的设备名称。
 
 Once you know the target name, use `PeripheralManagerService` to connect to that device. When you are done communicating with the peripheral device, close the connection to free up resources. Additionally, you cannot open a new connection to the device until the existing connection is closed. To close the connection, use the device's `close()` method.
 
@@ -97,7 +97,7 @@ public class HomeActivity extends Activity {
 
 After a connection is established with the SPI bus, configure the data transfer rate and operation modes to match the slave devices on the same bus. For data transfer to be successful, all devices on the bus must expect the same clock and data format behavior.
 
-在于SPI总线的连接建立之后，接下来需要配置数据传输速率和操作模式用意匹配连接到该总线上的从设备。为了保证数据能够成功的传输，所有连接到该SPI总线上的设备都应该工作在相同的时钟频率并保持数据格式一致性的行为。
+在于SPI总线的连接建立之后，接下来需要配置数据传输速率和操作模式用以匹配连接到该总线上的从设备。为了保证数据能够成功的传输，所有连接到该SPI总线上的设备都应该工作在相同的时钟频率并保持数据格式一致性。
 
 <aside class="note">**Note:** <span>Some slave devices cannot configure their SPI operation mode, so refer to the documentation for your hardware when choosing peripheral devices.</span></aside>
 

@@ -45,7 +45,7 @@ To create a bundle for your product:
 
 
 
-1. 如果您还没有处在本标签，请先打开 [Android Things 管理中心](https://partner.android.com/things/console)，点击您之前所[配置](https://developer.android.google.cn/things/console/configure.html)的产品，然后点击 **FACTORY IMAGES** 标签。
+1. 如果您还没有处在本标签，请先打开 [Android Things 管理中心](https://partner.android.com/things/console)，点击您之前所 [配置](https://developer.android.google.cn/things/console/configure.html)的产品，然后点击 **FACTORY IMAGES** 标签。
 
 2. 点击 **UPLOAD** 上传您的 [Bundle](https://developer.android.google.cn/things/console/app_bundle.html)。上传完毕之后，请在 **Bundles** 表格中，点击 bundle ID 一旁的按钮以选中该 Bundle。
 
@@ -82,7 +82,7 @@ Click the **Download build** link to download the factory image (i.e., the creat
 
 Find your device in the table of supported [hardware platforms](https://developer.android.google.cn/things/hardware/developer-kits.html). Then click the **Get Started** link to find instructions on how to flash your device with the downloaded image.
 
-请在我们所支持的[硬件平台](https://developer.android.google.cn/things/hardware/developer-kits.html)中找到您的设备型号。点击对应的 **Get Started** 链接，根据指示说明将下载好的镜像烧写到设备中。
+请在我们所支持的 [硬件平台](https://developer.android.google.cn/things/hardware/developer-kits.html) 中找到您的设备型号。点击对应的 **Get Started** 链接，根据指示说明将下载好的镜像烧写到设备中。
 
 ## Delete a bundle or build
 
@@ -110,7 +110,8 @@ To permanently delete a bundle or a build for your product:
 
 After you [flash a device](#flash_device), you can update the build with OTA [updates](https://developer.android.google.cn/things/console/update.html).
 
-在[为设备烧写镜像](#flash_device)之后，您就可以使用无线 (OTA) 的方式进行[更新](https://developer.android.google.cn/things/console/update.html)了。
+在 [为设备烧写镜像](#flash_device) 之后，您就可以使用无线 (OTA) 的方式进行 [更新](https://developer.android.google.cn/things/console/update.html)了。
+
 
 **Note:** You must flash the device with an image from the Android Things Console in order for the device to receive updates.
 
