@@ -23,7 +23,7 @@ I<sup>2</sup>S devices contain at least one **Serial Data (SD)** signal. This is
 
 > **Note:** Multiple peripherals sharing the same **BCLK** and **LRCLK** lines must use the same audio encoding and sample rate parameters.
 
-> **Note:** 多种外设如果需要共享 **BCLK** 和 **LRCLK** 信号，就必须用相同的音频编码和采样频率参数。
+> **:** 多种外设如果需要共享 **BCLK** 和 **LRCLK** 信号，就必须用相同的音频编码和采样频率参数。
 
 ## Managing the device connection
 
