@@ -15,7 +15,7 @@ I<sup>2</sup>S 是 **_同步_** 串行接口，意味着它要通过共享的时
 
 > **Note:**  LRCLK is also often called the **Frame Select (FS)** or **Word Select (WS)** signal.
 
-> **:** LRCLK 也通常称作 **Frame Select (FS)帧选择** 或者是 **Word Select (WS)字选择** 信号。 
+> **注意:** LRCLK 也通常称作 **Frame Select (FS)帧选择** 或者是 **Word Select (WS)字选择** 信号。 
 
 I<sup>2</sup>S devices contain at least one **Serial Data (SD)** signal. This is common with peripherals, which generally only produce or consume audio data. Master devices are more likely to have dedicated lines for receive (**SDIN**) and transmit (**SDOUT**) to support **_full-duplex_** communication. This allows you to connect to multiple peripherals to send and receive audio data simultaneously.
 
