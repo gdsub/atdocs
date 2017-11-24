@@ -11,6 +11,7 @@
 3.  [Delete an existing product](#delete_an_android_things_product)
 4.  [What's next](#whats-next)
 
+***
 
 1.  [准备工作](#准备工作)
 2.  [创建一个新产品](#创建一个新产品)
@@ -72,7 +73,7 @@ To create your product:
 
 7.  Enter the required OEM partition size.
 
-    <aside class="note">**Note:** <span>You cannot change the SOM type, Google Play Services inclusion, or OEM partition size for a product after you create it.</span></aside>
+    **Note:** You cannot change the SOM type, Google Play Services inclusion, or OEM partition size for a product after you create it.
 
 8.  (Optional) Type a description of your product.
 
@@ -80,7 +81,7 @@ To create your product:
 
 9.  Click **CREATE**.
 
-
+***
 
 1. 打开 [Android Things 管理中心](https://partner.android.com/things/console)。
 
@@ -106,7 +107,7 @@ To create your product:
 
 7. 输入所需的 OEM 分区大小。
 
-    <aside class="note">**注意：** <span>在您的产品创建完成之后，您不可以再修改 SOM 类型、是否包含 Google Play 服务，以及 OEM 分区大小。</span></aside>
+    **注意：**在您的产品创建完成之后，您不可以再修改 SOM 类型、是否包含 Google Play 服务，以及 OEM 分区大小。
 
 8. （可选项）输入您的产品描述
 
@@ -140,7 +141,7 @@ To delete a product:
     *   Select the product. Click the trash can icon near the upper right of the screen.
 3.  In the **Delete Product** dialog, click **Delete**.
 
-
+***
 
 1. 打开 [Android Things 管理中心](https://partner.android.com/things/console)。
 2. 在产品列表中找到要删除的产品项。以下两种操作任选其一：

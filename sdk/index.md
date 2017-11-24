@@ -97,7 +97,7 @@ For ease of development, this same activity should include a [CATEGORY_LAUNCHER]
 
 为了便于开发，这一 Activity 应包含一个 [CATEGORY_LAUNCHER](https://developer.android.google.cn/reference/android/content/Intent.html#CATEGORY_LAUNCHER) Intent 过滤器， Android Studio 在部署和调试的时候可以将其作为默认 Activity 启动。
 
-~~~Java
+~~~xml
     <application    
         android:label="@string/app_name">    
         <activity android:name=".HomeActivity">        

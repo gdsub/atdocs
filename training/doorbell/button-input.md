@@ -88,13 +88,13 @@ The `Button` peripheral driver handles the low-level logic of listening for GPIO
 
 2. 添加按钮驱动依赖到你的应用下的`build.gradle`文件中：
 
-```groovy
+~~~groovy
   dependencies {
     ...
 
     compile 'com.google.android.things.contrib:driver-button:0.3'
 }
-```
+~~~
 
 3. Initialize a `ButtonInputDriver` with the connected GPIO port name, and the appropriate logic state indicating when the button is physically pressed.
 
@@ -111,7 +111,7 @@ The `Button` peripheral driver handles the low-level logic of listening for GPIO
 
 5. 通过重写 `Activity.onKeyUp` 或者 `onKeyDown` 方法来捕捉按钮按下或释放事件，就像他们是用键盘产生的事件一样：
 
-   ```java
+   ~~~java
    public class DoorbellActivity extends Activity {
 
        /*
@@ -153,7 +153,7 @@ The `Button` peripheral driver handles the low-level logic of listening for GPIO
            return super.onKeyUp(keyCode, event);
        }
    }
-   ```
+   ~~~
 
 ## Manage the connection
 
@@ -165,7 +165,7 @@ You should manage the peripheral connection according to the application compone
 
 你应该根据应用程序组件的生命周期来管理外设的连接。在 Activity 被创建的时候你已经初始化了 `ButtonInputDriver` 。当 Activity 被停止使用或者被销毁时关闭连接。
 
-```java
+~~~java
 public class DoorbellActivity extends Activity {
     ...
 
@@ -183,5 +183,5 @@ public class DoorbellActivity extends Activity {
         }
     }
 }
-```
+~~~
 

@@ -56,14 +56,14 @@ To enable Firebase Realtime Database for your project:
 
 4. 在你应用的 `build.gradle` 文件中添加  Firebase 实时数据库依赖：
 
-   ```groovy
+   ~~~groovy
    dependencies {
        ...
 
        compile 'com.google.firebase:firebase-core:9.4.0'
        compile 'com.google.firebase:firebase-database:9.4.0'
    }
-   ```
+   ~~~
 
 ## Configure database rules
 
@@ -84,14 +84,14 @@ You need to specify who can read and write to your Firebase Realtime Database. T
 
 2. 点击 **Rules** ，然后更新数据库规则为所有人拥有读写权限：
 
-   ```json
+   ~~~json
    {
      "rules": {
        ".read": true,
        ".write": true
      }
    }
-   ```
+   ~~~
 
 3. Click **Publish**.
 
@@ -123,7 +123,7 @@ The following JSON schema describes how the data is organized in Firebase for ea
 
 下面的 JSON 概要描述了每次事件的数据在 Firebase 中是如何存储的：
 
-```json
+~~~json
 <doorbell-entry> {
     "image": <Base64 image data>,
     "timestamp": <event timestamp>,
@@ -133,7 +133,7 @@ The following JSON schema describes how the data is organized in Firebase for ea
         ...
     }
 }
-```
+~~~
 To write the captured data into a Firebase database:
 
 将拍摄的数据存入 Firebase 数据库中：
@@ -143,7 +143,7 @@ To write the captured data into a Firebase database:
 
 1. 使用 `FirebaseDatabase.getInstance()` 初始化一个数据库实例：
 
-   ```java
+   ~~~java
    import com.google.firebase.database.FirebaseDatabase;
    ...
 
@@ -160,7 +160,7 @@ To write the captured data into a Firebase database:
            mDatabase = FirebaseDatabase.getInstance();
        }
    }
-   ```
+   ~~~
 
 
 2. Write the captured image data, timestamp, and Cloud Vision annotations to a new `DatabaseReference` in the database.
@@ -168,7 +168,7 @@ To write the captured data into a Firebase database:
 
 2. 使用一个新的  `DatabaseReference`  将拍摄的图像数据，时间戳，以及 Cloud Vision 标注写入数据库。
 
-   ```java
+   ~~~java
    import com.google.firebase.database.DatabaseReference;
    import com.google.firebase.database.FirebaseDatabase;
    import com.google.firebase.database.ServerValue;
@@ -206,7 +206,7 @@ To write the captured data into a Firebase database:
            }
        }
    }
-   ```
+   ~~~
 
 > **Note:** The `push()` method creates a new node referenced by a unique key.
 

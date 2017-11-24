@@ -30,17 +30,42 @@ The driver implementation is responsible for communicating with the connected GP
 1.  Create a new `GpsDriver` instance:
 2.  Register the driver with the `UserDriverManager`:
 
-        import com.google.android.things.userdriver.GpsDriver;import com.google.android.things.userdriver.UserDriverManager;...public class GpsDriverService extends Service {    private GpsDriver mDriver;    @Override    public void onCreate() {        super.onCreate();        // Create a new driver implementation        mDriver = new GpsDriver();        // Register with the framework        UserDriverManager manager = UserDriverManager.getManager();        manager.registerGpsDriver(mDriver);    }}
+~~~java
+import com.google.android.things.userdriver.GpsDriver;
+import com.google.android.things.userdriver.UserDriverManager;
+public class GpsDriverService extends Service {    
+    private GpsDriver mDriver;    
+    @Override    
+    public void onCreate() {        
+        super.onCreate();        
+        // Create a new driver implementation        
+        mDriver = new GpsDriver();        
+        // Register with the framework       
+        UserDriverManager manager = UserDriverManager.getManager();        
+        manager.registerGpsDriver(mDriver);    
+    }
+}
+~~~
 
 3.  Unregister the driver when location events are not longer required.
 
-        public class GpsDriverService extends Service {    ...    @Override    protected void onDestroy() {        super.onDestroy();        UserDriverManager manager = UserDriverManager.getManager();        manager.unregisterGpsDriver(mDriver);    }}
+
+~~~java
+public class GpsDriverService extends Service {
+    @Override
+    protected void onDestroy() {        
+        super.onDestroy();        
+        UserDriverManager manager = UserDriverManager.getManager();        
+        manager.unregisterGpsDriver(mDriver);    
+    }
+}
+~~~
         
 * * *
 
 1.  创建一个新的 `GpsDriver` 实例：
 2.  使用 `UserDriverManager` 来注册这个驱动:
-``` java
+~~~ java
 import com.google.android.things.userdriver.GpsDriver;
 import com.google.android.things.userdriver.UserDriverManager;
 ...
@@ -62,10 +87,10 @@ public class GpsDriverService extends Service {
     }
 
 }
-```
+~~~
 3.  当不需要位置信息时，取消注册驱动。
 
-``` java
+~~~ java
 public class GpsDriverService extends Service {
     ...
 
@@ -79,7 +104,7 @@ public class GpsDriverService extends Service {
 }
 
 
-```
+~~~
 
 ## Reporting location
 
@@ -91,7 +116,7 @@ Report each new location fix to the Android framework with the `reportLocation()
 
 使用 `reportLocation()` 方法上报每次定位更新到 Android framework 中。这个方法接受一个 [Location](https://developer.android.google.cn/reference/android/location/Location.html) 对象，该对象中包含需要上报的最新内容。将每个上报 `Location` 的 provider 类型设置为 `LocationManager.GPS_PROVIDER`。
 
-``` java
+~~~ java
 import android.location.Location;
     ...
 
@@ -116,7 +141,7 @@ import android.location.Location;
             mDriver.reportLocation(location);
         }
     }
-```
+~~~
     
 <aside class="note">**Note:** <span>Drivers should send every update discovered from the GPS hardware. The framework filters updates delivered to apps based on their request criteria.</span></aside>
 
@@ -223,7 +248,7 @@ The following code example parses the `GPRMC` string format into a [Location](ht
 
 下面的代码示例将 `GPRMC` 字符串格式解析成一个 [Location](https://developer.android.google.cn/reference/android/location/Location.html) 实例：
 
-``` java
+~~~ java
 // Convert latitude from DMS to decimal format
 private float parseLatitude(String latString, String hemisphere) {
     float lat = Float.parseFloat(latString.substring(2))/60.0f;
@@ -267,7 +292,7 @@ public Location parseLocationFromString(String rawGpsData) {
 
     return result;
 }
-```
+~~~
 ## Adding the required permission
 
 ## 添加需要的权限

@@ -238,7 +238,7 @@ To avoid polling the UART unnecessarily when the buffer is empty, register a `Ua
 
 如果要避免缓冲区为空时，我们还在读取缓冲区。可以通过 UartDevice` 注册回调函数 `UartDeviceCallback` 。这个回调函数会在有可用数据时，调用 `onUartDeviceDataAvailable()` 这个方法。 如果你的应用不再监听输入数据，应该注销这个回调函数。
 
-~~~javw
+~~~java
     public class HomeActivity extends Activity {    
 			private UartDevice mDevice;    
 			...    

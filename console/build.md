@@ -97,7 +97,7 @@ To permanently delete a bundle or a build for your product:
 1.  Select a bundle from the **Bundles** table or a build from the **Build configuration list** table.
 2.  Click the trash can icon.
 
-
+***
 
 1. 在 **Bundles** 表格中选中一个 Bundle，或在 **Build configuration list** 表格中选中一个构建文件。
 2. 点击垃圾桶图标。
@@ -112,7 +112,8 @@ After you [flash a device](#flash_device), you can update the build with OTA [up
 
 在 [为设备烧写镜像](#flash_device) 之后，您就可以使用无线 (OTA) 的方式进行 [更新](https://developer.android.google.cn/things/console/update.html)了。
 
-<aside class="note"> **Note:** <span>You must flash the device with an image from the Android Things Console in order for the device to receive updates.</span></aside>
 
-<aside class="note"> **注意：** <span>为了使设备能够收到更新，您为设备烧写的镜像一定要下载自 Android Things 管理中心。</span></aside>
+**Note:** You must flash the device with an image from the Android Things Console in order for the device to receive updates.
+
+**注意：** 为了使设备能够收到更新，您为设备烧写的镜像一定要下载自 Android Things 管理中心
 
