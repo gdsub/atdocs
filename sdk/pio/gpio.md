@@ -11,7 +11,7 @@ You can configure GPIO pins as an input or output with either a high or low stat
 
 <aside class="note">**Note:** <span>To avoid damage to the GPIO pins, review the input and output limits of your hardware before making wire connections. See [Hardware 101](https://developer.android.google.cn/things/hardware/hardware-101.html) and consult the documentation for your hardware.</span></aside>
 
-<aside class="note">**注意:** <span>为避免造成对GPIO管脚的损坏，请在对你的硬件进行接线时检查有关GPIO输入和输出的限制。查看[硬件 101](https://developer.android.google.cn/things/hardware/hardware-101.html) 并查阅你的硬件的相关文档。</span></aside>
+**注意：** 为避免造成对GPIO管脚的损坏，请在对你的硬件进行接线时检查有关GPIO输入和输出的限制。查看[硬件 101](https://developer.android.google.cn/things/hardware/hardware-101.html) 并查阅你的硬件的相关文档。
 
 ## Managing the connection
 ## 管理连接
