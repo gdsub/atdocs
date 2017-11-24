@@ -381,6 +381,7 @@ Follow these instructions to download and run a [sample](https://github.com/andr
     按下 Rainbow HAT 上的 A 键来点亮红色的 LED
 
 ## Next steps
+
 ## 下一步
 * * *
 
@@ -411,7 +412,9 @@ Follow these instructions to download and run a [sample](https://github.com/andr
 .
 
 ## Feedback
-##用户反馈
+
+## 用户反馈
+
 
 * * *
 

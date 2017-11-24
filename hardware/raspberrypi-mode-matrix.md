@@ -55,7 +55,13 @@ Raspberry Pi 有一个全速单　UART (UART0) 和一个迷你 UART (MINIUART)�
 
 打开</td>
 
-<td>Pins BCM14/BCM15 expose RX/TX of the [serial debug console](https://developer.android.google.cn/things/hardware/raspberrypi.html#serial_debug_console)</td>
+<td>
+
+Pins BCM14/BCM15 expose RX/TX of the [serial debug console](https://developer.android.google.cn/things/hardware/raspberrypi.html#serial_debug_console)
+
+BCM14/BCM15 引脚为 [串口调试控制台](https://developer.android.google.cn/things/hardware/raspberrypi.html#serial_debug_console) 的 RX/TX 接口
+
+</td>
 
 </tr>
 
@@ -71,7 +77,13 @@ Raspberry Pi 有一个全速单　UART (UART0) 和一个迷你 UART (MINIUART)�
 
 关闭</td>
 
-<td>Pins BCM14/BCM15 expose RX/TX of [UART0](https://developer.android.google.cn/things/sdk/pio/uart.html)</td>
+<td>
+
+Pins BCM14/BCM15 expose RX/TX of [UART0](https://developer.android.google.cn/things/sdk/pio/uart.html)
+
+BCM14/BCM15 引脚为 [UART0](https://developer.android.google.cn/things/sdk/pio/uart.html) 的 RX/TX 接口
+
+</td>
 
 </tr>
 
@@ -87,7 +99,13 @@ Raspberry Pi 有一个全速单　UART (UART0) 和一个迷你 UART (MINIUART)�
 
 打开</td>
 
-<td>Pins BCM14/BCM15 expose RX/TX of [MINIUART](https://developer.android.google.cn/things/sdk/pio/uart.html)</td>
+<td>
+
+Pins BCM14/BCM15 expose RX/TX of [MINIUART](https://developer.android.google.cn/things/sdk/pio/uart.html)
+
+BCM14/BCM15 引脚为 [MINIUART](https://developer.android.google.cn/things/sdk/pio/uart.html) 的 RX/TX 接口
+
+</td>
 
 </tr>
 
@@ -105,7 +123,13 @@ BCM14 或 BCM15</td>
 
 打开</td>
 
-<td>Named pin (BCM14 or BCM15) is [GPIO](https://developer.android.google.cn/things/sdk/pio/gpio.html), other pin is idle</td>
+<td>
+
+Named pin (BCM14 or BCM15) is  [GPIO](https://developer.android.google.cn/things/sdk/pio/gpio.html) , other pin is idle
+
+BCM14/BCM15 引脚为 [GPIO](https://developer.android.google.cn/things/sdk/pio/gpio.html) 接口， 其它的引脚空闲
+
+</td>
 
 </tr>
 
@@ -118,6 +142,7 @@ An `IOException` error is thrown if you try to open an active pin (from above) u
 当你尝试用一个不同的 UART 模式打开以上的串口时会出现 `IOException` 报错
 
 ## Audio modes
+
 ## 音频模式
 
 * * *
@@ -184,9 +209,13 @@ Raspberry Pi 上的 PWM 驱动和音频系统 (I2S 和模拟)使用一个共享�
 
 关闭</td>
 
-<td>Pin BCM18 enabled as [PWM](https://developer.android.google.cn/things/sdk/pio/pwm.html)
+<td>
 
-BCM18 口用为 [PWM](https://developer.android.google.cn/things/sdk/pio/pwm.html)</td>
+Pin BCM18 enabled as [PWM](https://developer.android.google.cn/things/sdk/pio/pwm.html)
+
+BCM18 引脚为 [PWM](https://developer.android.google.cn/things/sdk/pio/pwm.html) 接口
+
+</td>
 
 </tr>
 
@@ -202,9 +231,13 @@ BCM18 口用为 [PWM](https://developer.android.google.cn/things/sdk/pio/pwm.htm
 
 打开</td>
 
-<td>Pin BCM18 enabled as [I2S](https://developer.android.google.cn/things/sdk/pio/i2s.html) BCLK
+<td>
 
-BCM18 口用为 [I2S](https://developer.android.google.cn/things/sdk/pio/i2s.html) BCLK</td>
+Pin BCM18 enabled as [I2S](https://developer.android.google.cn/things/sdk/pio/i2s.html) BCLK
+
+BCM18 引脚为 [I2S](https://developer.android.google.cn/things/sdk/pio/i2s.html) BCLK 接口
+
+</td>
 
 </tr>
 
@@ -220,9 +253,13 @@ BCM18 口用为 [I2S](https://developer.android.google.cn/things/sdk/pio/i2s.htm
 
 打开</td>
 
-<td>Named pin (BCM18) is [GPIO](https://developer.android.google.cn/things/sdk/pio/gpio.html)
+<td>
 
-命名串口 (BCM18) 是 [GPIO](https://developer.android.google.cn/things/sdk/pio/gpio.html)</td>
+Named pin (BCM18) is [GPIO](https://developer.android.google.cn/things/sdk/pio/gpio.html)
+
+BCM18 是 [GPIO](https://developer.android.google.cn/things/sdk/pio/gpio.html) 接口
+
+</td>
 
 </tr>
 
@@ -230,7 +267,7 @@ BCM18 口用为 [I2S](https://developer.android.google.cn/things/sdk/pio/i2s.htm
 
 </table>
 
-<aside class="note">**Note:** <span>Switching from PWM0 mode to Audio mode requires a device reboot due to limitations of the hardware.</span></aside>
+**Note:** Switching from PWM0 mode to Audio mode requires a device reboot due to limitations of the hardware.
 
-<aside class="note">**注意:** <span>由于硬件局限，从 PWM0 模式切换到音频模式需要设备重启。</span></aside>
+**注意:** 由于硬件局限，从 PWM0 模式切换到音频模式需要设备重启。
 

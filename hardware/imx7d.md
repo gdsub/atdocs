@@ -71,9 +71,9 @@ Use the following steps to flash the Android image:
 
        ` $ fastboot devices1b2f21d4e1fe0129        fastboot`
 
-    **Note:** Your device will not boot into Fastboot mode if it was previously flashed with Android Things. You need to first execute the following command using the [adb tool](https://developer.android.google.cn/tools/help/adb.html) to reboot the device into Fastboot mode.
+**Note:** Your device will not boot into Fastboot mode if it was previously flashed with Android Things. You need to first execute the following command using the [adb tool](https://developer.android.google.cn/tools/help/adb.html) to reboot the device into Fastboot mode.
     
-    **Note:** 如何前面已经烧了Android Things 镜像，板子会进入不了 fastboot 模式。 这样就需要用 [adb tool](https://developer.android.google.cn/tools/help/adb.html) 执行下面命令使得板子进入 fastboot 模式。
+**注意:** 如何前面已经烧了Android Things 镜像，板子会进入不了 fastboot 模式。 这样就需要用 [adb tool](https://developer.android.google.cn/tools/help/adb.html) 执行下面命令使得板子进入 fastboot 模式。
 
         $ adb reboot bootloader`
 
@@ -81,9 +81,9 @@ Use the following steps to flash the Android image:
 
     执行 `flash-all.sh` 脚本。 此脚本会安装 bootloader, 基带固件, 和操作系统 (On Windows systems, use `flash-all.bat` instead).
 
-    **Note:** The device automatically reboots into Android Things when the process is complete.
+**Note:** The device automatically reboots into Android Things when the process is complete.
 
-    **Note:**  当处理程序结束会自动启动到 Android Things 。
+**注意:**  当处理程序结束会自动启动到 Android Things 。
 
 5.  To verify that Android is running on the device, discover it using the [adb tool](https://developer.android.google.cn/tools/help/adb.html):
 
@@ -113,7 +113,7 @@ Before connecting your board to a Wi-Fi network, attach an external IPEX or u.FL
 
 **Note:**  The module can't resolve Wi-Fi signals if you proceed without connecting an antenna.
 
-**Note:**  如果不连接天线模块无法处理 Wi-Fi信号。
+**注意:**  如果不连接天线模块无法处理 Wi-Fi信号。
 
 To connect your board to Wi-Fi, first access a shell prompt on the device. You can use either of the following methods:
 

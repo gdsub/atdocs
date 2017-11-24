@@ -103,7 +103,7 @@ To flash Android Things onto your board, download the latest preview image in th
 
 **Note:** Raspberry Pi broadcasts the hostname `Android.local` over Multicast DNS. If your host platform supports MDNS, you can also connect to the board using the following command:
 
-**注意** Raspberry Pi 会覆盖组播 DNS 传输主机名称 `Android.local` 。如果你的寄存平台支持 MDNS，你也可以通过以下操作连接开发板：
+**注意:** Raspberry Pi 会覆盖组播 DNS 传输主机名称 `Android.local` 。如果你的寄存平台支持 MDNS，你也可以通过以下操作连接开发板：
     
      $ adb connect Android.local
 
@@ -119,7 +119,7 @@ After flashing your board, it is strongly recommended to connect it to the inter
 
 **Note:** The device doesn't need to be on the same network as your computer.
 
-**注意**你的设备不必和你的电脑使用相同的网络。
+**注意:** 你的设备不必和你的电脑使用相同的网络。
 
 To connect your board to Wi-Fi, first access a shell prompt on the device. You can use either of the following methods:
 
@@ -240,6 +240,7 @@ If you want to clear all of the saved networks on the board:
 The serial console is a helpful tool for debugging your board and reviewing system log information. The console is the default output location for kernel log messages (i.e. `dmesg`), and it also provides access to a full shell prompt that you can use to access commands such as [logcat](https://developer.android.google.cn/tools/help/logcat.html). This is helpful if you are unable to access ADB on your board through other means and have not yet enabled a network connection.
 
 串行控制台是一个用于调试你的开发板和浏览系统信息非常有效的工具。控制台是默认的内核日志信息输出地址(`dmesg`)。
+
 To access the serial console, connect a [USB to TTL Serial Cable](https://www.adafruit.com/products/954) to the device UART pins as shown below.
 
 你可以通过以下的方式连接一条 [USB to TTL 串行线](https://www.adafruit.com/products/954) 到设备的 UART 口来访问串行控制台

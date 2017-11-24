@@ -56,13 +56,13 @@ Connect the board to your host computer:
 
 ![""](https://developer.android.google.cn/things/images/spriot-connections.png)
 
-1.  Connect a Micro-USB cable to the USB OTG connector.
+* 	Connect a Micro-USB cable to the USB OTG connector.
 
-    把板子上的USB OTG接口和主机之间用 USB-C线连起来。
+	把板子上的USB OTG接口和主机之间用 USB-C线连起来。
 
-2.  Connect a 5V power adapter to the power input connector.
+* 	Connect a 5V power adapter to the power input connector.
 
-    连一个5V 电源适配器到电源输入接口
+	连一个5V 电源适配器到电源输入接口
 
 
 **For Argon i.MX6UL:**
