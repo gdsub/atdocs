@@ -4,7 +4,7 @@
 
 The i.MX 7Dual delivers high-performance processing for low-power requirements with a high degree of functional integration. The i.MX 7Dual features an advanced implementation of two ARM®Cortex®-A7 cores, which operate at speeds of up to 1.2 GHz, as well as the ARM® Cortex®-M4 core. The Pico variant is pin-compatible with the Intel® Edison for sensors and low-speed I/O, but also adds additional expansion possibilities for multimedia and connectivity, giving you cutting edge technology that can easily be expanded and implemented for IoT designs.
 
-i.MX 7Dual处理器是带有高度功能集成、低功耗、高性能的, 工作频率最高到 1.2 GHz, 核心是 ARM® Cortex®-M4。Pico 板和 Intel® Edison 板对传感器和低速 I/O 来讲是管脚兼容的,但也加了对多媒体和联网的扩展可能，这使得板子可以很容易的用到最新的 IoT 技术。
+i.MX 7Dual 处理器是带有高度功能集成、低功耗、高性能的, 工作频率最高到 1.2 GHz, 核心是 ARM® Cortex®-M4。Pico 板和 Intel® Edison 板对传感器和低速 I/O 来讲是管脚兼容的，但也加了对多媒体和联网的扩展可能，这使得板子可以很容易的用到最新的 IoT 技术。
 
 ![""](https://developer.android.google.cn/things/images/nxp-pico7-board.png)
 
@@ -24,7 +24,7 @@ Before you begin flashing, you will need the following items in addition to your
     
 To flash Android Things onto your board, download the latest preview image in the [Android Things Console](https://partner.android.com/things/console) (see the [release notes](https://developer.android.google.cn/things/preview/releases.html)) and follow these steps:
 
-为了烧录 Android Things 到板子上, 从 [Android Things Console](https://partner.android.com/things/console) 下载最新的映像(看下 [release notes](https://developer.android.google.cn/things/preview/releases.html)) 并按一下步骤来做:
+为了烧录 Android Things 到板子上，从 [Android Things Console](https://partner.android.com/things/console) 下载最新的映像（参看 [release notes](https://developer.android.google.cn/things/preview/releases.html)）并按以下步骤来做：
 
 ### Step 1: Connect the Hardware
 
@@ -38,7 +38,7 @@ Connect the board to your host computer as shown below:
 
 1.  Connect a USB-C cable from your host computer for Power and USB OTG.
 
-    把板子上的USB OTG接口和主机之间用 USB-C 线连起来。
+    把板子上的 USB OTG 接口和主机之间用 USB-C 线连起来。
 
 ### Step 2: Flash Android Things
 
@@ -62,31 +62,31 @@ Use the following steps to flash the Android image:
 
 2.  Open a command line terminal and navigate to the unzipped image directory.
 
-    打开一个命令行终端并进到解开映像的目录。
+    打开一个命令行终端并切换到映像的解压目录。
 
 3.  Verify that the device has booted into Fastboot mode by executing the following command:
 
-    执行下面命令确保板子进入了fastboot 模式:
+    执行以下命令验证板子已进入 fastboot 模式:
 
         $ fastboot devices1b2f21d4e1fe0129        fastboot
 
     <aside class="note">**Note:** <span>Your device will not boot into Fastboot mode if it was previously flashed with Android Things. You need to first execute the following command using the [adb tool](https://developer.android.google.cn/tools/help/adb.html) to reboot the device into Fastboot mode.
     
-    <aside class="note">**Note:** <span>如何前面已经烧了Android Things 映像，板子会进入不了 fastboot 模式。 这样就需要用[adb tool](https://developer.android.google.cn/tools/help/adb.html)执行下面命令使得板子进入 fastboot 模式。
+    <aside class="note">**Note:** <span>如何前面已经烧了 Android Things 映像，板子不会进入 fastboot 模式。这样就需要用[adb tool](https://developer.android.google.cn/tools/help/adb.html)执行以下命令使板子进入 fastboot 模式。
 
         $ adb reboot bootloader</span></aside>
 
 4.  Execute the `flash-all.sh` script. This script installs the necessary bootloader, baseband firmware(s), and operating system. (On Windows systems, use `flash-all.bat` instead).
 
-    执行 `flash-all.sh` 脚本。 此脚本会安装 bootloader, 基带固件, 和操作系统 (On Windows systems, use `flash-all.bat` instead).
+    执行 `flash-all.sh` 脚本。此脚本会安装 bootloader、基带固件和操作系统（如在 Windows 系统上，请替换位 `flash-all.bat` 命令）。
 
     <aside class="note">**Note:** <span>The device automatically reboots into Android Things when the process is complete.</span></aside>
 
-    <aside class="note">**Note:** <span>当处理程序结束会自动启动到 Android Things 。</span></aside>
+    <aside class="note">**Note:** <span>当处理程序结束会自动重启进入 Android Things 。</span></aside>
 
 5.  To verify that Android is running on the device, discover it using the [adb tool](https://developer.android.google.cn/tools/help/adb.html):
 
-    为了验证 Android 正在板子上跑，可以用 [adb tool](https://developer.android.google.cn/tools/help/adb.html)执行如下命令:
+    为了验证 Android 正在板子上运行，可以用 [adb tool](https://developer.android.google.cn/tools/help/adb.html)执行如下命令:
 
         $ adb wait-for-device...$ adb devicesList of devices attached1b2f21d4e1fe0129        device
 
@@ -98,7 +98,7 @@ Use the following steps to flash the Android image:
 
 After flashing your board, it is strongly recommended to connect it to the internet. This allows your device to deliver crash reports and receive updates.
 
-在板子烧过后, 强烈建议要连上网。 这会让你的板子能上传崩溃报告并接受更新。
+在板子烧过后，强烈建议要连上网。这样你的板子就能够上传崩溃报告并收到更新。
 
 <aside class="note">**Note:** <span>The device doesn't need to be on the same network as your computer.</span></aside>
 
@@ -106,17 +106,17 @@ After flashing your board, it is strongly recommended to connect it to the inter
 
 Before connecting your board to a Wi-Fi network, attach an external IPEX or u.FL Wi-Fi antenna to your board as shown:
 
-在连到Wi-Fi之前, 连一根 IPEX 或者 u.FL Wi-Fi 天线到板子上如下所示
+在连到 Wi-Fi 之前，连一根 IPEX 或者 u.FL Wi-Fi 天线到板子上，如下图所示
 
 ![""](https://developer.android.google.cn/things/images/pico7-antenna.png)
 
 <aside class="note">**Note:** <span>The module can't resolve Wi-Fi signals if you proceed without connecting an antenna.</span></aside>
 
-<aside class="note">**Note:** <span>如果不连接天线模块无法处理 Wi-Fi信号。</span></aside>
+<aside class="note">**注意：** <span>如果不连接天线模块无法处理 Wi-Fi 信号。</span></aside>
 
 To connect your board to Wi-Fi, first access a shell prompt on the device. You can use either of the following methods:
 
-为了连板子到 Wi-Fi, 先连上板子的 shell 终端。 可以使用下面任一种方法：
+为了让连板子到 Wi-Fi，先连上板子的 shell 终端。可以使用下面任意一种方法：
 
 *   Open a shell over adb with the `adb shell` command.
 
@@ -128,11 +128,11 @@ To connect your board to Wi-Fi, first access a shell prompt on the device. You c
 
 Once you can access a shell prompt, follow these steps:
 
-一旦连到一个 shell 终端, 按下面步骤来:
+一旦连到一个 shell 终端，按以下步骤来：
 
 1.  Send an intent to the Wi-Fi service that includes the SSID of your local network. Your [board](https://developer.android.google.cn/things/hardware/developer-kits.html) must support the network protocol and frequency band of the wireless network in order to establish a connection.
 
-向 Wi-Fi 服务发送带有你的本地网络 SSID 的请求。你的 [开发板](https://developer.android.google.cn/things/hardware/developer-kits.html) 必须支持无线网络协议和频段以建立连接。
+向 Wi-Fi 服务发送带有你的本地网络 SSID 的请求。你的 [开发板](https://developer.android.google.cn/things/hardware/developer-kits.html) 必须支持无线网络协议及频段以建立连接。
 
         $ am startservice \    -n com.google.wifisetup/.WifiSetupService \    -a WifiSetupService.Connect
 
@@ -162,7 +162,7 @@ Once you can access a shell prompt, follow these steps:
 
     <td>Connect to the wireless network SSID specified by <var>network_ssid</var>. _This argument is required_.
 	
-	连接到由 <var>network_ssid</var> 指定的无线网络 SSID 。此参数为必须参数</td>
+	连接到由 <var>network_ssid</var> 指定的无线网络 SSID 。此参数为必须参数。</td>
 
     </tr>
 
@@ -172,7 +172,7 @@ Once you can access a shell prompt, follow these steps:
 
     <td>Optional argument to use the passcode specified by <var>network_pass</var> to connect to the network SSID. This argument is not necessary if your network doesn't require a passcode.
 	
-	可选操作，通过 <var>network_pass</var> 指定的密码来连接网络 SSID 。不必要操作如果你的网络不需要密码。</td>
+	可选操作，通过 <var>network_pass</var> 指定的密码来连接网络 SSID 。如果你的网络不需要密码，不需设定。</td>
 
     </tr>
 
@@ -182,7 +182,7 @@ Once you can access a shell prompt, follow these steps:
 
     <td>Optional argument used in place of `passphrase` for passcodes with special characters (`space, !, ", $, &, ', (, ), ;, <, >, `, or |`). Use [base64 encoding](https://www.base64encode.org/) to specify the value for <var>encoded_pass</var>.
 	
-	可选操作，设置密码 `passphrase` 可用特殊字符 (`space, !, ", $, &, ', (, ), ;, <, >, `, or |`)。使用 [base64 encoding](https://www.base64encode.org/) 来指定 <var>encoded_pass</var> 的值</td>
+	可选操作，设置密码 `passphrase` 可用特殊字符 (`space, !, ", $, &, ', (, ), ;, <, >, `, or |`)。使用 [base64 编码](https://www.base64encode.org/) 来指定 <var>encoded_pass</var> 的值</td>
 
     </tr>
 
@@ -223,7 +223,7 @@ Once you can access a shell prompt, follow these steps:
 
 If you want to clear all of the saved networks on the board:
 
-如果你要清空开发板上所有已存的网络：
+如果你要清空开发板上所有已存的网络，请使用以下命令：
 
     $ am startservice \    -n com.google.wifisetup/.WifiSetupService \    -a WifiSetupService.Reset
 
@@ -235,7 +235,7 @@ If you want to clear all of the saved networks on the board:
 
 The serial console is a helpful tool for debugging your board and reviewing system log information. The console is the default output location for kernel log messages (i.e. `dmesg`), and it also provides access to a full shell prompt that you can use to access commands such as [logcat](https://developer.android.google.cn/tools/help/logcat.html). This is helpful if you are unable to access ADB on your board through other means and have not yet enabled a network connection.
 
-串口是很有用的调试板子看系统打印信息的工具。 串口是内核打印信息的缺省输出口 (例如 `dmesg`), 串口能提供一个完全的命令行终端来执行类似 [logcat](https://developer.android.google.cn/tools/help/logcat.html)的命令。 如果此时板子不能用 ADB 命令来访问同时也不能联网时会特别有用。
+串口是很有用的调试板子看系统打印信息的工具。 串口是内核打印信息的缺省输出口（例如 `dmesg`），串口能提供一个完全的命令行终端来执行类似 [logcat](https://developer.android.google.cn/tools/help/logcat.html)的命令。如果此时板子不能用 ADB 命令来访问同时也不能联网时会特别有用。
 
 To access the serial console:
 
@@ -245,17 +245,17 @@ To access the serial console:
 
 Open a connection to the USB serial device on your development computer using a terminal program, such as [PuTTY](http://www.putty.org/) (Windows), [Serial](https://www.decisivetactics.com/products/serial/) (Mac OS), or [Minicom](https://en.wikipedia.org/wiki/Minicom) (Linux). The serial port parameters for the console are as follows:
 
-使用串口终端程序在你的PC上打开 USB 串口设备, 例如 [PuTTY](http://www.putty.org/) (Windows下), [Serial](https://www.decisivetactics.com/products/serial/) (Mac 下), 或者 [Minicom](https://en.wikipedia.org/wiki/Minicom) (Linux下)。串口的参数设置如下:
+使用串口终端程序在你的 PC 上打开 USB 串口设备, 例如 [PuTTY](http://www.putty.org/)（Windows下），[串口](https://www.decisivetactics.com/products/serial/)（Mac 下），或者 [Minicom](https://en.wikipedia.org/wiki/Minicom)（Linux下）。串口的参数设置如下:
 
 *   **Baud Rate**: 115200
 
-*   **比特率**: 115200
+*   **比特率**：115200
 *   **Data Bits**: 8
 
-*   **数据位**: 8
+*   **数据位**：8
 *   **Parity**: None
 
-*   **奇偶校验**: None
-*   **Stop Bits**: 1
+*   **奇偶校验**：无
+*   **Stop Bits**: 1
 
-*   **停止位**: 1
+*   **停止位**：1
