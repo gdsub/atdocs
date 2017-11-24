@@ -5,7 +5,7 @@
 
 The Android [sensor framework](https://developer.android.google.cn/guide/topics/sensors/sensors_overview.html) supports a wide variety of sensor types to measure the conditions of the physical environment and read the raw data from apps. Using sensor drivers, your apps can extend this framework and add new sensor devices connected over [Peripheral I/O](https://developer.android.google.cn/things/sdk/pio/index.html).
 
-Android 的[传感器框架](https://developer.android.google.cn/guide/topics/sensors/sensors_overview.html)支持的传感器类型相对广泛，使用该框架可以测量物理环境的状态并从应用中读取原始数据。而通过使用传感器驱动，你的应用可以扩展这个框架，并且可以添加连接到 [Peripheral I/O](https://developer.android.google.cn/things/sdk/pio/index.html) 上的新设备。
+Android 的 [传感器框架](https://developer.android.google.cn/guide/topics/sensors/sensors_overview.html) 支持的传感器类型相对广泛，使用该框架可以测量物理环境的状态并从应用中读取原始数据。而通过使用传感器驱动，你的应用可以扩展这个框架，并且可以添加连接到 [Peripheral I/O](https://developer.android.google.cn/things/sdk/pio/index.html) 上的新设备。
 
 The data from these sensors is delivered through the same [SensorManager](https://developer.android.google.cn/reference/android/hardware/SensorManager.html) APIs as the built-in Android sensors. Your app can implement a driver to connect a new sensor of a known type, such as an accelerometer, or a sensor type that Android doesn't currently define, such as a blood glucose sensor.
 
@@ -23,7 +23,7 @@ The framework polls your driver periodically when listeners are registered for s
 
 <aside class="note">**Note:** <span>For more information on the data format expected for known sensor types, see [sensor event values](https://developer.android.google.cn/reference/android/hardware/SensorEvent.html#values).</span></aside>
 
-<aside class="note">**注意:** <span>想要获取更多关于已知传感器类型的数据格式信息，查阅[传感器事件值](https://developer.android.google.cn/reference/android/hardware/SensorEvent.html#values).</span></aside>
+**注意：** 想要获取更多关于已知传感器类型的数据格式信息，查阅 [传感器事件值](https://developer.android.google.cn/reference/android/hardware/SensorEvent.html#values).
 
 The framework may call `read()` at a time when the driver is not able to produce a sensor reading. When this occurs, your driver should throw an `IOException`.
 
@@ -70,7 +70,7 @@ UserSensorDriver mDriver = new UserSensorDriver() {
 
 <aside class="note">**Note:** <span>Sensors without low power modes can still use this callback to increase or reduce the reporting frequency of the data in order to manage power consumption.</span></aside>
 
-<aside class="note">**注意:** <span>没有低功耗模式的传感器同样能使用这个回调方法来提高或降低数据的上报频率以便管理节点的能耗。</span></aside>
+**注意：** 没有低功耗模式的传感器同样能使用这个回调方法来提高或降低数据的上报频率以便管理节点的能耗。
 
 ## Describing the sensor
 
