@@ -15,7 +15,7 @@ GPS 模块通常使用 [UART](https://developer.android.google.cn/things/sdk/pio
 
 <aside class="note">**Note:** <span>The framework only supports a single source for GPS location data. You cannot register multiple GPS drivers.</span></aside>
 
-**注意：** Framework 仅支持单一的 GPS 位置信息数据源。你不能注册多个 GPS 驱动。
+**注意:** Framework 仅支持单一的 GPS 位置信息数据源。你不能注册多个 GPS 驱动。
 
 ## Creating the driver
 
