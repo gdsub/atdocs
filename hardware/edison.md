@@ -32,7 +32,7 @@ To flash Android Things onto your board, download the preview image in the [Andr
 
 If this is your first time installing Android Things on the Edison, you need to upgrade the bootloader to be Fastboot capable. Follow the Intel Getting Started Guide to perform the required one-time setup steps on your board:
 
-如果这是您第一次在Edison开发板上安装 Android Things，您需要升级您的 bootloader 到 Fastboot，请参考 Intel 提供的入门指南来对开发板进行必要的一次性步骤设置：
+如果这是您第一次在Edison开发板上安装 Android Things，您需要升级您的 bootloader 以便能够支持 Fastboot，请参考 Intel 提供的入门指南来对开发板进行必要的一次性步骤设置：
 
 *   [Arduino Expansion Board](https://software.intel.com/en-us/articles/installing-android-things-on-intel-edison-kit-for-arduino)
 *   [Arduino 扩展板](https://software.intel.com/en-us/articles/installing-android-things-on-intel-edison-kit-for-arduino)
@@ -43,15 +43,15 @@ If this is your first time installing Android Things on the Edison, you need to 
 
 ### Step 2: Connect the Hardware
 
-### 步骤 2： 连接到硬件
+### 步骤 2： 连接硬件
 
 Connect the board to your host computer:
 
-连接开发板到计算机：
+将开发板连接到计算机：
 
 **For Arduino Expansion Board:**
 
-**对于 Arduino 扩展板：**
+**针对 Arduino 扩展板的操作步骤：**
 
 ![""](https://developer.android.google.cn/things/images/edison-arduino-connections.png)
 
@@ -60,18 +60,19 @@ Connect the board to your host computer:
 2.  Press the **FW** button and keep it pressed.
 2.  长按 **FW** 键。
 3.  Connect a USB cable to **J16**.
-3.  连接 USB 线到 **J16**。
+3.  将 USB 线连接到 **J16**。
 4.  Release the **FW** button.
 4.  松开 **FW** 键。
 
 **For Sparkfun Block:**
 
-**对于 Sparkfun 扩展模块：**
+**针对 Sparkfun 扩展模块的操作步骤：**
 
 ![""](https://developer.android.google.cn/things/images/edison-sparkfun-connections.png)
 
 1.  Connect a USB cable to the **OTG** connector.
-1.  连接USB线到 **OTG** 接口。
+
+1.  将 USB 线连接到 **OTG** 接口。
 
 ### Step 3: Flash Android Things
 
@@ -89,11 +90,11 @@ Once you have loaded the proper bootloader on your device, use the following ste
 
     *   Navigate to the Android SDK location on your computer; the path can be found in the system settings for Android Studio. Verify that the `fastboot` binary is installed in the `platform-tools/` directory.
 
-    *   切换到计算机上 Android SDK 的位置，该位置的路径可以从 Android Studio 的系统配置中可以找到。确认 `fastboot` 二进制文件已经安装到`platform-tools/` 目录下。
+    *   打开计算机上 Android SDK 的安装目录，该目录路径可以从 Android Studio 的系统配置中找到。确认 `fastboot` 二进制文件已经安装到 `platform-tools/` 目录下。
 
     *   After you have the fastboot tool, add it to your `PATH` [environment variable](https://developer.android.google.cn/studio/command-line/variables.html#set). This command should be similar to the following:
 
-    *   确认了 fastboot 工具之后，把它添加到您的环境变量 `PATH` [环境变量](https://developer.android.google.cn/studio/command-line/variables.html#set) 中。添加的命令参考如下。
+    *   确认了您有了 fastboot 工具之后，把它添加到您的环境变量 `PATH` [环境变量](https://developer.android.google.cn/studio/command-line/variables.html#set) 中。添加的命令参考如下。
 
         `export PATH=$PATH:"path/to/fastboot"`
 
@@ -129,7 +130,7 @@ Once you have loaded the proper bootloader on your device, use the following ste
 
     <aside class="note">**Note:** <span>The device automatically reboots into Android Things when the process is complete.</span></aside>
 
-    <aside class="note">**注意：** <span>该过程完成后，设备会自动重新引导到 Android Things</span></aside>
+    <aside class="note">**注意：** <span>该过程完成后，设备会自动重启进入 Android Things</span></aside>
 
 5.  To verify that Android is running on the device, discover it using the [adb tool](https://developer.android.google.cn/tools/help/adb.html):
 
@@ -146,18 +147,18 @@ Once you have loaded the proper bootloader on your device, use the following ste
 
 After flashing your board, it is strongly recommended to connect it to the internet. This allows your device to deliver crash reports and receive updates.
 
-烧录完开发板之后, 强烈建议将其连接到互联网. 这可让您的设备提供崩溃报告以及接收更新。
+烧录完开发板之后, 强烈建议将其连接到互联网。这可让您的设备提供崩溃报告以及接收更新。
 
 <aside class="note">**Note:** <span>The device doesn't need to be on the same network as your computer.</span></aside>
 
-<aside class="note">**注意：** <span>设备和计算机不一定要处于同一个网络。</span></aside>
+<aside class="note">**注意：** <span>设备和计算机不一定要处于同一个网络中。</span></aside>
 
 To connect your board to Wi-Fi, first access a shell prompt on the device. You can use either of the following methods:
 
-开发板连接Wi-Fi之前需要先访问设备的shell终端。 您可用通过以下任意一种方式来访问:
+开发板连接 Wi-Fi 之前需要先访问设备的 shell 终端。 您可用通过以下任意一种方式来访问:
 
 *   Open a shell over adb with the `adb shell` command.
-*   使用 `adb shell` 来打开基于adb的终端。
+*   使用 `adb shell` 来打开基于 adb 的终端。
 *   Connect to the [serial console](#serial_debug_console).
 *   连接到串口调试终端 [串口终端](#串口调试终端)。
 
@@ -177,7 +178,7 @@ Once you can access a shell prompt, follow these steps:
 
 ***
 
-1.  发送一条包含本地无线网络 SSID 等参数的消息到Wi-Fi服务。 您的 [开发板](https://developer.android.google.cn/things/hardware/developer-kits.html) 必须支持该无线网络的协议以及频段才能够建立网络连接。
+1.  发送一条包含本地无线网络 SSID 等参数的消息到 Wi-Fi 服务。 您的 [开发板](https://developer.android.google.cn/things/hardware/developer-kits.html) 必须支持该无线网络的协议以及频段才能够建立网络连接。
 
         $ am startservice \    -n com.google.wifisetup/.WifiSetupService \    -a WifiSetupService.Connect
 
@@ -249,7 +250,7 @@ Once you can access a shell prompt, follow these steps:
 
     <td>`-e ssid <var>network_ssid</var>`</td>
 
-    <td>通过 <var>network_ssid</var> 来指定被连接无线网络的SSID。 **该参数是必要参数**。</td>
+    <td>通过 <var>network_ssid</var> 来指定被连接无线网络的 SSID 。 **该参数是必要参数**。</td>
 
     </tr>
 
@@ -257,7 +258,7 @@ Once you can access a shell prompt, follow these steps:
 
     <td>`-e passphrase <var>network_pass</var>`</td>
 
-    <td>通过 <var>network_pass</var> 来指定被连接无线网络（SSID）的密码。 该参数不是必要参数，因为无线网络可以不配置密码。</td>
+    <td>通过 <var>network_pass</var> 来指定被连接无线网络（SSID）的密码。 该参数是可选参数，因为无线网络可以不设置密码。</td>
 
     </tr>
 
@@ -273,7 +274,7 @@ Once you can access a shell prompt, follow these steps:
 
     <td>`--ez hidden true`</td>
 
-    <td>可选参数用来表示命令中指定的无线网络（SSID）是隐藏的。 如果省略, 这个参数的默认值为false。</td>
+    <td>可选参数用来表示命令中指定的无线网络（SSID）是隐藏的。 如果省略, 这个参数的默认值为 false 。</td>
 
     </tr>
 
@@ -285,21 +286,21 @@ Once you can access a shell prompt, follow these steps:
 
         $ logcat -d | grep Wifi...V WifiWatcher: Network state changed to CONNECTEDV WifiWatcher: SSID changed: ...I WifiConfigurator: Successfully connected to ...
 
-3.  测试是否可以访问远程IP地址:
+3.  测试是否可以访问远程 IP 地址:
 
         $ ping 8.8.8.8PING 8.8.8.8 (8.8.8.8) 56(84) bytes of data.64 bytes from 8.8.8.8: icmp_seq=1 ttl=57 time=6.67 ms64 bytes from 8.8.8.8: icmp_seq=2 ttl=57 time=55.5 ms64 bytes from 8.8.8.8: icmp_seq=3 ttl=57 time=23.0 ms64 bytes from 8.8.8.8: icmp_seq=4 ttl=57 time=245 ms
 
-4.  检查设备的日期和时间是否已经正确配置:
+4.  检查设备的日期和时间是否已经设置正确:
 
         $ date
 
     <aside class="note">**Note:** <span>An incorrect date or time may cause SSL errors. Restart the device to automatically set the correct date and time from a time server.</span></aside>
 
-    <aside class="note">**注意：** <span>日期或者时间错误可能导致SSL错误。 通过重启可以让设备自动从远程时间服务器进行日期和时间的同步</span></aside>
+    <aside class="note">**注意：** <span>日期或者时间错误可能导致 SSL 错误。 重启可以让设备自动同远程时间服务器进行日期和时间的同步。</span></aside>
 
 If you want to clear all of the saved networks on the board:
 
-如果您想清除开发板上所有已保存的网络:
+如果您想清除开发板上所有已保存的网络，可以使用以下命令:
 
     $ am startservice \    -n com.google.wifisetup/.WifiSetupService \    -a WifiSetupService.Reset
 
@@ -331,7 +332,7 @@ To access the serial console, connect a micro USB cable to the board as follows:
 
 Open a connection to the USB serial device on your development computer using a terminal program, such as [PuTTY](http://www.putty.org/) (Windows), [Serial](https://www.decisivetactics.com/products/serial/) (Mac OS), or [Minicom](https://en.wikipedia.org/wiki/Minicom) (Linux). The serial port parameters for the console are as follows:
 
-选择一个终端程序来建立计算机和USB串口设备的连接，例如 [PuTTY](http://www.putty.org/) (Windows), [Serial](https://www.decisivetactics.com/products/serial/) (Mac OS), or [Minicom](https://en.wikipedia.org/wiki/Minicom) (Linux). 串口连接参数参考如下:
+选择一个终端程序来建立计算机和 USB 串口设备的连接，例如 [PuTTY](http://www.putty.org/) (Windows), [Serial](https://www.decisivetactics.com/products/serial/) (Mac OS), or [Minicom](https://en.wikipedia.org/wiki/Minicom) (Linux). 串口连接参数参考如下:
 
 *   **Baud Rate**: 115200
 *   **波特率**: 115200
