@@ -4,7 +4,7 @@
 
 Expanding the i.MX 6 series, the i.MX 6UltraLite is a high performance, ultra-efficient processor family featuring an advanced implementation of a single ARM® Cortex®-A7 core. The Pico variant is pin-compatible with the Intel® Edison for sensors and low-speed I/O, but also adds additional expansion possibilities for multimedia and connectivity, giving you cutting edge technology that can easily be expanded and implemented for IoT designs.
 
-从 i.MX 6 系列中扩展而来, i.MX 6UltraLite 是一个高性能，非常高效的处理器家族，采用的是单个ARM® Cortex®-A7核。 Pico 板和 Intel® Edison 板对传感器和低速 I/O来讲是管脚兼容的,但也加了对多媒体和联网的扩展可能，这使得板子可以很容易的用到最新的 IoT 技术。
+从 i.MX 6 系列中扩展而来, i.MX 6UltraLite 是一个高性能，非常高效的处理器家族，采用的是单个 ARM® Cortex®-A7 核。 Pico 板和 Intel® Edison 板对传感器和低速 I/O来讲是管脚兼容的,但也加了对多媒体和联网的扩展可能，这使得板子可以很容易的用到最新的 IoT 技术。
 
 ![](https://developer.android.google.cn/things/images/nxp-pico7-board.png) ![](https://developer.android.google.cn/things/images/nxp-spriot-board.png) ![](https://developer.android.google.cn/things/images/nxp-argon-board.png)
 
@@ -85,7 +85,7 @@ Connect the board to your host computer:
     
 4.  Move **SW1** to the **ON** position to power the board.
 
-    把 **SW1** 切换到**开** 给板子上电。
+    把 **SW1** 切换到 **开** 给板子上电。
 
 ### Step 2: Flash Android Things
 
@@ -117,13 +117,13 @@ Use the following steps to flash the Android image:
 
 3.  Verify that the device has booted into Fastboot mode by executing the following command:
 
-     执行下面命令确保板子进入了fastboot 模式:
+     执行下面命令确保板子进入了 fastboot 模式:
 
         $ fastboot devices1b2f21d4e1fe0129        fastboot
 
     <aside class="note">**Note:** <span>Your device will not boot into Fastboot mode if it was previously flashed with Android Things. You need to first execute the following command using the [adb tool](https://developer.android.google.cn/tools/help/adb.html) to reboot the device into Fastboot mode.
     
-    <aside class="note">**Note:** <span>如何前面已经烧了Android Things 映像，板子会进入不了 fastboot 模式。 这样就需要用[adb tool](https://developer.android.google.cn/tools/help/adb.html)执行下面命令使得板子进入 fastboot 模式。
+    **注意：** 如何前面已经烧了 Android Things 映像，板子会进入不了 fastboot 模式。 这样就需要用 [adb tool](https://developer.android.google.cn/tools/help/adb.html)执行下面命令使得板子进入 fastboot 模式。
  
  
  
@@ -136,7 +136,7 @@ Use the following steps to flash the Android image:
 
     <aside class="note">**Note:** <span>The device automatically reboots into Android Things when the process is complete.</span></aside>
     
-    <aside class="note">**Note:** <span>当处理程序结束会自动启动到 Android Things 。</span></aside>
+    **注意：** 当处理程序结束会自动启动到 Android Things 。
      
 5.  To verify that Android is running on the device, discover it using the [adb tool](https://developer.android.google.cn/tools/help/adb.html):
 
@@ -155,11 +155,12 @@ After flashing your board, it is strongly recommended to connect it to the inter
 在板子烧过后, 强烈建议要连上网。 这会让你的板子能上传崩溃报告并接受更新。
 
 <aside class="note">**Note:** <span>The device doesn't need to be on the same network as your computer.</span>
-					**注意**板子不需要和你的主机在一个网络上。</aside>
+	
+**注意：** 板子不需要和你的主机在一个网络上。
 					
 Before connecting your board to a Wi-Fi network, attach an external IPEX or u.FL Wi-Fi antenna to your board as shown:
 
-在连到Wi-Fi之前, 连一根 IPEX 或者 u.FL Wi-Fi 天线到板子上如下所示:
+在连到 Wi-Fi 之前, 连一根 IPEX 或者 u.FL Wi-Fi 天线到板子上如下所示:
 
 **For Pico i.MX6UL:**
 
@@ -179,7 +180,7 @@ Before connecting your board to a Wi-Fi network, attach an external IPEX or u.FL
 
 <aside class="note">**Note:** <span>The module can't resolve Wi-Fi signals if you proceed without connecting an antenna.</span></aside>
 
-<aside class="note">**Note:** <span>如果不连接天线模块无法处理 Wi-Fi信号。</span></aside>
+**注意：** 如果不连接天线模块无法处理 Wi-Fi信号。
 
 To connect your board to Wi-Fi, first access a shell prompt on the device. You can use either of the following methods:
 
@@ -287,7 +288,8 @@ Once you can access a shell prompt, follow these steps:
         $ date
 
     <aside class="note">**Note:** <span>An incorrect date or time may cause SSL errors. Restart the device to automatically set the correct date and time from a time server.</span>
-						**注意** <span>不正确的日期或者时间可能造成 SSL 错误。重启设备从服务器自动获取正确的日期和时间</aside>
+    
+    **注意：** 不正确的日期或者时间可能造成 SSL 错误。重启设备从服务器自动获取正确的日期和时间
 
 If you want to clear all of the saved networks on the board:
 
