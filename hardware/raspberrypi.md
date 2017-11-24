@@ -10,7 +10,7 @@ See [Raspberry Pi I/O](https://developer.android.google.cn/things/hardware/raspb
 
 参照 [Raspberry Pi I/O](https://developer.android.google.cn/things/hardware/raspberrypi-io.html) 获取更多此板 [外围 I/O](https://developer.android.google.cn/things/sdk/pio/index.html) 的信息
 ## Flashing the image
-## 在开发板上烧录程序映像
+## 在开发板上烧录程序镜像
 * * *
 
 Before you begin flashing, you will need the following items in addition to your Raspberry Pi:
@@ -35,26 +35,27 @@ Before you begin flashing, you will need the following items in addition to your
 
 To flash Android Things onto your board, download the latest preview image in the [Android Things Console](https://partner.android.com/things/console) (see the [release notes](https://developer.android.google.cn/things/preview/releases.html)) and follow these steps:
 
-为了在板上烧录 Android Things ，请从 [Android Things 控制台](https://partner.android.com/things/console) 下载最新的预览版映像 (参见 [更新注释](https://developer.android.google.cn/things/preview/releases.html) 然后参照以下步骤：
+为了在板上烧录 Android Things ，请从 [Android Things 控制台](https://partner.android.com/things/console) 下载最新的预览版镜像 (参见 [更新注释](https://developer.android.google.cn/things/preview/releases.html) 然后参照以下步骤：
 
 1.  Insert an 8 GB or larger microSD card into your development computer.
 
     在你的用于开发的电脑上插入 8 GB 或更大的 microSD 卡
 2.  Unzip the downloaded image archive on your development computer. Navigate to the unzipped image file.
 
-    解压缩你的电脑上下载的映像。找到解压缩映像的文件。
+    解压缩你的电脑上下载的镜像。找到解压缩镜像的文件。
 
-    <aside class="note">**Note:** <span>The compressed image file expands to over 4GB. This can cause problems for the built-in tools on some platforms. If you are unable to unzip the archive, or see a message stating that it's corrupt, use [7-Zip](http://www.7-zip.org/download.html) (Windows) or [The Unarchiver](http://unarchiver.c3.cx/unarchiver) (Mac OS) instead.</span></aside>
+**Note:** The compressed image file expands to over 4GB. This can cause problems for the built-in tools on some platforms. If you are unable to unzip the archive, or see a message stating that it's corrupt, use [7-Zip](http://www.7-zip.org/download.html) (Windows) or [The Unarchiver](http://unarchiver.c3.cx/unarchiver) (Mac OS) instead.
     
-    **注意** 压缩文件解压后会超过 4 GB 。这可能导致一些平台上内置的解压缩工具出现问题。如果内置工具不能解压文件，或者工具崩溃，可以尝试 [7-Zip](http://www.7-zip.org/download.html) (Windows) 或者 [The Unarchiver](http://unarchiver.c3.cx/unarchiver) (Mac OS)
+**注意** 压缩文件解压后会超过 4 GB 。这可能导致一些平台上内置的解压缩工具出现问题。如果内置工具不能解压文件，或者工具崩溃，可以尝试 [7-Zip](http://www.7-zip.org/download.html) (Windows) 或者 [The Unarchiver](http://unarchiver.c3.cx/unarchiver) (Mac OS)
 
 3.  Follow the official Raspberry Pi instructions for writing the image to the SD card:
 
-    按照以下官方 Raspberry Pi 指南将映像写入 SD 卡：
+按照以下官方 Raspberry Pi 指南将镜像写入 SD 卡：
 
-    *   [Linux](https://www.raspberrypi.org/documentation/installation/installing-images/linux.md)
-    *   [Mac](https://www.raspberrypi.org/documentation/installation/installing-images/mac.md)
-    *   [Windows](https://www.raspberrypi.org/documentation/installation/installing-images/windows.md)
+*   [Linux](https://www.raspberrypi.org/documentation/installation/installing-images/linux.md)
+*   [Mac](https://www.raspberrypi.org/documentation/installation/installing-images/mac.md)
+*   [Windows](https://www.raspberrypi.org/documentation/installation/installing-images/windows.md)
+
 4.  Insert the flashed microSD card into your board.
 
     将烧录好的 microSD 卡插入到你的开发板中 
@@ -64,29 +65,31 @@ To flash Android Things onto your board, download the latest preview image in th
     按照以下指南连接开发板上的接口
 
 
-    ![""](https://developer.android.google.cn/things/images/raspberrypi-connections.png)
+![""](https://developer.android.google.cn/things/images/raspberrypi-connections.png)
 
-    1.  Connect a USB cable to **J1** for power.
+1.  Connect a USB cable to **J1** for power.
 	
-        将 USB 线和 **J1** 口相连用来供电
-    2.  Connect an Ethernet cable to your local network.
-	
-        将网线连到你的本地网络
+	将 USB 线和 **J1** 口相连用来供电
 
-        <aside class="note">**Note:** <span>If you do not have wired access to your local network, you can do either of the following:</span></aside>
+2.  Connect an Ethernet cable to your local network.
+	
+    将网线连到你的本地网络
+
+**Note:** If you do not have wired access to your local network, you can do either of the following:
 		
-		**注意:** <span>如果你没有有线网络，你可以从以下操作中任选其一：
+**注意:** 如果你没有有线网络，你可以从以下操作中任选其一：
 
-        *   Connect the Ethernet cable to your development computer and assign the Raspberry Pi an IP address using DHCP.
+*   Connect the Ethernet cable to your development computer and assign the Raspberry Pi an IP address using DHCP.
 
-		*	将网线连接到你的电脑上并通过 DHCP 给 Raspberry Pi 分配一个 IP 地址
-        *   Connect a [serial cable](#serial_debug_console) from the Raspberry Pi to your development computer. Use a serial console to [connect to Wi-Fi](#connecting_wi-fi).
+*	将网线连接到你的电脑上并通过 DHCP 给 Raspberry Pi 分配一个 IP 地址
+
+*   Connect a [serial cable](#serial_debug_console) from the Raspberry Pi to your development computer. Use a serial console to [connect to Wi-Fi](#connecting_wi-fi).
 		
-		*	用一根 [串行线](#serial_debug_console) 将 Raspberry Pi 和你的电脑相连。使用一个串行控制台 [连接到 Wi-Fi](#connecting_wi-fi)。
+*	用一根 [串行线](#serial_debug_console) 将 Raspberry Pi 和你的电脑相连。使用一个串行控制台 [连接到 Wi-Fi](#connecting_wi-fi)。
 
-    3.  Connect an HDMI cable to an external display.
+3.  Connect an HDMI cable to an external display.
 	
-        将 HDMI 线连接到外置屏幕
+    将 HDMI 线连接到外置屏幕
 
 6.  Verify that Android is running on the device. The Android Things Launcher shows information about the board on the display, including the IP address.
 
@@ -96,12 +99,13 @@ To flash Android Things onto your board, download the latest preview image in th
 
     使用 [adb 工具](https://developer.android.google.cn/tools/help/adb.html) 连接到以下 IP 地址：
 
-        $ adb connect <ip-address>connected to <ip-address>:5555
+    $ adb connect <ip-address>connected to <ip-address>:5555
 
-    <aside class="note">**Note:** <span>Raspberry Pi broadcasts the hostname `Android.local` over Multicast DNS. If your host platform supports MDNS, you can also connect to the board using the following command:
-						**注意** Raspberry Pi 会覆盖组播 DNS 传输主机名称 `Android.local` 。如果你的寄存平台支持 MDNS，你也可以通过以下操作连接开发板：
+**Note:** Raspberry Pi broadcasts the hostname `Android.local` over Multicast DNS. If your host platform supports MDNS, you can also connect to the board using the following command:
+
+**注意** Raspberry Pi 会覆盖组播 DNS 传输主机名称 `Android.local` 。如果你的寄存平台支持 MDNS，你也可以通过以下操作连接开发板：
     
-        $ adb connect Android.local</span></aside>
+     $ adb connect Android.local
 
 ## Connecting Wi-Fi
 
@@ -113,8 +117,9 @@ After flashing your board, it is strongly recommended to connect it to the inter
 
 在烧录完你的开发板之后，强烈推荐将它连上网。这可以让你的设备发送崩溃报告和获取更新。
 
-<aside class="note">**Note:** <span>The device doesn't need to be on the same network as your computer.</span>
-					**注意**你的设备不必和你的电脑使用相同的网络。</aside>
+**Note:** The device doesn't need to be on the same network as your computer.
+
+**注意**你的设备不必和你的电脑使用相同的网络。
 
 To connect your board to Wi-Fi, first access a shell prompt on the device. You can use either of the following methods:
 
@@ -132,9 +137,9 @@ Once you can access a shell prompt, follow these steps:
 访问 Shell prompt 后，参照以下步骤：
 1.  Send an intent to the Wi-Fi service that includes the SSID of your local network. Your [board](https://developer.android.google.cn/things/hardware/developer-kits.html) must support the network protocol and frequency band of the wireless network in order to establish a connection.
 
-    向 Wi-Fi 服务发送带有你的本地网络 SSID 的请求。你的 [开发板](https://developer.android.google.cn/things/hardware/developer-kits.html) 必须支持无线网络协议和无线网络频段以建立连接。
+向 Wi-Fi 服务发送带有你的本地网络 SSID 的请求。你的 [开发板](https://developer.android.google.cn/things/hardware/developer-kits.html) 必须支持无线网络协议和无线网络频段以建立连接。
 
-        $ am startservice \    -n com.google.wifisetup/.WifiSetupService \    -a WifiSetupService.Connect
+	$ am startservice \    -n com.google.wifisetup/.WifiSetupService \    -a WifiSetupService.Connect
 
 The following arguments are supported with this command:
 
@@ -212,18 +217,19 @@ The following arguments are supported with this command:
 
 4.  Check that the date and time are set correctly on the device:
 
-    确认设备上的日期与时间设置正确：
+确认设备上的日期与时间设置正确：
 
-        $ date
+$ date
 
-    <aside class="note">**Note:** <span>An incorrect date or time may cause SSL errors. Restart the device to automatically set the correct date and time from a time server.</span>
-						**注意** <span>不正确的日期或者时间可能造成 SSL 错误。重启设备从服务器自动获取正确的日期和时间</aside>
+**Note:** An incorrect date or time may cause SSL errors. Restart the device to automatically set the correct date and time from a time server.
+
+**注意** 不正确的日期或者时间可能造成 SSL 错误。重启设备从服务器自动获取正确的日期和时间
 
 If you want to clear all of the saved networks on the board:
 
 如果你要清空开发板上所有已存的网络，使用以下命令：
 
-    $ am startservice \    -n com.google.wifisetup/.WifiSetupService \    -a WifiSetupService.Reset
+	$ am startservice \    -n com.google.wifisetup/.WifiSetupService \    -a WifiSetupService.Reset
 
 ## Serial debug console
 
