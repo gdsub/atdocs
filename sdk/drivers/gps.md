@@ -29,7 +29,12 @@ The driver implementation is responsible for communicating with the connected GP
 这个驱动的实现是用来与 GPS 硬件通信，监听位置信息变化，并将这些变更上报到 framework 中。按照如下方法来创建驱动：
 
 1.  Create a new `GpsDriver` instance:
+
+	创建一个新的 `GpsDriver` 实例：
+
 2.  Register the driver with the `UserDriverManager`:
+
+	使用 `UserDriverManager` 来注册这个驱动:
 
 ~~~java
 import com.google.android.things.userdriver.GpsDriver;
@@ -50,6 +55,7 @@ public class GpsDriverService extends Service {   
 
 3.  Unregister the driver when location events are not longer required.
 
+	当不需要位置信息时，取消注册驱动。
 
 ~~~java
 public class GpsDriverService extends Service {
@@ -63,49 +69,6 @@ public class GpsDriverService extends Service {
 ~~~
         
 * * *
-
-1.  创建一个新的 `GpsDriver` 实例：
-2.  使用 `UserDriverManager` 来注册这个驱动:
-~~~ java
-import com.google.android.things.userdriver.GpsDriver;
-import com.google.android.things.userdriver.UserDriverManager;
-...
-
-public class GpsDriverService extends Service {
-
-    private GpsDriver mDriver;
-
-    @Override
-    public void onCreate() {
-        super.onCreate();
-
-        // Create a new driver implementation
-        mDriver = new GpsDriver();
-
-        // Register with the framework
-        UserDriverManager manager = UserDriverManager.getManager();
-        manager.registerGpsDriver(mDriver);
-    }
-
-}
-~~~
-3.  当不需要位置信息时，取消注册驱动。
-
-~~~ java
-public class GpsDriverService extends Service {
-    ...
-
-    @Override
-    protected void onDestroy() {
-        super.onDestroy();
-
-        UserDriverManager manager = UserDriverManager.getManager();
-        manager.unregisterGpsDriver(mDriver);
-    }
-}
-
-
-~~~
 
 ## Reporting location
 

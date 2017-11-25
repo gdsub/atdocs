@@ -20,13 +20,13 @@ UART peripherals typically come in two flavors:
 
 UART 外设一般以两种形式存在：
 
-* 3-Wire ports include data receive (RX), data transmit (TX), and ground reference (GND) signals.
+* 	3-Wire ports include data receive (RX), data transmit (TX), and ground reference (GND) signals.
 
-* 3线端口包括数据接收 (RX), 数据发送 (TX), 和地线 (GND) 信号。
+	3线端口包括数据接收 (RX), 数据发送 (TX), 和地线 (GND) 信号。
  
-* 5-Wire ports add request to send (RTS) and clear to send (CTS) signals used for **_hardware flow control_**. Flow control allows the receiving device to indicate that its FIFO buffer is temporarily full and the transmitting device should wait before sending any more data.
+* 	5-Wire ports add request to send (RTS) and clear to send (CTS) signals used for **_hardware flow control_**. Flow control allows the receiving device to indicate that its FIFO buffer is temporarily full and the transmitting device should wait before sending any more data.
 
-* 5线端口加入了请求发送 (RTS) 和 (CTS) 清除发送 (CTS) 信号这两种 **硬件流控**  信号。 流控保证当接收数据的设备的FIFO满时，发送数据的设备要等待，直到FIFO不为满时再发送数据。
+	5线端口加入了请求发送 (RTS) 和 (CTS) 清除发送 (CTS) 信号这两种 **硬件流控**  信号。 流控保证当接收数据的设备的FIFO满时，发送数据的设备要等待，直到FIFO不为满时再发送数据。
 
 Unlike [SPI](https://developer.android.google.cn/things/sdk/pio/spi.html) and [I2C](https://developer.android.google.cn/things/sdk/pio/i2c.html), UART only supports point-to-point communication between two devices.
 
@@ -106,7 +106,7 @@ After a connection is established, configure the data transfer rate and frame fo
 
 Every character sent across the UART is wrapped in a **_data frame_**, which contains the following components:
 
-* **数据帧** 包含了经过 UART 端口传输的第一个字符， 数据帧一般包括以下内容。
+**数据帧** 包含了经过 UART 端口传输的第一个字符， 数据帧一般包括以下内容:
 
 ![""](https://developer.android.google.cn/things/images/uart-frame.png)
 
@@ -126,7 +126,7 @@ Every character sent across the UART is wrapped in a **_data frame_**, which con
 
 * **停止位** - 当数据传输完成之后，可以配置一个时间间隔来保证数据传输完成，一般可配置成保持空闲一到两位的持续时间。
 
-<aside class="note">**Note:** <span>The default configuration for most UART devices is 8 data bits, no parity, and 1 stop bit (8N1).</span></aside>
+**Note:** The default configuration for most UART devices is 8 data bits, no parity, and 1 stop bit (8N1).
 
 **注意:** 大多数的UART设备会配成 8 个数据位，无校验位，1个停止位(8N1)。
 
@@ -152,9 +152,9 @@ The following code configures the UART connection to operate at 115200 baud, 8 d
 	}
 ~~~
 
-> **Note:** <span>Choosing uncommon baud rates can lead to high error rates in data transmission. You should always verify whether your chosen baud rate is well supported by your device hardware.
+**Note:** Choosing uncommon baud rates can lead to high error rates in data transmission. You should always verify whether your chosen baud rate is well supported by your device hardware.
 
-> **注意:** 如果配置的波特率不是设备支持的波特率，会带来数据传输中的大量的错误。在开发之前，要先确认你的设备支持哪几种波特率。
+**注意:** 如果配置的波特率不是设备支持的波特率，会带来数据传输中的大量的错误。在开发之前，要先确认你的设备支持哪几种波特率。
 
 ### Hardware Flow Control
 
@@ -204,9 +204,9 @@ To transmit a buffer of data over the UART to a peripheral, use the `write()` me
 	}
 ~~~
 
-> **Note:** A Java `byte` is an 8-bit value. If you configure a smaller data width using `setDataSize()`, the upper bits of each byte will be truncated.
+**Note:** A Java `byte` is an 8-bit value. If you configure a smaller data width using `setDataSize()`, the upper bits of each byte will be truncated.
 
-> **注意:** JAVA的 byte 一般是 8 位。如果用 `setDataSize()` 来定义大于 8 位的数据，那么byte的高位会被截断。
+**注意:** JAVA的 byte 一般是 8 位。如果用 `setDataSize()` 来定义大于 8 位的数据，那么byte的高位会被截断。
 
 ## Listening for incoming data
 

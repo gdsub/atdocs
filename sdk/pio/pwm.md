@@ -12,12 +12,16 @@ PWM is a digital (i.e. square wave) signal that oscillates according to a given 
 PWM根据给定的 **频率** 和 **占空比** 产生振荡，得到一个数字(例如方波)信号。
 
 * The frequency (expressed in Hz) describes how often the output pulse repeats.
+
+  频率 (以 Hz 表示) 用来描述输出脉冲重复的次数。
+
 * The period is the time each cycle takes and is the inverse of frequency.
+
+  周期表示每个循环所花费的时间，是频率的倒数。
+
 * The duty cycle (expressed as a percentage) describes the width of the pulse within that frequency window.
 
-* 频率 (以 Hz 表示) 用来描述输出脉冲重复的次数。
-* 周期表示每个循环所花费的时间，是频率的倒数。
-* 占空比表示该频率窗口内的脉冲宽度。
+  占空比表示该频率窗口内的脉冲宽度。
 
 For example, a PWM signal set to 50% duty is active for half of each cycle:
 
@@ -31,9 +35,9 @@ You can adjust the duty cycle to increase or decrease the average "on" time of t
 
 ![](https://developer.android.google.cn/things/images/pwm-duty.png)
 
-> **Note:** Most PWM hardware has to toggle at least once per cycle, so even duty values of 0% and 100% will have a small transition at the beginning of each cycle.
+**Note:** Most PWM hardware has to toggle at least once per cycle, so even duty values of 0% and 100% will have a small transition at the beginning of each cycle.
 
-> **注意:** 由于大多数 PWM 硬件必须每个周期至少切换一次，所以即使是占空比的值为 0% 或者是 100% ，仍然会在每个周期开始时，有一个小的过渡。
+**注意:** 由于大多数 PWM 硬件必须每个周期至少切换一次，所以即使是占空比的值为 0% 或者是 100% ，仍然会在每个周期开始时，有一个小的过渡。
 
 ## Managing the connection
 
