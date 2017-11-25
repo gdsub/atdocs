@@ -96,7 +96,9 @@ Once you have loaded the proper bootloader on your device, use the following ste
        通过执行以下命令，验证设备已经进入 Fastboot 模式。  
 
           $ fastboot devices1b2f21d4e1fe0129        fastboot
-      <aside class="note">**Note:** <span>Your device will not boot into Fastboot mode if it was previously flashed with Android Things. You need to first execute the following command using the [adb tool](https://developer.android.google.cn/tools/help/adb.html) to reboot the device into Fastboot mode. <br />**注:** 如果设备曾经烧录过 android Things ，设备开机将不会进入 Fastboot 模式。您需要使用 [adb 工具](https://developer.android.google.cn/tools/help/adb.html) 执行以下命令，重启设备并进入 Fastboot 模式。
+**Note:** Your device will not boot into Fastboot mode if it was previously flashed with Android Things. You need to first execute the following command using the [adb tool](https://developer.android.google.cn/tools/help/adb.html) to reboot the device into Fastboot mode. 
+
+**注意:** 如果设备曾经烧录过 android Things ，设备开机将不会进入 Fastboot 模式。您需要使用 [adb 工具](https://developer.android.google.cn/tools/help/adb.html) 执行以下命令，重启设备并进入 Fastboot 模式。
 
 
 
@@ -106,9 +108,9 @@ Once you have loaded the proper bootloader on your device, use the following ste
 
        执行 `flash-all.sh` 脚本，安装 bootloader ，基带固件和操作系统。( Windows 系统可以使用 `flash-all.bat` 脚本)。  
 
-      <aside class="note">**Note:** <span>The device automatically reboots into Android Things when the process is complete.</span></aside> <br /> <aside class="note">**注:** <span>安装完成后，设备将自动重启并进入 android thing。</span></aside>
+**Note:** The device automatically reboots into Android Things when the process is complete.
 
-
+**注意:** <span>安装完成后，设备将自动重启并进入 android thing。
 
 1.  To verify that Android is running on the device, discover it using the [adb tool](https://developer.android.google.cn/tools/help/adb.html):
 
@@ -128,7 +130,9 @@ After flashing your board, it is strongly recommended to connect it to the inter
 
 
 
-<aside class="note">**Note:** <span>The device doesn't need to be on the same network as your computer.</span></aside> <br /><aside class="note">**注:** <span>设备和计算机不需要在同一个网络中</span></aside>
+**Note:** The device doesn't need to be on the same network as your computer.
+
+**注意:** 设备和计算机不需要在同一个网络中
 
 Before connecting your board to a Wi-Fi network, ensure the provided antennas are attached to the u.FL Wi-Fi connectors on your board as shown:  
 
@@ -136,7 +140,9 @@ Before connecting your board to a Wi-Fi network, ensure the provided antennas ar
 
 ![""](https://developer.android.google.cn/things/images/joule-antenna.png)
 
-<aside class="note">**Note:** <span>The Joule can't resolve Wi-Fi signals if you proceed without connecting an antenna.</span></aside> <br /><aside class="note">**注:** <span>如果您没有连接天线， Joule 就无法接收 Wi-Fi 信号。</span></aside>
+**Note:** he Joule can't resolve Wi-Fi signals if you proceed without connecting an antenna.
+
+**注意:** 如果您没有连接天线， Joule 就无法接收 Wi-Fi 信号。
 
 To connect your board to Wi-Fi, first access a shell prompt on the device. You can use either of the following methods:  
 
@@ -157,60 +163,60 @@ Once you can access a shell prompt, follow these steps:
 
 1.  Send an intent to the Wi-Fi service that includes the SSID of your local network. Your [board](https://developer.android.google.cn/things/hardware/developer-kits.html) must support the network protocol and frequency band of the wireless network in order to establish a connection.  
 
-    设备向 Wi-Fi 服务发送一个包含本地网络 SSID 的连接请求包。因要和Wi-Fi 建立连接，设备必须支持相关的无线网络协议和频带。
+设备向 Wi-Fi 服务发送一个包含本地网络 SSID 的连接请求包。因要和Wi-Fi 建立连接，设备必须支持相关的无线网络协议和频带。
 
         $ am startservice \    -n com.google.wifisetup/.WifiSetupService \    -a WifiSetupService.Connect
 
-     The following arguments are supported with this command:  
-     该命令支持如下参数:
+The following arguments are supported with this command:  
+该命令支持如下参数:
 
-     <table>
+<table>
 
-     <tbody>
+<tbody>
 
-     <tr>
+<tr>
 
-     <th style="width: 240px;">Argument</th>
+<th style="width: 240px;">Argument</th>
 
-     <th>Description</th>
+<th>Description</th>
 
-     </tr>
+</tr>
 
-     <tr>
+<tr>
 
-     <td>`-e ssid <var>network_ssid</var>`</td>
+<td>`-e ssid <var>network_ssid</var>`</td>
 
-     <td>Connect to the wireless network SSID specified by <var>network_ssid</var>. _This argument is required_.  <br />设置参数<var>network_ssid</var>，连接到指定 SSID 的无线网络，参数是必选的。</td>
+<td>Connect to the wireless network SSID specified by <var>network_ssid</var>. _This argument is required_.  <br />设置参数<var>network_ssid</var>，连接到指定 SSID 的无线网络，参数是必选的。</td>
 
-     </tr>
+</tr>
 
-     <tr>
+<tr>
 
-     <td>`-e passphrase <var>network_pass</var>`</td>
+<td>`-e passphrase <var>network_pass</var>`</td>
 
-     <td>Optional argument to use the passcode specified by <var>network_pass</var> to connect to the network SSID. This argument is not necessary if your network doesn't require a passcode.  <br />参数<var>network_pass</var>是可选的，用来设置无线网络的密码，如果您的网络不需要密码，参数可以不用填写。</td>
+<td>Optional argument to use the passcode specified by <var>network_pass</var> to connect to the network SSID. This argument is not necessary if your network doesn't require a passcode.  <br />参数<var>network_pass</var>是可选的，用来设置无线网络的密码，如果您的网络不需要密码，参数可以不用填写。</td>
 
-     </tr>
+</tr>
 
-     <tr>
+<tr>
 
-     <td>`-e passphrase64 <var>encoded_pass</var>`</td>
+<td>`-e passphrase64 <var>encoded_pass</var>`</td>
 
-     <td>Optional argument used in place of `passphrase` for passcodes with special characters (`space, !, ", $, &, ', (, ), ;, <, >, ‘, or |`). Use [base64 encoding](https://www.base64encode.org/) to specify the value for <var>encoded_pass</var>. <br />如果密码中包含 (`空格, !, ", $, &, ', (, ), ;, <, >, ‘, or |`) 特殊字符，请使用 `passphrase64 ` 代替 `passphrase` ，对参数<var>encoded_pass</var>进行 [base64 编码](https://www.base64encode.org/)。  </td>
+<td>Optional argument used in place of `passphrase` for passcodes with special characters (`space, !, ", $, &, ', (, ), ;, <, >, ‘, or |`). Use [base64 encoding](https://www.base64encode.org/) to specify the value for <var>encoded_pass</var>. <br />如果密码中包含 (`空格, !, ", $, &, ', (, ), ;, <, >, ‘, or |`) 特殊字符，请使用 `passphrase64 ` 代替 `passphrase` ，对参数<var>encoded_pass</var>进行 [base64 编码](https://www.base64encode.org/)。  </td>
 
-     </tr>
+</tr>
 
-     <tr>
+<tr>
 
-     <td>`--ez hidden true`</td>
+<td>`--ez hidden true`</td>
 
-     <td>Optional argument to indicate that the SSID specified in this command is hidden. If omitted, this value defaults to false. <br />如果 SSID 无线网络是隐藏的，请将参数 `hidden` 设置为 true ，参数缺省值是 false 。</td>
+<td>Optional argument to indicate that the SSID specified in this command is hidden. If omitted, this value defaults to false. <br />如果 SSID 无线网络是隐藏的，请将参数 `hidden` 设置为 true ，参数缺省值是 false 。</td>
 
-     </tr>
+</tr>
 
-     </tbody>
+</tbody>
 
-     </table>
+</table>
 
 2.  Verify that the connection was successful through `logcat`:
 
@@ -229,13 +235,17 @@ Once you can access a shell prompt, follow these steps:
     使用`date` 命令，检查设备的日期和时间是否准确。
 
         $ date
-    <aside class="note">**Note:** <span>An incorrect date or time may cause SSL errors. Restart the device to automatically set the correct date and time from a time server.</span></aside> <br /><aside class="note">**注:** <span>错误的日期或时间可能会导致 SSL 连接错误。可以通过重新启动设备的方式，自动从时间服务器获取正确的日期和时间。</span></aside>
+
+**Note:** An incorrect date or time may cause SSL errors. Restart the device to automatically set the correct date and time from a time server.
+
+**注意:** 错误的日期或时间可能会导致 SSL 连接错误。可以通过重新启动设备的方式，自动从时间服务器获取正确的日期和时间。
 
 If you want to clear all of the saved networks on the board:
 
 如果您想清除设备上的网络设置，可以使用以下命令。
 
     $ am startservice \    -n com.google.wifisetup/.WifiSetupService \    -a WifiSetupService.Reset
+
 ## Serial debug console
 
 ## 串口调试控制台

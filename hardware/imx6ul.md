@@ -56,13 +56,14 @@ Connect the board to your host computer:
 
 ![""](https://developer.android.google.cn/things/images/spriot-connections.png)
 
-1.  Connect a Micro-USB cable to the USB OTG connector.
+* 	Connect a Micro-USB cable to the USB OTG connector.
 
-    把板子上的 USB OTG 接口和主机之间用 USB-C 线连起来。
+	把板子上的USB OTG接口和主机之间用 USB-C线连起来。
 
-2.  Connect a 5V power adapter to the power input connector.
 
-    连一个5V 电源适配器到电源输入接口。
+* 	Connect a 5V power adapter to the power input connector.
+
+	连一个5V 电源适配器到电源输入接口
 
 
 **For Argon i.MX6UL:**
@@ -101,15 +102,16 @@ Use the following steps to flash the Android image:
 
    下载并安装 [Android Studio](https://developer.android.google.cn/studio/index.html) 或者安装 [`sdkmanager`](https://developer.android.google.cn/studio/command-line/sdkmanager.html) 命令行工具。从 [SDK Manager](https://developer.android.google.cn/studio/intro/update.html#sdk-manager)更新 Android SDK Platform Tools 到 25.0.3 版或更新版本。
 
-    *   Navigate to the Android SDK location on your computer; the path can be found in the system settings for Android Studio. Verify that the `fastboot` binary is installed in the `platform-tools/` directory.
+*   Navigate to the Android SDK location on your computer; the path can be found in the system settings for Android Studio. Verify that the `fastboot` binary is installed in the `platform-tools/` directory.
     
-    *   打开电脑上的 Android SDK 的安装目录；目录路径可以在 Android Studio 的设置里面找到。确认 `fastboot` 在 `platform-tools/` 目录里。
+*   找到你电脑上的 Android SDK 的位置; 路径可以在Android Studio的设置里面找到。确认 `fastboot` 在 `platform-tools/` 目录里。
 
-    *   After you have the fastboot tool, add it to your `PATH` [environment variable](https://developer.android.google.cn/studio/command-line/variables.html#set). This command should be similar to the following:
+*   After you have the fastboot tool, add it to your `PATH` [environment variable](https://developer.android.google.cn/studio/command-line/variables.html#set). This command should be similar to the following:
 
-    *   如果已经装了fastboot 工具，把它加到 `PATH` [环境变量](https://developer.android.google.cn/studio/command-line/variables.html#set)里面。使用类似如下命令：
+*   如果已经装了fastboot, 加到 `PATH` [环境变量](https://developer.android.google.cn/studio/command-line/variables.html#set)里面。命令如同如下:
 
-        `export PATH=$PATH:"path/to/fastboot"`
+
+    `export PATH=$PATH:"path/to/fastboot"`
 
 2.  Open a command line terminal and navigate to the unzipped image directory.
 
@@ -121,22 +123,20 @@ Use the following steps to flash the Android image:
 
         $ fastboot devices1b2f21d4e1fe0129        fastboot
 
-    <aside class="note">**Note:** <span>Your device will not boot into Fastboot mode if it was previously flashed with Android Things. You need to first execute the following command using the [adb tool](https://developer.android.google.cn/tools/help/adb.html) to reboot the device into Fastboot mode.
+**Note:**  Your device will not boot into Fastboot mode if it was previously flashed with Android Things. You need to first execute the following command using the [adb tool](https://developer.android.google.cn/tools/help/adb.html) to reboot the device into Fastboot mode.
     
-    **注意：** 如何前面已经烧了 Android Things 映像，板子会进入不了 fastboot 模式。这时就需要用 [adb tool](https://developer.android.google.cn/tools/help/adb.html) 执行以下命令使得板子进入 fastboot 模式。
- 
- 
- 
+**注意:** 如果前面已经烧了 Android Things 映像，板子会进入不了 fastboot 模式。 这样就需要用 [adb tool](https://developer.android.google.cn/tools/help/adb.html) 执行下面命令使得板子进入 fastboot 模式。
 
-      $ adb reboot bootloader</span></aside>
+      $ adb reboot bootloader
 
 4.  Execute the `flash-all.sh` script. This script installs the necessary bootloader, baseband firmware(s), and operating system. (On Windows systems, use `flash-all.bat` instead).
 
    执行 `flash-all.sh` 脚本。 此脚本会安装 bootloader、基带固件、和操作系统（如在 Windows 系统上，请替换为 `flash-all.bat` 脚本）。
 
-    <aside class="note">**Note:** <span>The device automatically reboots into Android Things when the process is complete.</span></aside>
-    
-    **注意：** 当处理程序结束，设备会自动重启进入 Android Things 。
+**Note:** The device automatically reboots into Android Things when the process is complete.
+
+**注意:** 当处理程序结束会自动启动到 Android Things 。
+
      
 5.  To verify that Android is running on the device, discover it using the [adb tool](https://developer.android.google.cn/tools/help/adb.html):
 
@@ -154,9 +154,10 @@ After flashing your board, it is strongly recommended to connect it to the inter
 
 在板子烧过后，强烈建议要连上网。这样你的设备就能上传崩溃报告并及时收到更新。
 
-<aside class="note">**Note:** <span>The device doesn't need to be on the same network as your computer.</span>
-	
-**注意：** 设备不需要和你的主机在一个网络上。
+**Note:** The device doesn't need to be on the same network as your computer.
+
+**注意:** 板子不需要和你的主机在一个网络上。
+
 					
 Before connecting your board to a Wi-Fi network, attach an external IPEX or u.FL Wi-Fi antenna to your board as shown:
 
@@ -178,9 +179,10 @@ Before connecting your board to a Wi-Fi network, attach an external IPEX or u.FL
 
 ![""](https://developer.android.google.cn/things/images/vvdn-antenna.png)
 
-<aside class="note">**Note:** <span>The module can't resolve Wi-Fi signals if you proceed without connecting an antenna.</span></aside>
+**Note:** The module can't resolve Wi-Fi signals if you proceed without connecting an antenna.
 
-**注意：** 如果不连接天线模块无法处理 Wi-Fi信号。
+**注意:** 如果不连接天线模块无法处理 Wi-Fi信号。
+
 
 To connect your board to Wi-Fi, first access a shell prompt on the device. You can use either of the following methods:
 
@@ -200,74 +202,77 @@ Once you can access a shell prompt, follow these steps:
 
 1.  Send an intent to the Wi-Fi service that includes the SSID of your local network. Your [board](https://developer.android.google.cn/things/hardware/developer-kits.html) must support the network protocol and frequency band of the wireless network in order to establish a connection.
 
-    向 Wi-Fi 服务发送带有你的本地网络 SSID 的请求。你的 [开发板](https://developer.android.google.cn/things/hardware/developer-kits.html) 必须支持无线网络协议和频段以建立连接。
+向 Wi-Fi 服务发送带有你的本地网络 SSID 的请求。你的 [开发板](https://developer.android.google.cn/things/hardware/developer-kits.html) 必须支持无线网络协定和无线网络频率以建立连接。
 
-        $ am startservice \    -n com.google.wifisetup/.WifiSetupService \    -a WifiSetupService.Connect
 
-    The following arguments are supported with this command:
+	$ am startservice \    -n com.google.wifisetup/.WifiSetupService \    -a WifiSetupService.Connect
+
+The following arguments are supported with this command:
 	
-	此命令支持以下参数：
+此命令支持以下参数：
 
 
-    <table>
+<table>
 
-    <tbody>
+<tbody>
 
-    <tr>
+<tr>
 
-    <th style="width: 240px;">Argument
+<th style="width: 240px;">Argument
+
+参数</th>
+
+<th>Description
+
+具体细节</th>
+
+</tr>
+
+<tr>
+
+
+<td>`-e ssid <var>network_ssid</var>`</td>
+
+<td>Connect to the wireless network SSID specified by <var>network_ssid</var>. _This argument is required_.
+
+连接到由 <var>network_ssid</var> 指定的无线网络 SSID 。此参数为必须参数</td>
+
+</tr>
+
+
+<tr>
+
+<td>`-e passphrase <var>network_pass</var>`</td>
+
+<td>Optional argument to use the passcode specified by <var>network_pass</var> to connect to the network SSID. This argument is not necessary if your network doesn't require a passcode.
+
+可选操作，通过 <var>network_pass</var> 指定的密码来连接网络 SSID 。不必要操作如果你的网络不需要密码。</td>
+
+</tr>
+
+<tr>
+
+<td>`-e passphrase64 <var>encoded_pass</var>`</td>
+
+<td>Optional argument used in place of `passphrase` for passcodes with special characters (`space, !, ", $, &, ', (, ), ;, <, >, `, or |`). Use [base64 encoding](https://www.base64encode.org/) to specify the value for <var>encoded_pass</var>.
 	
-	参数</th>
+可选操作，设置密码 `passphrase` 可用特殊字符 (`space, !, ", $, &, ', (, ), ;, <, >, `, or |`)。使用 [base64 encoding](https://www.base64encode.org/) 来指定 <var>encoded_pass</var> 的值</td>
 
-    <th>Description
-	
-	具体细节</th>
+</tr>
 
-    </tr>
+<tr>
 
-    <tr>
+<td>`--ez hidden true`</td>
 
-    <td>`-e ssid <var>network_ssid</var>`</td>
+<td>Optional argument to indicate that the SSID specified in this command is hidden. If omitted, this value defaults to false.
 
-    <td>Connect to the wireless network SSID specified by <var>network_ssid</var>. _This argument is required_.
-	
-	连接到由 <var>network_ssid</var> 指定的无线网络 SSID 。此参数是必须要的。</td>
+可选操作，用来表明此命令中的 SSID 不可见。如果省略，此值会被默认为 false</td>
 
-    </tr>
+</tr>
 
-    <tr>
+</tbody>
 
-    <td>`-e passphrase <var>network_pass</var>`</td>
-
-    <td>Optional argument to use the passcode specified by <var>network_pass</var> to connect to the network SSID. This argument is not necessary if your network doesn't require a passcode.
-	
-	可选操作，通过 <var>network_pass</var> 指定的密码来连接网络 SSID 。如果你的网络不需要密码，可以不设定。</td>
-
-    </tr>
-
-    <tr>
-
-    <td>`-e passphrase64 <var>encoded_pass</var>`</td>
-
-    <td>Optional argument used in place of `passphrase` for passcodes with special characters (`space, !, ", $, &, ', (, ), ;, <, >, `, or |`). Use [base64 encoding](https://www.base64encode.org/) to specify the value for <var>encoded_pass</var>.
-	
-	可选操作，设置密码 `passphrase` 可用特殊字符 (`space, !, ", $, &, ', (, ), ;, <, >, `, or |`)。使用 [base64 encoding](https://www.base64encode.org/) 来指定 <var>encoded_pass</var> 的值</td>
-
-    </tr>
-
-    <tr>
-
-    <td>`--ez hidden true`</td>
-
-    <td>Optional argument to indicate that the SSID specified in this command is hidden. If omitted, this value defaults to false.
-	
-	可选操作，用来表明此命令中的 SSID 不可见。如果省略，此值会被默认为 false</td>
-
-    </tr>
-
-    </tbody>
-
-    </table>
+</table>
 
 2.  Verify that the connection was successful through `logcat`:
 
@@ -287,9 +292,10 @@ Once you can access a shell prompt, follow these steps:
 
         $ date
 
-    <aside class="note">**Note:** <span>An incorrect date or time may cause SSL errors. Restart the device to automatically set the correct date and time from a time server.</span>
-    
-    **注意：** 不正确的日期或者时间可能造成 SSL 错误。重启设备从服务器自动获取正确的日期和时间。
+**Note:** An incorrect date or time may cause SSL errors. Restart the device to automatically set the correct date and time from a time server.
+
+**注意** 不正确的日期或者时间可能造成 SSL 错误。重启设备从服务器自动获取正确的日期和时间。
+
 
 If you want to clear all of the saved networks on the board:
 
