@@ -45,9 +45,9 @@ Connect the board to your host computer:
 
 ![""](https://developer.android.google.cn/things/images/pico7-connections.png)
 
-1.  Connect a USB-C cable from your host computer to the USB OTG connector.
+1. 	Connect a USB-C cable from your host computer to the USB OTG connector.
 
-    把板子上的 USB OTG 接口和主机之间用 USB-C 线连起来。
+	把板子上的 USB OTG 接口和主机之间用 USB-C 线连起来。
     
 
 **For SprIoT i.MX6UL:**
@@ -72,21 +72,21 @@ Connect the board to your host computer:
 
 ![""](https://developer.android.google.cn/things/images/vvdn-connections.png)
 
-1.  Ensure switch **SW1** is in the **OFF** position.
+1. 	Ensure switch **SW1** is in the **OFF** position.
 
-    确保开关 **SW1** 保持在 **关** 。
+	确保开关 **SW1** 保持在 **关** 。
     
-2.  Connect a Micro-USB cable to the **OTG** (**J7**) connector.
+2.	Connect a Micro-USB cable to the **OTG** (**J7**) connector.
 
-    用 Micro-USB 线连到 **OTG** (**J7**) 接口。
+	用 Micro-USB 线连到 **OTG** (**J7**) 接口。
     
-3.  Connect a 5V power adapter to the power input (**J2**) connector.
+3. 	Connect a 5V power adapter to the power input (**J2**) connector.
     
-    用5V电源适配器连电源输入接口(**J2**)。
+	用5V电源适配器连电源输入接口(**J2**)。
     
-4.  Move **SW1** to the **ON** position to power the board.
+4. 	Move **SW1** to the **ON** position to power the board.
 
-    把 **SW1** 切换到 **开** 给板子上电。
+	把 **SW1** 切换到 **开** 给板子上电。
 
 ### Step 2: Flash Android Things
 
@@ -100,26 +100,26 @@ Use the following steps to flash the Android image:
 
 1.  Download and install [Android Studio](https://developer.android.google.cn/studio/index.html) or the [`sdkmanager`](https://developer.android.google.cn/studio/command-line/sdkmanager.html) command-line tool. Update the Android SDK Platform Tools to version 25.0.3 or later from the [SDK Manager](https://developer.android.google.cn/studio/intro/update.html#sdk-manager).
 
-   下载并安装 [Android Studio](https://developer.android.google.cn/studio/index.html) 或者安装 [`sdkmanager`](https://developer.android.google.cn/studio/command-line/sdkmanager.html) 命令行工具。从 [SDK Manager](https://developer.android.google.cn/studio/intro/update.html#sdk-manager)更新 Android SDK Platform Tools 到 25.0.3 版或更新版本。
+	下载并安装 [Android Studio](https://developer.android.google.cn/studio/index.html) 或者安装 [`sdkmanager`](https://developer.android.google.cn/studio/command-line/sdkmanager.html) 命令行工具。从 [SDK Manager](https://developer.android.google.cn/studio/intro/update.html#sdk-manager)更新 Android SDK Platform Tools 到 25.0.3 版或更新版本。
 
 *   Navigate to the Android SDK location on your computer; the path can be found in the system settings for Android Studio. Verify that the `fastboot` binary is installed in the `platform-tools/` directory.
     
-*   找到你电脑上的 Android SDK 的位置; 路径可以在Android Studio的设置里面找到。确认 `fastboot` 在 `platform-tools/` 目录里。
+	找到你电脑上的 Android SDK 的位置; 路径可以在Android Studio的设置里面找到。确认 `fastboot` 在 `platform-tools/` 目录里。
 
 *   After you have the fastboot tool, add it to your `PATH` [environment variable](https://developer.android.google.cn/studio/command-line/variables.html#set). This command should be similar to the following:
 
-*   如果已经装了fastboot, 加到 `PATH` [环境变量](https://developer.android.google.cn/studio/command-line/variables.html#set)里面。命令如同如下:
+	如果已经装了fastboot, 加到 `PATH` [环境变量](https://developer.android.google.cn/studio/command-line/variables.html#set)里面。命令如同如下:
 
 
     `export PATH=$PATH:"path/to/fastboot"`
 
-2.  Open a command line terminal and navigate to the unzipped image directory.
+2.	Open a command line terminal and navigate to the unzipped image directory.
 
-    打开一个命令行终端并切换到映像的解压目录。
+	打开一个命令行终端并切换到映像的解压目录。
 
-3.  Verify that the device has booted into Fastboot mode by executing the following command:
+3.	Verify that the device has booted into Fastboot mode by executing the following command:
 
-    为了验证板子已经进入了 fastboot 模式，可以执行以下命令:
+	为了验证板子已经进入了 fastboot 模式，可以执行以下命令:
 
         $ fastboot devices1b2f21d4e1fe0129        fastboot
 
@@ -129,18 +129,18 @@ Use the following steps to flash the Android image:
 
       $ adb reboot bootloader
 
-4.  Execute the `flash-all.sh` script. This script installs the necessary bootloader, baseband firmware(s), and operating system. (On Windows systems, use `flash-all.bat` instead).
+4.	Execute the `flash-all.sh` script. This script installs the necessary bootloader, baseband firmware(s), and operating system. (On Windows systems, use `flash-all.bat` instead).
 
-   执行 `flash-all.sh` 脚本。 此脚本会安装 bootloader、基带固件、和操作系统（如在 Windows 系统上，请替换为 `flash-all.bat` 脚本）。
+	执行 `flash-all.sh` 脚本。 此脚本会安装 bootloader、基带固件、和操作系统（如在 Windows 系统上，请替换为 `flash-all.bat` 脚本）。
 
 **Note:** The device automatically reboots into Android Things when the process is complete.
 
 **注意:** 当处理程序结束会自动启动到 Android Things 。
 
      
-5.  To verify that Android is running on the device, discover it using the [adb tool](https://developer.android.google.cn/tools/help/adb.html):
+5.	To verify that Android is running on the device, discover it using the [adb tool](https://developer.android.google.cn/tools/help/adb.html):
 
-   为了验证 Android 正在板子上运行，可以用 [adb tool](https://developer.android.google.cn/tools/help/adb.html)执行如下命令:
+	为了验证 Android 正在板子上运行，可以用 [adb tool](https://developer.android.google.cn/tools/help/adb.html)执行如下命令:
 
         $ adb wait-for-device...$ adb devicesList of devices attached1b2f21d4e1fe0129        device
 
@@ -200,9 +200,9 @@ Once you can access a shell prompt, follow these steps:
 
 一旦连到一个 shell 终端, 按下面步骤来:
 
-1.  Send an intent to the Wi-Fi service that includes the SSID of your local network. Your [board](https://developer.android.google.cn/things/hardware/developer-kits.html) must support the network protocol and frequency band of the wireless network in order to establish a connection.
+1.	Send an intent to the Wi-Fi service that includes the SSID of your local network. Your [board](https://developer.android.google.cn/things/hardware/developer-kits.html) must support the network protocol and frequency band of the wireless network in order to establish a connection.
 
-向 Wi-Fi 服务发送带有你的本地网络 SSID 的请求。你的 [开发板](https://developer.android.google.cn/things/hardware/developer-kits.html) 必须支持无线网络协定和无线网络频率以建立连接。
+	向 Wi-Fi 服务发送带有你的本地网络 SSID 的请求。你的 [开发板](https://developer.android.google.cn/things/hardware/developer-kits.html) 必须支持无线网络协定和无线网络频率以建立连接。
 
 
 	$ am startservice \    -n com.google.wifisetup/.WifiSetupService \    -a WifiSetupService.Connect
