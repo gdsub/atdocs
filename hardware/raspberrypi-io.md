@@ -1,4 +1,6 @@
-# Raspberry Pi I/O      
+# Raspberry Pi I/O
+
+# Raspberry Pi I/O
 
 <p>This section describes the <a href="https://developer.android.google.cn/things/sdk/pio/index.html">Peripheral I/O</a>
 interfaces available to your apps running on the
