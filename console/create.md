@@ -81,7 +81,7 @@ To create your product:
 
 3.  Click **CREATE A PRODUCT**.
 
-	点击 **CREATE A PRODUCT**。
+    点击 **CREATE A PRODUCT**。
 
     ![Create new product](https://developer.android.google.cn/things/images/console/create_new_product.png)
 
@@ -91,6 +91,8 @@ To create your product:
 
 
 4.  Type the product name for your product.
+
+    输入您的产品名称。
 
     This is an internal name that users won't see. Collaborating developers can use this name before deciding on the actual product name. You can change the name at any time after project creation.
 
