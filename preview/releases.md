@@ -38,7 +38,7 @@ Please file tickets in the Android issue tracker for issues discovered in the sy
 *   [Android Things bug 报告](https://issuetracker.google.com/issues/new?component=192720&template=847005)
 *   [Android Things 功能请求](https://issuetracker.google.com/issues/new?component=192720&template=848805)
 
-<aside class="note">**Note:** <span>Before filing a bug, please check this page for known issues and ensure you are running the [latest version](https://partner.android.com/things/console) of the preview system image.</span></aside>
+**Note:** Before filing a bug, please check this page for known issues and ensure you are running the [latest version](https://partner.android.com/things/console) of the preview system image.
 
 **注意:** 在提交 bug 之前，请查看本页面核对已知问题，并确保您正在运行 [最新版本](https://partner.android.com/things/console) 的预览版系统镜像。
 
