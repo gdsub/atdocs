@@ -4,7 +4,7 @@
 
 The Android audio subsystem enables apps to write audio data for playback and record audio from input sources. Using audio drivers, your apps can register new audio input/output devices connected over [I2S](https://developer.android.google.cn/things/sdk/pio/i2s.html) or other [Peripheral I/O](https://developer.android.google.cn/things/sdk/pio/index.html) interfaces. Apps can access your audio devices using the standard media framework APIs, such as [AudioTrack](https://developer.android.google.cn/reference/android/media/AudioTrack.html) and [AudioRecord](https://developer.android.google.cn/reference/android/media/AudioRecord.html).
 
-Android 音频子系统可以让应用能够写入音频数据用来播放，或者从输入源中录制音频。使用音频音频驱动，你的应用可以注册已经连接到 [I2S](https://developer.android.google.cn/things/sdk/pio/i2s.html) 或其它 [Peripheral I/O](https://developer.android.google.cn/things/sdk/pio/index.html) 接口上的新音频输入/输出设备。其它应用可以通过标准的媒体框架 API，例如 [AudioTrack](https://developer.android.google.cn/reference/android/media/AudioTrack.html) 和 [AudioRecord](https://developer.android.google.cn/reference/android/media/AudioRecord.html) 来接入你的音频设备。
+Android 音频子系统可以让应用能够写入音频数据用来播放，或者从输入源中录制音频。使用音频音频驱动，您的应用可以注册已经连接到 [I2S](https://developer.android.google.cn/things/sdk/pio/i2s.html) 或其它 [Peripheral I/O](https://developer.android.google.cn/things/sdk/pio/index.html) 接口上的新音频输入/输出设备。其它应用可以通过标准的媒体框架 API，例如 [AudioTrack](https://developer.android.google.cn/reference/android/media/AudioTrack.html) 和 [AudioRecord](https://developer.android.google.cn/reference/android/media/AudioRecord.html) 来接入您的音频设备。
 
 ## Implementing the driver
 
@@ -18,7 +18,7 @@ To define a new audio device, extend the `AudioInputDriver` or `AudioOutputDrive
 
 Your driver should implement the `onStandbyChanged()` method if the audio hardware is able to react to Android going into and out of standby mode. This might include terminating an audio stream in progress or putting the hardware into a low power state.
 
-如果你的音频硬件可以响应 Android 的进入/离开待机模式，你的驱动应当实现 `onStandbyChanged()` 方法。这可能会涉及终止正在使用的音频流，或将硬件置于低功耗状态。
+如果您的音频硬件可以响应 Android 的进入/离开待机模式，您的驱动应当实现 `onStandbyChanged()` 方法。这可能会涉及终止正在使用的音频流，或将硬件置于低功耗状态。
 
 The following example implements an `AudioOutputDriver` that sends audio from the framework to an `I2sDevice` for playback:
 
@@ -57,7 +57,7 @@ public class PlaybackDriver extends AudioOutputDriver {
 
 Bind your audio device to the framework by registering it with the `UserDriverManager`. Supply the following parameters along with the device registration:
 
-通过使用 `UserDriverManager` 注册，从而将你的音频设备绑定到 framework 中。在设备注册过程中，提供以下参数：
+通过使用 `UserDriverManager` 注册，从而将您的音频设备绑定到 framework 中。在设备注册过程中，提供以下参数：
 
 1.  **Audio Format** - Audio data parameters. Including sample rate, encoding, and channel count. Provided as an [AudioFormat](https://developer.android.google.cn/reference/android/media/AudioFormat.html).
 2.  **Device Type** - Either [TYPE_BUILTIN_MIC](https://developer.android.google.cn/reference/android/media/AudioDeviceInfo.html#TYPE_BUILTIN_MIC) or [TYPE_BUILTIN_SPEAKER](https://developer.android.google.cn/reference/android/media/AudioDeviceInfo.html#TYPE_BUILTIN_SPEAKER).
@@ -66,7 +66,7 @@ Bind your audio device to the framework by registering it with the `UserDriverMa
 * * *
 1.  **音频格式** - 音频数据参数。包括采样率，编码方式，以及通道数，以 [AudioFormat](https://developer.android.google.cn/reference/android/media/AudioFormat.html) 的方式提供。
 2.  **设备类型** - [TYPE_BUILTIN_MIC](https://developer.android.google.cn/reference/android/media/AudioDeviceInfo.html#TYPE_BUILTIN_MIC) 或者 [TYPE_BUILTIN_SPEAKER](https://developer.android.google.cn/reference/android/media/AudioDeviceInfo.html#TYPE_BUILTIN_SPEAKER).
-3.  **缓存大小** - 在一次事务中，系统与你的音频设备可交换数据的最大值。缓存大小必须是 16 个音频帧的偶数倍，由提供的格式定义。
+3.  **缓存大小** - 在一次事务中，系统与您的音频设备可交换数据的最大值。缓存大小必须是 16 个音频帧的偶数倍，由提供的格式定义。
 
 To detach the device from the framework, unregister the driver.
 
@@ -111,7 +111,7 @@ public class AudioDriverService extends Service {
 
 With the driver properly registered, apps can use the new device for recording and playback through the standard Android media classes, including [AudioTrack](https://developer.android.google.cn/reference/android/media/AudioTrack.html) and [AudioRecord](https://developer.android.google.cn/reference/android/media/AudioRecord.html).
 
-当驱动正确地被注册后，其它应用可以通过标准的 Android 媒体类操控你的新设备录音或播放音频。这些媒体类包括 [AudioTrack](https://developer.android.google.cn/reference/android/media/AudioTrack.html) 和 [AudioRecord](https://developer.android.google.cn/reference/android/media/AudioRecord.html)。
+当驱动正确地被注册后，其它应用可以通过标准的 Android 媒体类操控您的新设备录音或播放音频。这些媒体类包括 [AudioTrack](https://developer.android.google.cn/reference/android/media/AudioTrack.html) 和 [AudioRecord](https://developer.android.google.cn/reference/android/media/AudioRecord.html)。
 
 The registration process can take some time before the audio device is available to clients. Apps should register an [AudioDeviceCallback](https://developer.android.google.cn/reference/android/media/AudioDeviceCallback.html) to be notified when it is available before starting recording or playback on that device:
 
@@ -169,7 +169,7 @@ public class PlaybackActivity extends Activity {
 
 Add the required permission for the user driver to your app's manifest file:
 
-在你应用的清单文件中添加用户驱动所需的权限：
+在您应用的清单文件中添加用户驱动所需的权限：
 
 ``` xml
 <uses-permission android:name="com.google.android.things.permission.MANAGE_AUDIO_DRIVERS" />

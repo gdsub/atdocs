@@ -43,7 +43,7 @@ SPI支持同时将多个从设备连接在同一总线上。与[I2C](https://dev
 
 In order to open a connection to a particular SPI slave, you need to know the unique name of the bus. During the initial stages of development, or when porting an app to new hardware, it is helpful to discover all the available device names from `PeripheralManagerService` using `getSpiBusList()`:
 
-当需要建立访问某从设备的连接时，你需要获知总线的唯一名称。在发开的早期阶段，或者当你在将应用移植到某个新硬件的时候，你可以通过由`PeripheralManagerService`提供的`getSpiBusList()`来发现所有可用的设备名称：
+当需要建立访问某从设备的连接时，您需要获知总线的唯一名称。在发开的早期阶段，或者当您在将应用移植到某个新硬件的时候，您可以通过由`PeripheralManagerService`提供的`getSpiBusList()`来发现所有可用的设备名称：
 
 ~~~java
     PeripheralManagerService manager = new PeripheralManagerService();
@@ -62,7 +62,7 @@ SPI controllers that support multiple hardware chip selects will report each ava
 
 Once you know the target name, use `PeripheralManagerService` to connect to that device. When you are done communicating with the peripheral device, close the connection to free up resources. Additionally, you cannot open a new connection to the device until the existing connection is closed. To close the connection, use the device's `close()` method.
 
-当你取得目标设备名称后，使用`PeripheralManagerService`去连接该设备。当你和该外设的通信结束后，请记得及时关闭连接以便释放相关资源。另外请注意，在已有连接的情况下，你无法再建立对该设备的新连接了。如需关闭连接，调用该设备的`close()`方法。
+当您取得目标设备名称后，使用`PeripheralManagerService`去连接该设备。当您和该外设的通信结束后，请记得及时关闭连接以便释放相关资源。另外请注意，在已有连接的情况下，您无法再建立对该设备的新连接了。如需关闭连接，调用该设备的`close()`方法。
 
 ~~~java
 public class HomeActivity extends Activity {    
@@ -109,11 +109,11 @@ After a connection is established with the SPI bus, configure the data transfer 
 
 **Note:** Some slave devices cannot configure their SPI operation mode, so refer to the documentation for your hardware when choosing peripheral devices.
 
-**注意：** 有些从设备无法配置SPI的操作模式，所以当连接外设时请先请查阅你设备硬件的相关文档。
+**注意：** 有些从设备无法配置SPI的操作模式，所以当连接外设时请先请查阅您设备硬件的相关文档。
 
 1.  Set the SPI mode, which defines the polarity and phase of the clock signal. The mode you choose is based on three attributes:
 
-	设置SPI模式，定义时钟信号的极性和相位。你可选择的模式基于三种属性：
+	设置SPI模式，定义时钟信号的极性和相位。您可选择的模式基于三种属性：
 
     ![](https://developer.android.google.cn/things/images/spi-clock.png)
 
@@ -155,7 +155,7 @@ After a connection is established with the SPI bus, configure the data transfer 
 
     *   **Frequency** - Specifies the shared clock signal in Hz. Clock signal capabilities will vary across device hardware. You should verify the supported frequencies of your particular device before setting this value.
 
-    	**频率** - 指定共享时钟信号的周期（单位为Hz）。不同设备硬件对于时钟信号的处理能力有所不同，所以你在设置你特定外设的时钟频率时，应该确认硬件上是否支持。
+    	**频率** - 指定共享时钟信号的周期（单位为Hz）。不同设备硬件对于时钟信号的处理能力有所不同，所以您在设置您特定外设的时钟频率时，应该确认硬件上是否支持。
 
     *   **Justification** - Specifies the ordering of the individual bits in each byte as they are transferred across the bus. This is also known as the endianness of the data. By default, data will be sent with the most significant bit (MSB) first.
 

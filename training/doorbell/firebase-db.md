@@ -76,7 +76,7 @@ You need to specify who can read and write to your Firebase Realtime Database. T
 
 1.  In the [Firebase console](https://firebase.google.cn/console/), on the page for your project, click **Database**.
 
-1.  在 [Firebase 控制台](https://firebase.google.cn/console/) ，在你的工程页，点击  **Database**。
+1.  在 [Firebase 控制台](https://firebase.google.cn/console/) ，在您的工程页，点击  **Database**。
 
 2.  Click **Rules**, and update the database rules to allow public read/write access:
 

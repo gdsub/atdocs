@@ -47,7 +47,7 @@ You can adjust the duty cycle to increase or decrease the average "on" time of t
 
 In order to open a connection to a PWM port, you need to know the unique port name. During the initial stages of development, or when porting an app to new hardware, it's helpful to discover all the available port names from `PeripheralManagerService` using `getPwmList()`:
 
-为了打开PWM端口的连接，你需要知道唯一的端口名称。在开发的最初阶段，或者当移植一款应用到新的硬件的时候，最有效的办法是使用 `PeripheralManagerService` 下的 `getPwmList()` 方法来查看所有可用的端口名称。
+为了打开PWM端口的连接，您需要知道唯一的端口名称。在开发的最初阶段，或者当移植一款应用到新的硬件的时候，最有效的办法是使用 `PeripheralManagerService` 下的 `getPwmList()` 方法来查看所有可用的端口名称。
 
 ~~~java
     PeripheralManagerService manager = new PeripheralManagerService();
@@ -62,7 +62,7 @@ In order to open a connection to a PWM port, you need to know the unique port na
 
 Once you know the target name, use `PeripheralManagerService` to connect to that port. When you are done communicating with the PWM port, close the connection to free up resources. Additionally, you cannot open a new connection to the port until the existing connection is closed. To close the connection, use the port's `close()` method.
 
-当你知道的目标设备的名称，就可以用 `PeripheralManagerService` 方法进行连接。当你已经完成与 PWM 端口的数据传输时，记得关闭连接来释放资源。在已有连接关闭之前，请不要打开一个新的端口连接。用设备的 `close()` 方法可以关闭连接。
+当您知道的目标设备的名称，就可以用 `PeripheralManagerService` 方法进行连接。当您已经完成与 PWM 端口的数据传输时，记得关闭连接来释放资源。在已有连接关闭之前，请不要打开一个新的端口连接。用设备的 `close()` 方法可以关闭连接。
 
 ~~~java
     public class HomeActivity extends Activity {    

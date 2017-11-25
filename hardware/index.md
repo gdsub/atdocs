@@ -4,7 +4,7 @@
 
 Android Things lets you build professional, mass-market products on a trusted platform, without previous knowledge of embedded system design.
 
-Android Things 能让你在没有嵌入式系统设计的预备知识的情况下，通过可信任的平台开发出专业的，服务大众市场的产品。
+Android Things 能让您在没有嵌入式系统设计的预备知识的情况下，通过可信任的平台开发出专业的，服务大众市场的产品。
 
 ## Turnkey Hardware Solutions
 
@@ -20,7 +20,7 @@ We work with SoC partners to build Android Things certified development boards t
 
 SoMs integrate the SoC, RAM, Flash Storage, WiFi, Bluetooth and other components onto a single board and come with all of the necessary FCC certifications. You can optimize your board design by flattening existing modules onto a PCB to save costs and space.
 
-SoMs 集成了 SoC、RAM、Flash存储、WiFi、蓝牙和其它的组件到一块开发板上，所有元件通过了必要的 FCC（美国联邦通讯委员会）认证。你可以通过扁平化现有的模块到 PCB 板的方式来优化你的板级设计，从而节省成本和空间。
+SoMs 集成了 SoC、RAM、Flash存储、WiFi、蓝牙和其它的组件到一块开发板上，所有元件通过了必要的 FCC（美国联邦通讯委员会）认证。您可以通过扁平化现有的模块到 PCB 板的方式来优化您的板级设计，从而节省成本和空间。
 
 #### Google BSP
 
@@ -64,4 +64,4 @@ Building devices is now within reach for everyone, even if you've never designed
 
 Android Things reduces the large upfront development costs and risks inherent in getting your idea off the ground. When you're ready to ship large quantities of devices, your costs scale linearly. In addition, ongoing engineering and testing costs are reduced by Google-provided updates.
 
-Android Things 减少了从想法到实施过程中研发费用和风险。当您布署大量设备时，你的成本是线性增长的，尤其要注意成本风险。此外，Google 提供的更新会降低开发过程中随之而来的工程和测试成本。
+Android Things 减少了从想法到实施过程中研发费用和风险。当您布署大量设备时，您的成本是线性增长的，尤其要注意成本风险。此外，Google 提供的更新会降低开发过程中随之而来的工程和测试成本。

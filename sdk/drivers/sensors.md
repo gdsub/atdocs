@@ -5,11 +5,11 @@
 
 The Android [sensor framework](https://developer.android.google.cn/guide/topics/sensors/sensors_overview.html) supports a wide variety of sensor types to measure the conditions of the physical environment and read the raw data from apps. Using sensor drivers, your apps can extend this framework and add new sensor devices connected over [Peripheral I/O](https://developer.android.google.cn/things/sdk/pio/index.html).
 
-Android 的 [传感器框架](https://developer.android.google.cn/guide/topics/sensors/sensors_overview.html) 支持的传感器类型相对广泛，使用该框架可以测量物理环境的状态并从应用中读取原始数据。而通过使用传感器驱动，你的应用可以扩展这个框架，并且可以添加连接到 [Peripheral I/O](https://developer.android.google.cn/things/sdk/pio/index.html) 上的新设备。
+Android 的 [传感器框架](https://developer.android.google.cn/guide/topics/sensors/sensors_overview.html) 支持的传感器类型相对广泛，使用该框架可以测量物理环境的状态并从应用中读取原始数据。而通过使用传感器驱动，您的应用可以扩展这个框架，并且可以添加连接到 [Peripheral I/O](https://developer.android.google.cn/things/sdk/pio/index.html) 上的新设备。
 
 The data from these sensors is delivered through the same [SensorManager](https://developer.android.google.cn/reference/android/hardware/SensorManager.html) APIs as the built-in Android sensors. Your app can implement a driver to connect a new sensor of a known type, such as an accelerometer, or a sensor type that Android doesn't currently define, such as a blood glucose sensor.
 
-从这些传感器中获取的数据被通过 和 Android 内置传感器相同的 [SensorManager](https://developer.android.google.cn/reference/android/hardware/SensorManager.html) APIs 传递。 你的应用可以实现一个驱动，用来连接一个新的已知类型的传感器设备，例如加速度计，或者是当前 Android 未定义的设备类型，比如血糖传感器。
+从这些传感器中获取的数据被通过 和 Android 内置传感器相同的 [SensorManager](https://developer.android.google.cn/reference/android/hardware/SensorManager.html) APIs 传递。 您的应用可以实现一个驱动，用来连接一个新的已知类型的传感器设备，例如加速度计，或者是当前 Android 未定义的设备类型，比如血糖传感器。
 
 ## Implementing the driver
 
@@ -19,7 +19,7 @@ The data from these sensors is delivered through the same [SensorManager](https:
 
 The framework polls your driver periodically when listeners are registered for sensor updates. To respond to poll requests for new data, extend the `UserSensorDriver` class and override the `read()` method. Each call to read should return a new `UserSensorReading` containing the current sensor data.
 
-当监听器已被注册接收传感器更新时，framework 会间歇性地拉取你的驱动。为了响应拉取请求以提供新的数据，需要继承 `UserSensorDriver` 类并覆写 `read()` 方法。每次调用这个方法时，应当返回包含当前传感器数据的 `UserSensorReading` 实例。
+当监听器已被注册接收传感器更新时，framework 会间歇性地拉取您的驱动。为了响应拉取请求以提供新的数据，需要继承 `UserSensorDriver` 类并覆写 `read()` 方法。每次调用这个方法时，应当返回包含当前传感器数据的 `UserSensorReading` 实例。
 
 **Note:** For more information on the data format expected for known sensor types, see [sensor event values](https://developer.android.google.cn/reference/android/hardware/SensorEvent.html#values).
 
@@ -28,7 +28,7 @@ The framework polls your driver periodically when listeners are registered for s
 
 The framework may call `read()` at a time when the driver is not able to produce a sensor reading. When this occurs, your driver should throw an `IOException`.
 
-当传感器驱动不能产生数据更新时，framework 也可能会调用 `read()` 方法，当这种情况出现时，你的驱动应当抛出一个 `IOException`。
+当传感器驱动不能产生数据更新时，framework 也可能会调用 `read()` 方法，当这种情况出现时，您的驱动应当抛出一个 `IOException`。
 
 ~~~ java
 UserSensorDriver mDriver = new UserSensorDriver() {
@@ -52,7 +52,7 @@ UserSensorDriver mDriver = new UserSensorDriver() {
 
 If your sensor supports low power or sleep modes, override the `setEnabled()` method of your driver implementation to activate them. The framework calls this method to indicate that sensors should be ramped up to deliver readings or put to sleep to save power:
 
-如果你的传感器支持低功耗或睡眠模式，重写驱动实现中的 `setEnabled()` 方法来激活该功能。Framework 调用这个方法来表征这个传感器应当被唤起传递数据或是进入睡眠模式节能：
+如果您的传感器支持低功耗或睡眠模式，重写驱动实现中的 `setEnabled()` 方法来激活该功能。Framework 调用这个方法来表征这个传感器应当被唤起传递数据或是进入睡眠模式节能：
 ~~~ java
 UserSensorDriver mDriver = new UserSensorDriver() {
     ...
@@ -92,15 +92,15 @@ To add a new sensor driver to the Android framework:
 
 2.  Provide the sensor name and vendor name of your driver.
 
-	为你的驱动提供传感器名称和供应商的名称。
+	为您的驱动提供传感器名称和供应商的名称。
 
 3.  Apply the range, resolution, update frequency (delay), and power requirements (if available) of your sensor to the builder. These values assist the framework in selecting the best sensor based on the requests received by [SensorManager](https://developer.android.google.cn/reference/android/hardware/SensorManager.html).
 
-	在构建器中提供你的传感器的范围，分辨率，更新频率（延迟），以及能耗需求（如果可用的话）。这些值可以帮助 framework 根据 [SensorManager](https://developer.android.google.cn/reference/android/hardware/SensorManager.html) 收到的需求选择最佳的传感器。
+	在构建器中提供您的传感器的范围，分辨率，更新频率（延迟），以及能耗需求（如果可用的话）。这些值可以帮助 framework 根据 [SensorManager](https://developer.android.google.cn/reference/android/hardware/SensorManager.html) 收到的需求选择最佳的传感器。
 
 4.  Attach your `UserSensorDriver` implementation with the `setDriver()` method.
 
-	使用 `setDriver()` 方法添加你的  `UserSensorDriver` 实现。
+	使用 `setDriver()` 方法添加您的  `UserSensorDriver` 实现。
 
 ~~~ java
 UserSensor accelerometer = UserSensor.builder()
@@ -251,7 +251,7 @@ public class SensorActivity extends Activity implements SensorEventListener {
 
 Add the required permission for the user driver to your app's manifest file:
 
-在你应用的清单文件中添加用户驱动所需的权限：
+在您应用的清单文件中添加用户驱动所需的权限：
 
 ~~~xml
 <uses-permission android:name="com.google.android.things.permission.MANAGE_SENSOR_DRIVERS" />

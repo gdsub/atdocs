@@ -17,7 +17,7 @@ Android Things 由 Things Support Library 提供的新增接口以扩展了核�
 
 The Android Things platform is also streamlined for single application use. System apps are not present, and your app is launched automatically on startup to immerse your users in the app experience.
 
-Android Things 平台也被简化为单一应用程序使用，不再提供系统应用程序，并且你的应用程序在系统启动时自动启动，令用户沉浸在应用程序的体验当中。
+Android Things 平台也被简化为单一应用程序使用，不再提供系统应用程序，并且您的应用程序在系统启动时自动启动，令用户沉浸在应用程序的体验当中。
 
 ## Things Support Library
 
@@ -31,7 +31,7 @@ Android Things 平台也被简化为单一应用程序使用，不再提供系�
 
 The Peripheral I/O APIs let your apps communicate with sensors and actuators using industry standard protocols and interfaces. The following interfaces are supported: GPIO, PWM, I2C, SPI, UART.
 
-外设 I/O 接口让你的应用程序使用工业标准协议和接口与传感器和执行器通讯。支持下列接口：GPIO, PWM, I2C, SPI, UART。
+外设 I/O 接口让您的应用程序使用工业标准协议和接口与传感器和执行器通讯。支持下列接口：GPIO, PWM, I2C, SPI, UART。
 
 See the [Peripheral I/O API Guides](https://developer.android.google.cn/things/sdk/pio/index.html) for more information on how to use the APIs.
 
@@ -61,7 +61,7 @@ See the [User Driver API Guides](https://developer.android.google.cn/things/sdk/
 
 Android Things doesn't include the standard suite of system apps and content providers. Avoid using [common intents](https://developer.android.google.cn/guide/components/intents-common.html) as well as the following content provider APIs in your apps:
 
-Android Things 不包含标准的系统应用程序套件和内容提供商。避免在你的应用程序中使用 [常用Intent](https://developer.android.google.cn/guide/components/intents-common.html) 以及下列内容提供商的接口：
+Android Things 不包含标准的系统应用程序套件和内容提供商。避免在您的应用程序中使用 [常用Intent](https://developer.android.google.cn/guide/components/intents-common.html) 以及下列内容提供商的接口：
 
 [CalendarContract](https://developer.android.google.cn/reference/android/provider/CalendarContract.html)  
 [ContactsContract](https://developer.android.google.cn/reference/android/provider/ContactsContract.html)  
@@ -83,7 +83,7 @@ Android Things 支持同于传统Android应用程序提供的 [UI工具包](http
 
 However, Android Things does not _require_ a display. On devices where a graphical display is not present, activities are still a primary component of your Android Things app. This is because the framework delivers all [input events](https://developer.android.google.cn/guide/topics/ui/ui-events.html) to the foreground activity, which has focus. Your app cannot receive key events or motion events through any other application component, such as a [service](https://developer.android.google.cn/guide/components/services.html).
 
-然而， Android Things 不需要显示设备 ，在没有图形显示的设备上，Activity 依然是Android Things应用程序的主要组件。这是因为框架将所有的 [输入事件](https://developer.android.google.cn/guide/topics/ui/ui-events.html) 传递给获取焦点的前台Activity。你的应用程序无法通过诸如  [service](https://developer.android.google.cn/guide/components/services.html) 等其他任何应用组件接收关键事件或动作事件。
+然而， Android Things 不需要显示设备 ，在没有图形显示的设备上，Activity 依然是Android Things应用程序的主要组件。这是因为框架将所有的 [输入事件](https://developer.android.google.cn/guide/topics/ui/ui-events.html) 传递给获取焦点的前台Activity。您的应用程序无法通过诸如  [service](https://developer.android.google.cn/guide/components/services.html) 等其他任何应用组件接收关键事件或动作事件。
 
 ### Home activity support
 
@@ -304,7 +304,7 @@ than the version bundled with the target release.
 
 [Cloud IoT Core](http://cloud.google.com/iot-core) is a fully managed service that allows you to easily and securely connect, manage, and ingest data from millions of globally dispersed devices. Cloud IoT Core, in combination with other services on Google Cloud IoT platform, provides a complete solution for collecting, processing, analyzing, and visualizing IoT data in real time to support improved operational efficiency.
 
-[云物联网核心](http://cloud.google.com/iot-core) 是一个完整的可以让你轻松，安全地链接，管理，并从全球数以百万计的分布式设备中获取数据的托管服务。云物联网核心，与 Google 云物联网平台上的其他服务结合，提供了一个以支持提高应用效率的用于实时收集，处理，分析和可视化物联网数据的解决方案。
+[云物联网核心](http://cloud.google.com/iot-core) 是一个完整的可以让您轻松，安全地链接，管理，并从全球数以百万计的分布式设备中获取数据的托管服务。云物联网核心，与 Google 云物联网平台上的其他服务结合，提供了一个以支持提高应用效率的用于实时收集，处理，分析和可视化物联网数据的解决方案。
 
 ### Permissions
 
@@ -312,7 +312,7 @@ than the version bundled with the target release.
 
 [Declare permissions](https://developer.android.google.cn/guide/topics/permissions/requesting.html#permissions) that you need in your app's manifest file. [Normal permissions](https://developer.android.google.cn/guide/topics/permissions/requesting.html#normal-dangerous) are granted at install time. Dangerous permissions are granted on the next device reboot and do not require [run time checks](https://developer.android.google.cn/training/permissions/requesting.html). This applies to new app installs and updated `<uses-permission>` elements in existing apps.
 
-你需要在你的应用程序中的 manifest 文件中 [声明权限](https://developer.android.google.cn/guide/topics/permissions/requesting.html#permissions) 在安装时授予 [正常权限](https://developer.android.google.cn/guide/topics/permissions/requesting.html#normal-dangerous) 在下一个设备重启时授予危险权限，不需要 [运行时校验](https://developer.android.google.cn/training/permissions/requesting.html) 这适用于新应用程序安装和更新现有应用程序的 `<uses-permission>` 元素。
+您需要在您的应用程序中的 manifest 文件中 [声明权限](https://developer.android.google.cn/guide/topics/permissions/requesting.html#permissions) 在安装时授予 [正常权限](https://developer.android.google.cn/guide/topics/permissions/requesting.html#normal-dangerous) 在下一个设备重启时授予危险权限，不需要 [运行时校验](https://developer.android.google.cn/training/permissions/requesting.html) 这适用于新应用程序安装和更新现有应用程序的 `<uses-permission>` 元素。
 
 <aside class="note">**Note:**<span>During development, dangerous permissions are granted at install time when using Android Studio 3.0 and later.</span></aside><br />
 <br />
@@ -325,4 +325,4 @@ than the version bundled with the target release.
 
 Since there is no system-wide status bar and window shade in Android Things, [notifications](https://developer.android.google.cn/guide/topics/ui/notifiers/notifications.html) are not supported. Avoid calling the [NotificationManager](https://developer.android.google.cn/reference/android/app/NotificationManager.html) APIs in your apps.
 
-由于在 Android Things 中没有系统的状态栏和窗口阴影，[通知](https://developer.android.google.cn/guide/topics/ui/notifiers/notifications.html) 不被支持，在你的应用程序中不要调用 [NotificationManager](https://developer.android.google.cn/reference/android/app/NotificationManager.html) 接口。
+由于在 Android Things 中没有系统的状态栏和窗口阴影，[通知](https://developer.android.google.cn/guide/topics/ui/notifiers/notifications.html) 不被支持，在您的应用程序中不要调用 [NotificationManager](https://developer.android.google.cn/reference/android/app/NotificationManager.html) 接口。

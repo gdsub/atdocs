@@ -56,7 +56,7 @@ Use the following steps to flash the Android image:
 
 *   Navigate to the Android SDK location on your computer; the path can be found in the system settings for Android Studio. Verify that the `fastboot` binary is installed in the `platform-tools/` directory.
 
-*   找到你电脑上的 Android SDK 的位置; 路径可以在Android Studio的设置里面找到。确认 `fastboot` 在 `platform-tools/` 目录里。
+*   找到您电脑上的 Android SDK 的位置; 路径可以在Android Studio的设置里面找到。确认 `fastboot` 在 `platform-tools/` 目录里。
 
 *   After you have the fastboot tool, add it to your `PATH` [environment variable](https://developer.android.google.cn/studio/command-line/variables.html#set). This command should be similar to the following:
     
@@ -103,11 +103,11 @@ Use the following steps to flash the Android image:
 
 After flashing your board, it is strongly recommended to connect it to the internet. This allows your device to deliver crash reports and receive updates.
 
-在板子烧过后，强烈建议要连上网。这样你的板子就能够上传崩溃报告并收到更新。
+在板子烧过后，强烈建议要连上网。这样您的板子就能够上传崩溃报告并收到更新。
 
 **Note:** The device doesn't need to be on the same network as your computer.
 
-**注意：** 板子不需要和你的主机在一个网络上。
+**注意：** 板子不需要和您的主机在一个网络上。
 
 Before connecting your board to a Wi-Fi network, attach an external IPEX or u.FL Wi-Fi antenna to your board as shown:
 
@@ -137,7 +137,7 @@ Once you can access a shell prompt, follow these steps:
 
 1.  Send an intent to the Wi-Fi service that includes the SSID of your local network. Your [board](https://developer.android.google.cn/things/hardware/developer-kits.html) must support the network protocol and frequency band of the wireless network in order to establish a connection.
 
-	向 Wi-Fi 服务发送带有你的本地网络 SSID 的请求。你的 [开发板](https://developer.android.google.cn/things/hardware/developer-kits.html) 必须支持无线网络协议和频段以建立连接。
+	向 Wi-Fi 服务发送带有您的本地网络 SSID 的请求。您的 [开发板](https://developer.android.google.cn/things/hardware/developer-kits.html) 必须支持无线网络协议和频段以建立连接。
 
 ~~~java
 $ am startservice \    -n com.google.wifisetup/.WifiSetupService \    -a WifiSetupService.Connect
@@ -181,7 +181,7 @@ The following arguments are supported with this command:
 <td>Optional argument to use the passcode specified by <var>network_pass</var> to connect to the network SSID. This argument is not necessary if your network doesn't require a passcode.
 
 
-可选操作，通过 <var>network_pass</var> 指定的密码来连接网络 SSID 。不必要操作如果你的网络不需要密码。</td>
+可选操作，通过 <var>network_pass</var> 指定的密码来连接网络 SSID 。不必要操作如果您的网络不需要密码。</td>
 
 </tr>
 
@@ -234,7 +234,7 @@ $ date
 
 If you want to clear all of the saved networks on the board:
 
-如果你要清空开发板上所有已存的网络，请使用以下命令：
+如果您要清空开发板上所有已存的网络，请使用以下命令：
 
 `$ am startservice \    -n com.google.wifisetup/.WifiSetupService \    -a WifiSetupService.Reset`
 
@@ -256,7 +256,7 @@ To access the serial console:
 
 Open a connection to the USB serial device on your development computer using a terminal program, such as [PuTTY](http://www.putty.org/) (Windows), [Serial](https://www.decisivetactics.com/products/serial/) (Mac OS), or [Minicom](https://en.wikipedia.org/wiki/Minicom) (Linux). The serial port parameters for the console are as follows:
 
-使用串口终端程序在你的 PC 上打开 USB 串口设备, 例如 [PuTTY](http://www.putty.org/)（Windows下），[串口](https://www.decisivetactics.com/products/serial/)（Mac 下），或者 [Minicom](https://en.wikipedia.org/wiki/Minicom)（Linux下）。串口的参数设置如下:
+使用串口终端程序在您的 PC 上打开 USB 串口设备, 例如 [PuTTY](http://www.putty.org/)（Windows下），[串口](https://www.decisivetactics.com/products/serial/)（Mac 下），或者 [Minicom](https://en.wikipedia.org/wiki/Minicom)（Linux下）。串口的参数设置如下:
 
 *   **Baud Rate**: 115200
 

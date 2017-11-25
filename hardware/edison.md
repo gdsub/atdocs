@@ -37,7 +37,7 @@ If this is your first time installing Android Things on the Edison, you need to 
 *   [Arduino Expansion Board](https://software.intel.com/en-us/articles/installing-android-things-on-intel-edison-kit-for-arduino)
 *   [Arduino 扩展板](https://software.intel.com/en-us/articles/installing-android-things-on-intel-edison-kit-for-arduino)
 *   [Mini Breakout Board](https://software.intel.com/en-us/articles/installing-android-things-on-intel-edison-breakout-board)
-*   [迷你分线板](https://software.intel.com/en-us/articles/installing-android-things-on-intel-edison-breakout-board)
+*   [迷您分线板](https://software.intel.com/en-us/articles/installing-android-things-on-intel-edison-breakout-board)
 *   [Sparkfun Block](https://software.intel.com/en-us/articles/installing-android-things-on-sparkfun-block-with-intel-edison-module)
 *   [Sparkfun 扩展模块](https://software.intel.com/en-us/articles/installing-android-things-on-sparkfun-block-with-intel-edison-module)
 

@@ -12,7 +12,7 @@ The following modes in each table are mutually exclusive on the Raspberry Pi 3.
 
 The Raspberry Pi has a single full-speed UART (**UART0**) and a mini UART (**MINIUART**); see the [official docs](https://www.raspberrypi.org/documentation/configuration/uart.md) for information on their differences. These UARTs are multiplexed between various board functions and cannot be used simultaneously. The following modes are supported:
 
-Raspberry Pi 有一个全速单　UART (UART0) 和一个迷你 UART (MINIUART)；更多关于它们不同的细节可以参照 [官方文件](https://www.raspberrypi.org/documentation/configuration/uart.md)。这些 UART 模式支持多路板载功能，但多个 UART 之间不能同时使用。以下是所有支持的模式：
+Raspberry Pi 有一个全速单　UART (UART0) 和一个迷您 UART (MINIUART)；更多关于它们不同的细节可以参照 [官方文件](https://www.raspberrypi.org/documentation/configuration/uart.md)。这些 UART 模式支持多路板载功能，但多个 UART 之间不能同时使用。以下是所有支持的模式：
 <table>
 
 <thead>
@@ -139,7 +139,7 @@ BCM14/BCM15 引脚为 [GPIO](https://developer.android.google.cn/things/sdk/pio/
 
 An `IOException` error is thrown if you try to open an active pin (from above) using a different UART mode.
 
-当你尝试用一个不同的 UART 模式打开以上的串口时会出现 `IOException` 报错
+当您尝试用一个不同的 UART 模式打开以上的串口时会出现 `IOException` 报错
 
 ## Audio modes
 

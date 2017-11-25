@@ -24,7 +24,7 @@ Build connected devices for a wide variety of consumer, retail, and industrial a
 
 If you can build an app, you can build a device
 
-你只要能开发 Android 应用，就同样可以构建智能设备
+您只要能开发 Android 应用，就同样可以构建智能设备
 
 
 #### The Android ecosystem
@@ -33,7 +33,7 @@ If you can build an app, you can build a device
 
 Leverage existing Android development tools, APIs, resources, and a thriving developer community.
 
-完善的 Android 开发工具、应用程序接口、资源，以及不断发展的开发者社区，助你的开发事半功倍。
+完善的 Android 开发工具、应用程序接口、资源，以及不断发展的开发者社区，助您的开发事半功倍。
 
 #### New APIs for IoT devices
 
@@ -41,7 +41,7 @@ Leverage existing Android development tools, APIs, resources, and a thriving dev
 
 Develop with new Android framework APIs that provide low level I/O and libraries for common components like temperature sensors, display controllers, and more.
 
-新的 Android 框架为你提供了常用组件的底层输入输出接口和开发库，如温度传感器、显示控制器等。
+新的 Android 框架为您提供了常用组件的底层输入输出接口和开发库，如温度传感器、显示控制器等。
 
 #### Trusted security
 
@@ -49,16 +49,16 @@ Develop with new Android framework APIs that provide low level I/O and libraries
 
 Take advantage of regular best-in-class security updates by building on top of the Android OS.
 
-得益于 Android 系统的安全更新机制，你可以更安心开发你的应用程序。
+得益于 Android 系统的安全更新机制，您可以更安心开发您的应用程序。
 
 
 # Rapid prototypes to real products
 
-# 让你的产品从零到一
+# 让您的产品从零到一
 
 Anyone, from startups to large companies, can build commercial products at scale
 
-任何人，都可以从这里起步，构建你自己的物联网产品帝国
+任何人，都可以从这里起步，构建您自己的物联网产品帝国
 
 ![](https://developer.android.google.cn/things/images/landing-certified.png)
 
@@ -68,7 +68,7 @@ Anyone, from startups to large companies, can build commercial products at scale
 
 Our certified development boards include the System on Chip (SoC), RAM, wireless radios, and more to get you started quickly.
 
-经我们认证过的开发板包含 SoC 芯片，RAM，无线接收装置等，方便你快速开始构建你的应用。
+经我们认证过的开发板包含 SoC 芯片，RAM，无线接收装置等，方便您快速开始构建您的应用。
 
 ![](https://developer.android.google.cn/things/images/landing-market.png)
 
@@ -78,7 +78,7 @@ Our certified development boards include the System on Chip (SoC), RAM, wireless
 
 Start prototyping immediately with supported boards and a developer build of Android Things. There's no need for kernel, firmware, or board development.
 
-Android Things 系统为开发者提供便利，你可以在通过认证的开发板上立刻开始构建你的产品，而不需要硬件编程基础。
+Android Things 系统为开发者提供便利，您可以在通过认证的开发板上立刻开始构建您的产品，而不需要硬件编程基础。
 
 
 ![](https://developer.android.google.cn/things/images/landing-scale.png)
@@ -89,8 +89,8 @@ Android Things 系统为开发者提供便利，你可以在通过认证的开�
 
 Shipping products is easy because our prototype boards are commercial grade. The same boards can be easily customized by your prototype supplier to fit your specific form-factor and other needs, all while running the same software.
 
-得益于在在商业级认证的开发板做开发，你的构建会很容易变成真正的产品。代工厂可以很方便的帮你对同样的电路板进行定制，
-满足你对外观和其他的需求。
+得益于在在商业级认证的开发板做开发，您的构建会很容易变成真正的产品。代工厂可以很方便的帮您对同样的电路板进行定制，
+满足您对外观和其他的需求。
 
 To learn more about the hardware program, see our [Hardware Platform Overview](https://developer.android.google.cn/things/hardware/index.html).
 
@@ -100,11 +100,11 @@ To learn more about the hardware program, see our [Hardware Platform Overview](h
 
 The power of Google at your fingertips
 
-Google 的强力驱动 你触手可及
+Google 的强力驱动 您触手可及
 
 Build and manage millions of devices at Google’s scale
 
-使用 Google 的架构管理你的设备
+使用 Google 的架构管理您的设备
 
 #### Google APIs and services
 
@@ -120,7 +120,7 @@ Leverage a wide range of Google services, including Google Play services.
 
 We provide the system image, updates, fixes, and more, so you can focus on creating compelling products.
 
-提供系统镜像、更新、补丁包等，你可以更专注与产品的开发。
+提供系统镜像、更新、补丁包等，您可以更专注与产品的开发。
 
 #### Large scale infrastructure
 
@@ -128,7 +128,7 @@ We provide the system image, updates, fixes, and more, so you can focus on creat
 
 Push Google-provided OS updates and your own app updates, using the same OTA infrastructure we use for our own products.
 
-可借助与 Google 产品里 OTA 更新相同的大型基础设施架构，用于你构建的产品的系统和应用更新。
+可借助与 Google 产品里 OTA 更新相同的大型基础设施架构，用于您构建的产品的系统和应用更新。
 
 # Android Things Developer Preview
 
@@ -136,7 +136,7 @@ Push Google-provided OS updates and your own app updates, using the same OTA inf
 
 Get started now with the Developer Preview, so you can start designing and developing your own products. We will be providing regular updates with new features, and a long-term support release for commercialization in the coming months.
 
-开启 Android Things 开发者预览版，你可以从现在开始设想和构建你的产品，我们将定期提供新功能的更新，并在接下来的时间里提供商业级别的长期支持（LTS）版本。
+开启 Android Things 开发者预览版，您可以从现在开始设想和构建您的产品，我们将定期提供新功能的更新，并在接下来的时间里提供商业级别的长期支持（LTS）版本。
 
 [Get the Developer Preview](https://developer.android.google.cn/things/preview/index.html)
 

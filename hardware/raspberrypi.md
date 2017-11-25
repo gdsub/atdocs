@@ -15,7 +15,7 @@ See [Raspberry Pi I/O](https://developer.android.google.cn/things/hardware/raspb
 
 Before you begin flashing, you will need the following items in addition to your Raspberry Pi:
 
-在开始烧录之前，除了 Raspberry Pi 以外，你还需要以下设备
+在开始烧录之前，除了 Raspberry Pi 以外，您还需要以下设备
 
 *   HDMI cable
 
@@ -38,10 +38,10 @@ To flash Android Things onto your board, download the latest preview image in th
 为了在板上烧录 Android Things ，请从 [Android Things 控制台](https://partner.android.com/things/console) 下载最新的预览版镜像 (参见 [更新注释](https://developer.android.google.cn/things/preview/releases.html) 然后参照以下步骤：
 
 1.  Insert an 8 GB or larger microSD card into your development computer.
-    在你的用于开发的电脑上插入 8 GB 或更大的 microSD 卡
+    在您的用于开发的电脑上插入 8 GB 或更大的 microSD 卡
 
 2.  Unzip the downloaded image archive on your development computer. Navigate to the unzipped image file.
-    解压缩你的电脑上下载的镜像。找到解压缩镜像的文件。
+    解压缩您的电脑上下载的镜像。找到解压缩镜像的文件。
 
 **Note:** The compressed image file expands to over 4GB. This can cause problems for the built-in tools on some platforms. If you are unable to unzip the archive, or see a message stating that it's corrupt, use [7-Zip](http://www.7-zip.org/download.html) (Windows) or [The Unarchiver](http://unarchiver.c3.cx/unarchiver) (Mac OS) instead.
     
@@ -55,7 +55,7 @@ To flash Android Things onto your board, download the latest preview image in th
 *   [Windows](https://www.raspberrypi.org/documentation/installation/installing-images/windows.md)
 
 4.  Insert the flashed microSD card into your board.
-    将烧录好的 microSD 卡插入到你的开发板中 
+    将烧录好的 microSD 卡插入到您的开发板中 
     
 5.  Make the following connections to your board:
     按照以下指南连接开发板上的接口
@@ -67,19 +67,19 @@ To flash Android Things onto your board, download the latest preview image in th
     将 USB 线和 **J1** 口相连用来供电
 
 2.  Connect an Ethernet cable to your local network.
-    将网线连到你的本地网络
+    将网线连到您的本地网络
 
 **Note:** If you do not have wired access to your local network, you can do either of the following:
 		
-**注意：** 如果你没有有线网络，你可以从以下操作中任选其一：
+**注意：** 如果您没有有线网络，您可以从以下操作中任选其一：
 
 *   Connect the Ethernet cable to your development computer and assign the Raspberry Pi an IP address using DHCP.
 
-*   将网线连接到你的电脑上并通过 DHCP 给 Raspberry Pi 分配一个 IP 地址
+*   将网线连接到您的电脑上并通过 DHCP 给 Raspberry Pi 分配一个 IP 地址
 
 *   Connect a [serial cable](#serial_debug_console) from the Raspberry Pi to your development computer. Use a serial console to [connect to Wi-Fi](#connecting_wi-fi).
 		
-*   用一根 [串行线](#serial_debug_console) 将 Raspberry Pi 和你的电脑相连。使用一个串行控制台 [连接到 Wi-Fi](#connecting_wi-fi)。
+*   用一根 [串行线](#serial_debug_console) 将 Raspberry Pi 和您的电脑相连。使用一个串行控制台 [连接到 Wi-Fi](#connecting_wi-fi)。
 
 3.  Connect an HDMI cable to an external display.
     将 HDMI 线连接到外置屏幕
@@ -113,11 +113,11 @@ After flashing your board, it is strongly recommended to connect it to the inter
 
 **Note:** The device doesn't need to be on the same network as your computer.
 
-**注意：** 你的设备不必和你的电脑使用相同的网络。
+**注意：** 您的设备不必和您的电脑使用相同的网络。
 
 To connect your board to Wi-Fi, first access a shell prompt on the device. You can use either of the following methods:
 
-为了将你的开发板连到 Wi-Fi ，首先访问设备上的 shell prompt 。你可以从以下操作中任选其一：
+为了将您的开发板连到 Wi-Fi ，首先访问设备上的 shell prompt 。您可以从以下操作中任选其一：
 
 *   Connect your board to your Wi-Fi router or development computer to assign it an IP address. Run the `adb connect <ip-address>` command to connect to this IP address using the [adb tool](https://developer.android.google.cn/tools/help/adb.html). Open a shell over adb with the `adb shell` command.
 
@@ -131,7 +131,7 @@ Once you can access a shell prompt, follow these steps:
 
 1.  Send an intent to the Wi-Fi service that includes the SSID of your local network. Your [board](https://developer.android.google.cn/things/hardware/developer-kits.html) must support the network protocol and frequency band of the wireless network in order to establish a connection.
 
-    向 Wi-Fi 服务发送带有你的本地网络 SSID 的请求。你的 [开发板](https://developer.android.google.cn/things/hardware/developer-kits.html) 必须支持无线网络协议和无线网络频段以建立连接。
+    向 Wi-Fi 服务发送带有您的本地网络 SSID 的请求。您的 [开发板](https://developer.android.google.cn/things/hardware/developer-kits.html) 必须支持无线网络协议和无线网络频段以建立连接。
 
 	$ am startservice \    -n com.google.wifisetup/.WifiSetupService \    -a WifiSetupService.Connect
 
@@ -209,7 +209,7 @@ The following arguments are supported with this command:
 
         $ ping 8.8.8.8PING 8.8.8.8 (8.8.8.8) 56(84) bytes of data.64 bytes from 8.8.8.8: icmp_seq=1 ttl=57 time=6.67 ms64 bytes from 8.8.8.8: icmp_seq=2 ttl=57 time=55.5 ms64 bytes from 8.8.8.8: icmp_seq=3 ttl=57 time=23.0 ms64 bytes from 8.8.8.8: icmp_seq=4 ttl=57 time=245 ms
 
-    测试你可以访问远程 IP 地址：
+    测试您可以访问远程 IP 地址：
 
         $ ping 8.8.8.8PING 8.8.8.8 (8.8.8.8) 56(84) bytes of data.64 bytes from 8.8.8.8: icmp_seq=1 ttl=57 time=6.67 ms64 bytes from 8.8.8.8: icmp_seq=2 ttl=57 time=55.5 ms64 bytes from 8.8.8.8: icmp_seq=3 ttl=57 time=23.0 ms64 bytes from 8.8.8.8: icmp_seq=4 ttl=57 time=245 ms
 
@@ -227,7 +227,7 @@ If you want to clear all of the saved networks on the board:
 
 	$ am startservice \    -n com.google.wifisetup/.WifiSetupService \    -a WifiSetupService.Reset
 
-如果你要清空开发板上所有已存的网络，使用以下命令：
+如果您要清空开发板上所有已存的网络，使用以下命令：
 
 	$ am startservice \    -n com.google.wifisetup/.WifiSetupService \    -a WifiSetupService.Reset
 

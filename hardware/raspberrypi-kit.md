@@ -2,7 +2,7 @@
 # Raspberry Pi 3 Android Things 新手套件	
 Follow these instructions to set up your [Raspberry Pi 3 Starter Kit](https://shop.pimoroni.com/products/rainbow-hat-for-android-things)
 
-根据以下指南设置你的 [Raspberry Pi 3 Starter Kit](https://shop.pimoroni.com/products/rainbow-hat-for-android-things)
+根据以下指南设置您的 [Raspberry Pi 3 Starter Kit](https://shop.pimoroni.com/products/rainbow-hat-for-android-things)
 
 
 ## What's in the box
@@ -211,7 +211,7 @@ The case encloses the Raspberry Pi and protects it.
 
 <span style="font-size:1.2em; vertical-align: middle;">⑥</span> Insert the four plastic bolts into the four corner holes in the case. Attach a nut to each of the bolts underneath the case. You can press down on the head of each bolt and use the included plastic wrench to tighten the nut.
 
-将四个塑料螺丝分别插入保护盒四角的孔里。在四个塑料螺丝下加装塑料螺母。你可以适当按压塑料螺丝也可以用塑料扳手将螺母拧紧。</td>
+将四个塑料螺丝分别插入保护盒四角的孔里。在四个塑料螺丝下加装塑料螺母。您可以适当按压塑料螺丝也可以用塑料扳手将螺母拧紧。</td>
 
 
 </tr>
@@ -240,7 +240,7 @@ Connect the Rainbow HAT to the Raspberry Pi.
 
 <span style="font-size:1.2em; vertical-align: middle;">①</span> Locate the Rainbow HAT. The HAT has a 40-pin female connector. The Raspberry Pi has a 40-pin male connector. You will connect these together in the next step.
 
-找到 Rainbow HAT 板。HAT 板有40针的母接头。Raspberry Pi 有40针的公接头。下一步中，你会把它们接在一起</td>
+找到 Rainbow HAT 板。HAT 板有40针的母接头。Raspberry Pi 有40针的公接头。下一步中，您会把它们接在一起</td>
 
 
 <td style="width:450px;">
@@ -265,7 +265,7 @@ Connect the Rainbow HAT to the Raspberry Pi.
 The power adapter may not have the right outlet adapter for your location. Do the following to change the outlet adapter (if needed)
 
 
-电源接头可能与你所在的地区不匹配。按照以下指南来更换接头。（如果有需要）
+电源接头可能与您所在的地区不匹配。按照以下指南来更换接头。（如果有需要）
 
 <table>
 
@@ -304,7 +304,7 @@ The power adapter may not have the right outlet adapter for your location. Do th
 
 <span style="font-size:1.2em; vertical-align: middle;">③</span> Locate the correct outlet adapter for your location. Slide it onto the power adapter.
 
-找到适配你的地区的插头。将它插入电源内。</td>
+找到适配您的地区的插头。将它插入电源内。</td>
 
 
 <td style="width:450px;">
@@ -328,7 +328,7 @@ The power adapter may not have the right outlet adapter for your location. Do th
 
 Your kit is now assembled. You will insert the micro SD card and connect the power cable in the installation instructions below.
 
-你的套件现在就拼装完了。你可以按照下面的安装指南插入 micro SD 卡和连接电源
+您的套件现在就拼装完了。您可以按照下面的安装指南插入 micro SD 卡和连接电源
 ![final_result](https://developer.android.google.cn/things/images/rpi-starter-kit/final_result.jpg)
 
 
@@ -342,7 +342,7 @@ Follow the hardware setup [instructions](https://developer.android.google.cn/thi
  
 按照硬件设置 [指南](https://developer.android.google.cn/things/hardware/raspberrypi.html)
 
- 在你的 Raspberry Pi 开发板上来烧录最新版的 Android Things
+ 在您的 Raspberry Pi 开发板上来烧录最新版的 Android Things
 
 ## Blink an LED
 ## 闪烁 LED
@@ -359,7 +359,7 @@ Follow these instructions to download and run a [sample](https://github.com/andr
 
  project to the directory of your choice.
 
-    下载并解压 [sample-button](https://github.com/androidthings/sample-button/archive/master.zip) 程序到你指定的文件地址
+    下载并解压 [sample-button](https://github.com/androidthings/sample-button/archive/master.zip) 程序到您指定的文件地址
 
 2.  Run the project using either of the following:
     用以下两种方法任选其一来运行程序
@@ -392,7 +392,7 @@ Follow these instructions to download and run a [sample](https://github.com/andr
 
         adb uninstall com.example.androidthings.button
 		
-  注意为了程序之间不互相干扰，请先卸载开发板上已有的程序，再安装新程序。比如你可以通过这段命令行来卸载之前的程序：
+  注意为了程序之间不互相干扰，请先卸载开发板上已有的程序，再安装新程序。比如您可以通过这段命令行来卸载之前的程序：
 
         adb uninstall com.example.androidthings.button
 
@@ -400,7 +400,7 @@ Follow these instructions to download and run a [sample](https://github.com/andr
 or learn how to [build your first device](https://developer.android.google.cn/things/training/first-device/index.html)
  
 *   参照一下 [外设实验室](https://codelabs.developers.google.com/codelabs/androidthings-peripherals)
- 或者学习如何 [设置你的第一台设备](https://developer.android.google.cn/things/training/first-device/index.html)
+ 或者学习如何 [设置您的第一台设备](https://developer.android.google.cn/things/training/first-device/index.html)
 
 
 *   Connect with the community at [g.co/iotdev](https://g.co/iotdev)
@@ -417,7 +417,7 @@ or learn how to [build your first device](https://developer.android.google.cn/th
 
 You can [report bugs](https://issuetracker.google.com/issues/new?component=192720&template=847005)
 
-你可以 [汇报 bugs](https://issuetracker.google.com/issues/new?component=192720&template=847005)
+您可以 [汇报 bugs](https://issuetracker.google.com/issues/new?component=192720&template=847005)
 
  and [suggest new features](https://issuetracker.google.com/issues/new?component=192720&template=848805)
  

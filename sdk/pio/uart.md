@@ -55,7 +55,7 @@ In order to open a connection to a particular UART, you need to know the unique 
 
 Once you know the target name, use `PeripheralManagerService` to connect to that device. When you are done communicating with the peripheral device, close the connection to free up resources. Additionally, you cannot open a new connection to the device until the existing connection is closed. To close the connection, use the device's `close()` method.
 
-一旦知道当前 UART 的名称，可以使用 `PeripheralManagerService` 来连接外设。当你已经完成外设的数据传输时，记行关闭连接来释放资源。 直到正在使用的连接关闭之后，才可以打开一个新的连接。 用设备的 `close()` 方法可以关闭连接。
+一旦知道当前 UART 的名称，可以使用 `PeripheralManagerService` 来连接外设。当您已经完成外设的数据传输时，记行关闭连接来释放资源。 直到正在使用的连接关闭之后，才可以打开一个新的连接。 用设备的 `close()` 方法可以关闭连接。
 
 ~~~java
     public class HomeActivity extends Activity { 
@@ -154,7 +154,7 @@ The following code configures the UART connection to operate at 115200 baud, 8 d
 
 **Note:** Choosing uncommon baud rates can lead to high error rates in data transmission. You should always verify whether your chosen baud rate is well supported by your device hardware.
 
-**注意:** 如果配置的波特率不是设备支持的波特率，会带来数据传输中的大量的错误。在开发之前，要先确认你的设备支持哪几种波特率。
+**注意:** 如果配置的波特率不是设备支持的波特率，会带来数据传输中的大量的错误。在开发之前，要先确认您的设备支持哪几种波特率。
 
 ### Hardware Flow Control
 
@@ -162,7 +162,7 @@ The following code configures the UART connection to operate at 115200 baud, 8 d
 
 If your device supports 5-wire UART ports, enabling hardware flow control can increase the reliability of the data transfer. Often this also means you can safely use faster baud rates with a much lower chance of missing incoming data.
 
-如果你的设备支持5线的端口，使能硬件流控能够提高数据传输的稳定性。通常来说，硬件流控也保证在一个很高的波特率时，不怎么会丢失接收数据。
+如果您的设备支持5线的端口，使能硬件流控能够提高数据传输的稳定性。通常来说，硬件流控也保证在一个很高的波特率时，不怎么会丢失接收数据。
 
 ![""](https://developer.android.google.cn/things/images/uart-flow-control.png)
 
@@ -216,7 +216,7 @@ To transmit a buffer of data over the UART to a peripheral, use the `write()` me
 
 Use the `read()` method to pull incoming data from the UART FIFO buffer into your application. This method accepts an empty buffer to fill with the incoming data and a maximum number of bytes to read. UART reads are non-blocking, and will return immediately if there is no data available in the FIFO.
 
-使用 `read()` 方法可以从 UART 的 FIFO 中连续的读取数据到你的应用程序。这种方法可以使一个空的缓冲区接收最大的字节数的数据用于读取。UART 的读取操作是非阻塞式的，如果 FIFO 中没有数据的话，就立刻返回。
+使用 `read()` 方法可以从 UART 的 FIFO 中连续的读取数据到您的应用程序。这种方法可以使一个空的缓冲区接收最大的字节数的数据用于读取。UART 的读取操作是非阻塞式的，如果 FIFO 中没有数据的话，就立刻返回。
 
 `UartDevice` will return the number of available bytes in the FIFO at the time of the read, up to the requested count. To ensure that all data was recovered, loop over the UART until it reports that no more data is present:
 
@@ -236,7 +236,7 @@ Use the `read()` method to pull incoming data from the UART FIFO buffer into you
 
 To avoid polling the UART unnecessarily when the buffer is empty, register a `UartDeviceCallback` with the `UartDevice`. This callback invokes the `onUartDeviceDataAvailable()` method when there is data available to read. You should unregister the callback when your application is no longer listening for incoming data.
 
-如果要避免缓冲区为空时，我们还在读取缓冲区。可以通过 UartDevice` 注册回调函数 `UartDeviceCallback` 。这个回调函数会在有可用数据时，调用 `onUartDeviceDataAvailable()` 这个方法。 如果你的应用不再监听输入数据，应该注销这个回调函数。
+如果要避免缓冲区为空时，我们还在读取缓冲区。可以通过 UartDevice` 注册回调函数 `UartDeviceCallback` 。这个回调函数会在有可用数据时，调用 `onUartDeviceDataAvailable()` 这个方法。 如果您的应用不再监听输入数据，应该注销这个回调函数。
 
 ~~~java
     public class HomeActivity extends Activity {    

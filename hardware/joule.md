@@ -138,7 +138,7 @@ After flashing your board, it is strongly recommended to connect it to the inter
 
 Before connecting your board to a Wi-Fi network, ensure the provided antennas are attached to the u.FL Wi-Fi connectors on your board as shown:  
 
-在你的设备连接到 Wi-Fi 网络前，请先确保天线已经连接到你设备的 u.FL Wi-Fi 连接器上，如下所示：
+在您的设备连接到 Wi-Fi 网络前，请先确保天线已经连接到您设备的 u.FL Wi-Fi 连接器上，如下所示：
 
 ![""](https://developer.android.google.cn/things/images/joule-antenna.png)
 
@@ -256,7 +256,7 @@ If you want to clear all of the saved networks on the board:
 
 The serial console is a helpful tool for debugging your board and reviewing system log information. The console is the default output location for kernel log messages (i.e. `dmesg`), and it also provides access to a full shell prompt that you can use to access commands such as [logcat](https://developer.android.google.cn/tools/help/logcat.html). This is helpful if you are unable to access ADB on your board through other means and have not yet enabled a network connection.  
 
-串口控制台是一款非常有用的工具，用来调试设备和检查系统日志。控制台是内核日志消息（如dmesg ）的默认输出位置，同时它也提供了一套完整的 shell 访问命令，你可以用它来访问 logcat 等命令。如果你无法在你的设备上通过其他方式获取 ADB 且没有网络连接，这将为你提供帮助。
+串口控制台是一款非常有用的工具，用来调试设备和检查系统日志。控制台是内核日志消息（如dmesg ）的默认输出位置，同时它也提供了一套完整的 shell 访问命令，您可以用它来访问 logcat 等命令。如果您无法在您的设备上通过其他方式获取 ADB 且没有网络连接，这将为您提供帮助。
 
 To access the serial console, connect a micro USB cable to the board as shown below.
 

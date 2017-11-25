@@ -42,7 +42,7 @@ To import a library driver into your app:
 
 1.  Search the [driver index](https://developer.android.google.cn/things/sdk/driver-library.html) for a driver that matches your peripheral.
 
-1.  在 [driver index](https://developer.android.google.cn/things/sdk/driver-library.html) 中搜索与你的外设设备相匹配的驱动。
+1.  在 [driver index](https://developer.android.google.cn/things/sdk/driver-library.html) 中搜索与您的外设设备相匹配的驱动。
 
 2.  Add the driver artifact dependency to your app-level `build.gradle` file:
 

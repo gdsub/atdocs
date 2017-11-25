@@ -101,7 +101,7 @@ Input drivers can also emit motion events to connect a pointing device to the fr
 
 **Note:** You must report all coordinates as positive integer values.
 
-**注意:** 你上报的坐标必须是正整数值。
+**注意:** 您上报的坐标必须是正整数值。
 
 
 1.  Create a new driver instance using the `InputDriver.Builder` and the source type `SOURCE_TOUCHPAD`.
@@ -173,7 +173,7 @@ public class TouchpadDriverService extends Service { 
 
 Android delivers input events to the foreground activity through various callback methods. Your app receives key events through the `onKeyDown()` and `onKeyUp()` methods, and all other input events through the `onGenericMotionEvent()` method.
 
-Android 通过多种回调方法传递输入事件给前台活动。你的应用通过使用 `onKeyDown()` 和 `onKeyUp()` 方法接收按键事件,以及通过 `onGenericMotionEvent()` 方法接收所有其它输入事件。
+Android 通过多种回调方法传递输入事件给前台活动。您的应用通过使用 `onKeyDown()` 和 `onKeyUp()` 方法接收按键事件,以及通过 `onGenericMotionEvent()` 方法接收所有其它输入事件。
 
 ~~~ java
 public class HomeActivity extends Activity {
@@ -213,7 +213,7 @@ See [Handling Controller Actions](https://developer.android.google.cn/training/g
 
 Add the required permission for the user driver to your app's manifest file:
 
-在你应用的清单文件中添加用户驱动所需的权限：
+在您应用的清单文件中添加用户驱动所需的权限：
 
 ~~~xml
 <uses-permission android:name="com.google.android.things.permission.MANAGE_INPUT_DRIVERS" />

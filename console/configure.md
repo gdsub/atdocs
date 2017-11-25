@@ -4,7 +4,7 @@
 
 The **PRODUCT SETTINGS** tab in the [Android Things Console](https://partner.android.com/things/console) allows you to change the product settings.
 
-**[Android Things 管理中心](https://partner.android.com/things/console) 的 PRODUCT SETTINGS** 标签页允许你修改产品设置。
+**[Android Things 管理中心](https://partner.android.com/things/console) 的 PRODUCT SETTINGS** 标签页允许您修改产品设置。
 
 To configure your product:
 

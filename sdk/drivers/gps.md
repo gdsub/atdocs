@@ -3,7 +3,7 @@
 
 The GPS user driver allows your app to publish updates to the device's physical location through the Android [location services](https://developer.android.google.cn/training/location/index.html).
 
-GPS 设备驱动能够让你的应用通过 Android [位置服务](https://developer.android.google.cn/training/location/index.html) 更新设备的地理位置信息。
+GPS 设备驱动能够让您的应用通过 Android [位置服务](https://developer.android.google.cn/training/location/index.html) 更新设备的地理位置信息。
 
 GPS modules are receive-only devices that triangulate signals from remote satellites in order to determine an accurate physical location. Once the GPS module collects enough satellite data to calculate an accurate position, it has a valid location (a **fix** ) that it can report.
 
@@ -15,7 +15,7 @@ GPS 模块通常使用 [UART](https://developer.android.google.cn/things/sdk/pio
 
 **Note:** The framework only supports a single source for GPS location data. You cannot register multiple GPS drivers.
 
-**注意:** Framework 仅支持单一的 GPS 位置信息数据源。你不能注册多个 GPS 驱动。
+**注意:** Framework 仅支持单一的 GPS 位置信息数据源。您不能注册多个 GPS 驱动。
 
 
 ## Creating the driver
@@ -277,7 +277,7 @@ public Location parseLocationFromString(String rawGpsData) {
 
 Add the required permission for the user driver to your app's manifest file:
 
-在你应用的 manifest 文件中为使用用户驱动添加必要的权限声明：
+在您应用的 manifest 文件中为使用用户驱动添加必要的权限声明：
 
 ~~~xml
 <uses-permission android:name="com.google.android.things.permission.MANAGE_GPS_DRIVERS" />

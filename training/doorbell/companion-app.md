@@ -196,7 +196,7 @@ public class DoorbellEntryAdapter extends FirebaseRecyclerAdapter<DoorbellEntry,
 ~~~
 Create an instance of the `DoorbellEntryAdapter` and attach it to a `RecyclerView` in your activity. The FirebaseUI adapters automatically register event listeners with the database. To avoid memory leaks, initialize the adapter in `onStart()` and call its `cleanup()` method in `onStop()`.
 
-创建一个 `DoorbellEntryAdapter` 实例并且将它关联给你页面的 `RecyclerView`。FirebaseUI 适配器自动为数据库注册数据监听器。为了避免内存泄漏，在 `onStart()` 中初始化适配器并且在 `onStop()` 中调用适配器的 `cleanup()` 方法。
+创建一个 `DoorbellEntryAdapter` 实例并且将它关联给您页面的 `RecyclerView`。FirebaseUI 适配器自动为数据库注册数据监听器。为了避免内存泄漏，在 `onStart()` 中初始化适配器并且在 `onStop()` 中调用适配器的 `cleanup()` 方法。
 
 To ensure that each new doorbell event is visible to the user, scroll the list to the latest item on each data set change. You can listen for changes events using an `AdapterDataObserver` attached to your adapter.
 

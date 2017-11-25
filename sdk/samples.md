@@ -7,7 +7,7 @@
 tutorials to help you build embedded applications and integrate hardware
 peripherals. You can get started with the following samples:</p>
 
-<p>欢迎来到 Android Things 代码示例。这里你可以找到帮助你构建嵌入式应用程序和集成硬件外部设备的代码片段和教程。你可以从一下实例开始： </p>
+<p>欢迎来到 Android Things 代码示例。这里您可以找到帮助您构建嵌入式应用程序和集成硬件外部设备的代码片段和教程。您可以从一下实例开始： </p>
 <ul>
 <li><a href="https://github.com/androidthings/sample-simplepio"><strong>Simple PIO</strong></a> -
     Runs basic code that exercises the PIO APIs in Java. Each sample is an
@@ -106,6 +106,6 @@ peripherals. You can get started with the following samples:</p>
 <p>You can find additional code samples at the
 <a class="external-link" href="https://github.com/androidthings">Android Things page</a>
 on GitHub.</p>
-<p>你可以在Github上的
+<p>您可以在Github上的
 <a class="external-link" href="https://github.com/androidthings">Android Things 页面</a>
 找到更多的代码示例。</p>

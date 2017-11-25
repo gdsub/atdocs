@@ -19,7 +19,7 @@ I<sup>2</sup>S 是 **_同步_** 串行接口，意味着它要通过共享的时
 
 I<sup>2</sup>S devices contain at least one **Serial Data (SD)** signal. This is common with peripherals, which generally only produce or consume audio data. Master devices are more likely to have dedicated lines for receive (**SDIN**) and transmit (**SDOUT**) to support **_full-duplex_** communication. This allows you to connect to multiple peripherals to send and receive audio data simultaneously.
 
- I<sup>2</sup>S 设备至少包括一个 **Serial Data (SD)串行数据** 信号。这是一个通用的外设信号，一般用来输入或者是输出音频数据。主设备一般可以选择 接收 (**SDIN**) 或者是发送 (**SDOUT**) 通道来支持 **全双工** 通信。 这种通信方式可以让你连接多个外设，并且同时接收或者发送数据。
+ I<sup>2</sup>S 设备至少包括一个 **Serial Data (SD)串行数据** 信号。这是一个通用的外设信号，一般用来输入或者是输出音频数据。主设备一般可以选择 接收 (**SDIN**) 或者是发送 (**SDOUT**) 通道来支持 **全双工** 通信。 这种通信方式可以让您连接多个外设，并且同时接收或者发送数据。
 
 **Note:** Multiple peripherals sharing the same **BCLK** and **LRCLK** lines must use the same audio encoding and sample rate parameters.
 
@@ -47,7 +47,7 @@ In order to open a connection to a particular I<sup>2</sup>S device, you need to
 
 Once you know the target device name, use `PeripheralManagerService` to connect to that device and supply the audio parameters of the PCM data. You can provide these as discrete parameters, or as an [AudioFormat](https://developer.android.google.cn/reference/android/media/AudioFormat.html). When you are done communicating with the peripheral device, close the connection to free up resources. Additionally, you cannot open a new connection to the device until the existing connection is closed. To close the connection, use the device's `close()` method.
 
-一旦你知道了目标设备的名称，就可以用 `PeripheralManagerService` 连接设备并且设定 PCM 的数据的音频参数。 可以依据 [AudioFormat](https://developer.android.google.cn/reference/android/media/AudioFormat.html) 或一个 [AudioFormat](https://developer.android.google.cn/reference/android/media/AudioFormat.html) 来提供音频离散参数。 当你已经完成外设的数据传输时，记行关闭连接来释放资源。除此之外，除非现有连接已经关闭，否则请不要打开一个新的设备连接。要想关闭连接，可以使用设备中的 `close()` 方法。
+一旦您知道了目标设备的名称，就可以用 `PeripheralManagerService` 连接设备并且设定 PCM 的数据的音频参数。 可以依据 [AudioFormat](https://developer.android.google.cn/reference/android/media/AudioFormat.html) 或一个 [AudioFormat](https://developer.android.google.cn/reference/android/media/AudioFormat.html) 来提供音频离散参数。 当您已经完成外设的数据传输时，记行关闭连接来释放资源。除此之外，除非现有连接已经关闭，否则请不要打开一个新的设备连接。要想关闭连接，可以使用设备中的 `close()` 方法。
 
 ~~~java
     public class HomeActivity extends Activity {    
@@ -113,7 +113,7 @@ In addition to describing the expected audio data, this tells the I<sup>2</sup>S
 
 Per the formula, the above example format requires an I<sup>2</sup>S bit clock frequency of **_1.41MHz_**. Similar to the requirements on [UART](https://developer.android.google.cn/things/sdk/pio/uart.html) baud rate, the timing of this signal must be very accurate to avoid transmission errors caused by [jitter](https://en.wikipedia.org/wiki/Jitter). Ensure that your hardware platform can accurately generate the required bit clock frequency for your chosen format parameters.
 
-上面的例子需要 I<sup>2</sup>S 的位时钟频率为 **_1.41MHz_**。 和串口 [UART](https://developer.android.google.cn/things/sdk/pio/uart.html) 的波特率类似。 信号时钟必须十分精确，完全避免由 [抖动](https://en.wikipedia.org/wiki/Jitter) 产生的传输错误。 需要确认硬件是否能够精确产生你选择的参数所需要的位时钟。
+上面的例子需要 I<sup>2</sup>S 的位时钟频率为 **_1.41MHz_**。 和串口 [UART](https://developer.android.google.cn/things/sdk/pio/uart.html) 的波特率类似。 信号时钟必须十分精确，完全避免由 [抖动](https://en.wikipedia.org/wiki/Jitter) 产生的传输错误。 需要确认硬件是否能够精确产生您选择的参数所需要的位时钟。
 
 To learn more about audio frames, encoding, and sampling, see the [AudioFormat](https://developer.android.google.cn/reference/android/media/AudioFormat.html) reference.
 
@@ -128,7 +128,7 @@ To learn more about audio frames, encoding, and sampling, see the [AudioFormat](
 
 The data transfer methods of `I2sDevice` mirror the format of the [AudioTrack](https://developer.android.google.cn/reference/android/media/AudioTrack.html) and [AudioRecord](https://developer.android.google.cn/reference/android/media/AudioRecord.html) APIs. This allows your app to integrate with custom audio peripherals the same way it would with the built-in microphone or speaker. Each method accepts data as a `byte[]`, `short[]`, or `ByteBuffer`. Choose the version that matches the [encoding](https://developer.android.google.cn/reference/android/media/AudioFormat.html#encoding) used for your audio data.
 
-`I2sDevice` 中的数据传输方法跟 [AudioTrack](https://developer.android.google.cn/reference/android/media/AudioTrack.html) 和[AudioRecord](https://developer.android.google.cn/reference/android/media/AudioRecord.html) 文档描述一致。 它能使你的应用把自定义的音频外设和内置的麦克风或者是扬声器整合在一起。音频数据会以 `byte[]`, `short[]`, 或者 `ByteBuffer`的形式来存放。在 [编码](https://developer.android.google.cn/reference/android/media/AudioFormat.html#encoding) 中选择正确的音频数据存放方式。
+`I2sDevice` 中的数据传输方法跟 [AudioTrack](https://developer.android.google.cn/reference/android/media/AudioTrack.html) 和[AudioRecord](https://developer.android.google.cn/reference/android/media/AudioRecord.html) 文档描述一致。 它能使您的应用把自定义的音频外设和内置的麦克风或者是扬声器整合在一起。音频数据会以 `byte[]`, `short[]`, 或者 `ByteBuffer`的形式来存放。在 [编码](https://developer.android.google.cn/reference/android/media/AudioFormat.html#encoding) 中选择正确的音频数据存放方式。
 
 The following example reads data from an I<sup>2</sup>S input device (such as a microphone) and echoes that data out through the default audio route:
 

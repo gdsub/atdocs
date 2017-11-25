@@ -10,7 +10,7 @@ To allow app developers to register new device drivers with the framework, Andro
 
 **Note:** You cannot customize the behavior of device drivers in the [Linux kernel](https://source.android.google.cn/devices/#Linux%20kernel) or [Hardware Abstraction Layer](https://source.android.google.cn/devices/#Hardware%20Abstraction%20Layer) (HAL) to add new functionality to a device.
 
-**注意:** 你不能在 [Linux kernel](https://source.android.google.cn/devices/#Linux%20kernel) 中定制设备驱动的行为或者在 [硬件抽象层](https://source.android.google.cn/devices/#Hardware%20Abstraction%20Layer) (HAL) 为设备添加新的功能。
+**注意:** 您不能在 [Linux kernel](https://source.android.google.cn/devices/#Linux%20kernel) 中定制设备驱动的行为或者在 [硬件抽象层](https://source.android.google.cn/devices/#Hardware%20Abstraction%20Layer) (HAL) 为设备添加新的功能。
 
 
 ## Benefits
@@ -21,7 +21,7 @@ To allow app developers to register new device drivers with the framework, Andro
 
 In many apps, using [Peripheral I/O](https://developer.android.google.cn/things/sdk/pio/index.html) to communicate directly with external hardware devices is sufficient. However, there are some benefits to integrating your hardware with the rest of the Android framework:
 
-在许多应用中，使用 [Peripheral I/O](https://developer.android.google.cn/things/sdk/pio/index.html) 来和外部硬件进行通信是完全足够的。然而，集成你的硬件到 Android framework 中是有一些好处的：
+在许多应用中，使用 [Peripheral I/O](https://developer.android.google.cn/things/sdk/pio/index.html) 来和外部硬件进行通信是完全足够的。然而，集成您的硬件到 Android framework 中是有一些好处的：
 
 *   **Portability**: Application code that purely targets the Android framework can run on a variety of different boards and configurations without additional abstractions for the device driver implementation.
 
@@ -30,7 +30,7 @@ In many apps, using [Peripheral I/O](https://developer.android.google.cn/things/
 
 *   **Reuse**: You can pull existing Android code snippets and libraries into your application without the need to modify or fork them to handle your specific hardware implementation.
 
-*   **重用性**: 你可以直接使用已有的 Android 代码段或库到你的应用中，不需要经过修改或者复制它们来处理对于特定硬件的实现。
+*   **重用性**: 您可以直接使用已有的 Android 代码段或库到您的应用中，不需要经过修改或者复制它们来处理对于特定硬件的实现。
 
 
 *   **Integration**: Android often combines data from various services together to enhance the information reported to apps or create new virtual data sets. User drivers can contribute to this process.
@@ -57,7 +57,7 @@ In many apps, using [Peripheral I/O](https://developer.android.google.cn/things/
 
 **[Audio](https://developer.android.google.cn/things/sdk/drivers/audio.html)** - The Android media framework provides a rich API surface for audio playback and recording. Using audio drivers, you can extend the set of input/output devices available to Android. Your app can also define which audio device should be considered the default.
 
-**[声音](https://developer.android.google.cn/things/sdk/drivers/audio.html)** - Android 媒体框架提供了大量 API 以供播放声音和录音。使用声音驱动后，你能够以 Android 中的方式使用这些输入/输出设备。你的应用还能确定哪一个设备作为默认设备。
+**[声音](https://developer.android.google.cn/things/sdk/drivers/audio.html)** - Android 媒体框架提供了大量 API 以供播放声音和录音。使用声音驱动后，您能够以 Android 中的方式使用这些输入/输出设备。您的应用还能确定哪一个设备作为默认设备。
 
 ## Suggested Usage
 
@@ -67,5 +67,5 @@ In many apps, using [Peripheral I/O](https://developer.android.google.cn/things/
 
 If you separate driver functionality into multiple apps, use foreground services for all apps except the primary `IOT_LAUNCHER` target. In doing so, you avoid limitations placed on background apps. For more information, see the [Background Execution Limits](https://developer.android.google.cn/preview/features/background.html) guide.
 
-如果你将驱动的功能分割到多个应用中，那么需要在除了首要 `IOT_LAUNCHER` 之外的每个应用中使用前台服务，。 这样做之后，你就能避免后台应用的一些限制。详情请见[后台运行限制](https://developer.android.google.cn/preview/features/background.html)指导.
+如果您将驱动的功能分割到多个应用中，那么需要在除了首要 `IOT_LAUNCHER` 之外的每个应用中使用前台服务，。 这样做之后，您就能避免后台应用的一些限制。详情请见[后台运行限制](https://developer.android.google.cn/preview/features/background.html)指导.
 

@@ -40,7 +40,7 @@ I<sup>2</sup>C 支持多个从设备连接到同一个总线上。与使用SPI�
 
 In order to open a connection to a particular I<sup>2</sup>C slave, you need to know the unique name of the bus. During the initial stages of development, or when porting an app to new hardware, it's helpful to discover all the available device names from `PeripheralManagerService` using `getI2cBusList()`:
 
-当需要建立访问到某从设备的连接时，你需要获知总线名称。在发开的早期阶段，或者当你在将应用移植到某个新硬件的时候，你可以通过由PeripheralManagerService`提供的`getI2cBusList()`来发现所有可用的设备名称。
+当需要建立访问到某从设备的连接时，您需要获知总线名称。在发开的早期阶段，或者当您在将应用移植到某个新硬件的时候，您可以通过由PeripheralManagerService`提供的`getI2cBusList()`来发现所有可用的设备名称。
 
 ~~~java
 PeripheralManagerService manager = new PeripheralManagerService();
@@ -54,7 +54,7 @@ if (deviceList.isEmpty()) {
 
 Once you know the target device name, use `PeripheralManagerService` to connect to that device. When you are done communicating with the peripheral device, close the connection to free up resources. Additionally, you cannot open a new connection to the device until the existing connection is closed. To close the connection, use the device's `close()` method.
 
-当你取得目标设备名称后，使用`PeripheralManagerService`去连接该设备。当你和该外设的通信结束后，请记得及时关闭连接以便释放相关资源。另外请注意，在已有连接的情况下，你无法再建立对该设备的新连接了。如需关闭连接，调用该设备的`close()`方法。
+当您取得目标设备名称后，使用`PeripheralManagerService`去连接该设备。当您和该外设的通信结束后，请记得及时关闭连接以便释放相关资源。另外请注意，在已有连接的情况下，您无法再建立对该设备的新连接了。如需关闭连接，调用该设备的`close()`方法。
 
 ~~~java
 public class HomeActivity extends Activity {    
@@ -178,7 +178,7 @@ With raw transfers, the device will send a single start condition before the tra
 
 **Note:** There is no explicit maximum length that a raw transaction can handle, but the I<sup>2</sup>C controller hardware on your device may have a limit on the number of bytes it can process. Consult your device hardware documentation if your peripheral requires large data transfers.
 
-**注意:**  对于原始数据传输的最大长度没有明确的限定, 但你设备上的 I<sup>2</sup>C 控制器硬件本身可能有对于处理数据的字节数有限制。如果外设需要进行大量数据传输，请查阅你的设备硬件相关文档。
+**注意:**  对于原始数据传输的最大长度没有明确的限定, 但您设备上的 I<sup>2</sup>C 控制器硬件本身可能有对于处理数据的字节数有限制。如果外设需要进行大量数据传输，请查阅您的设备硬件相关文档。
 
 The following code sample show you how to construct a raw byte buffer and write it to an I<sup>2</sup>C slave:
 

@@ -5,7 +5,7 @@
 
 The Peripheral Driver Library offers support in integrating common sensors and actuators into your app. The library contains prewritten user drivers for popular peripherals available for supported Android Things hardware.
 
-外围设备驱动库提供支持使得你的应用程序集成了通用传感器和执行器结合。这个库包含为大部分常见外围设备预先写好的驱动以支持 Android Things 硬件。
+外围设备驱动库提供支持使得您的应用程序集成了通用传感器和执行器结合。这个库包含为大部分常见外围设备预先写好的驱动以支持 Android Things 硬件。
 
 ![](https://developer.android.google.cn/things/images/driver-library.png)
 
@@ -19,4 +19,4 @@ The goal of the Peripheral Driver Library is to simplify the integration of thes
 
 The Peripheral Driver Library is open-sourced and available on [GitHub](https://github.com/androidthings/contrib-drivers). For examples using each driver in your apps, see the [driver samples](https://github.com/androidthings/drivers-samples).
 
-外围设备驱动程序库在 [GitHub](https://github.com/androidthings/contrib-drivers) 是开源且可用的。在你的应用程序中使用任意一个驱动程序的例子，请参照 [驱动程序示例](https://github.com/androidthings/drivers-samples) 。
+外围设备驱动程序库在 [GitHub](https://github.com/androidthings/contrib-drivers) 是开源且可用的。在您的应用程序中使用任意一个驱动程序的例子，请参照 [驱动程序示例](https://github.com/androidthings/drivers-samples) 。

@@ -8,11 +8,11 @@
 
 You can configure GPIO pins as an input or output with either a high or low state. As an input, an external source determines the state, and your app can read the current value or react to changes in state. As an output, your app configures the state of the pin.
 
-你可以配置GPIO管脚来定义数据传输方向输入或输出高电平或低电平。当管脚做为输入使用时，可以检测到外部信号源的状态变化，你的应用程序可以获得当前状态或者对状态变化做出反应。当管脚做为输出使用时，你的应用程序可以对管脚状态的高低进行配置。
+您可以配置GPIO管脚来定义数据传输方向输入或输出高电平或低电平。当管脚做为输入使用时，可以检测到外部信号源的状态变化，您的应用程序可以获得当前状态或者对状态变化做出反应。当管脚做为输出使用时，您的应用程序可以对管脚状态的高低进行配置。
 
 **Note:** To avoid damage to the GPIO pins, review the input and output limits of your hardware before making wire connections. See [Hardware 101](https://developer.android.google.cn/things/hardware/hardware-101.html) and consult the documentation for your hardware.
 
-**注意：** 为避免造成对GPIO管脚的损坏，请在对你的硬件进行接线时检查有关GPIO输入和输出的限制。查看[硬件 101](https://developer.android.google.cn/things/hardware/hardware-101.html) 并查阅你的硬件的相关文档。
+**注意：** 为避免造成对GPIO管脚的损坏，请在对您的硬件进行接线时检查有关GPIO输入和输出的限制。查看[硬件 101](https://developer.android.google.cn/things/hardware/hardware-101.html) 并查阅您的硬件的相关文档。
 
 ## Managing the connection
 
@@ -21,7 +21,7 @@ You can configure GPIO pins as an input or output with either a high or low stat
 
 In order to open a connection to a GPIO port, you need to know the unique port name. During the initial stages of development, or when porting an app to new hardware, it's helpful to discover all the available port names from `PeripheralManagerService` using `getGpioList()`:
 
-当需要对某个GPIO接口进行连接是，你需要获知对应的GPIO端口号。在开发的早期阶段，或者当你在将应用移植到某个新硬件的时候，你可以通过由`PeripheralManagerService`提供的 `getGpioList()`来发现所有可用的GPIO端口号：
+当需要对某个GPIO接口进行连接是，您需要获知对应的GPIO端口号。在开发的早期阶段，或者当您在将应用移植到某个新硬件的时候，您可以通过由`PeripheralManagerService`提供的 `getGpioList()`来发现所有可用的GPIO端口号：
 
 ~~~java
     
@@ -36,7 +36,7 @@ if (portList.isEmpty()) {
 
 Once you know the target name, use `PeripheralManagerService` to connect to that port. When you're done communicating with the GPIO port, close the connection to free up resources. Additionally, you cannot open a new connection to the same port until the existing connection is closed. To close the connection, use the port's `close()` method.
 
-当你获得了端口名称后，可以使用`PeripheralManagerService`来连接到这个端口。在你完成对这个GPIO端口的通信后，请记得及时关闭连接以便释放相关资源。另外请注意，对同一个GPIO端口只能建立一个连接，在该连接关闭前你无法再对同一个GPIO端口发起新的连接。如需关闭连接，调用端口的`close()`方法。
+当您获得了端口名称后，可以使用`PeripheralManagerService`来连接到这个端口。在您完成对这个GPIO端口的通信后，请记得及时关闭连接以便释放相关资源。另外请注意，对同一个GPIO端口只能建立一个连接，在该连接关闭前您无法再对同一个GPIO端口发起新的连接。如需关闭连接，调用端口的`close()`方法。
 
 ~~~java
 public class HomeActivity extends Activity {    
@@ -117,7 +117,7 @@ public void configureInput(Gpio gpio) throws IOException {
 
 A GPIO port configured as an input can notify your app when its state changes between high and low. To register for these change events:
 
-GPIO端口可以被配置为输入状态时可以在端口状态高低变化时及时通知到你的应用程序。在使用时对如下事件进行注册：
+GPIO端口可以被配置为输入状态时可以在端口状态高低变化时及时通知到您的应用程序。在使用时对如下事件进行注册：
 
 1.  Attach a `GpioCallback` to the active port connection.
 
@@ -178,7 +178,7 @@ private GpioCallback mGpioCallback = new GpioCallback() {
 
 4.  Unregister any interrupt handlers when your app is no longer listening for incoming events:
 
-	当你的应用不再对某一GPIO端口的状态变化进行监听时，请及时注销掉相关的中断处理函数。
+	当您的应用不再对某一GPIO端口的状态变化进行监听时，请及时注销掉相关的中断处理函数。
 
 ~~~java
 public class HomeActivity extends Activity {    

@@ -5,7 +5,7 @@
 <p>This section describes the <a href="https://developer.android.google.cn/things/sdk/pio/index.html">Peripheral I/O</a>
 interfaces available to your apps running on the
 <a href="https://www.raspberrypi.org/products/raspberry-pi-3-model-b/">Raspberry Pi 3</a>.</p>
-<p>这一部分将介绍 <a href="https://www.raspberrypi.org/products/raspberry-pi-3-model-b/">Raspberry Pi 3</a> 上所有可供你的 apps 使用的 <a href="https://developer.android.google.cn/things/sdk/pio/index.html">外围接口</a>。</p>
+<p>这一部分将介绍 <a href="https://www.raspberrypi.org/products/raspberry-pi-3-model-b/">Raspberry Pi 3</a> 上所有可供您的 apps 使用的 <a href="https://developer.android.google.cn/things/sdk/pio/index.html">外围接口</a>。</p>
 
 <p>The Raspberry Pi has pins that are multiplexed between various board functions.
 Some board functions cannot be used simultaneously (for example, enabling
