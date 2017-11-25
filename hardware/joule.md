@@ -1,7 +1,9 @@
 # Intel® Joule™
+# Intel® Joule™
 
 
-Intel® Joule™, Intel’s highest-performing system-on-module, packs powerful compute capabilities in a thumb-sized, low-power package. The Intel® Joule™ 550x/570x developer kit enables developers to rapidly prototype all manner of autonomous robots and IoT applications requiring computer vision or edge processing.  
+Intel® Joule™, Intel’s highest-performing system-on-module, packs powerful compute capabilities in a thumb-sized, low-power package. The Intel® Joule™ 550x/570x developer kit enables developers to rapidly prototype all manner of autonomous robots and IoT applications requiring computer vision or edge processing.
+
 Intel® Joule™ 是英特尔性能最卓越的模块化系统，其在一个拇指大小的低功耗封装中实现了强大的包计算能力。对于那些需要机器视觉或边缘计算能力的机器人和物联网应用，Intel® Joule™ 550x/570x 开发套件可以快速的将创意转变成原型乃至产品。
 
 ![""](https://developer.android.google.cn/things/images/intel-joule-dev-kit.png)
