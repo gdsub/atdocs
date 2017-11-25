@@ -51,7 +51,7 @@ To enable Google Cloud Vision for your project:
 
 3. 在你应用的 `build.gradle`  文件中添加  Cloud Vision Java 客户端的库依赖：
 
-```groovy
+~~~groovy
   dependencies {
     ...
 
@@ -60,16 +60,16 @@ To enable Google Cloud Vision for your project:
 
     compile 'com.google.apis:google-api-services-vision:v1-rev22-1.22.0'
 }
-```
+~~~
 
 4. Add the required permissions to your app's manifest file:
 
 
 4. 在应用的 manifest 文件中添加必要的权限：
 
-```html
+~~~html
   <uses-permission android:name="android.permission.INTERNET" />
-```
+~~~
 
 ## Upload the image for processing
 
@@ -107,7 +107,7 @@ To send the data to Cloud Vision for processing:
 
 4. 使用 `BatchAnnotateImagesRequest` 执行请求并处理结果。这是一个耗时的、依赖网络条件的阻塞请求。
 
-```java
+~~~java
 import com.google.api.client.extensions.android.http.AndroidHttp;
 import com.google.api.client.http.HttpTransport;
 import com.google.api.client.json.JsonFactory;
@@ -157,13 +157,13 @@ public Map<String, Float> annotateImage(byte[] imageBytes) throws IOException {
 
     return convertResponseToMap(response);
 }
-```
+~~~
 
 The `BatchAnnotateImagesResponse` returned from the API wraps the annotation data in a few layers. You may wish to simplify the result by extracting the annotation labels and scores into a simpler collection.
 
 API 所返回的 `BatchAnnotateImagesResponse` 将标记数据进行了若干层封装。你可能希望将注释标签和分数抽取到一个简单的集合来简化相关操作。
 
-```java
+~~~java
 private Map<String, Float> convertResponseToMap(BatchAnnotateImagesResponse response) {
     Map<String, Float> annotations = new HashMap<>();
 
@@ -177,12 +177,12 @@ private Map<String, Float> convertResponseToMap(BatchAnnotateImagesResponse resp
 
     return annotations;
 }
-```
+~~~
 You can now upload the image data from the camera and examine the annotations returned by the Cloud Vision API.
 
 现在你可以上传相机的图像数据然后使用  Cloud Vision API 检查返回的结果。
 
-```java
+~~~java
 public class DoorbellActivity extends Activity {
     ...
 
@@ -199,5 +199,5 @@ public class DoorbellActivity extends Activity {
         }
     }
 }
-```
+~~~
 

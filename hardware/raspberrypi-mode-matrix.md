@@ -271,3 +271,4 @@ BCM18 是 [GPIO](https://developer.android.google.cn/things/sdk/pio/gpio.html) �
 
 **注意:** 由于硬件局限，从 PWM0 模式切换到音频模式需要设备重启。
 
+

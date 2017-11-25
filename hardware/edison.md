@@ -32,7 +32,7 @@ To flash Android Things onto your board, download the preview image in the [Andr
 
 If this is your first time installing Android Things on the Edison, you need to upgrade the bootloader to be Fastboot capable. Follow the Intel Getting Started Guide to perform the required one-time setup steps on your board:
 
-如果这是您第一次在Edison开发板上安装 Android Things，您需要升级您的 bootloader 到 Fastboot，请参考 Intel 提供的入门指南来对开发板进行必要的一次性步骤设置：
+如果这是您第一次在Edison开发板上安装 Android Things，您需要升级您的 bootloader 以便能够支持 Fastboot，请参考 Intel 提供的入门指南来对开发板进行必要的一次性步骤设置：
 
 *   [Arduino Expansion Board](https://software.intel.com/en-us/articles/installing-android-things-on-intel-edison-kit-for-arduino)
 *   [Arduino 扩展板](https://software.intel.com/en-us/articles/installing-android-things-on-intel-edison-kit-for-arduino)
@@ -43,15 +43,15 @@ If this is your first time installing Android Things on the Edison, you need to 
 
 ### Step 2: Connect the Hardware
 
-### 步骤 2： 连接到硬件
+### 步骤 2： 连接硬件
 
 Connect the board to your host computer:
 
-连接开发板到计算机：
+将开发板连接到计算机：
 
 **For Arduino Expansion Board:**
 
-**对于 Arduino 扩展板：**
+**针对 Arduino 扩展板的操作步骤：**
 
 ![""](https://developer.android.google.cn/things/images/edison-arduino-connections.png)
 
@@ -71,15 +71,17 @@ Connect the board to your host computer:
 
 	松开 **FW** 键。
 
+
 **For Sparkfun Block:**
 
-**对于 Sparkfun 扩展模块：**
+**针对 Sparkfun 扩展模块的操作步骤：**
 
 ![""](https://developer.android.google.cn/things/images/edison-sparkfun-connections.png)
 
 *	Connect a USB cable to the **OTG** connector.
 
 	连接USB线到 **OTG** 接口。
+
 
 ### Step 3: Flash Android Things
 
@@ -93,9 +95,11 @@ Once you have loaded the proper bootloader on your device, use the following ste
 
 	下载并安装 [Android Studio](https://developer.android.google.cn/studio/index.html) 或者 [`sdkmanager`](https://developer.android.google.cn/studio/command-line/sdkmanager.html) 命令行工具。 使用 [SDK Manager](https://developer.android.google.cn/studio/intro/update.html#sdk-manager) 来更新 Android SDK 平台工具到 25.0.3 或者更新的版本。
 
+
 * 	Navigate to the Android SDK location on your computer; the path can be found in the system settings for Android Studio. Verify that the `fastboot` binary is installed in the `platform-tools/` directory.
 
     切换到计算机上 Android SDK 的位置，该位置的路径可以从 Android Studio 的系统配置中可以找到。确认 `fastboot` 二进制文件已经安装到`platform-tools/` 目录下。
+
 
 * 	After you have the fastboot tool, add it to your `PATH` [environment variable](https://developer.android.google.cn/studio/command-line/variables.html#set). This command should be similar to the following:
 
@@ -111,6 +115,7 @@ Once you have loaded the proper bootloader on your device, use the following ste
 
 	通过执行以下命令来验证设备是否已启动到 Fastboot 模式
 
+
         $ fastboot devices1b2f21d4e1fe0129        fastboot
 
 **Note:** Your device will not boot into Fastboot mode if it was previously flashed with Android Things. You need to first execute the following command using the [adb tool](https://developer.android.google.cn/tools/help/adb.html) to reboot the device into Fastboot mode.
@@ -121,18 +126,19 @@ Once you have loaded the proper bootloader on your device, use the following ste
 
         $ adb reboot bootloader
     
-
 * 	Execute the `flash-all.sh` script. This script installs the necessary bootloader, baseband firmware(s), and operating system. (On Windows systems, use `flash-all.bat` instead).
 
 	执行 `flash-all.sh` 脚本。该脚本会安装必要的 bootloader，基带固件以及操作系统。（Windows 操作系统使用 `flash-all.bat` 替代）
 
 **Note:**  The device automatically reboots into Android Things when the process is complete.
 
+
 **注意：** 该过程完成后，设备会自动重新引导到 Android Things
 
 * 	To verify that Android is running on the device, discover it using the [adb tool](https://developer.android.google.cn/tools/help/adb.html):
 
 	要验证 Android 已经在该设备上运行, 可以使用 [adb tool](https://developer.android.google.cn/tools/help/adb.html):
+
 
         $ adb wait-for-device...$ adb devicesList of devices attached1b2f21d4e1fe0129        device
 
@@ -144,7 +150,7 @@ Once you have loaded the proper bootloader on your device, use the following ste
 
 After flashing your board, it is strongly recommended to connect it to the internet. This allows your device to deliver crash reports and receive updates.
 
-烧录完开发板之后, 强烈建议将其连接到互联网. 这可让您的设备提供崩溃报告以及接收更新。
+烧录完开发板之后, 强烈建议将其连接到互联网。这可让您的设备提供崩溃报告以及接收更新。
 
 **Note:** The device doesn't need to be on the same network as your computer.
 
@@ -152,7 +158,7 @@ After flashing your board, it is strongly recommended to connect it to the inter
 
 To connect your board to Wi-Fi, first access a shell prompt on the device. You can use either of the following methods:
 
-开发板连接Wi-Fi之前需要先访问设备的shell终端。 您可用通过以下任意一种方式来访问:
+开发板连接 Wi-Fi 之前需要先访问设备的 shell 终端。 您可用通过以下任意一种方式来访问:
 
 *   Open a shell over adb with the `adb shell` command.
 
@@ -169,6 +175,7 @@ Once you can access a shell prompt, follow these steps:
 * 	Send an intent to the Wi-Fi service that includes the SSID of your local network. Your [board](https://developer.android.google.cn/things/hardware/developer-kits.html) must support the network protocol and frequency band of the wireless network in order to establish a connection.
 
 	发送一条包含本地无线网络 SSID 等参数的消息到Wi-Fi服务。 您的 [开发板](https://developer.android.google.cn/things/hardware/developer-kits.html) 必须支持该无线网络的协议以及频段才能够建立网络连接。
+
 
         $ am startservice \    -n com.google.wifisetup/.WifiSetupService \    -a WifiSetupService.Connect
 
@@ -272,18 +279,15 @@ The following arguments are supported with this command:
 
 </table>
 
-2.  Verify that the connection was successful through `logcat`:
 2.  通过 `logcat` 来验证网络连接是否成功建立：
 
         $ logcat -d | grep Wifi...V WifiWatcher: Network state changed to CONNECTEDV WifiWatcher: SSID changed: ...I WifiConfigurator: Successfully connected to ...
 
-3.  Test that you can access a remote IP address:
-3.  测试是否可以访问远程IP地址:
+3.  测试是否可以访问远程 IP 地址:
 
         $ ping 8.8.8.8PING 8.8.8.8 (8.8.8.8) 56(84) bytes of data.64 bytes from 8.8.8.8: icmp_seq=1 ttl=57 time=6.67 ms64 bytes from 8.8.8.8: icmp_seq=2 ttl=57 time=55.5 ms64 bytes from 8.8.8.8: icmp_seq=3 ttl=57 time=23.0 ms64 bytes from 8.8.8.8: icmp_seq=4 ttl=57 time=245 ms
 
-4.  Check that the date and time are set correctly on the device:
-4.  检查设备的日期和时间是否已经正确配置:
+4.  检查设备的日期和时间是否已经设置正确:
 
         $ date
 
@@ -293,7 +297,7 @@ The following arguments are supported with this command:
 
 If you want to clear all of the saved networks on the board:
 
-如果您想清除开发板上所有已保存的网络:
+如果您想清除开发板上所有已保存的网络，可以使用以下命令:
 
     $ am startservice \    -n com.google.wifisetup/.WifiSetupService \    -a WifiSetupService.Reset
 
@@ -325,7 +329,7 @@ To access the serial console, connect a micro USB cable to the board as follows:
 
 Open a connection to the USB serial device on your development computer using a terminal program, such as [PuTTY](http://www.putty.org/) (Windows), [Serial](https://www.decisivetactics.com/products/serial/) (Mac OS), or [Minicom](https://en.wikipedia.org/wiki/Minicom) (Linux). The serial port parameters for the console are as follows:
 
-选择一个终端程序来建立计算机和USB串口设备的连接，例如 [PuTTY](http://www.putty.org/) (Windows), [Serial](https://www.decisivetactics.com/products/serial/) (Mac OS), or [Minicom](https://en.wikipedia.org/wiki/Minicom) (Linux). 串口连接参数参考如下:
+选择一个终端程序来建立计算机和 USB 串口设备的连接，例如 [PuTTY](http://www.putty.org/) (Windows), [Serial](https://www.decisivetactics.com/products/serial/) (Mac OS), or [Minicom](https://en.wikipedia.org/wiki/Minicom) (Linux). 串口连接参数参考如下:
 
 *   **Baud Rate**: 115200
 *   **波特率**: 115200

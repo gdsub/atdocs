@@ -22,6 +22,7 @@
 
 	[下一步](#下一步)
 
+***
 
 
 ## Before you begin
@@ -44,7 +45,9 @@ Gather the following information:
 
 *   **System on Module (SOM) type**—[Hardware platform](https://developer.android.google.cn/things/hardware/developer-kits.html) on which you are building your Android Things product
 
+
 *   **模块化系统 (SOM) 类型** — 选择在哪一个[硬件平台](https://developer.android.google.cn/things/hardware/developer-kits.html)之上开发 Android Things 产品
+
 
 *   **Product description**—A brief paragraph that provides more detail to identify the product and its function. Maximum characters: 100
 
@@ -86,9 +89,8 @@ To create your product:
 
     会弹出 **Create new product** 对话框。
 
-4.  Type the product name for your product.
 
-	输入产品名称。
+4.  Type the product name for your product.
 
     This is an internal name that users won't see. Collaborating developers can use this name before deciding on the actual product name. You can change the name at any time after project creation.
 
@@ -138,7 +140,7 @@ If you delete a product, the product information is deleted. Deletions cannot be
 
 After deletion, devices flashed from that product will no longer receive [updates](https://developer.android.google.cn/things/console/update.html).
 
-执行了删除操作之后，写入该产品的设备不会再收到[更新提醒](https://developer.android.google.cn/things/console/update.html)。
+执行了删除操作之后，写入该产品的设备不会再收到 [更新提醒](https://developer.android.google.cn/things/console/update.html)。
 
 To delete a product:
 
@@ -172,5 +174,5 @@ To delete a product:
 
 The next step is to [configure the product settings](https://developer.android.google.cn/things/console/configure.html).
 
-下一步是[产品配置](https://developer.android.google.cn/things/console/configure.html)。
+下一步是 [产品配置](https://developer.android.google.cn/things/console/configure.html)。
 

@@ -42,17 +42,56 @@ In order to open a connection to a particular I<sup>2</sup>C slave, you need to 
 
 当需要建立访问到某从设备的连接时，你需要获知总线名称。在发开的早期阶段，或者当你在将应用移植到某个新硬件的时候，你可以通过由PeripheralManagerService`提供的`getI2cBusList()`来发现所有可用的设备名称。
 
-    PeripheralManagerService manager = new PeripheralManagerService();List<String> deviceList = manager.getI2cBusList();if (deviceList.isEmpty()) {    Log.i(TAG, "No I2C bus available on this device.");} else {    Log.i(TAG, "List of available devices: " + deviceList);}
+~~~java
+PeripheralManagerService manager = new PeripheralManagerService();
+List<String> deviceList = manager.getI2cBusList();
+if (deviceList.isEmpty()) {    
+    Log.i(TAG, "No I2C bus available on this device.");
+    } else {    
+        Log.i(TAG, "List of available devices: " + deviceList);
+}
+~~~
 
 Once you know the target device name, use `PeripheralManagerService` to connect to that device. When you are done communicating with the peripheral device, close the connection to free up resources. Additionally, you cannot open a new connection to the device until the existing connection is closed. To close the connection, use the device's `close()` method.
 
 当你取得目标设备名称后，使用`PeripheralManagerService`去连接该设备。当你和该外设的通信结束后，请记得及时关闭连接以便释放相关资源。另外请注意，在已有连接的情况下，你无法再建立对该设备的新连接了。如需关闭连接，调用该设备的`close()`方法。
 
-    public class HomeActivity extends Activity {    // I2C Device Name    private static final String I2C_DEVICE_NAME = ...;    // I2C Slave Address    private static final int I2C_ADDRESS = ...;    private I2cDevice mDevice;    @Override    protected void onCreate(Bundle savedInstanceState) {        super.onCreate(savedInstanceState);        // Attempt to access the I2C device        try {            PeripheralManagerService manager = new PeripheralManagerService();            mDevice = manager.openI2cDevice(I2C_DEVICE_NAME, I2C_ADDRESS);        } catch (IOException e) {            Log.w(TAG, "Unable to access I2C device", e);        }    }    @Override    protected void onDestroy() {        super.onDestroy();        if (mDevice != null) {            try {                mDevice.close();                mDevice = null;            } catch (IOException e) {                Log.w(TAG, "Unable to close I2C device", e);            }        }    }}
+~~~java
+public class HomeActivity extends Activity {    
+    // I2C Device Name    
+    private static final String I2C_DEVICE_NAME = ;    
+    // I2C Slave Address    
+    private static final int I2C_ADDRESS = ;    
+    private I2cDevice mDevice;    
+    @Override    
+    protected void onCreate(Bundle savedInstanceState) {        
+        super.onCreate(savedInstanceState);        
+        // Attempt to access the I2C device        
+        try {            
+            PeripheralManagerService manager = new PeripheralManagerService();            
+            mDevice = manager.openI2cDevice(I2C_DEVICE_NAME, I2C_ADDRESS);        
+        } catch (IOException e) {            
+            Log.w(TAG, "Unable to access I2C device", e);        
+        }    
+    }    
+    @Override    
+    protected void onDestroy() {        
+        super.onDestroy();        
+        if (mDevice != null) {            
+            try {                
+                mDevice.close();                
+                mDevice = null;            
+                } catch (IOException e) {                
+                    Log.w(TAG, "Unable to close I2C device", e);            
+                }        
+        }    
+    }
+}
+~~~
 
-<aside class="note">**Note:** <span>The device name represents the I<sup>2</sup>C bus, and the address represents the individual slave on that bus. Therefore, an `I2cDevice` is a connection to a specific slave device on the corresponding I<sup>2</sup>C bus.</span></aside>
+> **Note:** <The device name represents the I<sup>2</sup>C bus, and the address represents the individual slave on that bus. Therefore, an `I2cDevice` is a connection to a specific slave device on the corresponding I<sup>2</sup>C bus.
 
-<aside class="note">**注意:** <span>设备名称代表I<sup>2</sup>C总线，访问地址则代表了总线上的每个从设备. 因此，一个`I2c设备`是指一个连接到对应的I<sup>2</sup>C总线上的特定从设备。</span></aside>
+> **注意:** 设备名称代表I<sup>2</sup>C总线，访问地址则代表了总线上的每个从设备. 因此，一个`I2c设备`是指一个连接到对应的I<sup>2</sup>C总线上的特定从设备。
 
 ## Interacting with registers
 
@@ -82,9 +121,9 @@ The first transaction identifies the register address to access, and the second 
 
 第一个事务操作标明了需要访问的寄存器地址，第二个事务操作用来对该地址进行数据的读或者写操作。从设备上的逻辑数据一般会占用多个字节，并涵盖了多个寄存器地址。提供给API调用的寄存器地址总是引用的第一个寄存器。
 
-<aside class="note">**Note:** <span>Per SMBus protocol, the device will send a "repeated start" condition between the address and data transactions.</span></aside>
+> **Note:** Per SMBus protocol, the device will send a "repeated start" condition between the address and data transactions.
 
-<aside class="注意">**Note:** <span>按照SMBus协议，设备将在地址和数据事务操作之间发送“重复开始”条件。</span></aside>
+> **注意:** 按照SMBus协议，设备将在地址和数据事务操作之间发送“重复开始”条件。
 
 Peripheral I/O provides three types of SMBus commands for accessing register data:
 
@@ -101,8 +140,24 @@ Peripheral I/O provides three types of SMBus commands for accessing register dat
 *   **Block Data** - `readRegBuffer()` and `writeRegBuffer()` Read or write up to 32 consecutive register values as an array.
 
 * **块数据** - `readRegBuffer()` and `writeRegBuffer()` 用于读取或者写入多至32个连续寄存器的数组操作。
-
-    // Modify the contents of a single registerpublic void setRegisterFlag(I2cDevice device, int address) throws IOException {    // Read one register from slave    byte value = device.readRegByte(address);    // Set bit 6    value |= 0x40;    // Write the updated value back to slave    device.writeRegByte(address, value);}// Read a register blockpublic byte[] readCalibration(I2cDevice device, int startAddress) throws IOException {    // Read three consecutive register values    byte[] data = new byte[3];    device.readRegBuffer(startAddress, data, data.length);    return data;}
+~~~java
+// Modify the contents of a single registerpublic 
+void setRegisterFlag(I2cDevice device, int address) throws IOException {    
+    // Read one register from slave    
+    byte value = device.readRegByte(address);    
+    // Set bit 6    
+    value |= 0x40;    
+    // Write the updated value back to slave    
+    device.writeRegByte(address, value);
+}
+    // Read a register blockpublic 
+byte[] readCalibration(I2cDevice device, int startAddress) throws IOException {    
+        // Read three consecutive register values    
+    byte[] data = new byte[3];    
+    device.readRegBuffer(startAddress, data, data.length);    
+    return data;
+}
+~~~
 
 ## Transferring raw data
 
@@ -120,13 +175,19 @@ With raw transfers, the device will send a single start condition before the tra
 
 进行原始数据传输时，设备将发起事务传输之前发送单个开始条件并在传输结束后发送停止条件。多个事务传输无法同时使用”重复开始“条件进行共同传输。
 
-<aside class="note">**Note:** <span>There is no explicit maximum length that a raw transaction can handle, but the I<sup>2</sup>C controller hardware on your device may have a limit on the number of bytes it can process. Consult your device hardware documentation if your peripheral requires large data transfers.</span></aside>
+> **Note:** There is no explicit maximum length that a raw transaction can handle, but the I<sup>2</sup>C controller hardware on your device may have a limit on the number of bytes it can process. Consult your device hardware documentation if your peripheral requires large data transfers.
 
-<aside class="note">**注意:** <span> 对于原始数据传输的最大长度没有明确的限定, 但你设备上的I<sup>2</sup>C控制器硬件本身可能有对于处理数据的字节数有限制。如果外设需要进行大量数据传输，请查阅你的设备硬件相关文档。</span></aside>
+> **注意:**  对于原始数据传输的最大长度没有明确的限定, 但你设备上的I<sup>2</sup>C控制器硬件本身可能有对于处理数据的字节数有限制。如果外设需要进行大量数据传输，请查阅你的设备硬件相关文档。
 
 The following code sample show you how to construct a raw byte buffer and write it to an I<sup>2</sup>C slave:
 
 以下代码实例如何构造原始数据字节缓冲并写入I<sup>2</sup>C从设备：
 
-    public void writeBuffer(I2cDevice device, byte[] buffer) throws IOException {    int count = device.write(buffer, buffer.length);    Log.d(TAG, "Wrote " + count + " bytes over I2C.");}
+~~~java
 
+public void writeBuffer(I2cDevice device, byte[] buffer) throws IOException {    
+    int count = device.write(buffer, buffer.length);    
+    Log.d(TAG, "Wrote " + count + " bytes over I2C.");
+}
+
+~~~

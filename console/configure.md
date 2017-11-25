@@ -24,7 +24,7 @@ To configure your product:
 
 	点击 **CREATE STARTER BUILD**。
 
-
+***
 
 
 ## What's next

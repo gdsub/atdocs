@@ -12,6 +12,7 @@ To allow app developers to register new device drivers with the framework, Andro
 
 **注意:** 你不能在 [Linux kernel](https://source.android.google.cn/devices/#Linux%20kernel) 中定制设备驱动的行为或者在 [硬件抽象层](https://source.android.google.cn/devices/#Hardware%20Abstraction%20Layer) (HAL) 为设备添加新的功能。
 
+
 ## Benefits
 
 ## 优势

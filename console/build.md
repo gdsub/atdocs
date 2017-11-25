@@ -27,6 +27,7 @@
 	[下一步](#下一步)
 
 
+
 The **FACTORY IMAGES** tab in the [Android Things Console](https://partner.android.com/things/console) allows you to create application bundles for device builds. You can download these builds to flash on your device. Use this tab to see the build history for a product.
 
 在 [Android Things 管理中心](https://partner.android.com/things/console)的 **FACTORY IMAGES** 标签中，您可以在设备的构建镜像里创建应用 Bundle。您可以下载这些构建好的镜像，烧写到设备中。您还可以在本标签页中看到产品的构建历史记录。
@@ -48,6 +49,7 @@ To create a bundle for your product:
     ![Create a build bundle](https://developer.android.google.cn/things/images/console/build.png)
 
 * 	Click **UPLOAD** to upload your [bundle](https://developer.android.google.cn/things/console/app_bundle.html). After you upload the bundle, click the button next to its bundle ID in the **Bundles** table to select it.
+
 
 点击 **UPLOAD** 上传您的 [Bundle](https://developer.android.google.cn/things/console/app_bundle.html)。上传完毕之后，请在 **Bundles** 表格中，点击 bundle ID 一旁的按钮以选中该 Bundle。
 

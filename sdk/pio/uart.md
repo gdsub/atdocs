@@ -152,9 +152,9 @@ The following code configures the UART connection to operate at 115200 baud, 8 d
 	}
 ~~~
 
-<aside class="note">**Note:** <span>Choosing uncommon baud rates can lead to high error rates in data transmission. You should always verify whether your chosen baud rate is well supported by your device hardware.</span></aside>
+> **Note:** <span>Choosing uncommon baud rates can lead to high error rates in data transmission. You should always verify whether your chosen baud rate is well supported by your device hardware.
 
-**注意:** 如果配置的波特率不是设备支持的波特率，会带来数据传输中的大量的错误。在开发之前，要先确认你的设备支持哪几种波特率。
+> **注意:** 如果配置的波特率不是设备支持的波特率，会带来数据传输中的大量的错误。在开发之前，要先确认你的设备支持哪几种波特率。
 
 ### Hardware Flow Control
 
@@ -204,9 +204,9 @@ To transmit a buffer of data over the UART to a peripheral, use the `write()` me
 	}
 ~~~
 
-<aside class="note">**Note:** <span>A Java `byte` is an 8-bit value. If you configure a smaller data width using `setDataSize()`, the upper bits of each byte will be truncated.</span></aside>
+> **Note:** A Java `byte` is an 8-bit value. If you configure a smaller data width using `setDataSize()`, the upper bits of each byte will be truncated.
 
-**注意:** JAVA的 byte 一般是 8 位。如果用 `setDataSize()` 来定义大于 8 位的数据，那么byte的高位会被截断。
+> **注意:** JAVA的 byte 一般是 8 位。如果用 `setDataSize()` 来定义大于 8 位的数据，那么byte的高位会被截断。
 
 ## Listening for incoming data
 
@@ -238,7 +238,7 @@ To avoid polling the UART unnecessarily when the buffer is empty, register a `Ua
 
 如果要避免缓冲区为空时，我们还在读取缓冲区。可以通过 UartDevice` 注册回调函数 `UartDeviceCallback` 。这个回调函数会在有可用数据时，调用 `onUartDeviceDataAvailable()` 这个方法。 如果你的应用不再监听输入数据，应该注销这个回调函数。
 
-~~~javw
+~~~java
     public class HomeActivity extends Activity {    
 			private UartDevice mDevice;    
 			...    

@@ -15,7 +15,6 @@
 	[查看推送历史记录](#查看推送历史记录)
 
 
-
 The **OTA UPDATES** tab in the [Android Things Console](https://partner.android.com/things/console) allows you to view and push over-the-air updates to devices.
 
 在 [Android Things 管理中心](https://partner.android.com/things/console)的 **OTA UPDATES** 标签页中，您可以为设备推送无线更新，并查看历史记录。
@@ -36,6 +35,7 @@ To push a build for your product:
 
 2.  Click **START A NEW UPDATE**.
 
+
 	请点击 **START A NEW UPDATE**。
 
 3.  In the **Bundles** table, select an existing bundle or click **UPLOAD** to upload a new [one](https://developer.android.google.cn/things/console/app_bundle.html). Note that empty bundles are not supported for OTA updates.
@@ -45,6 +45,7 @@ To push a build for your product:
     ![Update a build](https://developer.android.google.cn/things/images/console/update_push.png)
 
 4.  In the **Android Things versions** table, select an OS version.
+
 
 	在 **Android Things versions** 表格中，选择操作系统版本。
 
@@ -57,6 +58,7 @@ To push a build for your product:
 	点击 **PUSH UPDATE**，并确认信息无误。
 
 6.  Click **PUSH**. The build will be pushed to all devices; it can take several hours for all devices to be updated. You can view the build status, including the number of devices that have been updated, in the **Current build** table.
+
 
 	点击 **PUSH**。该构建文件会被推送到所有的设备上，更新所有设备一般需要几个小时的时间。您可以在 **Current build** 表格查看构建文件的详情，包括已更新的设备数量等。
 
@@ -98,14 +100,13 @@ The following sequence describes the update process:
 
 **注意：** 现阶段，您需要手动重新启动设备，执行 `adb shell` 命令，紧接着执行 `reboot` 命令。
 
-
 OTA updates for OEM apps are ignored if apps are sideloaded. When the device is rebooting, the operating system checks if a main apk (with `action=MAIN, category=IOT_LAUNCHER`) exists in the user data partition. If one exists, the device runs this apk. If one does not exist, the system checks for an apk in the OEM partition.
 
 如果 OEM 应用通过线刷刷入，无线更新时会被忽略掉。当设备更新重启时，操作系统会在数据分区检查是否有主 apk （带有 `action=MAIN, category=IOT_LAUNCHER` 的apk）存在。如果存在，设备会运行该 apk。如果不存在，操作系统会在 OEM 分区检查 apk 文件。
 
 To make sure the device uses the updated apk, remove a sideloaded apk with `adb uninstall <var>package_name</var>` and reboot the device.
 
-为了确保设备使用的是更新过的 apk，请将线刷的 apk 通过 `adb uninstall <var>package_name</var>` 命令移除，并重启设备。
+为了确保设备使用的是更新过的 apk，请将线刷的 apk 通过 `adb uninstall package_name` 命令移除，并重启设备。
 
 OS updates are not ignored.
 

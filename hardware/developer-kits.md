@@ -22,16 +22,10 @@ Discover the hardware platforms supported by Android Things as well as developer
 
 * * *
 
-<table>
-
-<tbody>
-
-<tr>
-
-<th>Platform</th>
+Platform
 
 
-<td style="width: 23%">
+
 **NXP Pico i.MX7D**  
 
 ![](https://developer.android.google.cn/things/images/nxp-pico7-module.png)
@@ -48,9 +42,6 @@ Discover the hardware platforms supported by Android Things as well as developer
 [Get Started - Pico Pro Maker Kit](https://developer.android.google.cn/things/hardware/imx7d-kit.html)  
 [入门 - Pico Pro 开发套件](https://developer.android.google.cn/things/hardware/imx7d-kit.html)
 
-</td>
-
-<td style="width: 23%">
 **NXP Pico i.MX6UL**  
 
 ![](https://developer.android.google.cn/things/images/nxp-pico-module.png)  
@@ -64,9 +55,6 @@ Discover the hardware platforms supported by Android Things as well as developer
 [Get Started](https://developer.android.google.cn/things/hardware/imx6ul.html)  
 [入门](https://developer.android.google.cn/things/hardware/imx6ul.html)
 
-</td>
-
-<td style="width: 23%">
 **NXP Argon i.MX6UL**  
 
 ![](https://developer.android.google.cn/things/images/nxp-argon-module.png)  
@@ -80,9 +68,6 @@ Discover the hardware platforms supported by Android Things as well as developer
 [Get Started](https://developer.android.google.cn/things/hardware/imx6ul.html)  
 [入门](https://developer.android.google.cn/things/hardware/imx6ul.html)
 
-</td>
-
-<td style="width: 23%">
 **NXP SprIoT i.MX6UL**  
 
 ![](https://developer.android.google.cn/things/images/nxp-spriot-module.png)  
@@ -95,31 +80,20 @@ Discover the hardware platforms supported by Android Things as well as developer
 
 [Get Started](https://developer.android.google.cn/things/hardware/imx6ul.html)  
 [入门](https://developer.android.google.cn/things/hardware/imx6ul.html)
-</td>
 
-</tr>
-
-<tr>
-
-<th>CPU & Memory</th>
-
-<td>
+CPU & Memory
 
 *   NXP i.MX7D
 *   1GHz dual-core ARM Cortex A7
 *   512MB RAM
 
-</td>
 
-<td>
 
 *   NXP i.MX6Ultralite
 *   500MHz ARM Cortex A7
 *   512MB RAM
 
-</td>
 
-<td>
 
 *   NXP i.MX6Ultralite
 *   500MHz ARM Cortex A7

@@ -56,7 +56,36 @@ Once you know the target name, use `PeripheralManagerService` to connect to that
 
 当你取得目标设备名称后，使用`PeripheralManagerService`去连接该设备。当你和该外设的通信结束后，请记得及时关闭连接以便释放相关资源。另外请注意，在已有连接的情况下，你无法再建立对该设备的新连接了。如需关闭连接，调用该设备的`close()`方法。
 
-    public class HomeActivity extends Activity {    // SPI Device Name    private static final String SPI_DEVICE_NAME = ...;    private SpiDevice mDevice;    @Override    protected void onCreate(Bundle savedInstanceState) {        super.onCreate(savedInstanceState);        // Attempt to access the SPI device        try {            PeripheralManagerService manager = new PeripheralManagerService();            mDevice = manager.openSpiDevice(SPI_DEVICE_NAME);        } catch (IOException e) {             Log.w(TAG, "Unable to access SPI device", e);        }    }    @Override    protected void onDestroy() {        super.onDestroy();        if (mDevice != null) {            try {                mDevice.close();                mDevice = null;            } catch (IOException e) {                Log.w(TAG, "Unable to close SPI device", e);            }        }    }}
+~~~java
+public class HomeActivity extends Activity {    
+    // SPI Device Name    
+    private static final String SPI_DEVICE_NAME = ...;    
+    private SpiDevice mDevice;    
+    @Override    
+    protected void onCreate(Bundle savedInstanceState) {        
+        super.onCreate(savedInstanceState);        
+        // Attempt to access the SPI device        
+        try {            
+            PeripheralManagerService manager = new PeripheralManagerService();            
+            mDevice = manager.openSpiDevice(SPI_DEVICE_NAME);        
+        } catch (IOException e) {             
+            Log.w(TAG, "Unable to access SPI device", e);        
+        }    
+    }    
+    @Override    
+    protected void onDestroy() {        
+        super.onDestroy();        
+        if (mDevice != null) {            
+            try {                
+                mDevice.close();                
+                mDevice = null;            
+            } catch (IOException e) {                
+                Log.w(TAG, "Unable to close SPI device", e);            
+            }        
+        }    
+    }
+}
+~~~
 
 ## Configuring clock and data modes
 
@@ -70,9 +99,9 @@ After a connection is established with the SPI bus, configure the data transfer 
 
 在于SPI总线的连接建立之后，接下来需要配置数据传输速率和操作模式用以匹配连接到该总线上的从设备。为了保证数据能够成功的传输，所有连接到该SPI总线上的设备都应该工作在相同的时钟频率并保持数据格式一致性。
 
-<aside class="note">**Note:** <span>Some slave devices cannot configure their SPI operation mode, so refer to the documentation for your hardware when choosing peripheral devices.</span></aside>
+> **Note:** Some slave devices cannot configure their SPI operation mode, so refer to the documentation for your hardware when choosing peripheral devices.
 
-<aside class="note">**注意：** <span>有些从设备无法配置SPI的操作模式，所以当连接外设时请先请查阅你设备硬件的相关文档。</span></aside>
+> **注意：** 有些从设备无法配置SPI的操作模式，所以当连接外设时请先请查阅你设备硬件的相关文档。
 
 1.  Set the SPI mode, which defines the polarity and phase of the clock signal. The mode you choose is based on three attributes:
 
@@ -120,7 +149,15 @@ The following code configures the SPI connection with Mode 0, 16MHz clock, 8 bit
 
 以下的代码配置了SPI连接工作在模式0下，设备时钟周期16MHz，8个比特每个字，最高有效位（MSB）优先：
 
-    public void configureSpiDevice(SpiDevice device) throws IOException {    // Low clock, leading edge transfer    device.setMode(SpiDevice.MODE0);    device.setFrequency(16000000);     // 16MHz    device.setBitsPerWord(8);          // 8 BPW    device.setBitJustification(false); // MSB first}
+~~~java
+public void configureSpiDevice(SpiDevice device) throws IOException {   
+    // Low clock, leading edge transfer    
+    device.setMode(SpiDevice.MODE0);    
+    device.setFrequency(16000000);     // 16MHz   
+    device.setBitsPerWord(8);          // 8 BPW    
+    device.setBitJustification(false); // MSB first
+}
+~~~
 
 ## Transferring data
 
@@ -134,7 +171,18 @@ SPI supports both half-duplex and full-duplex data transfer. Most apps should us
 
 SPI支持半双工和全双工数据传输。大部分应用程序应该使用半双工模式下的`write()`或`read()`方法来与从设备进行数据交换。
 
-    // Half-duplex data transferpublic void sendCommand(SpiDevice device, byte[] buffer) throws IOException {    // Shift data out to slave    device.write(buffer, buffer.length);    // Read the response    byte[] response = new byte[32];    device.read(response, response.length);    ...}
+~~~java
+
+// Half-duplex data transferpublic 
+void sendCommand(SpiDevice device, byte[] buffer) throws IOException {    
+    // Shift data out to slave    
+    device.write(buffer, buffer.length);    
+    // Read the response    
+    byte[] response = new byte[32];    
+    device.read(response, response.length);    
+    ...
+}
+~~~
 
 To perform a full-duplex exchange, use the `transfer()` method instead. This method accepts two buffers for read and write. The write buffer contains data to send to the slave, while the read buffer is empty and accepts data from the slave.
 
@@ -144,5 +192,12 @@ The data length must be less than or equal to the smallest buffer's size. It is 
 
 数据长度必须要小于等于最小缓冲的大小。在全双工传输中经常将两端的缓冲设置成一样的大小。
 
-    // Full-duplex data transferpublic void sendCommand(SpiDevice device, byte[] buffer) throws IOException {    byte[] response = new byte[buffer.length];    device.transfer(buffer, response, buffer.length);    ...}
+~~~java
+// Full-duplex data transferpublic 
+void sendCommand(SpiDevice device, byte[] buffer) throws IOException {    
+    byte[] response = new byte[buffer.length];    
+    device.transfer(buffer, response, buffer.length);    
+    ...
+}
+~~~
 
