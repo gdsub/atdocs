@@ -30,7 +30,7 @@ To flash Android Things onto your board, download the latest preview image in th
 
 ### Step 1: Connect the Hardware
 
-### Step 1: 连上硬件
+### 第一步：连上硬件
 
 Connect the board to your host computer as shown below:
 
@@ -40,7 +40,7 @@ Connect the board to your host computer as shown below:
 
 1.  Connect a USB-C cable from your host computer for Power and USB OTG.
 
-    把板子上的 USB OTG 接口和主机之间用 USB-C 线连起来。
+    把板子上的 USB OTG 接口和主机之间用 USB-C 线连起来。
 
 ### Step 2: Flash Android Things
 
@@ -48,9 +48,11 @@ Connect the board to your host computer as shown below:
 
 Use the following steps to flash the Android image:
 
+使用以下步骤烧录 Android 镜像：
+
 1.  Download and install [Android Studio](https://developer.android.google.cn/studio/index.html) or the [`sdkmanager`](https://developer.android.google.cn/studio/command-line/sdkmanager.html) command-line tool. Update the Android SDK Platform Tools to version 25.0.3 or later from the [SDK Manager](https://developer.android.google.cn/studio/intro/update.html#sdk-manager).
 
-下载并安装 [Android Studio](https://developer.android.google.cn/studio/index.html) 或者安装 [`sdkmanager`](https://developer.android.google.cn/studio/command-line/sdkmanager.html) 命令行工具。从 [SDK Manager](https://developer.android.google.cn/studio/intro/update.html#sdk-manager)更新 Android SDK Platform Tools 到 25.0.3 版或者更新版本。
+    下载并安装 [Android Studio](https://developer.android.google.cn/studio/index.html) 或者安装 [`sdkmanager`](https://developer.android.google.cn/studio/command-line/sdkmanager.html) 命令行工具。从 [SDK Manager](https://developer.android.google.cn/studio/intro/update.html#sdk-manager)更新 Android SDK Platform Tools 到 25.0.3 版或者更新版本。
 
 *   Navigate to the Android SDK location on your computer; the path can be found in the system settings for Android Studio. Verify that the `fastboot` binary is installed in the `platform-tools/` directory.
 
@@ -68,7 +70,7 @@ Use the following steps to flash the Android image:
 
 3.  Verify that the device has booted into Fastboot mode by executing the following command:
 
-    执行以下命令验证板子已进入 fastboot 模式:
+    执行以下命令验证板子已进入 fastboot 模式:
 
        ` $ fastboot devices1b2f21d4e1fe0129        fastboot`
 
@@ -81,7 +83,7 @@ Use the following steps to flash the Android image:
 
 4.  Execute the `flash-all.sh` script. This script installs the necessary bootloader, baseband firmware(s), and operating system. (On Windows systems, use `flash-all.bat` instead).
 
-    执行 `flash-all.sh` 脚本。此脚本会安装 bootloader、基带固件和操作系统（如在 Windows 系统上，请替换位 `flash-all.bat` 命令）。
+    执行 `flash-all.sh` 脚本。此脚本会安装 bootloader、基带固件和操作系统（如在 Windows 系统上，请替换位 `flash-all.bat` 命令）。
 
 **Note:** The device automatically reboots into Android Things when the process is complete.
 
@@ -89,7 +91,7 @@ Use the following steps to flash the Android image:
 
 5.  To verify that Android is running on the device, discover it using the [adb tool](https://developer.android.google.cn/tools/help/adb.html):
 
-    为了验证 Android 正在板子上运行，可以用 [adb tool](https://developer.android.google.cn/tools/help/adb.html)执行如下命令:
+    为了验证 Android 正在板子上运行，可以用 [adb tool](https://developer.android.google.cn/tools/help/adb.html)执行如下命令:
 
         `$ adb wait-for-device...$ adb devicesList of devices attached1b2f21d4e1fe0129        device`
 
@@ -105,7 +107,7 @@ After flashing your board, it is strongly recommended to connect it to the inter
 
 **Note:** The device doesn't need to be on the same network as your computer.
 
-**注意** 板子不需要和你的主机在一个网络上。
+**注意：** 板子不需要和你的主机在一个网络上。
 
 Before connecting your board to a Wi-Fi network, attach an external IPEX or u.FL Wi-Fi antenna to your board as shown:
 
@@ -210,25 +212,25 @@ The following arguments are supported with this command:
 
 2.  Verify that the connection was successful through `logcat`:
 
-用 `logcat`命令 确认连接成功：
+    用 `logcat`命令 确认连接成功：
 
 ` $ logcat -d | grep Wifi...V WifiWatcher: Network state changed to CONNECTEDV WifiWatcher: SSID changed: ...I WifiConfigurator: Successfully connected to ... `
 
 3.  Test that you can access a remote IP address:
 
-测试能否访问远程 IP 地址：
+    测试能否访问远程 IP 地址：
 
 $ ping 8.8.8.8 PING 8.8.8.8 (8.8.8.8) 56(84) bytes of data.64 bytes from 8.8.8.8: icmp_seq=1 ttl=57 time=6.67 ms64 bytes from 8.8.8.8: icmp_seq=2 ttl=57 time=55.5 ms64 bytes from 8.8.8.8: icmp_seq=3 ttl=57 time=23.0 ms64 bytes from 8.8.8.8: icmp_seq=4 ttl=57 time=245 ms
 
 4.  Check that the date and time are set correctly on the device:
 
-确认板子上的日期与时间设置正确：
+    确认板子上的日期与时间设置正确：
 
 $ date
 
 **Note:** An incorrect date or time may cause SSL errors. Restart the device to automatically set the correct date and time from a time server.
 
-**注意** 不正确的日期或者时间可能造成 SSL 错误。重启设备从服务器自动获取正确的日期和时间
+**注意：** 不正确的日期或者时间可能造成 SSL 错误。重启设备从服务器自动获取正确的日期和时间
 
 If you want to clear all of the saved networks on the board:
 
