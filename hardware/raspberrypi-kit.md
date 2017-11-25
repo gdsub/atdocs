@@ -2,8 +2,8 @@
 # Raspberry Pi 3 Android Things 新手套件	
 Follow these instructions to set up your [Raspberry Pi 3 Starter Kit](https://shop.pimoroni.com/products/rainbow-hat-for-android-things)
 
-.
 根据以下指南设置你的 [Raspberry Pi 3 Starter Kit](https://shop.pimoroni.com/products/rainbow-hat-for-android-things)
+
 
 ## What's in the box
 
@@ -264,7 +264,6 @@ Connect the Rainbow HAT to the Raspberry Pi.
 ### 电源接头
 The power adapter may not have the right outlet adapter for your location. Do the following to change the outlet adapter (if needed)
 
-.
 
 电源接头可能与你所在的地区不匹配。按照以下指南来更换接头。（如果有需要）
 
@@ -360,21 +359,22 @@ Follow these instructions to download and run a [sample](https://github.com/andr
 
  project to the directory of your choice.
 
-下载并解压 [sample-button](https://github.com/androidthings/sample-button/archive/master.zip) 程序到你指定的文件地址
+    下载并解压 [sample-button](https://github.com/androidthings/sample-button/archive/master.zip) 程序到你指定的文件地址
 
 2.  Run the project using either of the following:
     用以下两种方法任选其一来运行程序
 
     *   In Android Studio, select **File > Open** and select the directory where you unzipped the sample. Select **Run > Run 'app'**.
-	* 	在 Android Studio 里，选择 **文件 > 打开** 然后选择解压缩文件的文件地址。选择 **运行 > 运行 'app'**
+    
+    * 	在 Android Studio 里，选择 **文件 > 打开** 然后选择解压缩文件的文件地址。选择 **运行 > 运行 'app'**
 	
     *   From the command line:
 
             cd sample-button-master./gradlew assembleDebugadb install -g -r app/build/outputs/apk/app-debug.apkadb shell am start com.example.androidthings.button/.ButtonActivity
-	
-	*	通过命令行：
-			
-			cd sample-button-master./gradlew assembleDebugadb install -g -r app/build/outputs/apk/app-debug.apkadb shell am start com.example.androidthings.button/.ButtonActivity
+	    
+    *   通过命令行：
+
+            cd sample-button-master./gradlew assembleDebugadb install -g -r app/build/outputs/apk/app-debug.apkadb shell am start com.example.androidthings.button/.ButtonActivity
 
 3.  Press the "A" button on the Rainbow HAT and the red LED will light up.
 
@@ -386,30 +386,27 @@ Follow these instructions to download and run a [sample](https://github.com/andr
 * * *
 
 *   Try one of the [other code samples](https://developer.android.google.cn/things/sdk/samples.html)
-*	尝试 [其他的示范程序](https://developer.android.google.cn/things/sdk/samples.html)
+*   尝试 [其他的示范程序](https://developer.android.google.cn/things/sdk/samples.html)
 
-. Remember to uninstall any existing samples from the development board before installing a new one, so that one does not interfere with the other. For example, to uninstall the previous sample from the command line:
+  Remember to uninstall any existing samples from the development board before installing a new one, so that one does not interfere with the other. For example, to uninstall the previous sample from the command line:
 
         adb uninstall com.example.androidthings.button
 		
-. 注意为了程序之间不互相干扰，请先卸载开发板上已有的程序，再安装新程序。比如你可以通过这段命令行来卸载之前的程序：
-		
-		adb uninstall com.example.androidthings.button
+  注意为了程序之间不互相干扰，请先卸载开发板上已有的程序，再安装新程序。比如你可以通过这段命令行来卸载之前的程序：
+
+        adb uninstall com.example.androidthings.button
 
 *   Take a look at the [Peripherals codelab](https://codelabs.developers.google.com/codelabs/androidthings-peripherals)
-*	参照一下 [外设实验室](https://codelabs.developers.google.com/codelabs/androidthings-peripherals)
-
- or learn how to [build your first device](https://developer.android.google.cn/things/training/first-device/index.html)
+or learn how to [build your first device](https://developer.android.google.cn/things/training/first-device/index.html)
  
+*   参照一下 [外设实验室](https://codelabs.developers.google.com/codelabs/androidthings-peripherals)
  或者学习如何 [设置你的第一台设备](https://developer.android.google.cn/things/training/first-device/index.html)
 
-.
 
 *   Connect with the community at [g.co/iotdev](https://g.co/iotdev)
 
-*	加入官方讨论社区 [g.co/iotdev](https://g.co/iotdev)
+*   加入官方讨论社区 [g.co/iotdev](https://g.co/iotdev)
 
-.
 
 ## Feedback
 
