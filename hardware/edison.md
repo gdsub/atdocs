@@ -247,7 +247,7 @@ The following arguments are supported with this command:
 
 <td>`-e ssid <var>network_ssid</var>`</td>
 
-<td>通过 <var>network_ssid</var> 来指定被连接无线网络的SSID。 **该参数是必要参数**。</td>
+<td>通过 <var>network_ssid</var> 来指定被连接无线网络的SSID，该参数是必要参数。</td>
 
 </tr>
 
@@ -293,7 +293,7 @@ The following arguments are supported with this command:
 
 **Note:** An incorrect date or time may cause SSL errors. Restart the device to automatically set the correct date and time from a time server.
 
-**注意：** 日期或者时间错误可能导致 SSL 错误。 通过重启可以让设备自动从远程时间服务器进行日期和时间的同步
+**注意：** 日期或者时间错误可能导致 SSL 错误。 通过重启可以让设备自动从远程时间服务器进行日期和时间的同步
 
 If you want to clear all of the saved networks on the board:
 
@@ -332,10 +332,14 @@ Open a connection to the USB serial device on your development computer using a 
 选择一个终端程序来建立计算机和 USB 串口设备的连接，例如 [PuTTY](http://www.putty.org/) (Windows), [Serial](https://www.decisivetactics.com/products/serial/) (Mac OS), or [Minicom](https://en.wikipedia.org/wiki/Minicom) (Linux). 串口连接参数参考如下:
 
 *   **Baud Rate**: 115200
-*   **波特率**: 115200
+
+*   **波特率**：115200
 *   **Data Bits**: 8
-*   **数据位**: 8
+
+*   **数据位**：8
 *   **Parity**: None
-*   **奇偶校验**: 无
+
+*   **奇偶校验**：无
 *   **Stop Bits**: 1
-*   **停止位**: 1
+
+*   **停止位**：1
