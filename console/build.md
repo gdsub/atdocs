@@ -51,7 +51,7 @@ To create a bundle for your product:
 * 	Click **UPLOAD** to upload your [bundle](https://developer.android.google.cn/things/console/app_bundle.html). After you upload the bundle, click the button next to its bundle ID in the **Bundles** table to select it.
 
 
-点击 **UPLOAD** 上传您的 [Bundle](https://developer.android.google.cn/things/console/app_bundle.html)。上传完毕之后，请在 **Bundles** 表格中，点击 bundle ID 一旁的按钮以选中该 Bundle。
+  	点击 **UPLOAD** 上传您的 [Bundle](https://developer.android.google.cn/things/console/app_bundle.html)。上传完毕之后，请在 **Bundles** 表格中，点击 bundle ID 一旁的按钮以选中该 Bundle。
 
 *   If you don't have a bundle, select **Empty bundle** in the table. If you select an empty bundle, you can test your application by sideloading it using the [adb tool](https://developer.android.google.cn/tools/help/adb.html).
 
