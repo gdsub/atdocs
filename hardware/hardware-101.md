@@ -277,9 +277,10 @@ It's rare for a digital signal to be exactly 0V or V<sub>CC</sub>. Most digital 
 </tbody>
 
 </table>
+
 Peripherals typically use digital I/O in a few common ways:
 
-外设通常通过以下几种方式使用数字 I/O ：
+外设通常通过以下几种方式使用数字 I/O:
 
 *   **Stable state**: Single on/off state mapped to a stable high or low value.
 

@@ -12,7 +12,7 @@ Follow these instructions to set up your [Pico Pro Maker Kit](https://www.techne
 
 Open the box and make sure you have all of the components in the kit. You will also need a small Phillips screwdriver (not provided).
 
-<aside class="note">**Note:** <span>Some versions of the Pico Pro Maker Kit do not include the Rainbow HAT, camera, and/or multi-touch display. The full kit is shown below.</span></aside>
+**Note:** Some versions of the Pico Pro Maker Kit do not include the Rainbow HAT, camera, and/or multi-touch display. The full kit is shown below.
 
 ![inventory](https://developer.android.google.cn/things/images/imx7d-kit/inventory.jpg)
 
@@ -425,7 +425,7 @@ Connect the Rainbow HAT to the development board:
 
 Connect the display to the development board:
 
-<aside class="note">**Note:** <span>For illustrative purposes, the connected camera module is not pictured in the following images.</span></aside>
+**Note:** For illustrative purposes, the connected camera module is not pictured in the following images.
 
 <table>
 
