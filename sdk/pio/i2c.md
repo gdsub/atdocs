@@ -3,11 +3,11 @@
 
 The [Inter-Integrated Circuit](https://en.wikipedia.org/wiki/I%C2%B2C) (IIC or I<sup>2</sup>C) bus connects simple peripheral devices with small data payloads. Sensors and actuators are common use cases for I<sup>2</sup>C. Examples include accelerometers, thermometers, LCD displays, and motor drivers.
 
-内部集成电路[Inter-Integrated Circuit](https://en.wikipedia.org/wiki/I%C2%B2C) (IIC 或 I<sup>2</sup>C) 总线用于连接数据传输量不大的简单的外设。这类传感器和动作器包括加速度传感器，温度传感器，液晶显示器和电机驱动器。
+内部集成电路 [Inter-Integrated Circuit](https://en.wikipedia.org/wiki/I%C2%B2C) (IIC 或 I<sup>2</sup>C) 总线用于连接数据传输量不大的简单的外设。这类传感器和动作器包括加速度传感器，温度传感器，液晶显示器和电机驱动器。
 
 I<sup>2</sup>C is a **_synchronous_** serial interface, which means it relies on a shared clock signal to synchronize data transfer between devices. The device in control of triggering the clock signal is known as the **_master_**. All other connected peripherals are known as **_slaves_**. Each device is connected to the same set of data signals to form a **_bus_**.
 
-I<sup>2</sup>C 是一种 **同步** 串行接口，数据传输的时候需要依赖设备间共享的时钟信号来做同步。 控制触发时钟信号源的设备为**_主设备_**。所以其他接连的外部设备为**_从设备_**。由每个设备到的同一组数据信号构成了**_总线_**。
+I<sup>2</sup>C 是一种 **同步** 串行接口，数据传输的时候需要依赖设备间共享的时钟信号来做同步。 控制触发时钟信号源的设备为 **_主设备_** 。所以其他接连的外部设备为 **_从设备_** 。由每个设备到的同一组数据信号构成了 **_总线_** 。
 
 
 I<sup>2</sup>C devices connect using a 3-Wire interface consisting of:
@@ -26,7 +26,7 @@ I<sup>2</sup>C 设备使用的三个接线的接口定义如下:
 
 Because all data is transferred over one wire, I<sup>2</sup>C only supports **_half-duplex_** communication. All communication is initiated by the master device, and the slave must respond once the master's transmission is complete.
 
-由于所有的数据都通过同一根线来传输，I<sup>2</sup>C只支持**_半双工_**的通信模式。所有的通信都得由主设备发起，然后从设备只能在主设备传输结束后才能做响应。
+由于所有的数据都通过同一根线来传输，I<sup>2</sup>C只支持 **_半双工_** 的通信模式。所有的通信都得由主设备发起，然后从设备只能在主设备传输结束后才能做响应。
 
 I<sup>2</sup>C supports multiple slave devices connected along the same bus. Unlike [SPI](https://developer.android.google.cn/things/sdk/pio/spi.html), slave devices are addressed using the I<sup>2</sup>C software protocol. Each device is programmed with a unique address and only responds to transmissions the master sends to that address. Every slave device must have an address, even if the bus contains only a single slave.
 
@@ -89,9 +89,9 @@ public class HomeActivity extends Activity {
 }
 ~~~
 
-> **Note:** <The device name represents the I<sup>2</sup>C bus, and the address represents the individual slave on that bus. Therefore, an `I2cDevice` is a connection to a specific slave device on the corresponding I<sup>2</sup>C bus.
+**Note:** The device name represents the I<sup>2</sup>C bus, and the address represents the individual slave on that bus. Therefore, an `I2cDevice` is a connection to a specific slave device on the corresponding I<sup>2</sup>C bus.
 
-> **注意:** 设备名称代表I<sup>2</sup>C总线，访问地址则代表了总线上的每个从设备. 因此，一个`I2c设备`是指一个连接到对应的I<sup>2</sup>C总线上的特定从设备。
+**注意:** 设备名称代表I<sup>2</sup>C总线，访问地址则代表了总线上的每个从设备. 因此，一个`I2cDevice` 是指一个连接到对应的I<sup>2</sup>C总线上的特定从设备。
 
 ## Interacting with registers
 
@@ -113,7 +113,7 @@ I<sup>2</sup>C从设备的内容组成由可读或可写寄存器（由某地址
 
 A common protocol implementation known as [System Management Bus](https://en.wikipedia.org/wiki/System_Management_Bus) (SMBus) exists on top of I<sup>2</sup>C to interact with register data in a standard way. SMBus commands consist of two I<sup>2</sup>C transactions as follows:
 
-系统管理总线[System Management Bus](https://en.wikipedia.org/wiki/System_Management_Bus)（SMBus）被用来作为与I<sup>2</sup>C总线寄存器数据交互的通用协议。SMBus命令由两个I<sup>2</sup>C事务操作来组成：
+系统管理总线 [System Management Bus](https://en.wikipedia.org/wiki/System_Management_Bus)（SMBus）被用来作为与I<sup>2</sup>C总线寄存器数据交互的通用协议。SMBus命令由两个I<sup>2</sup>C事务操作来组成：
 
 ![""](https://developer.android.google.cn/things/images/i2c-smbus.png)
 
@@ -121,9 +121,9 @@ The first transaction identifies the register address to access, and the second 
 
 第一个事务操作标明了需要访问的寄存器地址，第二个事务操作用来对该地址进行数据的读或者写操作。从设备上的逻辑数据一般会占用多个字节，并涵盖了多个寄存器地址。提供给API调用的寄存器地址总是引用的第一个寄存器。
 
-> **Note:** Per SMBus protocol, the device will send a "repeated start" condition between the address and data transactions.
+**Note:** Per SMBus protocol, the device will send a "repeated start" condition between the address and data transactions.
 
-> **注意:** 按照SMBus协议，设备将在地址和数据事务操作之间发送“重复开始”条件。
+**注意:** 按照SMBus协议，设备将在地址和数据事务操作之间发送“重复开始”条件。
 
 Peripheral I/O provides three types of SMBus commands for accessing register data:
 
@@ -140,22 +140,23 @@ Peripheral I/O provides three types of SMBus commands for accessing register dat
 *   **Block Data** - `readRegBuffer()` and `writeRegBuffer()` Read or write up to 32 consecutive register values as an array.
 
 * **块数据** - `readRegBuffer()` and `writeRegBuffer()` 用于读取或者写入多至32个连续寄存器的数组操作。
+
 ~~~java
 // Modify the contents of a single registerpublic 
 void setRegisterFlag(I2cDevice device, int address) throws IOException {    
-    // Read one register from slave    
-    byte value = device.readRegByte(address);    
-    // Set bit 6    
-    value |= 0x40;    
-    // Write the updated value back to slave    
-    device.writeRegByte(address, value);
+	// Read one register from slave    
+	byte value = device.readRegByte(address);    
+	// Set bit 6    
+	value |= 0x40;    
+	// Write the updated value back to slave    
+	device.writeRegByte(address, value);
 }
-    // Read a register blockpublic 
+// Read a register blockpublic 
 byte[] readCalibration(I2cDevice device, int startAddress) throws IOException {    
-        // Read three consecutive register values    
-    byte[] data = new byte[3];    
-    device.readRegBuffer(startAddress, data, data.length);    
-    return data;
+	// Read three consecutive register values    
+	byte[] data = new byte[3];    
+	device.readRegBuffer(startAddress, data, data.length);    
+	return data;
 }
 ~~~
 
@@ -175,9 +176,9 @@ With raw transfers, the device will send a single start condition before the tra
 
 进行原始数据传输时，设备将发起事务传输之前发送单个开始条件并在传输结束后发送停止条件。多个事务传输无法同时使用”重复开始“条件进行共同传输。
 
-> **Note:** There is no explicit maximum length that a raw transaction can handle, but the I<sup>2</sup>C controller hardware on your device may have a limit on the number of bytes it can process. Consult your device hardware documentation if your peripheral requires large data transfers.
+**Note:** There is no explicit maximum length that a raw transaction can handle, but the I<sup>2</sup>C controller hardware on your device may have a limit on the number of bytes it can process. Consult your device hardware documentation if your peripheral requires large data transfers.
 
-> **注意:**  对于原始数据传输的最大长度没有明确的限定, 但你设备上的I<sup>2</sup>C控制器硬件本身可能有对于处理数据的字节数有限制。如果外设需要进行大量数据传输，请查阅你的设备硬件相关文档。
+**注意:**  对于原始数据传输的最大长度没有明确的限定, 但你设备上的 I<sup>2</sup>C 控制器硬件本身可能有对于处理数据的字节数有限制。如果外设需要进行大量数据传输，请查阅你的设备硬件相关文档。
 
 The following code sample show you how to construct a raw byte buffer and write it to an I<sup>2</sup>C slave:
 

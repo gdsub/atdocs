@@ -84,12 +84,23 @@ To add a new sensor driver to the Android framework:
 
 1.  Use the `UserSensor.Builder` to declare the sensor's type.
 
+	使用 `UserSensor.Builder` 来声明一种传感器类型。
+
     For most apps, the sensor type should match one of Android's existing known [Sensor](https://developer.android.google.cn/reference/android/hardware/Sensor.html) types.
+
+    对于大部分应用来说，传感器类型应当与 Android 系统中已有的 [传感器](https://developer.android.google.cn/reference/android/hardware/Sensor.html) 类型匹配。
 
 2.  Provide the sensor name and vendor name of your driver.
 
+	为你的驱动提供传感器名称和供应商的名称。
+
 3.  Apply the range, resolution, update frequency (delay), and power requirements (if available) of your sensor to the builder. These values assist the framework in selecting the best sensor based on the requests received by [SensorManager](https://developer.android.google.cn/reference/android/hardware/SensorManager.html).
+
+	在构建器中提供你的传感器的范围，分辨率，更新频率（延迟），以及能耗需求（如果可用的话）。这些值可以帮助 framework 根据 [SensorManager](https://developer.android.google.cn/reference/android/hardware/SensorManager.html) 收到的需求选择最佳的传感器。
+
 4.  Attach your `UserSensorDriver` implementation with the `setDriver()` method.
+
+	使用 `setDriver()` 方法添加你的  `UserSensorDriver` 实现。
 
 ~~~ java
 UserSensor accelerometer = UserSensor.builder()
@@ -101,33 +112,27 @@ UserSensor accelerometer = UserSensor.builder()
 ~~~
         
 * * *
-1.  使用 `UserSensor.Builder` 来声明一种传感器类型。
-
-    For most apps, the sensor type should match one of Android's existing known [Sensor](https://developer.android.google.cn/reference/android/hardware/Sensor.html) types.
-    
-    对于大部分应用来说，传感器类型应当与 Android 系统中已有的[传感器](https://developer.android.google.cn/reference/android/hardware/Sensor.html) 类型匹配。
-
-2.  为你的驱动提供传感器名称和供应商的名称。
-
-3.  在构建器中提供你的传感器的范围，分辨率，更新频率（延迟），以及能耗需求（如果可用的话）。这些值可以帮助 framework 根据 [SensorManager](https://developer.android.google.cn/reference/android/hardware/SensorManager.html) 收到的需求选择最佳的传感器。
-4.  使用 `setDriver()` 方法添加你的  `UserSensorDriver` 实现。
-~~~ java
-UserSensor accelerometer = UserSensor.builder()
-        .setName("GroveAccelerometer")
-        .setVendor("Seeed")
-        .setType(Sensor.TYPE_ACCELEROMETER)
-        .setDriver(mDriver)
-        .build();
-~~~
 
 When implementing a sensor for which Android does not have a defined type:
 
 当实现一种 Android 系统未定义的传感器时：
 
 1.  Replace `setType()` with `setCustomType()` in the builder.
+
+	在构建器中使用 `setCustomType()` 替换`setType()`。
+
 2.  Provide a numeric sensor type that is `TYPE_DEVICE_PRIVATE_BASE` or larger.
+
+	提供一个数值为 `TYPE_DEVICE_PRIVATE_BASE` 或更大的数字型传感器类型。
+
 3.  Include a unique string name for the sensor type. This name should be unique system-wide, so using reverse domain notation is recommended.
+
+	为传感器类型提供一个唯一的字符名。这个名称应当在系统范围内唯一，因此推荐使用倒置的域名记号。
+
 4.  Include the sensor reporting mode.
+
+	提供传感器的上报模式。
+
 ~~~ java
 UserSensor custom = UserSensor.builder()
         .setName("MySensor")
@@ -141,21 +146,7 @@ UserSensor custom = UserSensor.builder()
 ~~~
 
 * * *
-1.  在构建器中使用 `setCustomType()` 替换`setType()`。
-2.  提供一个数值为 `TYPE_DEVICE_PRIVATE_BASE` 或更大的数字型传感器类型。
-3.  为传感器类型提供一个唯一的字符名。这个名称应当在系统范围内唯一，因此推荐使用倒置的域名记号。
-4.  提供传感器的上报模式。
 ~~~ java
-UserSensor custom = UserSensor.builder()
-        .setName("MySensor")
-        .setVendor("MyCompany")
-        .setCustomType(Sensor.TYPE_DEVICE_PRIVATE_BASE,
-                "com.example.mysensor",
-                Sensor.REPORTING_MODE_CONTINUOUS)
-        .setDriver(mDriver)
-        .build();
-
-~~~
 
 ## Registering the sensor
 
@@ -166,6 +157,7 @@ UserSensor custom = UserSensor.builder()
 Connect your new sensor to the framework by registering it with the `UserDriverManager`:
 
 使用 `UserDriverManager` 将新传感器注册到 framework 中：
+
 ~~~ java
 public class SensorDriverService extends Service {
 
@@ -196,11 +188,12 @@ public class SensorDriverService extends Service {
 
 With the driver properly registered, apps can receive updates from the associated device using the existing Android [sensor framework services](https://developer.android.google.cn/guide/topics/sensors/sensors_overview.html).
 
-当传感器被正确注册后，应用可以使用 Android 现有的[传感器框架服务](https://developer.android.google.cn/guide/topics/sensors/sensors_overview.html)从相关传感器设备处获取更新。
+当传感器被正确注册后，应用可以使用 Android 现有的 [传感器框架服务](https://developer.android.google.cn/guide/topics/sensors/sensors_overview.html) 从相关传感器设备处获取更新。
 
 The registration process can take some time before the sensor is available to clients. Apps interested in a user sensor should register a [DynamicSensorCallback](https://developer.android.google.cn/reference/android/hardware/SensorManager.DynamicSensorCallback.html) to be notified when it is available before registering a listener for sensor readings:
 
-在传感器可用之前，注册过程可能会需要一些时间。在注册传感器数据监听器之前，对用户传感器敏感的应用应当注册一个 [DynamicSensorCallback](https://developer.android.google.cn/reference/android/hardware/SensorManager.DynamicSensorCallback.html)，这样，当传感器可用时，它将会告知应用：
+在传感器可用之前，注册过程可能会需要一些时间。在注册传感器数据监听器之前，对用户传感器敏感的应用应当注册一个 [DynamicSensorCallback](https://developer.android.google.cn/reference/android/hardware/SensorManager.DynamicSensorCallback.html) ，这样，当传感器可用时，它将会告知应用：
+
 ~~~ java
 public class SensorActivity extends Activity implements SensorEventListener {
 
@@ -259,6 +252,7 @@ public class SensorActivity extends Activity implements SensorEventListener {
 Add the required permission for the user driver to your app's manifest file:
 
 在你应用的清单文件中添加用户驱动所需的权限：
+
 ~~~xml
 <uses-permission android:name="com.google.android.things.permission.MANAGE_SENSOR_DRIVERS" />
 ~~~

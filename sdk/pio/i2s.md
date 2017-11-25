@@ -13,17 +13,17 @@ I<sup>2</sup>S 是 **_同步_** 串行接口，意味着它要通过共享的时
 ![""](https://developer.android.google.cn/things/images/i2s-connections.png)
 
 
-> **Note:**  LRCLK is also often called the **Frame Select (FS)** or **Word Select (WS)** signal.
+**Note:**  LRCLK is also often called the **Frame Select (FS)** or **Word Select (WS)** signal.
 
-> **注意:** LRCLK 也通常称作 **Frame Select (FS)帧选择** 或者是 **Word Select (WS)字选择** 信号。 
+**注意:** LRCLK 也通常称作 **Frame Select (FS)帧选择** 或者是 **Word Select (WS)字选择** 信号。 
 
 I<sup>2</sup>S devices contain at least one **Serial Data (SD)** signal. This is common with peripherals, which generally only produce or consume audio data. Master devices are more likely to have dedicated lines for receive (**SDIN**) and transmit (**SDOUT**) to support **_full-duplex_** communication. This allows you to connect to multiple peripherals to send and receive audio data simultaneously.
 
  I<sup>2</sup>S 设备至少包括一个 **Serial Data (SD)串行数据** 信号。这是一个通用的外设信号，一般用来输入或者是输出音频数据。主设备一般可以选择 接收 (**SDIN**) 或者是发送 (**SDOUT**) 通道来支持 **全双工** 通信。 这种通信方式可以让你连接多个外设，并且同时接收或者发送数据。
 
-> **Note:** Multiple peripherals sharing the same **BCLK** and **LRCLK** lines must use the same audio encoding and sample rate parameters.
+**Note:** Multiple peripherals sharing the same **BCLK** and **LRCLK** lines must use the same audio encoding and sample rate parameters.
 
-> **注意:** 多种外设如果需要共享 **BCLK** 和 **LRCLK** 信号，就必须用相同的音频编码和采样频率参数。
+**注意:** 多种外设如果需要共享 **BCLK** 和 **LRCLK** 信号，就必须用相同的音频编码和采样频率参数。
 
 ## Managing the device connection
 
