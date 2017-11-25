@@ -56,7 +56,7 @@ Take advantage of Google's platform and support to scale from prototypes to comp
 
 Building devices is now within reach for everyone, even if you've never designed embedded systems. We provide a turnkey hardware solution and an easy-to-use software development platform, based on Android Studio and the Android SDK.
 
-即使没有设计过嵌入式系统，每个人都能轻而易举地开发设备。这是因为我们提供了一硬件解决方案和基于 Android Studio 和 Android SDK 的软件开发平台，这些能帮助您轻松完成嵌入式产品设计和开发。
+即使没有设计过嵌入式系统，每个人都能轻而易举地开发设备。这是因为我们提供了一站式硬件解决方案和基于 Android Studio 和 Android SDK 的软件开发平台，这些能帮助您轻松完成嵌入式产品设计和开发。
 
 #### Managed costs
 
