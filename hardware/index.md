@@ -8,7 +8,7 @@ Android Things 能让你在没有嵌入式系统设计的预备知识的情况�
 
 ## Turnkey Hardware Solutions
 
-## 交钥匙硬件解决方案
+## 一站式硬件解决方案
 
 We work with SoC partners to build Android Things certified development boards that contain SoMs (System-on-Modules) to get you developing fast.
 
@@ -24,7 +24,7 @@ SoMs 集成了 SoC、RAM、Flash存储、WiFi、蓝牙和其它的组件到一�
 
 #### Google BSP
 
-#### Google BSP
+#### Google 提供的板级支持包
 
 The Board Support Package (BSP) is managed by Google. This gives you a trusted platform to develop on with standard updates and fixes from Google.
 
@@ -44,7 +44,7 @@ See [Developer Kits](https://developer.android.com/things/hardware/developer-kit
 
 ## Low Barrier to Entry
 
-## 低进入门槛
+## 入门门槛低
 
 Take advantage of Google's platform and support to scale from prototypes to complete products quickly.
 
@@ -52,7 +52,7 @@ Take advantage of Google's platform and support to scale from prototypes to comp
 
 #### Get started quickly
 
-#### 快速入门
+#### 快速启动
 
 Building devices is now within reach for everyone, even if you've never designed embedded systems. We provide a turnkey hardware solution and an easy-to-use software development platform, based on Android Studio and the Android SDK.
 
