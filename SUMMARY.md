@@ -1,6 +1,6 @@
 # Summary
 
-* [简介](Readme.md)
+* [简介](README.md)
 * [贡献者](Contributor.md)
 * [主页](index.md)
 * [Hardware Overview](hardware/index.md)
