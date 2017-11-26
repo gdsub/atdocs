@@ -22,13 +22,13 @@ I<sup>2</sup>C 设备使用的三个接线的接口定义如下:
 *   共享数据线 (SDA)
 *   共用参考地线 (GND)
 
-![alt_text](https://developer.android.google.cn/things/images/i2c-connections.png "image_tooltip")
+![alt_text](../../images/i2c-connections.png "image_tooltip")
 
 Because all data is transferred over one wire, I<sup>2</sup>C only supports **_half-duplex_** communication. All communication is initiated by the master device, and the slave must respond once the master's transmission is complete.
 
 由于所有的数据都通过同一根线来传输，I<sup>2</sup>C只支持 **_半双工_** 的通信模式。所有的通信都得由主设备发起，然后从设备只能在主设备传输结束后才能做响应。
 
-I<sup>2</sup>C supports multiple slave devices connected along the same bus. Unlike [SPI](https://developer.android.google.cn/things/sdk/pio/spi.html), slave devices are addressed using the I<sup>2</sup>C software protocol. Each device is programmed with a unique address and only responds to transmissions the master sends to that address. Every slave device must have an address, even if the bus contains only a single slave.
+I<sup>2</sup>C supports multiple slave devices connected along the same bus. Unlike [SPI](../../sdk/pio/spi.html), slave devices are addressed using the I<sup>2</sup>C software protocol. Each device is programmed with a unique address and only responds to transmissions the master sends to that address. Every slave device must have an address, even if the bus contains only a single slave.
 
 I<sup>2</sup>C 支持多个从设备连接到同一个总线上。与使用SPI的外设不同，从设备的寻址模式使用I<sup>2</sup>C的软件协议。每个设备都可以被程序写为唯一的访问地址并只对主设备发向这个地址的传输做出响应。每个从设备都必须配置地址，即使总线上只连接了一个从设备，也需要这么做。
 
@@ -115,7 +115,7 @@ A common protocol implementation known as [System Management Bus](https://en.wik
 
 系统管理总线 [System Management Bus](https://en.wikipedia.org/wiki/System_Management_Bus)（SMBus）被用来作为与I<sup>2</sup>C总线寄存器数据交互的通用协议。SMBus命令由两个I<sup>2</sup>C事务操作来组成：
 
-![""](https://developer.android.google.cn/things/images/i2c-smbus.png)
+![""](../../images/i2c-smbus.png)
 
 The first transaction identifies the register address to access, and the second reads or writes the data at that address. Logical data on a slave device may often take up multiple bytes, and thus encompass multiple register addresses. The register address provided to the API is always the first register to reference.
 
@@ -170,7 +170,7 @@ When interacting with an I<sup>2</sup>C peripheral that defines its registers di
 
 当与I<sup>2</sup>C寄存器定义和SMBus不同的外设进行交互式，或者这类外设不使用任何寄存器，使用原 `read()` and `write()` 方法可以获得对连接线上传输的所有数据的控制。这些方法将按照以下的方式执行单个I<sup>2</sup>C事务性操作：
 
-![""](https://developer.android.google.cn/things/images/i2c-raw.png)
+![""](../../images/i2c-raw.png)
 
 With raw transfers, the device will send a single start condition before the transfer and a single stop condition after. It is not possible to combine multiple transactions with a "repeated start" condition.
 

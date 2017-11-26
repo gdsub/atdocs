@@ -1,15 +1,15 @@
 # Joule I/O
 # Joule I/O
 
-This section describes the [Peripheral I/O](https://developer.android.google.cn/things/sdk/pio/index.html) interfaces available to your apps running on the [Intel® Joule™ 570x Developer Kit](http://www.intel.com/buy/us/en/product/emergingtechnologies/intel-joule-570x-developer-kit-541737).
+This section describes the [Peripheral I/O](../sdk/pio/index.html) interfaces available to your apps running on the [Intel® Joule™ 570x Developer Kit](http://www.intel.com/buy/us/en/product/emergingtechnologies/intel-joule-570x-developer-kit-541737).
 
-本节描述的是 [Intel® Joule™ 570x Developer Kit](http://www.intel.com/buy/us/en/product/emergingtechnologies/intel-joule-570x-developer-kit-541737) 对应用程序开放的 [外设 I/O](https://developer.android.google.cn/things/sdk/pio/index.html) 接口。
+本节描述的是 [Intel® Joule™ 570x Developer Kit](http://www.intel.com/buy/us/en/product/emergingtechnologies/intel-joule-570x-developer-kit-541737) 对应用程序开放的 [外设 I/O](../sdk/pio/index.html) 接口。
 
 The following pinout diagram illustrates the locations of the available ports exposed by the breakout connectors of this board:
 
 下面的引脚图说明了板子上引出的可用接口位置：
 
-![""](https://developer.android.google.cn/things/images/pinout-joule.png)
+![""](../images/pinout-joule.png)
 
 In addition to the breakout pins, the Joule kit has six on-board LEDs:
 

@@ -6,16 +6,16 @@ Build connected devices for a wide variety of consumer, retail, and industrial a
 
 为广大消费者、零售业和工业界构建物联网设备
 
-[Get the Developer Preview](https://developer.android.google.cn/things/preview/index.html)
+[Get the Developer Preview](preview/index.html)
 
-[获取开发者预览版](https://developer.android.google.cn/things/preview/index.html)
+[获取开发者预览版](preview/index.html)
 
-[![Scroll down to read more](https://developer.android.google.cn/things/images/carrot_black.png)](#android-things)
+[![Scroll down to read more](images/carrot_black.png)](#android-things)
 
-[![向下滑动阅读更多](https://developer.android.google.cn/things/images/carrot_black.png)](#android-things)
+[![向下滑动阅读更多](images/carrot_black.png)](#android-things)
 
 
-![](https://developer.android.google.cn/things/images/graphic_bugdroid.png)
+![](images/graphic_bugdroid.png)
 
 
 # The ease and power of Android
@@ -60,7 +60,7 @@ Anyone, from startups to large companies, can build commercial products at scale
 
 任何人，都可以从这里起步，构建您自己的物联网产品帝国
 
-![](https://developer.android.google.cn/things/images/landing-certified.png)
+![](images/landing-certified.png)
 
 #### Turnkey hardware solutions
 
@@ -70,7 +70,7 @@ Our certified development boards include the System on Chip (SoC), RAM, wireless
 
 经我们认证过的开发板包含 SoC 芯片，RAM，无线接收装置等，方便您快速开始构建您的应用。
 
-![](https://developer.android.google.cn/things/images/landing-market.png)
+![](images/landing-market.png)
 
 #### Low barrier to entry
 
@@ -81,7 +81,7 @@ Start prototyping immediately with supported boards and a developer build of And
 Android Things 系统为开发者提供便利，您可以在通过认证的开发板上立刻开始构建您的产品，而不需要硬件编程基础。
 
 
-![](https://developer.android.google.cn/things/images/landing-scale.png)
+![](images/landing-scale.png)
 
 #### Build products at scale
 
@@ -92,11 +92,11 @@ Shipping products is easy because our prototype boards are commercial grade. The
 得益于在在商业级认证的开发板做开发，您的构建会很容易变成真正的产品。代工厂可以很方便的帮您对同样的电路板进行定制，
 满足您对外观和其他的需求。
 
-To learn more about the hardware program, see our [Hardware Platform Overview](https://developer.android.google.cn/things/hardware/index.html).
+To learn more about the hardware program, see our [Hardware Platform Overview](hardware/index.html).
 
-了解更多与硬件有关的信息，请参阅：[Hardware Platform Overview](https://developer.android.google.cn/things/hardware/index.html)。
+了解更多与硬件有关的信息，请参阅：[Hardware Platform Overview](hardware/index.html)。
 
-![](https://developer.android.google.cn/things/images/graphic_superG.png)
+![](images/graphic_superG.png)
 
 The power of Google at your fingertips
 
@@ -138,6 +138,6 @@ Get started now with the Developer Preview, so you can start designing and devel
 
 开启 Android Things 开发者预览版，您可以从现在开始设想和构建您的产品，我们将定期提供新功能的更新，并在接下来的时间里提供商业级别的长期支持（LTS）版本。
 
-[Get the Developer Preview](https://developer.android.google.cn/things/preview/index.html)
+[Get the Developer Preview](preview/index.html)
 
-[开发者预览版](https://developer.android.google.cn/things/preview/index.html)
+[开发者预览版](preview/index.html)

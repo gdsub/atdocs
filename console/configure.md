@@ -10,11 +10,11 @@ To configure your product:
 
 产品配置步骤如下：
 
-* 	If you are not already on this tab, open the [Android Things Console](https://partner.android.com/things/console) and click a product you previously [created](https://developer.android.google.cn/things/console/create.html). The **Product settings** box appears.
+* 	If you are not already on this tab, open the [Android Things Console](https://partner.android.com/things/console) and click a product you previously [created](../console/create.html). The **Product settings** box appears.
 
-	如果您还没有打开本标签页，请进入 [Android Things 管理中心](https://partner.android.com/things/console)并点击您之前所 [创建的项目](https://developer.android.google.cn/things/console/create.html)。**产品设置** 页如图所示。
+	如果您还没有打开本标签页，请进入 [Android Things 管理中心](https://partner.android.com/things/console)并点击您之前所 [创建的项目](../console/create.html)。**产品设置** 页如图所示。
 
-    ![Configure a product](https://developer.android.google.cn/things/images/console/configure.png)
+    ![Configure a product](../images/console/configure.png)
 
 * 	You can edit the product name or product description, if desired. If you do, make sure to click **SAVE CHANGES**.
 
@@ -33,6 +33,6 @@ To configure your product:
 
 * * *
 
-The next step is to [build the device image](https://developer.android.google.cn/things/console/build.html).
+The next step is to [build the device image](../console/build.html).
 
-下一步是 [生成设备镜像文件](https://developer.android.google.cn/things/console/build.html)。
+下一步是 [生成设备镜像文件](../console/build.html)。

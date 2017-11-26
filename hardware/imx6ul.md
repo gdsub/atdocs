@@ -6,7 +6,7 @@ Expanding the i.MX 6 series, the i.MX 6UltraLite is a high performance, ultra-ef
 
 从 i.MX 6 系列中扩展而来，i.MX 6UltraLite 是一个高性能，非常高效的处理器系列，采用的是单个 ARM® Cortex®-A7 核。Pico 板和 Intel® Edison 板对传感器和低速 I/O 来讲是管脚兼容的，但也加了对多媒体和联网的扩展可能，这使得板子可以很容易的用到最新的 IoT 技术。
 
-![](https://developer.android.google.cn/things/images/nxp-pico7-board.png) ![](https://developer.android.google.cn/things/images/nxp-spriot-board.png) ![](https://developer.android.google.cn/things/images/nxp-argon-board.png)
+![](../images/nxp-pico7-board.png) ![](../images/nxp-spriot-board.png) ![](../images/nxp-argon-board.png)
 
 ## Flashing the image
 
@@ -26,9 +26,9 @@ Before you begin flashing, you will need the following items in addition to your
 
 *   5V 直流适配器 ( Pico i.MX6UL 板子不需要)
 
-To flash Android Things onto your board, download the latest preview image in the [Android Things Console](https://partner.android.com/things/console) (see the [release notes](https://developer.android.google.cn/things/preview/releases.html)) and follow these steps:
+To flash Android Things onto your board, download the latest preview image in the [Android Things Console](https://partner.android.com/things/console) (see the [release notes](../preview/releases.html)) and follow these steps:
 
-为了烧录 Android Things 到板子上，从 [Android Things Console](https://partner.android.com/things/console) 下载最新的映像（看下 [release notes](https://developer.android.google.cn/things/preview/releases.html)）并按以下步骤来做：
+为了烧录 Android Things 到板子上，从 [Android Things Console](https://partner.android.com/things/console) 下载最新的映像（看下 [release notes](../preview/releases.html)）并按以下步骤来做：
 
 ### Step 1: Connect the Hardware
 
@@ -43,7 +43,7 @@ Connect the board to your host computer:
 
 **对于 Pico i.MX6UL 板：**
 
-![""](https://developer.android.google.cn/things/images/pico7-connections.png)
+![""](../images/pico7-connections.png)
 
 1. 	Connect a USB-C cable from your host computer to the USB OTG connector.
 
@@ -54,7 +54,7 @@ Connect the board to your host computer:
 
 **对于 SprIoT i.MX6UL 板：**
 
-![""](https://developer.android.google.cn/things/images/spriot-connections.png)
+![""](../images/spriot-connections.png)
 
 * 	Connect a Micro-USB cable to the USB OTG connector.
 
@@ -70,7 +70,7 @@ Connect the board to your host computer:
 
 **对于 Argon i.MX6UL 板：**
 
-![""](https://developer.android.google.cn/things/images/vvdn-connections.png)
+![""](../images/vvdn-connections.png)
 
 1. 	Ensure switch **SW1** is in the **OFF** position.
 
@@ -167,17 +167,17 @@ Before connecting your board to a Wi-Fi network, attach an external IPEX or u.FL
 
 **对于 Pico i.MX6UL 板：**
 
-![""](https://developer.android.google.cn/things/images/pico7-antenna.png)
+![""](../images/pico7-antenna.png)
 
 **For SprIoT i.MX6UL**
 
 **对于 SprIoT i.MX6UL 板：**
 
-![""](https://developer.android.google.cn/things/images/spriot-antenna.png)
+![""](../images/spriot-antenna.png)
 
 **对于 Argon i.MX6UL板:**
 
-![""](https://developer.android.google.cn/things/images/vvdn-antenna.png)
+![""](../images/vvdn-antenna.png)
 
 **Note:** The module can't resolve Wi-Fi signals if you proceed without connecting an antenna.
 
@@ -200,9 +200,9 @@ Once you can access a shell prompt, follow these steps:
 
 一旦连到一个 shell 终端, 按下面步骤来:
 
-1.	Send an intent to the Wi-Fi service that includes the SSID of your local network. Your [board](https://developer.android.google.cn/things/hardware/developer-kits.html) must support the network protocol and frequency band of the wireless network in order to establish a connection.
+1.	Send an intent to the Wi-Fi service that includes the SSID of your local network. Your [board](../hardware/developer-kits.html) must support the network protocol and frequency band of the wireless network in order to establish a connection.
 
-	向 Wi-Fi 服务发送带有您的本地网络 SSID 的请求。您的 [开发板](https://developer.android.google.cn/things/hardware/developer-kits.html) 必须支持无线网络协定和无线网络频率以建立连接。
+	向 Wi-Fi 服务发送带有您的本地网络 SSID 的请求。您的 [开发板](../hardware/developer-kits.html) 必须支持无线网络协定和无线网络频率以建立连接。
 
 
 	$ am startservice \    -n com.google.wifisetup/.WifiSetupService \    -a WifiSetupService.Connect
@@ -321,20 +321,20 @@ To access the serial console:
 
 **对 Pico i.MX6UL板：** 如下图，连 micro USB 线到调试接口上。
 
-![""](https://developer.android.google.cn/things/images/pico7-console.png)
+![""](../images/pico7-console.png)
 
 **For SprIoT i.MX6UL:** Connect a Micro-USB cable to the board as shown below.
 
 
 **对 SprIoT i.MX6UL 板：** 如下图，把 Micro-USB 线连到板子上。
 
-![""](https://developer.android.google.cn/things/images/spriot-console.png)
+![""](../images/spriot-console.png)
 
 **For Argon i.MX6UL:** Connect a USB Type B cable to the board as shown below.
 
 **对 Argon i.MX6UL板：** 如下图，把 USB Type B 线连到板子上。
 
-![""](https://developer.android.google.cn/things/images/vvdn-console.png)
+![""](../images/vvdn-console.png)
 
 Open a connection to the USB serial device on your development computer using a terminal program, such as [PuTTY](http://www.putty.org/) (Windows), [Serial](https://www.decisivetactics.com/products/serial/) (Mac OS), or [Minicom](https://en.wikipedia.org/wiki/Minicom) (Linux). The serial port parameters for the console are as follows:
 

@@ -6,7 +6,7 @@ The i.MX 7Dual delivers high-performance processing for low-power requirements w
 
 i.MX 7Dual 处理器是带有高度功能集成、低功耗、高性能的, 工作频率最高到 1.2 GHz, 核心是 ARM® Cortex®-M4。Pico 板和 Intel® Edison 板对传感器和低速 I/O 来讲是管脚兼容的，但也加了对多媒体和联网的扩展可能，这使得板子可以很容易的用到最新的 IoT 技术。
 
-![""](https://developer.android.google.cn/things/images/nxp-pico7-board.png)
+![""](../images/nxp-pico7-board.png)
 
 ## Flashing the image
 
@@ -23,9 +23,9 @@ Before you begin flashing, you will need the following items in addition to your
 * USB-C 线
 
 
-To flash Android Things onto your board, download the latest preview image in the [Android Things Console](https://partner.android.com/things/console) (see the [release notes](https://developer.android.google.cn/things/preview/releases.html)) and follow these steps:
+To flash Android Things onto your board, download the latest preview image in the [Android Things Console](https://partner.android.com/things/console) (see the [release notes](../preview/releases.html)) and follow these steps:
 
-为了烧录 Android Things 到板子上, 从 [Android Things 控制台](https://partner.android.com/things/console) 下载最新的镜像(看下 [发行说明](https://developer.android.google.cn/things/preview/releases.html)) 并按一下步骤来做:
+为了烧录 Android Things 到板子上, 从 [Android Things 控制台](https://partner.android.com/things/console) 下载最新的镜像(看下 [发行说明](../preview/releases.html)) 并按一下步骤来做:
 
 
 ### Step 1: Connect the Hardware
@@ -36,7 +36,7 @@ Connect the board to your host computer as shown below:
 
 连接板子到主机如下图：
 
-![""](https://developer.android.google.cn/things/images/pico7-connections.png)
+![""](../images/pico7-connections.png)
 
 1.  Connect a USB-C cable from your host computer for Power and USB OTG.
 
@@ -113,7 +113,7 @@ Before connecting your board to a Wi-Fi network, attach an external IPEX or u.FL
 
 在连到 Wi-Fi 之前，连一根 IPEX 或者 u.FL Wi-Fi 天线到板子上，如下图所示
 
-![""](https://developer.android.google.cn/things/images/pico7-antenna.png)
+![""](../images/pico7-antenna.png)
 
 **Note:**  The module can't resolve Wi-Fi signals if you proceed without connecting an antenna.
 
@@ -135,9 +135,9 @@ Once you can access a shell prompt, follow these steps:
 
 一旦连到一个 shell 终端，按以下步骤来：
 
-1.  Send an intent to the Wi-Fi service that includes the SSID of your local network. Your [board](https://developer.android.google.cn/things/hardware/developer-kits.html) must support the network protocol and frequency band of the wireless network in order to establish a connection.
+1.  Send an intent to the Wi-Fi service that includes the SSID of your local network. Your [board](../hardware/developer-kits.html) must support the network protocol and frequency band of the wireless network in order to establish a connection.
 
-	向 Wi-Fi 服务发送带有您的本地网络 SSID 的请求。您的 [开发板](https://developer.android.google.cn/things/hardware/developer-kits.html) 必须支持无线网络协议和频段以建立连接。
+	向 Wi-Fi 服务发送带有您的本地网络 SSID 的请求。您的 [开发板](../hardware/developer-kits.html) 必须支持无线网络协议和频段以建立连接。
 
 ~~~java
 $ am startservice \    -n com.google.wifisetup/.WifiSetupService \    -a WifiSetupService.Connect
@@ -252,7 +252,7 @@ To access the serial console:
 
 连接串口:
 
-![""](https://developer.android.google.cn/things/images/pico7-console.png)
+![""](../images/pico7-console.png)
 
 Open a connection to the USB serial device on your development computer using a terminal program, such as [PuTTY](http://www.putty.org/) (Windows), [Serial](https://www.decisivetactics.com/products/serial/) (Mac OS), or [Minicom](https://en.wikipedia.org/wiki/Minicom) (Linux). The serial port parameters for the console are as follows:
 

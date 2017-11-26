@@ -54,19 +54,19 @@ For this lesson, the following GPIO pins are assumed on each board:
 
 | Board                                    | Input Signal |
 | ---------------------------------------- | ------------ |
-| [NXP Pico i.MX7D](https://developer.android.google.cn/things/hardware/imx7d-pico-io.html) | GPIO_39      |
-| [Raspberry Pi](https://developer.android.google.cn/things/hardware/raspberrypi-io.html) | BCM21        |
+| [NXP Pico i.MX7D](../../hardware/imx7d-pico-io.html) | GPIO_39      |
+| [Raspberry Pi](../../hardware/raspberrypi-io.html) | BCM21        |
 
 | 开发板                                    |   输入信号   |
 | ---------------------------------------- | ------------ |
-| [NXP Pico i.MX7D](https://developer.android.google.cn/things/hardware/imx7d-pico-io.html) | GPIO_39      |
-| [Raspberry Pi](https://developer.android.google.cn/things/hardware/raspberrypi-io.html) | BCM21        |
+| [NXP Pico i.MX7D](../../hardware/imx7d-pico-io.html) | GPIO_39      |
+| [Raspberry Pi](../../hardware/raspberrypi-io.html) | BCM21        |
 
-![""](https://developer.android.google.cn/things/images/doorbell-button-wiring.png)
+![""](../../images/doorbell-button-wiring.png)
 
-> **Note:** See [Hardware 101](https://developer.android.google.cn/things/hardware/hardware-101.html) for more detail on connecting input and output components.
+> **Note:** See [Hardware 101](../../hardware/hardware-101.html) for more detail on connecting input and output components.
 
-> **注意：** 查看  [Hardware 101](https://developer.android.google.cn/things/hardware/hardware-101.html) 了解连接关于输入/输出元器件的一些更详细的信息。
+> **注意：** 查看  [Hardware 101](../../hardware/hardware-101.html) 了解连接关于输入/输出元器件的一些更详细的信息。
 
 ## Capture button press events
 

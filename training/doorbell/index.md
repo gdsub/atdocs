@@ -8,12 +8,12 @@
 
 *   [Android Studio 3.0](https://developer.android.google.cn/studio/index.html) or later
 *   [Android Studio 3.0](https://developer.android.google.cn/studio/index.html)  或更新版本
-*   [Android Things developer board](https://developer.android.google.cn/things/hardware/developer-kits.html)
-*   [Android Things 开发板](https://developer.android.google.cn/things/hardware/developer-kits.html)
+*   [Android Things developer board](../../hardware/developer-kits.html)
+*   [Android Things 开发板](../../hardware/developer-kits.html)
 *   Supported camera module
 *   支持相机模块
-*   [Peripheral Kit](https://developer.android.google.cn/things/hardware/developer-kits.html#featured_peripherals)
-*   [外设套件](https://developer.android.google.cn/things/hardware/developer-kits.html#featured_peripherals)
+*   [Peripheral Kit](../../hardware/developer-kits.html#featured_peripherals)
+*   [外设套件](../../hardware/developer-kits.html#featured_peripherals)
 *   Android device running Android 2.3 (API Level 9) or higher
 *   运行在 Android 2.3 （API Level 9）或更高版本的 Android 设备
 

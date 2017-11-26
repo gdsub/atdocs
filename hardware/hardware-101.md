@@ -1,9 +1,9 @@
 
 
 
-*   [Hardware](https://developer.android.google.cn/things/hardware/index.html)
+*   [Hardware](../hardware/index.html)
 
-*   [硬件](https://developer.android.google.cn/things/hardware/index.html)
+*   [硬件](../hardware/index.html)
 
 # Hardware 101
 
@@ -59,7 +59,7 @@ You should have a basic understanding of the relationships between voltage, curr
 
 [面包板](https://en.wikipedia.org/wiki/Breadboard) 是常用的用来快速做电路原型的工具，这样可以不用把原件焊接到一起。用面包板可以让您开发当中做线路改变直到电路设计稳定下来。
 
-![""](https://developer.android.google.cn/things/images/breadboard-connections.png)
+![""](../images/breadboard-connections.png)
 
 The holes of a breadboard are internally connected together in rows and columns to allow multiple components to share the same connection point. The outer rows are connected perpendicular to the rest of the board and form a single bus in each row across the top and bottom. These rows are typically used to connect power and ground, or other common signals needed across the entire circuit.
 
@@ -285,17 +285,17 @@ Peripherals typically use digital I/O in a few common ways:
 *   **Stable state**: Single on/off state mapped to a stable high or low value.
 
 *   **稳定状态**: 单一的开/关状态 变到一个稳定的高或低压。
-    ![""](https://developer.android.google.cn/things/images/digital-1.png)
+    ![""](../images/digital-1.png)
 
 *   **Pulse train**: Series of digital signal pulses with variable frequency and width transmitted continuously over time.
 
 *   **脉冲序列**: 一连串带可变频率和带宽的持续数字脉冲。
-    ![""](https://developer.android.google.cn/things/images/digital-2.png)
+    ![""](../images/digital-2.png)
 
 *   **Serial communication**: Series of digital 1s and 0s representing individual bits of a binary number.
 
 *   **串行通信**: 一系列的 0 和 1 代表分别代表一个二进制数的某一位。
-    ![""](https://developer.android.google.cn/things/images/digital-3.png)
+    ![""](../images/digital-3.png)
 
 For more information on analog and digital I/O, see [Sensors and Transducers](http://www.electronics-tutorials.ws/io/io_1.html) and [Binary Numbers](http://www.electronics-tutorials.ws/binary/bin_1.html).
 
@@ -306,7 +306,7 @@ For more information on analog and digital I/O, see [Sensors and Transducers](ht
 
 * * *
 
-![](https://developer.android.google.cn/things/images/hardware-inputs.png)
+![](../images/hardware-inputs.png)
 
 In many digital interface circuits, resistors are connected between the I/O signal pins and V<sub>CC</sub> or ground. These are known as pull-up and pull-down resistors, respectively. They guarantee that each signal has a stable default state that the rest of the system can rely on, without significantly affecting the input or output signal directly.
 
@@ -346,7 +346,7 @@ See [Pull-up Resistors](http://www.electronics-tutorials.ws/logic/pull-up-resist
 
 * * *
 
-![](https://developer.android.google.cn/things/images/hardware-debounce.png)
+![](../images/hardware-debounce.png)
 
 Many electrical input devices, such as switches and relays, have a mechanical component. As the mechanical motion of the device settles, the electrical signal can temporarily oscillate — or "bounce" — between multiple values. In many cases, this will be seen by your app as multiple input events in a very short time.
 
@@ -370,7 +370,7 @@ See [Input Interfacing Circuits](http://www.electronics-tutorials.ws/io/input-in
 
 * * *
 
-![](https://developer.android.google.cn/things/images/hardware-outputs.png)
+![](../images/hardware-outputs.png)
 
 Each output pin has a limited capability to source (when high) or sink (when low) current from the circuitry connected to it. Peripherals that draw more current than the pin can handle — even temporarily — can damage the output. To protect the pin, insert a current-limiting resistor in series with the load.
 

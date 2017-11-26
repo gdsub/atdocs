@@ -2,9 +2,9 @@
 
 # 输入
 
-Input user drivers provide an interface for apps to inject events into Android's [input pipeline](http://source.android.google.cn/devices/input/overview.html). With this API, apps can emulate a Human Interface Device (HID) or connect external hardware to the input system using [Peripheral I/O](https://developer.android.google.cn/things/sdk/pio/index.html).
+Input user drivers provide an interface for apps to inject events into Android's [input pipeline](http://source.android.google.cn/devices/input/overview.html). With this API, apps can emulate a Human Interface Device (HID) or connect external hardware to the input system using [Peripheral I/O](../../sdk/pio/index.html).
 
-输入用户驱动为应用提供向 Android 的[输入管道](http://source.android.google.cn/devices/input/overview.html) 注入事件的功能。有了这些 API 后, 应用可以模拟人体接口设备 (HID) 或使用 [Peripheral I/O](https://developer.android.google.cn/things/sdk/pio/index.html) 连接外部硬件到系统的输入中。
+输入用户驱动为应用提供向 Android 的[输入管道](http://source.android.google.cn/devices/input/overview.html) 注入事件的功能。有了这些 API 后, 应用可以模拟人体接口设备 (HID) 或使用 [Peripheral I/O](../../sdk/pio/index.html) 连接外部硬件到系统的输入中。
 
 ## Key Events
 

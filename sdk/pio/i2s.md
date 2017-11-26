@@ -6,11 +6,11 @@ The [Inter-IC Sound](https://en.wikipedia.org/wiki/I%C2%B2S) (IIS or I<sup>2</su
 
 [Inter-IC Sound](https://en.wikipedia.org/wiki/I%C2%B2S) (IIS or I<sup>2</sup>S) 总线连接数字音频设备与 [PCM](https://en.wikipedia.org/wiki/Pulse-code_modulation) 并且在两者之间交互音频数据。通常用于主机控制系统与麦克风或者扬声器之间的连接。
 
-I<sup>2</sup>S is a **_synchronous_** serial interface, which means it relies on shared clock signals to synchronize data transfer between devices. An I<sup>2</sup>S master device drives communication and timing through the primary **bit clock (BCLK)** signal, similar to [I2C](https://developer.android.google.cn/things/sdk/pio/i2c.html) or [SPI](https://developer.android.google.cn/things/sdk/pio/spi.html). I<sup>2</sup>S also includes a separate **left-right clock (LRCLK)** signal, which the master uses to select the proper audio channel for data (left or right).
+I<sup>2</sup>S is a **_synchronous_** serial interface, which means it relies on shared clock signals to synchronize data transfer between devices. An I<sup>2</sup>S master device drives communication and timing through the primary **bit clock (BCLK)** signal, similar to [I2C](../../sdk/pio/i2c.html) or [SPI](../../sdk/pio/spi.html). I<sup>2</sup>S also includes a separate **left-right clock (LRCLK)** signal, which the master uses to select the proper audio channel for data (left or right).
 
-I<sup>2</sup>S 是 **_同步_** 串行接口，意味着它要通过共享的时钟信号在设备之间同步传输数据。与 [I2C](https://developer.android.google.cn/things/sdk/pio/i2c.html) 或者是 [SPI](https://developer.android.google.cn/things/sdk/pio/spi.html) 类似， I<sup>2</sup>S 主设备驱动通过 **bit clock (BCLK) 位时钟** 信号校准时钟。 I<sup>2</sup>S 也包括了一个独立的 **left-right clock (LRCLK) 左右时钟** 信号，控制器用这个时钟来选择数据声道(左声道或者右声道)。
+I<sup>2</sup>S 是 **_同步_** 串行接口，意味着它要通过共享的时钟信号在设备之间同步传输数据。与 [I2C](../../sdk/pio/i2c.html) 或者是 [SPI](../../sdk/pio/spi.html) 类似， I<sup>2</sup>S 主设备驱动通过 **bit clock (BCLK) 位时钟** 信号校准时钟。 I<sup>2</sup>S 也包括了一个独立的 **left-right clock (LRCLK) 左右时钟** 信号，控制器用这个时钟来选择数据声道(左声道或者右声道)。
 
-![""](https://developer.android.google.cn/things/images/i2s-connections.png)
+![""](../../images/i2s-connections.png)
 
 
 **Note:**  LRCLK is also often called the **Frame Select (FS)** or **Word Select (WS)** signal.
@@ -111,9 +111,9 @@ In addition to describing the expected audio data, this tells the I<sup>2</sup>S
 
 **频率 = 采样率 x 采样长度 x 声道数**
 
-Per the formula, the above example format requires an I<sup>2</sup>S bit clock frequency of **_1.41MHz_**. Similar to the requirements on [UART](https://developer.android.google.cn/things/sdk/pio/uart.html) baud rate, the timing of this signal must be very accurate to avoid transmission errors caused by [jitter](https://en.wikipedia.org/wiki/Jitter). Ensure that your hardware platform can accurately generate the required bit clock frequency for your chosen format parameters.
+Per the formula, the above example format requires an I<sup>2</sup>S bit clock frequency of **_1.41MHz_**. Similar to the requirements on [UART](../../sdk/pio/uart.html) baud rate, the timing of this signal must be very accurate to avoid transmission errors caused by [jitter](https://en.wikipedia.org/wiki/Jitter). Ensure that your hardware platform can accurately generate the required bit clock frequency for your chosen format parameters.
 
-上面的例子需要 I<sup>2</sup>S 的位时钟频率为 **_1.41MHz_**。 和串口 [UART](https://developer.android.google.cn/things/sdk/pio/uart.html) 的波特率类似。 信号时钟必须十分精确，完全避免由 [抖动](https://en.wikipedia.org/wiki/Jitter) 产生的传输错误。 需要确认硬件是否能够精确产生您选择的参数所需要的位时钟。
+上面的例子需要 I<sup>2</sup>S 的位时钟频率为 **_1.41MHz_**。 和串口 [UART](../../sdk/pio/uart.html) 的波特率类似。 信号时钟必须十分精确，完全避免由 [抖动](https://en.wikipedia.org/wiki/Jitter) 产生的传输错误。 需要确认硬件是否能够精确产生您选择的参数所需要的位时钟。
 
 To learn more about audio frames, encoding, and sampling, see the [AudioFormat](https://developer.android.google.cn/reference/android/media/AudioFormat.html) reference.
 

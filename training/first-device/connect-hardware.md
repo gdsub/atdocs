@@ -16,9 +16,9 @@
 
 ## 您还需要阅读
 
-*   [Hardware 101](https://developer.android.google.cn/things/hardware/hardware-101.html)
+*   [Hardware 101](../../hardware/hardware-101.html)
 
-*   [硬件 101](https://developer.android.google.cn/things/hardware/hardware-101.html)
+*   [硬件 101](../../hardware/hardware-101.html)
 
 Before writing any code, you need to connect peripherals from your development kit to your board.
 
@@ -48,25 +48,25 @@ In this lesson, you will learn to wire a pushbutton switch and LED from a breadb
 
     将 LED 的负极（较短的一侧）的一侧接 GND。
 
-See [Hardware 101](https://developer.android.google.cn/things/hardware/hardware-101.html) for more detail on connecting input and output components.
+See [Hardware 101](../../hardware/hardware-101.html) for more detail on connecting input and output components.
 
-请参看 [硬件 101](https://developer.android.google.cn/things/hardware/hardware-101.html) 获取更多连接输入输出设备的信息。
+请参看 [硬件 101](../../hardware/hardware-101.html) 获取更多连接输入输出设备的信息。
 
 For this lesson, the following GPIO pins are assumed on each board:
 
 在这节课中，我们假定每个开发板上都存在 GPIO 引脚：
 
-[Intel Edison Arduino](https://developer.android.google.cn/things/hardware/edison-arduino-io.html)
+[Intel Edison Arduino](../../hardware/edison-arduino-io.html)
 
-[Intel Edison Sparkfun](https://developer.android.google.cn/things/hardware/edison-sparkfun-io.html)
+[Intel Edison Sparkfun](../../hardware/edison-sparkfun-io.html)
 
-[Intel Joule](https://developer.android.google.cn/things/hardware/joule.html)
+[Intel Joule](../../hardware/joule.html)
 
-[NXP Pico i.MX6UL](https://developer.android.google.cn/things/hardware/imx6ul-pico-io.html)
+[NXP Pico i.MX6UL](../../hardware/imx6ul-pico-io.html)
 
-[NXP Pico i.MX7D](https://developer.android.google.cn/things/hardware/imx7d-pico-io.html)
+[NXP Pico i.MX7D](../../hardware/imx7d-pico-io.html)
 `
-[Raspberry Pi](https://developer.android.google.cn/things/hardware/raspberrypi-io.html)
+[Raspberry Pi](../../hardware/raspberrypi-io.html)
 
-![""](https://developer.android.google.cn/things/images/simplepio-wiring.png)
+![""](../../images/simplepio-wiring.png)
 

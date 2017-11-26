@@ -2,19 +2,19 @@
 # 串行外设接口
 
 
-[Serial Peripheral Interface](https://en.wikipedia.org/wiki/Serial_Peripheral_Interface_Bus) (SPI) devices are typically found where fast data transfer rates are required. SPI is well suited for high-bandwidth use cases such as external non-volatile memory and graphical displays. Many sensor devices support SPI in addition to [I2C](https://developer.android.google.cn/things/sdk/pio/i2c.html).
+[Serial Peripheral Interface](https://en.wikipedia.org/wiki/Serial_Peripheral_Interface_Bus) (SPI) devices are typically found where fast data transfer rates are required. SPI is well suited for high-bandwidth use cases such as external non-volatile memory and graphical displays. Many sensor devices support SPI in addition to [I2C](../../sdk/pio/i2c.html).
 
-[串行外设接口](https://en.wikipedia.org/wiki/Serial_Peripheral_Interface_Bus)（SPI）设备通常被用于需要快速数据传输的工作场合。尤其适合需要高带宽的使用场景，例如外部非易失性存储器（NVM）和图形显示器。许多传感器设备除了支持[I2C](https://developer.android.google.cn/things/sdk/pio/i2c.html)以外也支持SPI。
+[串行外设接口](https://en.wikipedia.org/wiki/Serial_Peripheral_Interface_Bus)（SPI）设备通常被用于需要快速数据传输的工作场合。尤其适合需要高带宽的使用场景，例如外部非易失性存储器（NVM）和图形显示器。许多传感器设备除了支持[I2C](../../sdk/pio/i2c.html)以外也支持SPI。
 
 SPI is a **_synchronous_** serial interface, which means it relies on a shared clock signal to synchronize data transfer between devices. A master device controls the triggering of the clock signal and all other connected peripherals are known as **_slaves_**. Each device is connected to the same set of data signals to form a **_bus_**.
 
 SPI是 **_同步_** 串行接口，这意味着设备之间依赖于共享的时钟信号来对数据传输进行同步。主设备控制着时钟信号的触发，其他所有连接的外部设备都被认为是 **_从设备_** 。每个设备都连接到相同的数据信号集而形成 **_总线_** 。
 
-Theoretically, the data transfer rate for SPI is only limited by how fast the master can toggle the clock signal. Clock speeds are typically in the 16MHz to 25MHz range. This high-speed shared clock allows SPI peripherals to transfer data more quickly and with fewer errors than [UART](https://developer.android.google.cn/things/sdk/pio/uart.html).
+Theoretically, the data transfer rate for SPI is only limited by how fast the master can toggle the clock signal. Clock speeds are typically in the 16MHz to 25MHz range. This high-speed shared clock allows SPI peripherals to transfer data more quickly and with fewer errors than [UART](../../sdk/pio/uart.html).
 
-SPI总线的理论传输速度仅受到主设备切换时钟信号快慢的限制。通常时钟速度在16MHz到25MHz的范围内。这类高速共享的时钟可以允许SPI外设比[UART](https://developer.android.google.cn/things/sdk/pio/uart.html)设备传输速率更快且错误率更低。
+SPI总线的理论传输速度仅受到主设备切换时钟信号快慢的限制。通常时钟速度在16MHz到25MHz的范围内。这类高速共享的时钟可以允许SPI外设比[UART](../../sdk/pio/uart.html)设备传输速率更快且错误率更低。
 
-![""](https://developer.android.google.cn/things/images/spi-connections.png)
+![""](../../images/spi-connections.png)
 
 SPI supports **_full-duplex_** data transfer, meaning the master and slave can simultaneously exchange information. To support full-duplex transfer, the bus must provide the following separate signals, which makes SPI a minimum 4-Wire interface:
 
@@ -29,9 +29,9 @@ SPI支持 **_全双工_** 数据传输，意味着主从设备之间可以连续
 * 	共享时钟信号（CLK）
 * 	共用参考地线（GND）
 
-SPI supports multiple slave devices connected along the same bus. Unlike [I2C](https://developer.android.google.cn/things/sdk/pio/i2c.html), slave devices are addressed using hardware. An external **_chip select_** signal is required for each slave to allow the master to address that particular device as the data transfer target. This signal is not necessary if only using a single slave.
+SPI supports multiple slave devices connected along the same bus. Unlike [I2C](../../sdk/pio/i2c.html), slave devices are addressed using hardware. An external **_chip select_** signal is required for each slave to allow the master to address that particular device as the data transfer target. This signal is not necessary if only using a single slave.
 
-SPI支持同时将多个从设备连接在同一总线上。与[I2C](https://developer.android.google.cn/things/sdk/pio/i2c.html)的连接方式区别在于，从设备的寻址采用硬件方式。每个从设备都需要连接外部 **_片选_** 信号到主设备用于寻址到该设备进行数据传输。只有在总线上只接一个从设备的时候可以不接片选信号。
+SPI支持同时将多个从设备连接在同一总线上。与[I2C](../../sdk/pio/i2c.html)的连接方式区别在于，从设备的寻址采用硬件方式。每个从设备都需要连接外部 **_片选_** 信号到主设备用于寻址到该设备进行数据传输。只有在总线上只接一个从设备的时候可以不接片选信号。
 
 ## Managing the device connection
 
@@ -115,7 +115,7 @@ After a connection is established with the SPI bus, configure the data transfer 
 
 	设置SPI模式，定义时钟信号的极性和相位。您可选择的模式基于三种属性：
 
-    ![](https://developer.android.google.cn/things/images/spi-clock.png)
+    ![](../../images/spi-clock.png)
 
     * 	**Idle Level**: Level of the clock signal (low or high) when no data is being transferred.
 

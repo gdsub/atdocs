@@ -6,7 +6,7 @@ Intel® Joule™, Intel’s highest-performing system-on-module, packs powerful 
 
 Intel® Joule™ 是英特尔性能最卓越的模块化系统，其在一个拇指大小的低功耗封装中实现了强大的包计算能力。对于那些需要机器视觉或边缘计算能力的机器人和物联网应用，Intel® Joule™ 550x/570x 开发套件可以快速的将创意转变成原型乃至产品。
 
-![""](https://developer.android.google.cn/things/images/intel-joule-dev-kit.png)
+![""](../images/intel-joule-dev-kit.png)
 
 ## Flashing the image
 ## 烧录镜像
@@ -36,9 +36,9 @@ Before you begin flashing, you will need the following items in addition to your
 
       USB 键盘(可选)
 
-To flash Android Things onto your board, download the preview image in the [Android Things Console](https://partner.android.com/things/console) (see the [release notes](https://developer.android.google.cn/things/preview/releases.html#developer_preview_5)) and follow these steps:
+To flash Android Things onto your board, download the preview image in the [Android Things Console](https://partner.android.com/things/console) (see the [release notes](../preview/releases.html#developer_preview_5)) and follow these steps:
 
-先在 [Android Things 控制台](https://partner.android.com/things/console) 中下载 Android Things 镜像(请参阅[发行说明](https://developer.android.google.cn/things/preview/releases.html#developer_preview_5)) ，再按照以下步骤完成镜像烧录。
+先在 [Android Things 控制台](https://partner.android.com/things/console) 中下载 Android Things 镜像(请参阅[发行说明](../preview/releases.html#developer_preview_5)) ，再按照以下步骤完成镜像烧录。
 
 ### Step 1: Install Fastboot
 ### 第一步：安装 Fastboot
@@ -52,7 +52,7 @@ If this is your first time installing Android Things on the Joule, you need to u
 Connect the board to your host computer as shown below:  
 按照下面的方法将Joule连接到您的计算机：
 
-![""](https://developer.android.google.cn/things/images/joule-connections.png)
+![""](../images/joule-connections.png)
 
 1.  Connect a 12V adapter to the power input connector.
 
@@ -140,7 +140,7 @@ Before connecting your board to a Wi-Fi network, ensure the provided antennas ar
 
 在您的设备连接到 Wi-Fi 网络前，请先确保天线已经连接到您设备的 u.FL Wi-Fi 连接器上，如下所示：
 
-![""](https://developer.android.google.cn/things/images/joule-antenna.png)
+![""](../images/joule-antenna.png)
 
 **Note:** he Joule can't resolve Wi-Fi signals if you proceed without connecting an antenna.
 
@@ -163,7 +163,7 @@ Once you can access a shell prompt, follow these steps:
 
 一旦您可以访问 shell 提示符，请执行以下步骤:  
 
-1.  Send an intent to the Wi-Fi service that includes the SSID of your local network. Your [board](https://developer.android.google.cn/things/hardware/developer-kits.html) must support the network protocol and frequency band of the wireless network in order to establish a connection.  
+1.  Send an intent to the Wi-Fi service that includes the SSID of your local network. Your [board](../hardware/developer-kits.html) must support the network protocol and frequency band of the wireless network in order to establish a connection.  
 
 设备向 Wi-Fi 服务发送一个包含本地网络 SSID 的连接请求包。因要和Wi-Fi 建立连接，设备必须支持相关的无线网络协议和频带。
 
@@ -262,7 +262,7 @@ To access the serial console, connect a micro USB cable to the board as shown be
 
 如果您要访问串口控制台，请按照下图所示，连接 micro USB 线到设备上。
 
-![""](https://developer.android.google.cn/things/images/joule-console.png)
+![""](../images/joule-console.png)
 
 Open a connection to the USB serial device on your development computer using a terminal program, such as [PuTTY](http://www.putty.org/) (Windows), [Serial](https://www.decisivetactics.com/products/serial/) (Mac OS), or [Minicom](https://en.wikipedia.org/wiki/Minicom) (Linux). The serial port parameters for the console are as follows:
 

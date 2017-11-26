@@ -14,7 +14,7 @@ UART data transfer is **_full-duplex_**, meaning data can be sent and received a
 
 UART 用 **全双工** 模式来传输数据，意味着同一时间能完成数据的收发操作。一般 UART 的数据传输速度比 I<sup>2</sup>C 还快， 由于没有共享的时钟信号，两个设备之间会以双方约定好的，通用的传输速率来传输数据，这种传输方式也可以使单个设备的时钟有些须误差时可以自动避免传输错误。
 
-![""](https://developer.android.google.cn/things/images/uart-connections.png)
+![""](../../images/uart-connections.png)
 
 UART peripherals typically come in two flavors:
 
@@ -28,9 +28,9 @@ UART 外设一般以两种形式存在：
 
 	5线端口加入了请求发送 (RTS) 和 (CTS) 清除发送 (CTS) 信号这两种 **硬件流控**  信号。 流控保证当接收数据的设备的FIFO满时，发送数据的设备要等待，直到FIFO不为满时再发送数据。
 
-Unlike [SPI](https://developer.android.google.cn/things/sdk/pio/spi.html) and [I2C](https://developer.android.google.cn/things/sdk/pio/i2c.html), UART only supports point-to-point communication between two devices.
+Unlike [SPI](../../sdk/pio/spi.html) and [I2C](../../sdk/pio/i2c.html), UART only supports point-to-point communication between two devices.
 
-与 [SPI](https://developer.android.google.cn/things/sdk/pio/spi.html) 和 [I2C](https://developer.android.google.cn/things/sdk/pio/i2c.html) 不同的时， UART 只支持两个设备之间的点对点信号传输。
+与 [SPI](../../sdk/pio/spi.html) 和 [I2C](../../sdk/pio/i2c.html) 不同的时， UART 只支持两个设备之间的点对点信号传输。
 
 ## Managing the connection
 
@@ -108,7 +108,7 @@ Every character sent across the UART is wrapped in a **_data frame_**, which con
 
 **数据帧** 包含了经过 UART 端口传输的第一个字符， 数据帧一般包括以下内容:
 
-![""](https://developer.android.google.cn/things/images/uart-frame.png)
+![""](../../images/uart-frame.png)
 
 * **Start Bit** - Before sending data, the line is held active for a fixed time interval of 1 bit duration to indicate the start of a new character.
 
@@ -164,7 +164,7 @@ If your device supports 5-wire UART ports, enabling hardware flow control can in
 
 如果您的设备支持5线的端口，使能硬件流控能够提高数据传输的稳定性。通常来说，硬件流控也保证在一个很高的波特率时，不怎么会丢失接收数据。
 
-![""](https://developer.android.google.cn/things/images/uart-flow-control.png)
+![""](../../images/uart-flow-control.png)
 
 With hardware flow control enabled, the UART asserts the Request to Send (RTS) signal when the receive buffer on the device is full and cannot accept any more data. The signal will be cleared once the buffer has been drained. Similarly, the UART monitors the Clear to Send (CTS) signal, and will pause transmitting data if it sees that line asserted by the peripheral device.
 

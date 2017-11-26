@@ -6,7 +6,7 @@ To allow app developers to register new device drivers with the framework, Andro
 
 为了让应用开发者们在 framework 内注册新的设备驱动，Android Things 引入了**用户驱动**这一概念。用户驱动即那些继承自 Android Framework 中已存在服务，并且在应用内部注册的组件。它能够让任何应用注入硬件事件到 framework 中，于是其它应用能够使用标准的 Android API 来处理这些事件。
 
-![](https://developer.android.google.cn/things/images/driver-stack.png)
+![](../../images/driver-stack.png)
 
 **Note:** You cannot customize the behavior of device drivers in the [Linux kernel](https://source.android.google.cn/devices/#Linux%20kernel) or [Hardware Abstraction Layer](https://source.android.google.cn/devices/#Hardware%20Abstraction%20Layer) (HAL) to add new functionality to a device.
 
@@ -19,9 +19,9 @@ To allow app developers to register new device drivers with the framework, Andro
 
 * * *
 
-In many apps, using [Peripheral I/O](https://developer.android.google.cn/things/sdk/pio/index.html) to communicate directly with external hardware devices is sufficient. However, there are some benefits to integrating your hardware with the rest of the Android framework:
+In many apps, using [Peripheral I/O](../../sdk/pio/index.html) to communicate directly with external hardware devices is sufficient. However, there are some benefits to integrating your hardware with the rest of the Android framework:
 
-在许多应用中，使用 [Peripheral I/O](https://developer.android.google.cn/things/sdk/pio/index.html) 来和外部硬件进行通信是完全足够的。然而，集成您的硬件到 Android framework 中是有一些好处的：
+在许多应用中，使用 [Peripheral I/O](../../sdk/pio/index.html) 来和外部硬件进行通信是完全足够的。然而，集成您的硬件到 Android framework 中是有一些好处的：
 
 *   **Portability**: Application code that purely targets the Android framework can run on a variety of different boards and configurations without additional abstractions for the device driver implementation.
 
@@ -43,21 +43,21 @@ In many apps, using [Peripheral I/O](https://developer.android.google.cn/things/
 
 * * *
 
-**[GPS](https://developer.android.google.cn/things/sdk/drivers/gps.html)** - GPS provides high accuracy physical location information to apps. Integrating the location results from GPS devices with a user driver allows the framework to connect that data with other location sources, such as WiFi, and Google's [Fused Location Provider](https://developers.google.cn/android/reference/com/google/android/gms/location/FusedLocationProviderApi).
+**[GPS](../../sdk/drivers/gps.html)** - GPS provides high accuracy physical location information to apps. Integrating the location results from GPS devices with a user driver allows the framework to connect that data with other location sources, such as WiFi, and Google's [Fused Location Provider](https://developers.google.cn/android/reference/com/google/android/gms/location/FusedLocationProviderApi).
 
-**[GPS](https://developer.android.google.cn/things/sdk/drivers/gps.html)** - GPS 为应用提供高精度的地理位置信息。使用用户驱动从 GPS 设备集成位置信息，能够使 framework 像连接其它位置源的数据一样。例如 WiFi, 或者 Google 的 [Fused Location Provider](https://developers.google.cn/android/reference/com/google/android/gms/location/FusedLocationProviderApi).
+**[GPS](../../sdk/drivers/gps.html)** - GPS 为应用提供高精度的地理位置信息。使用用户驱动从 GPS 设备集成位置信息，能够使 framework 像连接其它位置源的数据一样。例如 WiFi, 或者 Google 的 [Fused Location Provider](https://developers.google.cn/android/reference/com/google/android/gms/location/FusedLocationProviderApi).
 
-**[HID](https://developer.android.google.cn/things/sdk/drivers/input.html)** - Human Interface Devices (HID) provide user input to apps. Touch pads, keyboards, and game controllers are all examples of devices that provide this type of input. Input user drivers let devices interact with the enhanced input framework APIs, such as [Gesture Support](https://developer.android.google.cn/training/gestures/index.html) or [Drag and Drop](https://developer.android.google.cn/guide/topics/ui/drag-drop.html).
+**[HID](../../sdk/drivers/input.html)** - Human Interface Devices (HID) provide user input to apps. Touch pads, keyboards, and game controllers are all examples of devices that provide this type of input. Input user drivers let devices interact with the enhanced input framework APIs, such as [Gesture Support](https://developer.android.google.cn/training/gestures/index.html) or [Drag and Drop](https://developer.android.google.cn/guide/topics/ui/drag-drop.html).
 
-**[HID](https://developer.android.google.cn/things/sdk/drivers/input.html)** - 人体接口设备 (HID) 提供人体输入给应用。触控板，键盘以及其它游戏控制器是提供此类型输入的一些例子。 “输入用户驱动” 能够让设备与加强的输入框架 API 间进行交互, 例如 [Gesture Support](https://developer.android.google.cn/training/gestures/index.html) or [Drag and Drop](https://developer.android.google.cn/guide/topics/ui/drag-drop.html).
+**[HID](../../sdk/drivers/input.html)** - 人体接口设备 (HID) 提供人体输入给应用。触控板，键盘以及其它游戏控制器是提供此类型输入的一些例子。 “输入用户驱动” 能够让设备与加强的输入框架 API 间进行交互, 例如 [Gesture Support](https://developer.android.google.cn/training/gestures/index.html) or [Drag and Drop](https://developer.android.google.cn/guide/topics/ui/drag-drop.html).
 
-**[Sensors](https://developer.android.google.cn/things/sdk/drivers/sensors.html)** - Sensors measure and report the conditions of the physical environment. The Android sensor framework implements **_sensor fusion_** to combine the raw data from multiple physical sensors into a single virtual sensor. This is particularly common with motion sensors, such as accelerometers and gyroscopes. Connecting your sensor to the framework with a user driver allows the data it produces to be included in sensor fusion.
+**[Sensors](../../sdk/drivers/sensors.html)** - Sensors measure and report the conditions of the physical environment. The Android sensor framework implements **_sensor fusion_** to combine the raw data from multiple physical sensors into a single virtual sensor. This is particularly common with motion sensors, such as accelerometers and gyroscopes. Connecting your sensor to the framework with a user driver allows the data it produces to be included in sensor fusion.
 
-**[传感器](https://developer.android.google.cn/things/sdk/drivers/sensors.html)** - 传感器测量并上报物理环境的情况。Android 的传感器框架实现了**传感器融合**，即将各种物理传感器中的原始数据合并到一个虚拟传感器上。这与运动传感器，例如加速度计和陀螺仪的做法部分类似。使用用户驱动连接传感器到 framework 中能够让传感器上报的数据被包含进融合传感器中。
+**[传感器](../../sdk/drivers/sensors.html)** - 传感器测量并上报物理环境的情况。Android 的传感器框架实现了**传感器融合**，即将各种物理传感器中的原始数据合并到一个虚拟传感器上。这与运动传感器，例如加速度计和陀螺仪的做法部分类似。使用用户驱动连接传感器到 framework 中能够让传感器上报的数据被包含进融合传感器中。
 
-**[Audio](https://developer.android.google.cn/things/sdk/drivers/audio.html)** - The Android media framework provides a rich API surface for audio playback and recording. Using audio drivers, you can extend the set of input/output devices available to Android. Your app can also define which audio device should be considered the default.
+**[Audio](../../sdk/drivers/audio.html)** - The Android media framework provides a rich API surface for audio playback and recording. Using audio drivers, you can extend the set of input/output devices available to Android. Your app can also define which audio device should be considered the default.
 
-**[声音](https://developer.android.google.cn/things/sdk/drivers/audio.html)** - Android 媒体框架提供了大量 API 以供播放声音和录音。使用声音驱动后，您能够以 Android 中的方式使用这些输入/输出设备。您的应用还能确定哪一个设备作为默认设备。
+**[声音](../../sdk/drivers/audio.html)** - Android 媒体框架提供了大量 API 以供播放声音和录音。使用声音驱动后，您能够以 Android 中的方式使用这些输入/输出设备。您的应用还能确定哪一个设备作为默认设备。
 
 ## Suggested Usage
 

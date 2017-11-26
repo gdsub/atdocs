@@ -5,7 +5,7 @@ Android Things makes developing connected embedded devices easy by providing the
 
 Android Things 通过提供相同的 Android 开发工具，一流的 Android 框架以及 Google 接口使得开发者毫不费力地开发嵌入式设备，在移动平台上获得成功。
 
-![""](https://developer.android.google.cn/things/images/platform-architecture.png)
+![""](../images/platform-architecture.png)
 
 Apps for embedded devices bring developers closer to hardware peripherals and drivers than phones and tablets. In addition, embedded devices typically present a single app experience to users. This document goes over the major additions, omissions, and differences between core Android development and Android Things.
 
@@ -33,9 +33,9 @@ The Peripheral I/O APIs let your apps communicate with sensors and actuators usi
 
 外设 I/O 接口让您的应用程序使用工业标准协议和接口与传感器和执行器通讯。支持下列接口：GPIO, PWM, I2C, SPI, UART。
 
-See the [Peripheral I/O API Guides](https://developer.android.google.cn/things/sdk/pio/index.html) for more information on how to use the APIs.
+See the [Peripheral I/O API Guides](../sdk/pio/index.html) for more information on how to use the APIs.
 
-关于如何使用接口的更多信息请看 [外设I/O接口指南](https://developer.android.google.cn/things/sdk/pio/index.html)
+关于如何使用接口的更多信息请看 [外设I/O接口指南](../sdk/pio/index.html)
 
 ### User Driver API
 
@@ -45,9 +45,9 @@ User drivers extend existing Android framework services and allow apps to inject
 
 用户驱动程序扩展了现存的 Android 框架服务，并且允许应用程序将硬件事件注入到其他应用程序可以使用标准 Android 接口访问的框架中。
 
-See the [User Driver API Guides](https://developer.android.google.cn/things/sdk/drivers/index.html) for more information on how to use the APIs.
+See the [User Driver API Guides](../sdk/drivers/index.html) for more information on how to use the APIs.
 
-关于如何使用接口的更多信息请看 [用户驱动程序接口指南](https://developer.android.google.cn/things/sdk/drivers/index.html)
+关于如何使用接口的更多信息请看 [用户驱动程序接口指南](../sdk/drivers/index.html)
 
 ## Behavior Changes
 
@@ -291,16 +291,16 @@ than the version bundled with the target release.
 
 每一批发布 Android Things 的 [Google Play Services](https://developer.android.google.cn/google/play-services/index.html) 最新稳定版，要求客户端SDK版本至少是 **11.0.0** 。 Android Things 不包括 [Google Play Store](https://developer.android.google.cn/distribute/googleplay/index.html) ，其负责自动更新设备上 的Google Play Services。因为设备上的 Google Play Services 版本是静态的，所以应用程序不能标记客户端SDK版本大于目标发布的捆绑版本。
 
- **Note:** During developer preview, the bundled version for each release is listed in the [release notes](https://developer.android.google.cn/things/preview/releases.html).
+ **Note:** During developer preview, the bundled version for each release is listed in the [release notes](../preview/releases.html).
     
- **注意:** 在开发者预览版中, 每个版本的捆绑版本都列在了 [发行说明](https://developer.android.google.cn/things/preview/releases.html) 中。 
+ **注意:** 在开发者预览版中, 每个版本的捆绑版本都列在了 [发行说明](../preview/releases.html) 中。 
 
 
 #### Cloud IoT Core
 
 #### 云物联网核心
 
-![](https://developer.android.google.cn/things/images/32px_Cloud_IoT_Colored.png)
+![](../images/32px_Cloud_IoT_Colored.png)
 
 [Cloud IoT Core](http://cloud.google.com/iot-core) is a fully managed service that allows you to easily and securely connect, manage, and ingest data from millions of globally dispersed devices. Cloud IoT Core, in combination with other services on Google Cloud IoT platform, provides a complete solution for collecting, processing, analyzing, and visualizing IoT data in real time to support improved operational efficiency.
 

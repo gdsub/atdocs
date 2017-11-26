@@ -10,25 +10,25 @@
 
 *   [Android Studio 3.0](https://developer.android.google.cn/studio/index.html) 或更高版本
 
-*   [Android Things developer board](https://developer.android.google.cn/things/hardware/developer-kits.html)
+*   [Android Things developer board](../../hardware/developer-kits.html)
 
-*   [Android Things 开发板](https://developer.android.google.cn/things/hardware/developer-kits.html)
+*   [Android Things 开发板](../../hardware/developer-kits.html)
 
-*   [Peripheral Kit](https://developer.android.google.cn/things/hardware/developer-kits.html#featured_peripherals)
+*   [Peripheral Kit](../../hardware/developer-kits.html#featured_peripherals)
 
-*   [外设套件](https://developer.android.google.cn/things/hardware/developer-kits.html#featured_peripherals)
+*   [外设套件](../../hardware/developer-kits.html#featured_peripherals)
 
 ## You should also read
 
 ## 您需要阅读如下资料
 
-*   [Peripheral I/O API Guide](https://developer.android.google.cn/things/sdk/pio/index.html)
+*   [Peripheral I/O API Guide](../../sdk/pio/index.html)
 
-*   [外设 I/O API 说明](https://developer.android.google.cn/things/sdk/pio/index.html)
+*   [外设 I/O API 说明](../../sdk/pio/index.html)
 
-*   [Hardware 101](https://developer.android.google.cn/things/hardware/hardware-101.html)
+*   [Hardware 101](../../hardware/hardware-101.html)
 
-*   [硬件 101](https://developer.android.google.cn/things/hardware/hardware-101.html)
+*   [硬件 101](../../hardware/hardware-101.html)
 
 
 Welcome to Android Things development!

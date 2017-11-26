@@ -6,7 +6,7 @@ The Intel® Edison compute module is a modular, small and powerful system on a c
 
 Intel® Edison 计算模块是一款模块化，体积小而且强大的片上系统（SoC），它包括CPU，MCU，内存，存储器，双频Wi-Fi和蓝牙。该模块可以安装到扩展板的系统上，使消费者和轻工业物联网应用的快速采用和原型化成为可能。
 
-![](https://developer.android.google.cn/things/images/intel-edison-arduino-kit.png) ![](https://developer.android.google.cn/things/images/intel-edison-sparkfun-kit.png)
+![](../images/intel-edison-arduino-kit.png) ![](../images/intel-edison-sparkfun-kit.png)
 
 ## Flashing the image
 
@@ -22,7 +22,7 @@ Before you begin flashing, you will need the following items in addition to your
 
 *   Micro-USB 线
 
-To flash Android Things onto your board, download the preview image in the [Android Things Console](https://partner.android.com/things/console) (see the [release notes](https://developer.android.google.cn/things/preview/releases.html#developer_preview_5)) and follow these steps:
+To flash Android Things onto your board, download the preview image in the [Android Things Console](https://partner.android.com/things/console) (see the [release notes](../preview/releases.html#developer_preview_5)) and follow these steps:
 
 将 Android Things 烧录到开发板之前，请先访问 [Android Things 控制台](https://partner.android.com/things/console) 下载预览版镜像，然后参考以下步骤：
 
@@ -53,7 +53,7 @@ Connect the board to your host computer:
 
 **针对 Arduino 扩展板的操作步骤：**
 
-![""](https://developer.android.google.cn/things/images/edison-arduino-connections.png)
+![""](../images/edison-arduino-connections.png)
 
 * 	Ensure switch **SW1** is in the position _towards_ the micro USB ports.
 
@@ -76,7 +76,7 @@ Connect the board to your host computer:
 
 **针对 Sparkfun 扩展模块的操作步骤：**
 
-![""](https://developer.android.google.cn/things/images/edison-sparkfun-connections.png)
+![""](../images/edison-sparkfun-connections.png)
 
 *	Connect a USB cable to the **OTG** connector.
 
@@ -172,9 +172,9 @@ Once you can access a shell prompt, follow these steps:
 
 连接到终端命令行以后, 接着做以下步骤:
 
-* 	Send an intent to the Wi-Fi service that includes the SSID of your local network. Your [board](https://developer.android.google.cn/things/hardware/developer-kits.html) must support the network protocol and frequency band of the wireless network in order to establish a connection.
+* 	Send an intent to the Wi-Fi service that includes the SSID of your local network. Your [board](../hardware/developer-kits.html) must support the network protocol and frequency band of the wireless network in order to establish a connection.
 
-	发送一条包含本地无线网络 SSID 等参数的消息到Wi-Fi服务。 您的 [开发板](https://developer.android.google.cn/things/hardware/developer-kits.html) 必须支持该无线网络的协议以及频段才能够建立网络连接。
+	发送一条包含本地无线网络 SSID 等参数的消息到Wi-Fi服务。 您的 [开发板](../hardware/developer-kits.html) 必须支持该无线网络的协议以及频段才能够建立网络连接。
 
 
         $ am startservice \    -n com.google.wifisetup/.WifiSetupService \    -a WifiSetupService.Connect
@@ -319,13 +319,13 @@ To access the serial console, connect a micro USB cable to the board as follows:
 
 **对于 Arduino 扩展板：** 连接到 **J3**.
 
-![""](https://developer.android.google.cn/things/images/edison-arduino-console.png)
+![""](../images/edison-arduino-console.png)
 
 **For Sparkfun Block:** Connect to **CONSOLE**.
 
 **对于 Sparkfun 扩展模块：** 连接到 **CONSOLE**.
 
-![""](https://developer.android.google.cn/things/images/edison-sparkfun-console.png)
+![""](../images/edison-sparkfun-console.png)
 
 Open a connection to the USB serial device on your development computer using a terminal program, such as [PuTTY](http://www.putty.org/) (Windows), [Serial](https://www.decisivetactics.com/products/serial/) (Mac OS), or [Minicom](https://en.wikipedia.org/wiki/Minicom) (Linux). The serial port parameters for the console are as follows:
 

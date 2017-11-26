@@ -3,9 +3,9 @@
 # 传感器
 
 
-The Android [sensor framework](https://developer.android.google.cn/guide/topics/sensors/sensors_overview.html) supports a wide variety of sensor types to measure the conditions of the physical environment and read the raw data from apps. Using sensor drivers, your apps can extend this framework and add new sensor devices connected over [Peripheral I/O](https://developer.android.google.cn/things/sdk/pio/index.html).
+The Android [sensor framework](https://developer.android.google.cn/guide/topics/sensors/sensors_overview.html) supports a wide variety of sensor types to measure the conditions of the physical environment and read the raw data from apps. Using sensor drivers, your apps can extend this framework and add new sensor devices connected over [Peripheral I/O](../../sdk/pio/index.html).
 
-Android 的 [传感器框架](https://developer.android.google.cn/guide/topics/sensors/sensors_overview.html) 支持的传感器类型相对广泛，使用该框架可以测量物理环境的状态并从应用中读取原始数据。而通过使用传感器驱动，您的应用可以扩展这个框架，并且可以添加连接到 [Peripheral I/O](https://developer.android.google.cn/things/sdk/pio/index.html) 上的新设备。
+Android 的 [传感器框架](https://developer.android.google.cn/guide/topics/sensors/sensors_overview.html) 支持的传感器类型相对广泛，使用该框架可以测量物理环境的状态并从应用中读取原始数据。而通过使用传感器驱动，您的应用可以扩展这个框架，并且可以添加连接到 [Peripheral I/O](../../sdk/pio/index.html) 上的新设备。
 
 The data from these sensors is delivered through the same [SensorManager](https://developer.android.google.cn/reference/android/hardware/SensorManager.html) APIs as the built-in Android sensors. Your app can implement a driver to connect a new sensor of a known type, such as an accelerometer, or a sensor type that Android doesn't currently define, such as a blood glucose sensor.
 

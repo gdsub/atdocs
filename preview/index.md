@@ -30,9 +30,9 @@ See [Building Your First App](https://developer.android.google.cn/training/basic
 
 * * *
 
-Because Android Things has a few key differences compared to the core Android OS, read the [Overview](https://developer.android.google.cn/things/sdk/index.html) to understand key concepts that you'll need to understand.
+Because Android Things has a few key differences compared to the core Android OS, read the [Overview](../sdk/index.html) to understand key concepts that you'll need to understand.
 
-由于 Android Things 与 Android 系统有一些关键性的差异，请先阅读[概览](https://developer.android.google.cn/things/sdk/index.html)以理解必知的主要概念。
+由于 Android Things 与 Android 系统有一些关键性的差异，请先阅读[概览](../sdk/index.html)以理解必知的主要概念。
 
 ## Get Hardware
 
@@ -40,9 +40,9 @@ Because Android Things has a few key differences compared to the core Android OS
 
 * * *
 
-Before you begin, you need a supported development board. You can compare the available boards on the [Developer Kits](https://developer.android.google.cn/things/hardware/developer-kits.html) page.
+Before you begin, you need a supported development board. You can compare the available boards on the [Developer Kits](../hardware/developer-kits.html) page.
 
-在开始之前，您还需要一块受支持的开发板。您可以在[开发者套件](https://developer.android.google.cn/things/hardware/developer-kits.html)页参照可用的开发板。
+在开始之前，您还需要一块受支持的开发板。您可以在[开发者套件](../hardware/developer-kits.html)页参照可用的开发板。
 
 ## Flash Android Things
 
@@ -54,17 +54,17 @@ Once you select a board, flash and bring up your hardware with the instructions 
 
 一旦您选择好了开发板，就可以按照相对应的硬件入门指南，刷入 Android Things。
 
-*   [NXP i.MX7D](https://developer.android.google.cn/things/hardware/imx7d.html)
-*   [NXP i.MX6UL](https://developer.android.google.cn/things/hardware/imx6ul.html)
-*   [Raspberry Pi 3](https://developer.android.google.cn/things/hardware/raspberrypi.html)
-*   [Intel Edison](https://developer.android.google.cn/things/hardware/edison.html)
-*   [Intel Joule](https://developer.android.google.cn/things/hardware/joule.html)
+*   [NXP i.MX7D](../hardware/imx7d.html)
+*   [NXP i.MX6UL](../hardware/imx6ul.html)
+*   [Raspberry Pi 3](../hardware/raspberrypi.html)
+*   [Intel Edison](../hardware/edison.html)
+*   [Intel Joule](../hardware/joule.html)
 
-- [NXP i.MX7D](https://developer.android.google.cn/things/hardware/imx7d.html)
-- [NXP i.MX6UL](https://developer.android.google.cn/things/hardware/imx6ul.html)
-- [Raspberry Pi 3](https://developer.android.google.cn/things/hardware/raspberrypi.html)
-- [Intel Edison](https://developer.android.google.cn/things/hardware/edison.html)
-- [Intel Joule](https://developer.android.google.cn/things/hardware/joule.html)
+- [NXP i.MX7D](../hardware/imx7d.html)
+- [NXP i.MX6UL](../hardware/imx6ul.html)
+- [Raspberry Pi 3](../hardware/raspberrypi.html)
+- [Intel Edison](../hardware/edison.html)
+- [Intel Joule](../hardware/joule.html)
 
 ## Set Up Your Development Environment
 
@@ -104,9 +104,9 @@ Once you select a board, flash and bring up your hardware with the instructions 
 
 * * *
 
-Now that you have your environment set up, see the [Building Your First Device](https://developer.android.google.cn/things/training/first-device/index.html) training class to start developing for Android Things.
+Now that you have your environment set up, see the [Building Your First Device](../training/first-device/index.html) training class to start developing for Android Things.
 
-现在您已经搭建好了开发环境。请阅读[开发您的第一台设备](https://developer.android.google.cn/things/training/first-device/index.html)培训教程，开始您的 Android Things 开发之旅吧。
+现在您已经搭建好了开发环境。请阅读[开发您的第一台设备](../training/first-device/index.html)培训教程，开始您的 Android Things 开发之旅吧。
 
 ## More samples
 
@@ -114,6 +114,6 @@ Now that you have your environment set up, see the [Building Your First Device](
 
 * * *
 
-For assistance building more complex applications with Android Things, review additional examples in the [Samples](https://developer.android.google.cn/things/sdk/samples.html) section.
+For assistance building more complex applications with Android Things, review additional examples in the [Samples](../sdk/samples.html) section.
 
-为了帮助您能够开发出更强大的 Android Things 应用，可在[示例](https://developer.android.google.cn/things/sdk/samples.html)部分中查阅更多的示例。
+为了帮助您能够开发出更强大的 Android Things 应用，可在[示例](../sdk/samples.html)部分中查阅更多的示例。

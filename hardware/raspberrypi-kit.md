@@ -15,7 +15,7 @@ Open the box and make sure you have all of the components in the kit.
 
 打开包装盒确认所有配件齐全
 
-![inventory](https://developer.android.google.cn/things/images/rpi-starter-kit/inventory.jpg)
+![inventory](../images/rpi-starter-kit/inventory.jpg)
 
 <table>
 
@@ -25,7 +25,7 @@ Open the box and make sure you have all of the components in the kit.
 
 <td style="width:450px;">
 
-![Bubble_number_01](https://developer.android.google.cn/things/images/imx7d-kit/Bubble_number_01.png)
+![Bubble_number_01](../images/imx7d-kit/Bubble_number_01.png)
 
 Raspberry Pi 3 development board
 
@@ -34,7 +34,7 @@ Raspberry Pi 3 开发板</td>
 
 <td>
 
-![Bubble_number_02](https://developer.android.google.cn/things/images/imx7d-kit/Bubble_number_02.png)
+![Bubble_number_02](../images/imx7d-kit/Bubble_number_02.png)
 
 Micro SD card with adapter
 
@@ -47,14 +47,14 @@ Micro SD卡与转换卡槽</td>
 
 <td>
 
-![Bubble_number_03](https://developer.android.google.cn/things/images/imx7d-kit/Bubble_number_03.png)
+![Bubble_number_03](../images/imx7d-kit/Bubble_number_03.png)
 
 Rainbow HAT</td>
 
 
 <td>
 
-![Bubble_number_04](https://developer.android.google.cn/things/images/imx7d-kit/Bubble_number_04.png)
+![Bubble_number_04](../images/imx7d-kit/Bubble_number_04.png)
 
 Plastic bolts (x4)
 塑料螺丝（四个）
@@ -69,7 +69,7 @@ Plastic bolts (x4)
 
 <td>
 
-![Bubble_number_05](https://developer.android.google.cn/things/images/imx7d-kit/Bubble_number_05.png)
+![Bubble_number_05](../images/imx7d-kit/Bubble_number_05.png)
 
 Plastic wrench
 
@@ -78,7 +78,7 @@ Plastic wrench
 
 <td>
 
-![Bubble_number_06](https://developer.android.google.cn/things/images/imx7d-kit/Bubble_number_06.png)
+![Bubble_number_06](../images/imx7d-kit/Bubble_number_06.png)
 
 Plastic case layers (x5)
 
@@ -91,7 +91,7 @@ Plastic case layers (x5)
 
 <td>
 
-![Bubble_number_07](https://developer.android.google.cn/things/images/imx7d-kit/Bubble_number_07.png)
+![Bubble_number_07](../images/imx7d-kit/Bubble_number_07.png)
 
 Power adapter
 
@@ -100,7 +100,7 @@ Power adapter
 
 <td>
 
-![Bubble_number_08](https://developer.android.google.cn/things/images/imx7d-kit/Bubble_number_08.png)
+![Bubble_number_08](../images/imx7d-kit/Bubble_number_08.png)
 
 Power outlet adapters (x3)
 
@@ -139,7 +139,7 @@ The case encloses the Raspberry Pi and protects it.
 
 <td style="width:450px;">
 
-![case_step1](https://developer.android.google.cn/things/images/rpi-starter-kit/pibow-coupe_1.png)
+![case_step1](../images/rpi-starter-kit/pibow-coupe_1.png)
 
 
 <span style="font-size:1.2em; vertical-align: middle;">①</span> Locate the two clear plastic layers for the case. Each layer has a white protective film on one side. Use your fingernail to peel off this film.
@@ -149,7 +149,7 @@ The case encloses the Raspberry Pi and protects it.
 
 <td style="width:450px;">
 
-![case_step2](https://developer.android.google.cn/things/images/rpi-starter-kit/pibow-coupe-number.png)
+![case_step2](../images/rpi-starter-kit/pibow-coupe-number.png)
 
 
 <span style="font-size:1.2em; vertical-align: middle;">②</span> All of the plastic layers are numbered in the top left corner except for one (the top layer)
@@ -169,7 +169,7 @@ The case encloses the Raspberry Pi and protects it.
 <td>
 
 
-![case_step3](https://developer.android.google.cn/things/images/rpi-starter-kit/pibow-coupe_2.png)
+![case_step3](../images/rpi-starter-kit/pibow-coupe_2.png)
 
 
 <span style="font-size:1.2em; vertical-align: middle;">③</span> Find the layer with a "1" on it and place it on top of layer 0\. Find the layer with a "2" on it and place it on top of layer 1\. Make sure that the numbers are lined up in the top left corner.
@@ -180,7 +180,7 @@ The case encloses the Raspberry Pi and protects it.
 <td>
 
 
-![case_step4](https://developer.android.google.cn/things/images/rpi-starter-kit/pibow-coupe_3.png)
+![case_step4](../images/rpi-starter-kit/pibow-coupe_3.png)
 
 
 <span style="font-size:1.2em; vertical-align: middle;">④</span> Place the Raspberry Pi so that it rests inside layer 2.
@@ -195,7 +195,7 @@ The case encloses the Raspberry Pi and protects it.
 <td>
 
 
-![case_step5](https://developer.android.google.cn/things/images/rpi-starter-kit/pibow-coupe_4.png)
+![case_step5](../images/rpi-starter-kit/pibow-coupe_4.png)
 
 
 <span style="font-size:1.2em; vertical-align: middle;">⑤</span> Find the layer with a "3" on it and place it on top of the Raspberry Pi. Place the unnumbered layer on top of layer 3\. Make sure that the numbers are lined up in the top left corner.
@@ -206,7 +206,7 @@ The case encloses the Raspberry Pi and protects it.
 <td>
 
 
-![case_step6](https://developer.android.google.cn/things/images/rpi-starter-kit/pibow-coupe_5.png)
+![case_step6](../images/rpi-starter-kit/pibow-coupe_5.png)
 
 
 <span style="font-size:1.2em; vertical-align: middle;">⑥</span> Insert the four plastic bolts into the four corner holes in the case. Attach a nut to each of the bolts underneath the case. You can press down on the head of each bolt and use the included plastic wrench to tighten the nut.
@@ -235,7 +235,7 @@ Connect the Rainbow HAT to the Raspberry Pi.
 
 <td style="width:450px;">
 
-![hat_step1](https://developer.android.google.cn/things/images/rpi-starter-kit/locate_hat.jpg)
+![hat_step1](../images/rpi-starter-kit/locate_hat.jpg)
 
 
 <span style="font-size:1.2em; vertical-align: middle;">①</span> Locate the Rainbow HAT. The HAT has a 40-pin female connector. The Raspberry Pi has a 40-pin male connector. You will connect these together in the next step.
@@ -245,7 +245,7 @@ Connect the Rainbow HAT to the Raspberry Pi.
 
 <td style="width:450px;">
 
-![hat_step2](https://developer.android.google.cn/things/images/rpi-starter-kit/attach_hat.jpg)
+![hat_step2](../images/rpi-starter-kit/attach_hat.jpg)
 
 
 <span style="font-size:1.2em; vertical-align: middle;">②</span> Gently press the connector on the back of the Rainbow HAT onto the connector on the Raspberry Pi. Be sure to press straight down.
@@ -275,7 +275,7 @@ The power adapter may not have the right outlet adapter for your location. Do th
 
 <td style="width:450px;">
 
-![power_step1](https://developer.android.google.cn/things/images/rpi-starter-kit/press_tab.jpg)
+![power_step1](../images/rpi-starter-kit/press_tab.jpg)
 
 
 <span style="font-size:1.2em; vertical-align: middle;">①</span> Press down on the plastic tab below the outlet posts.
@@ -285,7 +285,7 @@ The power adapter may not have the right outlet adapter for your location. Do th
 
 <td style="width:450px;">
 
-![power_step2](https://developer.android.google.cn/things/images/rpi-starter-kit/remove_adapter.jpg)
+![power_step2](../images/rpi-starter-kit/remove_adapter.jpg)
 
 
 <span style="font-size:1.2em; vertical-align: middle;">②</span> Gently slide the outlet adapter off of the power adapter.
@@ -299,7 +299,7 @@ The power adapter may not have the right outlet adapter for your location. Do th
 
 <td style="width:450px;">
 
-![power_step3](https://developer.android.google.cn/things/images/rpi-starter-kit/insert_adapter.jpg)
+![power_step3](../images/rpi-starter-kit/insert_adapter.jpg)
 
 
 <span style="font-size:1.2em; vertical-align: middle;">③</span> Locate the correct outlet adapter for your location. Slide it onto the power adapter.
@@ -309,7 +309,7 @@ The power adapter may not have the right outlet adapter for your location. Do th
 
 <td style="width:450px;">
 
-![power_step4](https://developer.android.google.cn/things/images/rpi-starter-kit/click_adapter.jpg)
+![power_step4](../images/rpi-starter-kit/click_adapter.jpg)
 
 
 <span style="font-size:1.2em; vertical-align: middle;">④</span> Gently press the outlet adapter until it locks into place. You should hear a click.
@@ -329,18 +329,18 @@ The power adapter may not have the right outlet adapter for your location. Do th
 Your kit is now assembled. You will insert the micro SD card and connect the power cable in the installation instructions below.
 
 您的套件现在就拼装完了。您可以按照下面的安装指南插入 micro SD 卡和连接电源
-![final_result](https://developer.android.google.cn/things/images/rpi-starter-kit/final_result.jpg)
+![final_result](../images/rpi-starter-kit/final_result.jpg)
 
 
 ## Install Android Things
 ## 安装 Android Things
 * * *
 
-Follow the hardware setup [instructions](https://developer.android.google.cn/things/hardware/raspberrypi.html)
+Follow the hardware setup [instructions](../hardware/raspberrypi.html)
 
  to flash the latest version of Android Things on your Raspberry Pi development board.
  
-按照硬件设置 [指南](https://developer.android.google.cn/things/hardware/raspberrypi.html)
+按照硬件设置 [指南](../hardware/raspberrypi.html)
 
  在您的 Raspberry Pi 开发板上来烧录最新版的 Android Things
 
@@ -385,8 +385,8 @@ Follow these instructions to download and run a [sample](https://github.com/andr
 ## 下一步
 * * *
 
-*   Try one of the [other code samples](https://developer.android.google.cn/things/sdk/samples.html)
-*   尝试 [其他的示范程序](https://developer.android.google.cn/things/sdk/samples.html)
+*   Try one of the [other code samples](../sdk/samples.html)
+*   尝试 [其他的示范程序](../sdk/samples.html)
 
   Remember to uninstall any existing samples from the development board before installing a new one, so that one does not interfere with the other. For example, to uninstall the previous sample from the command line:
 
@@ -397,10 +397,10 @@ Follow these instructions to download and run a [sample](https://github.com/andr
         adb uninstall com.example.androidthings.button
 
 *   Take a look at the [Peripherals codelab](https://codelabs.developers.google.com/codelabs/androidthings-peripherals)
-or learn how to [build your first device](https://developer.android.google.cn/things/training/first-device/index.html)
+or learn how to [build your first device](../training/first-device/index.html)
  
 *   参照一下 [外设实验室](https://codelabs.developers.google.com/codelabs/androidthings-peripherals)
- 或者学习如何 [设置您的第一台设备](https://developer.android.google.cn/things/training/first-device/index.html)
+ 或者学习如何 [设置您的第一台设备](../training/first-device/index.html)
 
 
 *   Connect with the community at [g.co/iotdev](https://g.co/iotdev)

@@ -22,6 +22,6 @@ Using the console, developers and device makers can:
 
 *   向设备推送无线 (OTA) 更新，包括 OEM 应用程序和系统镜像的更新
 
-To get started, [create a new product](https://developer.android.google.cn/things/console/create.html).
+To get started, [create a new product](../console/create.html).
 
-让我们从[创建一个新产品](https://developer.android.google.cn/things/console/create.html)开始说起吧。
+让我们从[创建一个新产品](../console/create.html)开始说起吧。

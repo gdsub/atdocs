@@ -57,9 +57,9 @@ Raspberry Pi 有一个全速单　UART (UART0) 和一个迷您 UART (MINIUART)�
 
 <td>
 
-Pins BCM14/BCM15 expose RX/TX of the [serial debug console](https://developer.android.google.cn/things/hardware/raspberrypi.html#serial_debug_console)
+Pins BCM14/BCM15 expose RX/TX of the [serial debug console](../hardware/raspberrypi.html#serial_debug_console)
 
-BCM14/BCM15 引脚为 [串口调试控制台](https://developer.android.google.cn/things/hardware/raspberrypi.html#serial_debug_console) 的 RX/TX 接口
+BCM14/BCM15 引脚为 [串口调试控制台](../hardware/raspberrypi.html#serial_debug_console) 的 RX/TX 接口
 
 </td>
 
@@ -79,9 +79,9 @@ BCM14/BCM15 引脚为 [串口调试控制台](https://developer.android.google.c
 
 <td>
 
-Pins BCM14/BCM15 expose RX/TX of [UART0](https://developer.android.google.cn/things/sdk/pio/uart.html)
+Pins BCM14/BCM15 expose RX/TX of [UART0](../sdk/pio/uart.html)
 
-BCM14/BCM15 引脚为 [UART0](https://developer.android.google.cn/things/sdk/pio/uart.html) 的 RX/TX 接口
+BCM14/BCM15 引脚为 [UART0](../sdk/pio/uart.html) 的 RX/TX 接口
 
 </td>
 
@@ -101,9 +101,9 @@ BCM14/BCM15 引脚为 [UART0](https://developer.android.google.cn/things/sdk/pio
 
 <td>
 
-Pins BCM14/BCM15 expose RX/TX of [MINIUART](https://developer.android.google.cn/things/sdk/pio/uart.html)
+Pins BCM14/BCM15 expose RX/TX of [MINIUART](../sdk/pio/uart.html)
 
-BCM14/BCM15 引脚为 [MINIUART](https://developer.android.google.cn/things/sdk/pio/uart.html) 的 RX/TX 接口
+BCM14/BCM15 引脚为 [MINIUART](../sdk/pio/uart.html) 的 RX/TX 接口
 
 </td>
 
@@ -125,9 +125,9 @@ BCM14 或 BCM15</td>
 
 <td>
 
-Named pin (BCM14 or BCM15) is  [GPIO](https://developer.android.google.cn/things/sdk/pio/gpio.html) , other pin is idle
+Named pin (BCM14 or BCM15) is  [GPIO](../sdk/pio/gpio.html) , other pin is idle
 
-BCM14/BCM15 引脚为 [GPIO](https://developer.android.google.cn/things/sdk/pio/gpio.html) 接口， 其它的引脚空闲
+BCM14/BCM15 引脚为 [GPIO](../sdk/pio/gpio.html) 接口， 其它的引脚空闲
 
 </td>
 
@@ -211,9 +211,9 @@ Raspberry Pi 上的 PWM 驱动和音频系统 (I2S 和模拟)使用一个共享�
 
 <td>
 
-Pin BCM18 enabled as [PWM](https://developer.android.google.cn/things/sdk/pio/pwm.html)
+Pin BCM18 enabled as [PWM](../sdk/pio/pwm.html)
 
-BCM18 引脚为 [PWM](https://developer.android.google.cn/things/sdk/pio/pwm.html) 接口
+BCM18 引脚为 [PWM](../sdk/pio/pwm.html) 接口
 
 </td>
 
@@ -233,9 +233,9 @@ BCM18 引脚为 [PWM](https://developer.android.google.cn/things/sdk/pio/pwm.htm
 
 <td>
 
-Pin BCM18 enabled as [I2S](https://developer.android.google.cn/things/sdk/pio/i2s.html) BCLK
+Pin BCM18 enabled as [I2S](../sdk/pio/i2s.html) BCLK
 
-BCM18 引脚为 [I2S](https://developer.android.google.cn/things/sdk/pio/i2s.html) BCLK 接口
+BCM18 引脚为 [I2S](../sdk/pio/i2s.html) BCLK 接口
 
 </td>
 
@@ -255,9 +255,9 @@ BCM18 引脚为 [I2S](https://developer.android.google.cn/things/sdk/pio/i2s.htm
 
 <td>
 
-Named pin (BCM18) is [GPIO](https://developer.android.google.cn/things/sdk/pio/gpio.html)
+Named pin (BCM18) is [GPIO](../sdk/pio/gpio.html)
 
-BCM18 是 [GPIO](https://developer.android.google.cn/things/sdk/pio/gpio.html) 接口
+BCM18 是 [GPIO](../sdk/pio/gpio.html) 接口
 
 </td>
 

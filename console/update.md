@@ -29,20 +29,20 @@ To push a build for your product:
 
 为您的产品推送构建文件，步骤如下：
 
-1.  If you are not already on this tab, open the [Android Things Console](https://partner.android.com/things/console), click a product for which you previously created a [device build](https://developer.android.google.cn/things/console/build.html), and click the **OTA UPDATES** tab.
+1.  If you are not already on this tab, open the [Android Things Console](https://partner.android.com/things/console), click a product for which you previously created a [device build](../console/build.html), and click the **OTA UPDATES** tab.
 
-	如果您还没有处在本标签，请先打开 [Android Things 管理中心](https://partner.android.com/things/console)，点击您之前已准备好[构建文件](https://developer.android.google.cn/things/console/build.html)的产品项，然后点击 **OTA UPDATES** 标签。
+	如果您还没有处在本标签，请先打开 [Android Things 管理中心](https://partner.android.com/things/console)，点击您之前已准备好[构建文件](../console/build.html)的产品项，然后点击 **OTA UPDATES** 标签。
 
 2.  Click **START A NEW UPDATE**.
 
 
 	请点击 **START A NEW UPDATE**。
 
-3.  In the **Bundles** table, select an existing bundle or click **UPLOAD** to upload a new [one](https://developer.android.google.cn/things/console/app_bundle.html). Note that empty bundles are not supported for OTA updates.
+3.  In the **Bundles** table, select an existing bundle or click **UPLOAD** to upload a new [one](../console/app_bundle.html). Note that empty bundles are not supported for OTA updates.
 
-	在 **Bundles** 表格中，选中一个已有的 Bundle 或者点击 **UPLOAD** 上传一个新的 [Bundle](https://developer.android.google.cn/things/console/app_bundle.html) 。请注意，空 Bundle 不支持无线更新。
+	在 **Bundles** 表格中，选中一个已有的 Bundle 或者点击 **UPLOAD** 上传一个新的 [Bundle](../console/app_bundle.html) 。请注意，空 Bundle 不支持无线更新。
 
-    ![Update a build](https://developer.android.google.cn/things/images/console/update_push.png)
+    ![Update a build](../images/console/update_push.png)
 
 4.  In the **Android Things versions** table, select an OS version.
 
@@ -63,10 +63,10 @@ To push a build for your product:
 	点击 **PUSH**。该构建文件会被推送到所有的设备上，更新所有设备一般需要几个小时的时间。您可以在 **Current build** 表格查看构建文件的详情，包括已更新的设备数量等。
 
     ![View current
-    build](https://developer.android.google.cn/things/images/console/current_build_list.png)
+    build](../images/console/current_build_list.png)
 
    ![View current
-   build](https://developer.android.google.cn/things/images/console/current_build_list.png)
+   build](../images/console/current_build_list.png)
 
 ### How build updates work
 
@@ -123,5 +123,5 @@ You can view all builds that have been pushed. These builds are no longer active
 您可以查看所有推送过的构建文件。但这些文件不再有效。
 
 ![View push
-history](https://developer.android.google.cn/things/images/console/update_build_list.png)
+history](../images/console/update_build_list.png)
 

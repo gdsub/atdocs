@@ -27,13 +27,13 @@ For example, a PWM signal set to 50% duty is active for half of each cycle:
 
 例如，一个 PWM 信号设置了 50% 的占空比，表示每一个循环内，有一半时间，是处于活动状态。
 
-![](https://developer.android.google.cn/things/images/pwm-signal.png)
+![](../../images/pwm-signal.png)
 
 You can adjust the duty cycle to increase or decrease the average "on" time of the signal. The following diagram shows pulse trains at 0%, 25%, and 100% duty:
 
 您可以调整占空比来增加或者减少信号处于活动状态的的平均时间。下图表示脉冲阵列为 0%, 25%, 100% 时候的占空情况。
 
-![](https://developer.android.google.cn/things/images/pwm-duty.png)
+![](../../images/pwm-duty.png)
 
 **Note:** Most PWM hardware has to toggle at least once per cycle, so even duty values of 0% and 100% will have a small transition at the beginning of each cycle.
 

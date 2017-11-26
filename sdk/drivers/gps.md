@@ -9,9 +9,9 @@ GPS modules are receive-only devices that triangulate signals from remote satell
 
 GPS 模块是个单向接收的设备，它利用三角测量的方式从远程卫星获取信号，从而确定设备的实际地理位置。一旦 GPS 模块收集到足够用来计算准确位置的卫星数据后，它就会生成一个能够上报的有效位置信息 (一个 **定位**)。
 
-GPS modules typically connect to the host system via [UART](https://developer.android.google.cn/things/sdk/pio/uart.html), but may use other forms of [Peripheral I/O](https://developer.android.google.cn/things/sdk/pio/index.html). For example, they may contain additional [GPIO](https://developer.android.google.cn/things/sdk/pio/gpio.html) pins to control power management or report when the module has gained or lost a fix.
+GPS modules typically connect to the host system via [UART](../../sdk/pio/uart.html), but may use other forms of [Peripheral I/O](../../sdk/pio/index.html). For example, they may contain additional [GPIO](../../sdk/pio/gpio.html) pins to control power management or report when the module has gained or lost a fix.
 
-GPS 模块通常使用 [UART](https://developer.android.google.cn/things/sdk/pio/uart.html) 连接到设备系统, 也有可能使用其它类型的 [Peripheral I/O](https://developer.android.google.cn/things/sdk/pio/index.html)。例如，它们可能额外地包含 [GPIO](https://developer.android.google.cn/things/sdk/pio/gpio.html) 针脚来进行电源管理，或者上报设备何时获得或失去定位。
+GPS 模块通常使用 [UART](../../sdk/pio/uart.html) 连接到设备系统, 也有可能使用其它类型的 [Peripheral I/O](../../sdk/pio/index.html)。例如，它们可能额外地包含 [GPIO](../../sdk/pio/gpio.html) 针脚来进行电源管理，或者上报设备何时获得或失去定位。
 
 **Note:** The framework only supports a single source for GPS location data. You cannot register multiple GPS drivers.
 

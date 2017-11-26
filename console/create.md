@@ -43,10 +43,10 @@ Gather the following information:
 
 *   **产品名称** — 一个您希望内部使用的产品名称。我们推荐将内部产品名称和最终发售时的产品名称区分开来。产品名称在管理中心中对开发者可见，但对用户不可见。字数上限：70 个字符
 
-*   **System on Module (SOM) type**—[Hardware platform](https://developer.android.google.cn/things/hardware/developer-kits.html) on which you are building your Android Things product
+*   **System on Module (SOM) type**—[Hardware platform](../hardware/developer-kits.html) on which you are building your Android Things product
 
 
-*   **模块化系统 (SOM) 类型** — 选择在哪一个[硬件平台](https://developer.android.google.cn/things/hardware/developer-kits.html)之上开发 Android Things 产品
+*   **模块化系统 (SOM) 类型** — 选择在哪一个[硬件平台](../hardware/developer-kits.html)之上开发 Android Things 产品
 
 
 *   **Product description**—A brief paragraph that provides more detail to identify the product and its function. Maximum characters: 100
@@ -83,7 +83,7 @@ To create your product:
 
     点击 **CREATE A PRODUCT**。
 
-    ![Create new product](https://developer.android.google.cn/things/images/console/create_new_product.png)
+    ![Create new product](../images/console/create_new_product.png)
 
     The **Create new product** dialog appears.
 
@@ -140,9 +140,9 @@ If you delete a product, the product information is deleted. Deletions cannot be
 
 如果您删除了一个产品，产品信息也随之被删除。删除操作不可恢复。
 
-After deletion, devices flashed from that product will no longer receive [updates](https://developer.android.google.cn/things/console/update.html).
+After deletion, devices flashed from that product will no longer receive [updates](../console/update.html).
 
-执行了删除操作之后，写入该产品的设备不会再收到 [更新提醒](https://developer.android.google.cn/things/console/update.html)。
+执行了删除操作之后，写入该产品的设备不会再收到 [更新提醒](../console/update.html)。
 
 To delete a product:
 
@@ -174,7 +174,7 @@ To delete a product:
 
 * * *
 
-The next step is to [configure the product settings](https://developer.android.google.cn/things/console/configure.html).
+The next step is to [configure the product settings](../console/configure.html).
 
-下一步是 [产品配置](https://developer.android.google.cn/things/console/configure.html)。
+下一步是 [产品配置](../console/configure.html)。
 

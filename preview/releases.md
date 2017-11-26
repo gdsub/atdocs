@@ -140,14 +140,14 @@ This preview release is for **developers and early adopters** to use for develop
 
 *   System power management is currently disabled. Devices will not suspend and wake locks are not necessary.
 *   Google Play Services requires 2-3 minutes on first boot to pre-optimize dex. App installs are blocked until this process is complete.
-*   Input events from [user drivers](https://developer.android.google.cn/things/sdk/drivers/index.html) will not wake the display from sleep.
+*   Input events from [user drivers](../sdk/drivers/index.html) will not wake the display from sleep.
 *   Devices cannot currently act as an A2DP audio source over Bluetooth.
 
 ### 已知问题
 
 *   系统电源管理当前已被禁用。设备不会休眠挂起，也无需唤醒服务。
 *   Google Play 服务 在第一次启动时需要 2-3 分钟的 DEX 预优化。优化完成后才能正常的安装应用。
-*   来自 [用户驱动程序](https://developer.android.google.cn/things/sdk/drivers/index.html) 的输入事件不会从睡眠中唤醒显示屏。
+*   来自 [用户驱动程序](../sdk/drivers/index.html) 的输入事件不会从睡眠中唤醒显示屏。
 *   设备当前不能通过蓝牙作为 A2DP 音频源。
 
 #### Peripheral I/O
@@ -248,11 +248,11 @@ Android O 目前是为手机和平板电脑设计的开发者预览版, DP5 基�
 
 #### NXP i.MX6UL SprIoT
 
-Android Things is now supported on the [NXP® SprIoT i.MX6UL](http://wireless.murata.com/eng/products/wireless-connectivity-platforms/iot-system-on-module/spriot-6ul.html) development platform. Learn more about this device and its capabilities on the [developer kits](https://developer.android.google.cn/things/hardware/developer-kits.html) page.
+Android Things is now supported on the [NXP® SprIoT i.MX6UL](http://wireless.murata.com/eng/products/wireless-connectivity-platforms/iot-system-on-module/spriot-6ul.html) development platform. Learn more about this device and its capabilities on the [developer kits](../hardware/developer-kits.html) page.
 
 #### NXP i.MX6UL SprIoT
 
-Android Things 现在支持 [NXP® SprIoT i.MX6UL](http://wireless.murata.com/eng/products/wireless-connectivity-platforms/iot-system-on-module/spriot-6ul.html) 开发平台。详细了解此设备及其功能请访问 [开发工具包页面](https://developer.android.google.cn/things/hardware/developer-kits.html) 。
+Android Things 现在支持 [NXP® SprIoT i.MX6UL](http://wireless.murata.com/eng/products/wireless-connectivity-platforms/iot-system-on-module/spriot-6ul.html) 开发平台。详细了解此设备及其功能请访问 [开发工具包页面](../hardware/developer-kits.html) 。
 
 #### Legacy Board Support
 
@@ -264,19 +264,19 @@ With Intel discontinuing the Edison and Joule hardware designs, these platforms 
 
 #### Device Management APIs
 
-This release introduces a new `DeviceManager` service for apps to control device state, such as executing a factory reset or device reboot. See the [reference documentation](https://developer.android.google.cn/things/reference/com/google/android/things/devicemanagement/package-summary.html) to learn more.
+This release introduces a new `DeviceManager` service for apps to control device state, such as executing a factory reset or device reboot. See the [reference documentation](../reference/com/google/android/things/devicemanagement/package-summary.html) to learn more.
 
 #### 设备管理 API
 
-此版本引入了新的 `DeviceManager` 服务以控制设备状态，可实现执行恢复出厂设置或者设备重启等。请参阅 [参考文档](https://developer.android.google.cn/things/reference/com/google/android/things/devicemanagement/package-summary.html) 了解更多信息。
+此版本引入了新的 `DeviceManager` 服务以控制设备状态，可实现执行恢复出厂设置或者设备重启等。请参阅 [参考文档](../reference/com/google/android/things/devicemanagement/package-summary.html) 了解更多信息。
 
 #### User Driver Permissions
 
-Apps are now required to request permission to manage user drivers registered with the framework. Review the updated [user driver API guides](https://developer.android.google.cn/things/sdk/drivers/index.html) for more details.
+Apps are now required to request permission to manage user drivers registered with the framework. Review the updated [user driver API guides](../sdk/drivers/index.html) for more details.
 
 #### 用户驱动权限
 
-当应用程序需要使用注册到框架中的用户驱动，应用程序需请求相应权限。有关详细信息, 请查看更新的 [用户驱动程序 API 指南](https://developer.android.google.cn/things/sdk/drivers/index.html)。
+当应用程序需要使用注册到框架中的用户驱动，应用程序需请求相应权限。有关详细信息, 请查看更新的 [用户驱动程序 API 指南](../sdk/drivers/index.html)。
 
 #### OpenGL 2.0 Support
 
@@ -288,17 +288,17 @@ With the update to Android O, [OpenGL ES 2.0](https://developer.android.google.c
 
 #### Runtime Pin Configuration
 
-Raspberry Pi 3 now supports runtime pin configuration for [Peripheral I/O](https://developer.android.google.cn/things/sdk/pio/index.html). This enables apps to configure pins as [GPIO](https://developer.android.google.cn/things/sdk/pio/gpio.html) that were previously reserved for other peripheral functions, and removes the need to edit the `config.txt` file to enable configuration modes for UART and audio. Review the updated [I/O pinout](https://developer.android.google.cn/things/hardware/raspberrypi-io.html) and [mode matrix](https://developer.android.google.cn/things/hardware/raspberrypi-mode-matrix.html) for more information.
+Raspberry Pi 3 now supports runtime pin configuration for [Peripheral I/O](../sdk/pio/index.html). This enables apps to configure pins as [GPIO](../sdk/pio/gpio.html) that were previously reserved for other peripheral functions, and removes the need to edit the `config.txt` file to enable configuration modes for UART and audio. Review the updated [I/O pinout](../hardware/raspberrypi-io.html) and [mode matrix](../hardware/raspberrypi-mode-matrix.html) for more information.
 
 #### 运行时引脚管理
 
-Raspberry Pi 3 现在能支持 [外设 I/O](https://developer.android.google.cn/things/sdk/pio/index.html) 的运行时引脚管理。这使得应用程序可以配置之前为其他外设方法保留的引脚，作为 [GPIO](https://developer.android.google.cn/things/sdk/pio/gpio.html) 使用。同时不在需要编辑 `config.txt` 文件来激活 UART 和音频的设置模式。有关详细信息，请参阅更新的 [I/O 引脚分配](https://developer.android.google.cn/things/hardware/raspberrypi-io.html) 和 [模式矩阵](https://developer.android.google.cn/things/hardware/raspberrypi-mode-matrix.html).
+Raspberry Pi 3 现在能支持 [外设 I/O](../sdk/pio/index.html) 的运行时引脚管理。这使得应用程序可以配置之前为其他外设方法保留的引脚，作为 [GPIO](../sdk/pio/gpio.html) 使用。同时不在需要编辑 `config.txt` 文件来激活 UART 和音频的设置模式。有关详细信息，请参阅更新的 [I/O 引脚分配](../hardware/raspberrypi-io.html) 和 [模式矩阵](../hardware/raspberrypi-mode-matrix.html).
 
 ### Known Issues
 
 *   System power management is currently disabled. Devices will not suspend and wake locks are not necessary.
 *   Google Play Services requires 2-3 minutes on first boot to pre-optimize dex. App installs are blocked until this process is complete.
-*   Input events from [user drivers](https://developer.android.google.cn/things/sdk/drivers/index.html) will not wake the display from sleep.
+*   Input events from [user drivers](../sdk/drivers/index.html) will not wake the display from sleep.
 *   Devices cannot currently act as an A2DP audio source over Bluetooth.
 
 
@@ -306,7 +306,7 @@ Raspberry Pi 3 现在能支持 [外设 I/O](https://developer.android.google.cn/
 
 *   系统电源管理当前已被禁用。设备不会休眠挂起，也无需唤醒服务。
 *   Google Play 服务 在第一次启动时需要 2-3 分钟的 DEX 预优化。优化完成后才能正常的安装应用。
-*   来自 [用户驱动程序](https://developer.android.google.cn/things/sdk/drivers/index.html) 的输入事件不会从睡眠中唤醒显示屏。
+*   来自 [用户驱动程序](../sdk/drivers/index.html) 的输入事件不会从睡眠中唤醒显示屏。
 *   设备当前不能通过蓝牙作为 A2DP 音频源。
 
 #### Peripheral I/O
@@ -408,12 +408,12 @@ NXP 为 Android Things 发布了一个新的 [Pico 开发者工具包](http://ww
 
 #### Play Services for IoT
 
-This release includes a new variant of [Google Play Services](https://developers.google.cn/android/) with a reduced foorprint targeted for IoT devices. Learn more about the current Google API support on the [SDK overview](https://developer.android.google.cn/things/sdk/index.html#google-services) page.
+This release includes a new variant of [Google Play Services](https://developers.google.cn/android/) with a reduced foorprint targeted for IoT devices. Learn more about the current Google API support on the [SDK overview](../sdk/index.html#google-services) page.
 
 
 #### Play 服务的物联网使用
 
-这次更新包括一个新 [Google Play 服务](https://developers.google.cn/android/) 的变种，它被设计为给物联网设备使用，优化了功能。了解更多 Google API 的支持，请参阅 [SDK 概述](https://developer.android.google.cn/things/sdk/index.html#google-services)。
+这次更新包括一个新 [Google Play 服务](https://developers.google.cn/android/) 的变种，它被设计为给物联网设备使用，优化了功能。了解更多 Google API 的支持，请参阅 [SDK 概述](../sdk/index.html#google-services)。
 
 ### Known Issues
 
@@ -529,27 +529,27 @@ This preview release is for **developers and early adopters** to use for develop
 
 #### NXP i.MX7D support
 
-Android Things is now supported on the [NXP® i.MX7D Pico](http://www.nxp.com/AndroidThingsGS) development platform. Learn more about this device and its capabilities on the [developer kits](https://developer.android.google.cn/things/hardware/developer-kits.html) page.
+Android Things is now supported on the [NXP® i.MX7D Pico](http://www.nxp.com/AndroidThingsGS) development platform. Learn more about this device and its capabilities on the [developer kits](../hardware/developer-kits.html) page.
 
 #### NXP i.MX7D 支持
 
-Android Things 现在支持 [NXP® i.MX7D Pico](http://www.nxp.com/AndroidThingsGS) 开发平台。 详细了解此设备及其功能请访问 [开发者工具包](https://developer.android.google.cn/things/hardware/developer-kits.html) 。
+Android Things 现在支持 [NXP® i.MX7D Pico](http://www.nxp.com/AndroidThingsGS) 开发平台。 详细了解此设备及其功能请访问 [开发者工具包](../hardware/developer-kits.html) 。
 
 #### Audio APIs
 
-Developers can now connect to digital audio devices over Inter-IC Sound (I2S) using Peripheral I/O and bind those devices to the media framework using the new audio user-space drivers. Review the new API guides for [I2S](https://developer.android.google.cn/things/sdk/pio/i2s.html) and [audio drivers](https://developer.android.google.cn/things/sdk/drivers/audio.html) for more details.
+Developers can now connect to digital audio devices over Inter-IC Sound (I2S) using Peripheral I/O and bind those devices to the media framework using the new audio user-space drivers. Review the new API guides for [I2S](../sdk/pio/i2s.html) and [audio drivers](../sdk/drivers/audio.html) for more details.
 
 #### 音频 API
 
-开发者现在可以使用外设 I/O 通过内部声卡（I2S）链接到数字音频设备，并使用新的音频用户空间驱动将这些设备绑定到媒体框架。了解更多，请参阅新的 [I2S API 手册](https://developer.android.google.cn/things/sdk/pio/i2s.html) 和 [声卡驱动](https://developer.android.google.cn/things/sdk/drivers/audio.html) 。
+开发者现在可以使用外设 I/O 通过内部声卡（I2S）链接到数字音频设备，并使用新的音频用户空间驱动将这些设备绑定到媒体框架。了解更多，请参阅新的 [I2S API 手册](../sdk/pio/i2s.html) 和 [声卡驱动](../sdk/drivers/audio.html) 。
 
 #### Peripheral drivers
 
-Peripheral I/O now supports runtime registration of additional interfaces through the `PioDriverManager`. This enables registration of peripheral bus expansion devices as well as stub interfaces for unit testing. To learn more, see the [reference documentation](https://developer.android.google.cn/things/reference/com/google/android/things/pio/PioDriverManager.html).
+Peripheral I/O now supports runtime registration of additional interfaces through the `PioDriverManager`. This enables registration of peripheral bus expansion devices as well as stub interfaces for unit testing. To learn more, see the [reference documentation](../reference/com/google/android/things/pio/PioDriverManager.html).
 
 #### 外设驱动
 
-外设 I/O 现在支持通过 `PioDriverManager` 运行时注册附加接口。这样可以注册外设总线扩展设备以及用于单元测试的桩接口。若要了解详细资料, 请参 [阅参考文档](https://developer.android.google.cn/things/reference/com/google/android/things/pio/PioDriverManager.html).
+外设 I/O 现在支持通过 `PioDriverManager` 运行时注册附加接口。这样可以注册外设总线扩展设备以及用于单元测试的桩接口。若要了解详细资料, 请参 [阅参考文档](../reference/com/google/android/things/pio/PioDriverManager.html).
 
 ### Known Issues
 
@@ -665,19 +665,19 @@ This preview release is for **developers and early adopters** to use for develop
 
 #### NXP Argon i.MX6UL support
 
-Android Things is now supported on the [NXP® Argon i.MX6UL](http://www.nxp.com/AndroidThingsGS) development platform. Learn more about this device and its capabilities on the [developer kits](https://developer.android.google.cn/things/hardware/developer-kits.html) page.
+Android Things is now supported on the [NXP® Argon i.MX6UL](http://www.nxp.com/AndroidThingsGS) development platform. Learn more about this device and its capabilities on the [developer kits](../hardware/developer-kits.html) page.
 
 #### NXP Argon i.MX6UL 支持
 
-Android Things 现在支持 [NXP® Argon i.MX6UL](http://www.nxp.com/AndroidThingsGS) 开发平台。 详细了解此设备及其功能请访问 [开发者工具包](https://developer.android.google.cn/things/hardware/developer-kits.html)。
+Android Things 现在支持 [NXP® Argon i.MX6UL](http://www.nxp.com/AndroidThingsGS) 开发平台。 详细了解此设备及其功能请访问 [开发者工具包](../hardware/developer-kits.html)。
 
 #### Android Bluetooth APIs support
 
-Developers can now use the [Android Bluetooth](https://developer.android.google.cn/guide/topics/connectivity/bluetooth.html) APIs across all Android Things supported hardware. These APIs can be used to interact with both Classic Bluetooth and Bluetooth Low Energy (BLE) devices. See the [Samples](https://developer.android.google.cn/things/sdk/samples.html) page for Bluetooth audio and Bluetooth GATT server code samples.
+Developers can now use the [Android Bluetooth](https://developer.android.google.cn/guide/topics/connectivity/bluetooth.html) APIs across all Android Things supported hardware. These APIs can be used to interact with both Classic Bluetooth and Bluetooth Low Energy (BLE) devices. See the [Samples](../sdk/samples.html) page for Bluetooth audio and Bluetooth GATT server code samples.
 
 #### Android Bluetooth APIs 支持
 
-开发者现在可以在所有支持硬件中使用 [Android 蓝牙](https://developer.android.google.cn/guide/topics/connectivity/bluetooth.html) API。 这些 API 可用于与传统蓝牙和低功耗蓝牙（BLE）进行交互。 参阅 [示例](https://developer.android.google.cn/things/sdk/samples.html) 页，以了解蓝牙音频和蓝牙 GATT 服务器代码示例。
+开发者现在可以在所有支持硬件中使用 [Android 蓝牙](https://developer.android.google.cn/guide/topics/connectivity/bluetooth.html) API。 这些 API 可用于与传统蓝牙和低功耗蓝牙（BLE）进行交互。 参阅 [示例](../sdk/samples.html) 页，以了解蓝牙音频和蓝牙 GATT 服务器代码示例。
 
 #### USB host support
 
@@ -697,11 +697,11 @@ USB-serial devices are now exposed as a `UartDevice` when plugged in. You can di
 
 #### Reference documentation
 
-You can now view [reference documentation](https://developer.android.google.cn/things/reference/index.html) online.
+You can now view [reference documentation](../reference/index.html) online.
 
 #### 参考文档
 
-现在可以浏览在线的 [参考文档](https://developer.android.google.cn/things/reference/index.html)。
+现在可以浏览在线的 [参考文档](../reference/index.html)。
 
 ### Known Issues
 
@@ -803,7 +803,7 @@ _日期: 2017 年 2 月_
 _版本号: NIG40_  
 _Play 服务版本: 10.0.0_
 
-Preview APIs [Javadoc reference](https://developer.android.google.cn/things/downloads/com.google.android.things-docs-dp2.zip).
+Preview APIs [Javadoc reference](../downloads/com.google.android.things-docs-dp2.zip).
 
 This preview release is for **developers and early adopters** to use for development and compatibility testing on supported hardware platforms. Please note the following general guidelines about the preview:
 
@@ -811,7 +811,7 @@ This preview release is for **developers and early adopters** to use for develop
 *   Not all APIs are enabled in this preview. APIs known to be disabled are documented in the Known Issues section.
 *   Developer Preview 2 is available on the Intel Edison, Intel Joule, NXP Pico, and Raspberry Pi 3 development boards.
 
-预览版 API [Javadoc 参考](https://developer.android.google.cn/things/downloads/com.google.android.things-docs-dp2.zip).
+预览版 API [Javadoc 参考](../downloads/com.google.android.things-docs-dp2.zip).
 
 此预览版仅供**开发者和尝鲜者**用来开发和测试硬件平台的兼容性。请注意以下关于预览版的准则：
 
@@ -825,19 +825,19 @@ This preview release is for **developers and early adopters** to use for develop
 
 #### Intel Joule support
 
-Android Things is now supported on the [Intel® Joule compute module](https://software.intel.com/en-us/iot/hardware/joule). Learn more about this device and its capabilities on the [developer kits](https://developer.android.google.cn/things/hardware/developer-kits.html) page.
+Android Things is now supported on the [Intel® Joule compute module](https://software.intel.com/en-us/iot/hardware/joule). Learn more about this device and its capabilities on the [developer kits](../hardware/developer-kits.html) page.
 
 #### Intel Joule 支持
 
-Android Things 现在支持 [Intel® Joule 计算模块](https://software.intel.com/en-us/iot/hardware/joule)。详细了解此设备及其功能请访问 [开发工具包](https://developer.android.google.cn/things/hardware/developer-kits.html) 页面。
+Android Things 现在支持 [Intel® Joule 计算模块](https://software.intel.com/en-us/iot/hardware/joule)。详细了解此设备及其功能请访问 [开发工具包](../hardware/developer-kits.html) 页面。
 
 #### Native peripheral API
 
-Access to peripheral I/O from C/C++ code is now supported using the [Native PIO library](https://developer.android.google.cn/things/sdk/pio/native.html) for the [Android NDK](https://developer.android.google.cn/ndk/index.html). Explore the new Native PIO sample on the [samples page](https://developer.android.google.cn/things/sdk/samples.html) to get started.
+Access to peripheral I/O from C/C++ code is now supported using the [Native PIO library](../sdk/pio/native.html) for the [Android NDK](https://developer.android.google.cn/ndk/index.html). Explore the new Native PIO sample on the [samples page](../sdk/samples.html) to get started.
 
 #### 本地外设 API
 
-现在,支持使用 C/C++ 代码，通过 [本地 PIO 库](https://developer.android.google.cn/things/sdk/pio/native.html)连接 [Android NDK](https://developer.android.google.cn/ndk/index.html)， 接入外设 I/O。想要了解更多，请探索新的原生 [PIO 示例](https://developer.android.google.cn/things/sdk/samples.html)。
+现在,支持使用 C/C++ 代码，通过 [本地 PIO 库](../sdk/pio/native.html)连接 [Android NDK](https://developer.android.google.cn/ndk/index.html)， 接入外设 I/O。想要了解更多，请探索新的原生 [PIO 示例](../sdk/samples.html)。
 
 #### USB audio support
 
@@ -859,13 +859,13 @@ Devices without on-board analog audio capabilities now support USB microphones a
 
 We have created a sample that shows how to use TensorFlow on Android Things devices. This sample demonstrates accessing the camera, performing object recognition and image classification, and speaking out the results using text-to-speech (TTS).
 
-Visit the [samples page](https://developer.android.google.cn/things/sdk/samples.html) to learn more.
+Visit the [samples page](../sdk/samples.html) to learn more.
 
 #### TensorFlow 示例
 
 我们已经创建了一个示例, 演示如何在 Android Things 上使用 TensorFlow。此示例演示如何访问照相机、执行物体识别和图像分类, 以及使用文本到语音转换 (TTS) 说出结果。
 
-访问 [示例页](https://developer.android.google.cn/things/sdk/samples.html) 了解更多。
+访问 [示例页](../sdk/samples.html) 了解更多。
 
 #### Peripheral manager reporting
 
@@ -979,7 +979,7 @@ _日期: 2016 年 12月_
 _版本号: NIF73/NIF74_  
 _Play 服务版本: 10.0.0_
 
-Preview APIs [Javadoc reference](https://developer.android.google.cn/things/downloads/com.google.android.things-docs-dp1.zip).
+Preview APIs [Javadoc reference](../downloads/com.google.android.things-docs-dp1.zip).
 
 This preview release is for **developers and early adopters** to use for development and compatibility testing on supported hardware platforms. Please note the following general guidelines about the preview:
 
@@ -988,7 +988,7 @@ This preview release is for **developers and early adopters** to use for develop
 *   Developer Preview 1 is available on the Intel Edison, NXP Pico, and Raspberry Pi 3 development boards.
 
 
-预览版 API [Javadoc 参考](https://developer.android.google.cn/things/downloads/com.google.android.things-docs-dp1.zip)。
+预览版 API [Javadoc 参考](../downloads/com.google.android.things-docs-dp1.zip)。
 
 此预览版仅供**开发者和尝鲜者**用来开发和测试硬件平台的兼容性。请注意以下关于预览版的准则：
 

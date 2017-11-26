@@ -21,9 +21,9 @@
 *   [Button sample app](https://github.com/androidthings/sample-button)
 
 
-Get up and running quickly with pre-built drivers from the [Peripheral Driver Library](https://developer.android.google.cn/things/sdk/driver-library.html). These drivers abstract the low-level communication details associated with many common hardware peripherals.
+Get up and running quickly with pre-built drivers from the [Peripheral Driver Library](../../sdk/driver-library.html). These drivers abstract the low-level communication details associated with many common hardware peripherals.
 
-通过从 [Peripheral Driver Library](https://developer.android.google.cn/things/sdk/driver-library.html) 获取的已经构建好的驱动，您可以快速的启动并允许 Android Things 应用。这些驱动可以将那些与很多常见硬件外设相关联的底层通信细节抽象化。
+通过从 [Peripheral Driver Library](../../sdk/driver-library.html) 获取的已经构建好的驱动，您可以快速的启动并允许 Android Things 应用。这些驱动可以将那些与很多常见硬件外设相关联的底层通信细节抽象化。
 
 In this lesson, you will learn to integrate library drivers into your app and bind peripherals to the Android framework through the `UserDriverManager`.
 
@@ -40,9 +40,9 @@ To import a library driver into your app:
 
 为了将驱动库导入到您的应用中，您需要：
 
-1.  Search the [driver index](https://developer.android.google.cn/things/sdk/driver-library.html) for a driver that matches your peripheral.
+1.  Search the [driver index](../../sdk/driver-library.html) for a driver that matches your peripheral.
 
-1.  在 [driver index](https://developer.android.google.cn/things/sdk/driver-library.html) 中搜索与您的外设设备相匹配的驱动。
+1.  在 [driver index](../../sdk/driver-library.html) 中搜索与您的外设设备相匹配的驱动。
 
 2.  Add the driver artifact dependency to your app-level `build.gradle` file:
 
@@ -56,9 +56,9 @@ To import a library driver into your app:
 
         <uses-permission android:name="com.google.android.things.permission.MANAGE_INPUT_DRIVERS" />
 
->   Different drivers may require different permissions. If you aren't sure which permissions are required for a specific driver, locate the driver's README file. See [User-Space Drivers](https://developer.android.google.cn/things/sdk/drivers/index.html) for more information.
+>   Different drivers may require different permissions. If you aren't sure which permissions are required for a specific driver, locate the driver's README file. See [User-Space Drivers](../../sdk/drivers/index.html) for more information.
 
->  不同的驱动可能需要不同的权限。如果您不知道某些驱动具体需要什么权限，您可以在驱动的 README 文件查看相关信息。详情请见 [User-Space Drivers](https://developer.android.google.cn/things/sdk/drivers/index.html)。
+>  不同的驱动可能需要不同的权限。如果您不知道某些驱动具体需要什么权限，您可以在驱动的 README 文件查看相关信息。详情请见 [User-Space Drivers](../../sdk/drivers/index.html)。
 
 4.  Initialize the driver class with the appropriate Peripheral I/O resources.
 
@@ -108,9 +108,9 @@ public class ButtonActivity extends Activity {
 
 * * *
 
-The driver library includes [user drivers](https://developer.android.google.cn/things/sdk/drivers/index.html) for supported peripheral types. When these drivers are available, they allow your app to interact with the standard Android framework APIs instead of the Peripheral I/O APIs.
+The driver library includes [user drivers](../../sdk/drivers/index.html) for supported peripheral types. When these drivers are available, they allow your app to interact with the standard Android framework APIs instead of the Peripheral I/O APIs.
 
-驱动库中包含与具体外设类型相匹配的 [用户驱动](https://developer.android.google.cn/things/sdk/drivers/index.html)，当这些驱动可用时，它们允许您的应用使用标准的 Android Framework API 代替外设 I/O API 来与外设交互。
+驱动库中包含与具体外设类型相匹配的 [用户驱动](../../sdk/drivers/index.html)，当这些驱动可用时，它们允许您的应用使用标准的 Android Framework API 代替外设 I/O API 来与外设交互。
 
 The following code registers a `ButtonInputDriver` peripheral as a key input with the framework. The driver will generate key events using the provided _key code_ each time the button is pressed or released.
 

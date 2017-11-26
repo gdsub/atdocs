@@ -4,11 +4,11 @@ Raspberry Pi 3 Model B is the latest iteration of the world's most popular singl
 
 Raspberry Pi 3B 型是这个全世界最受欢迎单片计算机系列的最新型号。它有一个四核64位 ARM Cortex-A53 1.2GHz 处理器、四个 USB 2.0 接口、支持有线和无线网络、HDMI口和复合端子输出、以及用来连接外界交互设备的一个40针的 GPIO 接口 
 
-![""](https://developer.android.google.cn/things/images/raspberry-pi-3-board.png)
+![""](../images/raspberry-pi-3-board.png)
 
-See [Raspberry Pi I/O](https://developer.android.google.cn/things/hardware/raspberrypi-io.html) for more details on the [Peripheral I/O](https://developer.android.google.cn/things/sdk/pio/index.html) signals on this board.
+See [Raspberry Pi I/O](../hardware/raspberrypi-io.html) for more details on the [Peripheral I/O](../sdk/pio/index.html) signals on this board.
 
-参照 [Raspberry Pi I/O](https://developer.android.google.cn/things/hardware/raspberrypi-io.html) 获取更多此板 [外围 I/O](https://developer.android.google.cn/things/sdk/pio/index.html) 的信息
+参照 [Raspberry Pi I/O](../hardware/raspberrypi-io.html) 获取更多此板 [外围 I/O](../sdk/pio/index.html) 的信息
 ## Flashing the image
 ## 在开发板上烧录程序镜像
 * * *
@@ -33,9 +33,9 @@ Before you begin flashing, you will need the following items in addition to your
 
 *	MicroSD 读卡器
 
-To flash Android Things onto your board, download the latest preview image in the [Android Things Console](https://partner.android.com/things/console) (see the [release notes](https://developer.android.google.cn/things/preview/releases.html)) and follow these steps:
+To flash Android Things onto your board, download the latest preview image in the [Android Things Console](https://partner.android.com/things/console) (see the [release notes](../preview/releases.html)) and follow these steps:
 
-为了在板上烧录 Android Things ，请从 [Android Things 控制台](https://partner.android.com/things/console) 下载最新的预览版镜像 (参见 [更新注释](https://developer.android.google.cn/things/preview/releases.html) 然后参照以下步骤：
+为了在板上烧录 Android Things ，请从 [Android Things 控制台](https://partner.android.com/things/console) 下载最新的预览版镜像 (参见 [更新注释](../preview/releases.html) 然后参照以下步骤：
 
 1.  Insert an 8 GB or larger microSD card into your development computer.
     在您的用于开发的电脑上插入 8 GB 或更大的 microSD 卡
@@ -61,7 +61,7 @@ To flash Android Things onto your board, download the latest preview image in th
     按照以下指南连接开发板上的接口
 
 
-![""](https://developer.android.google.cn/things/images/raspberrypi-connections.png)
+![""](../images/raspberrypi-connections.png)
 
 1.  Connect a USB cable to **J1** for power.
     将 USB 线和 **J1** 口相连用来供电
@@ -129,9 +129,9 @@ To connect your board to Wi-Fi, first access a shell prompt on the device. You c
 Once you can access a shell prompt, follow these steps:
 通过 Shell 命令行界面，参照以下步骤执行：
 
-1.  Send an intent to the Wi-Fi service that includes the SSID of your local network. Your [board](https://developer.android.google.cn/things/hardware/developer-kits.html) must support the network protocol and frequency band of the wireless network in order to establish a connection.
+1.  Send an intent to the Wi-Fi service that includes the SSID of your local network. Your [board](../hardware/developer-kits.html) must support the network protocol and frequency band of the wireless network in order to establish a connection.
 
-    向 Wi-Fi 服务发送带有您的本地网络 SSID 的请求。您的 [开发板](https://developer.android.google.cn/things/hardware/developer-kits.html) 必须支持无线网络协议和无线网络频段以建立连接。
+    向 Wi-Fi 服务发送带有您的本地网络 SSID 的请求。您的 [开发板](../hardware/developer-kits.html) 必须支持无线网络协议和无线网络频段以建立连接。
 
 	$ am startservice \    -n com.google.wifisetup/.WifiSetupService \    -a WifiSetupService.Connect
 
@@ -244,7 +244,7 @@ The serial console is a helpful tool for debugging your board and reviewing syst
 To access the serial console, connect a [USB to TTL Serial Cable](https://www.adafruit.com/products/954) to the device UART pins as shown below.
 
 您可以通过以下的方式连接一条 [USB to TTL 串行线](https://www.adafruit.com/products/954) 到设备的 UART 口来访问串行控制台
-![""](https://developer.android.google.cn/things/images/raspberrypi-console.png)
+![""](../images/raspberrypi-console.png)
 
 Open a connection to the USB serial device on your development computer using a terminal program, such as [PuTTY](http://www.putty.org/) (Windows), [Serial](https://www.decisivetactics.com/products/serial/) (Mac OS), or [Minicom](https://en.wikipedia.org/wiki/Minicom) (Linux). The serial port parameters for the console are as follows:
 
@@ -268,7 +268,7 @@ Open a connection to the USB serial device on your development computer using a 
 
 * * *
 
-The Raspberry Pi has pins that are multiplexed between various board functions. Some board functions cannot be used simultaneously (for example, enabling Bluetooth and using the `UART0` port for peripheral I/O). For more information, see the [function mode matrix](https://developer.android.google.cn/things/hardware/raspberrypi-mode-matrix.html).
+The Raspberry Pi has pins that are multiplexed between various board functions. Some board functions cannot be used simultaneously (for example, enabling Bluetooth and using the `UART0` port for peripheral I/O). For more information, see the [function mode matrix](../hardware/raspberrypi-mode-matrix.html).
 
-Raspberry Pi 上有复用的串口可以在不同的板载功能中切换。一些板载的功能不能同时使用（比如打开蓝牙和将 `UART0` 用为外围接口）。更多信息可以参考 [函数模式矩阵](https://developer.android.google.cn/things/hardware/raspberrypi-mode-matrix.html)。
+Raspberry Pi 上有复用的串口可以在不同的板载功能中切换。一些板载的功能不能同时使用（比如打开蓝牙和将 `UART0` 用为外围接口）。更多信息可以参考 [函数模式矩阵](../hardware/raspberrypi-mode-matrix.html)。
 

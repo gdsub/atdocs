@@ -51,7 +51,7 @@ Connect a supported camera module to the CSI-2 camera port on your board. Ensure
 
 将一个开发板所支持的相机模块连接到您的开发板的 CSI-2 相机端口。在固定连接器之前确认线缆完全插入并且结合处平整。
 
-![""](https://developer.android.google.cn/things/images/doorbell-camera-wiring.png)
+![""](../../images/doorbell-camera-wiring.png)
 
 ## Add permissions and required features
 

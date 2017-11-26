@@ -2,9 +2,9 @@
 
 # 音频
 
-The Android audio subsystem enables apps to write audio data for playback and record audio from input sources. Using audio drivers, your apps can register new audio input/output devices connected over [I2S](https://developer.android.google.cn/things/sdk/pio/i2s.html) or other [Peripheral I/O](https://developer.android.google.cn/things/sdk/pio/index.html) interfaces. Apps can access your audio devices using the standard media framework APIs, such as [AudioTrack](https://developer.android.google.cn/reference/android/media/AudioTrack.html) and [AudioRecord](https://developer.android.google.cn/reference/android/media/AudioRecord.html).
+The Android audio subsystem enables apps to write audio data for playback and record audio from input sources. Using audio drivers, your apps can register new audio input/output devices connected over [I2S](../../sdk/pio/i2s.html) or other [Peripheral I/O](../../sdk/pio/index.html) interfaces. Apps can access your audio devices using the standard media framework APIs, such as [AudioTrack](https://developer.android.google.cn/reference/android/media/AudioTrack.html) and [AudioRecord](https://developer.android.google.cn/reference/android/media/AudioRecord.html).
 
-Android 音频子系统可以让应用能够写入音频数据用来播放，或者从输入源中录制音频。使用音频音频驱动，您的应用可以注册已经连接到 [I2S](https://developer.android.google.cn/things/sdk/pio/i2s.html) 或其它 [Peripheral I/O](https://developer.android.google.cn/things/sdk/pio/index.html) 接口上的新音频输入/输出设备。其它应用可以通过标准的媒体框架 API，例如 [AudioTrack](https://developer.android.google.cn/reference/android/media/AudioTrack.html) 和 [AudioRecord](https://developer.android.google.cn/reference/android/media/AudioRecord.html) 来接入您的音频设备。
+Android 音频子系统可以让应用能够写入音频数据用来播放，或者从输入源中录制音频。使用音频音频驱动，您的应用可以注册已经连接到 [I2S](../../sdk/pio/i2s.html) 或其它 [Peripheral I/O](../../sdk/pio/index.html) 接口上的新音频输入/输出设备。其它应用可以通过标准的媒体框架 API，例如 [AudioTrack](https://developer.android.google.cn/reference/android/media/AudioTrack.html) 和 [AudioRecord](https://developer.android.google.cn/reference/android/media/AudioRecord.html) 来接入您的音频设备。
 
 ## Implementing the driver
 

@@ -42,16 +42,16 @@ To create a bundle for your product:
 
 为您的产品创建一个 Bundle 的步骤如下：
 
-* 	If you are not already on this tab, open the [Android Things Console](https://partner.android.com/things/console), click a product you previously [configured](https://developer.android.google.cn/things/console/configure.html), and click the **FACTORY IMAGES** tab.
+* 	If you are not already on this tab, open the [Android Things Console](https://partner.android.com/things/console), click a product you previously [configured](../console/configure.html), and click the **FACTORY IMAGES** tab.
 
-	如果您还没有处在本标签，请先打开 [Android Things 管理中心](https://partner.android.com/things/console)，点击您之前所 [配置](https://developer.android.google.cn/things/console/configure.html)的产品，然后点击 **FACTORY IMAGES** 标签。
+	如果您还没有处在本标签，请先打开 [Android Things 管理中心](https://partner.android.com/things/console)，点击您之前所 [配置](../console/configure.html)的产品，然后点击 **FACTORY IMAGES** 标签。
 
-    ![Create a build bundle](https://developer.android.google.cn/things/images/console/build.png)
+    ![Create a build bundle](../images/console/build.png)
 
-* 	Click **UPLOAD** to upload your [bundle](https://developer.android.google.cn/things/console/app_bundle.html). After you upload the bundle, click the button next to its bundle ID in the **Bundles** table to select it.
+* 	Click **UPLOAD** to upload your [bundle](../console/app_bundle.html). After you upload the bundle, click the button next to its bundle ID in the **Bundles** table to select it.
 
 
-  	点击 **UPLOAD** 上传您的 [Bundle](https://developer.android.google.cn/things/console/app_bundle.html)。上传完毕之后，请在 **Bundles** 表格中，点击 bundle ID 一旁的按钮以选中该 Bundle。
+  	点击 **UPLOAD** 上传您的 [Bundle](../console/app_bundle.html)。上传完毕之后，请在 **Bundles** 表格中，点击 bundle ID 一旁的按钮以选中该 Bundle。
 
 *   If you don't have a bundle, select **Empty bundle** in the table. If you select an empty bundle, you can test your application by sideloading it using the [adb tool](https://developer.android.google.cn/tools/help/adb.html).
 
@@ -75,7 +75,7 @@ When the build is complete, a new entry will appear in the **Build configuration
 
 当构建完成，一个新的文件项会出现在 **Build configuration list** 表格中。表格中的每一行都有一个 **Download build** 下载链接。
 
-![Build list](https://developer.android.google.cn/things/images/console/build_list.png)
+![Build list](../images/console/build_list.png)
 
 ## Flash the device
 
@@ -87,9 +87,9 @@ Click the **Download build** link to download the factory image (i.e., the creat
 
 点击 **Download build** 链接即可下载出厂镜像（也就是刚刚创建的构建文件）。
 
-Find your device in the table of supported [hardware platforms](https://developer.android.google.cn/things/hardware/developer-kits.html). Then click the **Get Started** link to find instructions on how to flash your device with the downloaded image.
+Find your device in the table of supported [hardware platforms](../hardware/developer-kits.html). Then click the **Get Started** link to find instructions on how to flash your device with the downloaded image.
 
-请在我们所支持的 [硬件平台](https://developer.android.google.cn/things/hardware/developer-kits.html) 中找到您的设备型号。点击对应的 **Get Started** 链接，根据指示说明将下载好的镜像烧写到设备中。
+请在我们所支持的 [硬件平台](../hardware/developer-kits.html) 中找到您的设备型号。点击对应的 **Get Started** 链接，根据指示说明将下载好的镜像烧写到设备中。
 
 ## Delete a bundle or build
 
@@ -115,9 +115,9 @@ To permanently delete a bundle or a build for your product:
 
 * * *
 
-After you [flash a device](#flash_device), you can update the build with OTA [updates](https://developer.android.google.cn/things/console/update.html).
+After you [flash a device](#flash_device), you can update the build with OTA [updates](../console/update.html).
 
-在 [为设备烧写镜像](#flash_device) 之后，您就可以使用无线 (OTA) 的方式进行 [更新](https://developer.android.google.cn/things/console/update.html)了。
+在 [为设备烧写镜像](#flash_device) 之后，您就可以使用无线 (OTA) 的方式进行 [更新](../console/update.html)了。
 
 **Note:** You must flash the device with an image from the Android Things Console in order for the device to receive updates.
 
