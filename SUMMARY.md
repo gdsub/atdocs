@@ -1,8 +1,8 @@
 # Summary
 
-* [简介](README.md)
-* [贡献者](Contributor.md)
 * [主页](index.md)
+* [项目介绍及问题提交方法](introduce.md)
+* [贡献者](Contributor.md)
 * [Hardware Overview](hardware/index.md)
     * [Hardware 101](hardware/hardware-101.md)
     * [Developer Kits](hardware/developer-kits.md)

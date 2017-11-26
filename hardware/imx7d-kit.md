@@ -18,15 +18,14 @@ Open the box and make sure you have all of the components in the kit. You will a
 
 <table>
 
-<tbody>
-
 <tr>
 
-<td style="width:450px;">
+<td>
 
 ![Bubble_number_01](../images/common/bubble-numbers/Bubble_number_01.png)
 
 Pico i.MX7Dual development board
+
 </td>
 
 <td>
@@ -43,13 +42,17 @@ Standoffs (x2) and screws (x5) for the Rainbow HAT</td>
 
 ![Bubble_number_03](../images/common/bubble-numbers/Bubble_number_03.png)
 
-Rainbow HAT</td>
+Rainbow HAT
+
+</td>
 
 <td>
 
 ![Bubble_number_04](../images/common/bubble-numbers/Bubble_number_04.png)
 
-USB-C cable</td>
+USB-C cable
+
+</td>
 
 </tr>
 
@@ -59,7 +62,9 @@ USB-C cable</td>
 
 ![Bubble_number_05](../images/common/bubble-numbers/Bubble_number_05.png)
 
-Wifi antenna</td>
+Wifi antenna
+
+</td>
 
 <td>
 
@@ -75,7 +80,9 @@ Antenna extender cable</td>
 
 ![Bubble_number_07](../images/common/bubble-numbers/Bubble_number_07.png)
 
-Camera module</td>
+Camera module
+
+</td>
 
 <td>
 
@@ -91,17 +98,19 @@ Camera module cable</td>
 
 ![Bubble_number_09](../images/common/bubble-numbers/Bubble_number_09.png)
 
-5" multi-touch display</td>
+5" multi-touch display
+
+</td>
 
 <td>
 
 ![Bubble_number_10](../images/common/bubble-numbers/Bubble_number_10.png)
 
-Display 6-wire cable</td>
+Display 6-wire cable
+
+</td>
 
 </tr>
-
-</tbody>
 
 </table>
 
