@@ -28,8 +28,6 @@
             * [Create a Bundle](console/app_bundle.md)
         * [OTA Updates](console/update.md)
         * [Partner Toolkit](https://iotpartnerkit.withgoogle.com)
-
------
 * [Software Overview](sdk/index.md)
     * [SDK Preview](preview/index.md)
         * [Release Notes](preview/releases.md)
