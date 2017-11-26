@@ -6,39 +6,19 @@ Google 在 2016 年 12 月发布了智能物联网操作系统 Android Things，
 
 我们与官方取得联系，在 Android Things 的文档最近进行的一次大改动之后，计划招募志愿者将文档中文化，并持续跟进。
 
-# Android Things 中文文档翻译计划
+# 社区发布简介
 
-##  时间线：
-* 翻译润稿：11月 6日 到11月20日
-* 社区发布：11月20日 到11月25日
-* 提交官方：11月30日
+欢迎大家不停的 Review 这份翻译文档。在我们的社区校对完成之后，文档就是 Google Developers 中文官方文档。
 
-## 内容介绍
+现有国内镜像网址： [Android Things](https://developer.android.google.cn/things)
 
-翻译原始文件为：[Android Things](https://developer.android.google.cn/things) 
+社区发布网址： 
 
-现在已经把每个人待翻译的内容整理到如下表格中：[Contributor.md](https://github.com/gdsub/atdocs/blob/master/Contributor.md)
+# 提交已发现的问题
 
-每一篇文章，除了markdowns标记外，所有的英文均需要翻译成中文。 
+提交方法： 进入 [Bug 提交](https://github.com/gdsub/atdocs/issues/new) 页面, 以下列格式描述issue
 
-## Contributor.md中的表格介绍
+* 标题： [BUG]xxxxxx,  其中xxxxxx为您想描述的问题
+* 内容： 请贴出网页的路径，说明网页的哪一段出现了什么问题，建议怎么去更正。如果不清楚行号，可以把相临的段落放在正文区域。 
 
-| #  | Markdown     | Category   |  Translator(s)    |
-| - | :-: | -: |  -: |
-|文档编号  |文档链接|所在目录|翻译人员(github帐号)|
-|1  | [index.md](https://github.com/gdsub/atdocs/blob/master/index.md) ||lucheng@google.com|
-
-
-## 操作指南
-
-在进行翻译之前，请先移驾 [wiki](https://github.com/gdsub/atdocs/wiki) 阅读所有的文档，这些文档将帮助您快速的学习翻译流程中碰到的各种问题。
-
-## 翻译示例 
-
-* [index.md](https://github.com/gdsub/atdocs/blob/master/index.md) 
-* [hardware/index.md](https://github.com/gdsub/atdocs/blob/master/hardware/index.md)
-
-
-## git使用注意事项
-
-请在每次git push之前，确保git pull成功。然后再提交
+谢谢

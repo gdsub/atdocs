@@ -53,3 +53,21 @@
 |51	|[console/app_bundle.md](https://github.com/gdsub/atdocs/blob/master/console/app_bundle.md)														|console				| [vincgao](https://github.com/vincgao)|	
 |52	|[console/update.md](https://github.com/gdsub/atdocs/blob/master/console/update.md)																|console				| [vincgao](https://github.com/vincgao)|	
 |53	|[preview/releases.md](https://github.com/gdsub/atdocs/blob/master/preview/releases.md)															|preview				| [ttoommbb](https://github.com/ttoommbb) |	
+
+| Reviews(s) |
+| - |
+| [Wangalan30](https://github.com/Wangalan30) |
+| [googoodalls](https://github.com/googoodalls) |
+| [mtk54101](https://github.com/mtk54101) |
+| [ttoommbb](https://github.com/ttoommbb) |
+| [bill790](https://github.com/bill790) |
+| [jamweak](https://github.com/jamweak) |
+| [riclava](https://github.com/riclava) |
+| [Zheaoli](https://github.com/Zheaoli) |
+| [YirongCheng](https://github.com/YirongCheng) |
+| [vincgao](https://github.com/vincgao) |
+| [hckerhx](https://github.com/hckerhx) |
+| [Crazy-Ann](https://github.com/Crazy-Ann) |
+| [Shr1992](https://github.com/Shr1992) |
+| [Yuchengwang](https://github.com/Yuchengwang) |
+| [chenglu](https://github.com/chenglu) |
