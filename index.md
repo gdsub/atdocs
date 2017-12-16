@@ -4,7 +4,7 @@ Android Things
 
 Build connected devices for a wide variety of consumer, retail, and industrial applications
 
-为广大消费者、零售业和工业界构建物联网设备
+为各种消费类、零售类和工业类应用构建物联网设备
 
 [Get the Developer Preview](preview/index.html)
 
@@ -33,7 +33,7 @@ If you can build an app, you can build a device
 
 Leverage existing Android development tools, APIs, resources, and a thriving developer community.
 
-完善的 Android 开发工具、应用程序接口、资源，以及不断发展的开发者社区，助您的开发事半功倍。
+可以利用已有的Android开发工具、应用程序接口、资源，以及不断发展的开发者社区
 
 #### New APIs for IoT devices
 
@@ -54,21 +54,21 @@ Take advantage of regular best-in-class security updates by building on top of t
 
 # Rapid prototypes to real products
 
-# 让您的产品从零到一
+# 快速从原型到真正的产品
 
 Anyone, from startups to large companies, can build commercial products at scale
 
-任何人，都可以从这里起步，构建您自己的物联网产品帝国
+从初创公司到大型企业，任何人都可以构建一定规模的商业级产品
 
 ![](images/landing-certified.png)
 
 #### Turnkey hardware solutions
 
-#### 一站式解决方案
+#### 完备的硬件平台解决方案
 
 Our certified development boards include the System on Chip (SoC), RAM, wireless radios, and more to get you started quickly.
 
-经我们认证过的开发板包含 SoC 芯片，RAM，无线接收装置等，方便您快速开始构建您的应用。
+我们认证的开发板，包含了片上系统（Soc）、RAM、无线模块，以及其他帮助您快速开始的组件。
 
 ![](images/landing-market.png)
 
@@ -85,7 +85,7 @@ Android Things 系统为开发者提供便利，您可以在通过认证的开�
 
 #### Build products at scale
 
-#### 更容易量产
+#### 构建一定规模的产品
 
 Shipping products is easy because our prototype boards are commercial grade. The same boards can be easily customized by your prototype supplier to fit your specific form-factor and other needs, all while running the same software.
 
@@ -100,11 +100,11 @@ To learn more about the hardware program, see our [Hardware Platform Overview](h
 
 The power of Google at your fingertips
 
-Google 的强力驱动 您触手可及
+Google的力量触手可及
 
 Build and manage millions of devices at Google’s scale
 
-使用 Google 的架构管理您的设备
+用Google的框架来构建和管理数百万台设备
 
 #### Google APIs and services
 
