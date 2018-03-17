@@ -3,7 +3,7 @@
 
 *   [Hardware](../hardware/index.html)
 
-*   [硬件](../hardware/index.html)
+    [硬件](../hardware/index.html)
 
 # Hardware 101
 
@@ -136,11 +136,11 @@ Digital logic represents a voltage signal as a binary value:
 
 *   **High**: When the voltage is at or near V<sub>CC</sub>. Typically represented as a logical "1".
 
-*   **High**: 当电压在或接近 V<sub>CC</sub>。 通常代表逻辑 “1”。
+    **High**: 当电压在或接近 V<sub>CC</sub>。 通常代表逻辑 “1”。
 
 *   **Low**: When the voltage is at or near ground. Typically represented as a logical "0".
 
-*   **Low**: 当电压在或接近地。 通常代表逻辑 “0”。
+    **Low**: 当电压在或接近地。 通常代表逻辑 “0”。
 
 It's rare for a digital signal to be exactly 0V or V<sub>CC</sub>. Most digital logic devices interpret a range of voltages near the extremes as a valid logic level. The following table indicates common input voltage ranges for each logic state.
 
@@ -284,17 +284,17 @@ Peripherals typically use digital I/O in a few common ways:
 
 *   **Stable state**: Single on/off state mapped to a stable high or low value.
 
-*   **稳定状态**: 单一的开/关状态 变到一个稳定的高或低压。
+    **稳定状态**: 单一的开/关状态 变到一个稳定的高或低压。
     ![""](../images/digital-1.png)
 
 *   **Pulse train**: Series of digital signal pulses with variable frequency and width transmitted continuously over time.
 
-*   **脉冲序列**: 一连串带可变频率和带宽的持续数字脉冲。
+    **脉冲序列**: 一连串带可变频率和带宽的持续数字脉冲。
     ![""](../images/digital-2.png)
 
 *   **Serial communication**: Series of digital 1s and 0s representing individual bits of a binary number.
 
-*   **串行通信**: 一系列的 0 和 1 代表分别代表一个二进制数的某一位。
+    **串行通信**: 一系列的 0 和 1 代表分别代表一个二进制数的某一位。
     ![""](../images/digital-3.png)
 
 For more information on analog and digital I/O, see [Sensors and Transducers](http://www.electronics-tutorials.ws/io/io_1.html) and [Binary Numbers](http://www.electronics-tutorials.ws/binary/bin_1.html).
