@@ -3,7 +3,7 @@
 
 *   [Hardware](../hardware/index.html)
 
-*   [硬件](../hardware/index.html)
+    [硬件](../hardware/index.html)
 
 # Hardware 101
 
@@ -136,11 +136,11 @@ Digital logic represents a voltage signal as a binary value:
 
 *   **High**: When the voltage is at or near V<sub>CC</sub>. Typically represented as a logical "1".
 
-*   **High**: 当电压在或接近 V<sub>CC</sub>。 通常代表逻辑 “1”。
+    **High**: 当电压在或接近 V<sub>CC</sub>。 通常代表逻辑 “1”。
 
 *   **Low**: When the voltage is at or near ground. Typically represented as a logical "0".
 
-*   **Low**: 当电压在或接近地。 通常代表逻辑 “0”。
+    **Low**: 当电压在或接近地。 通常代表逻辑 “0”。
 
 It's rare for a digital signal to be exactly 0V or V<sub>CC</sub>. Most digital logic devices interpret a range of voltages near the extremes as a valid logic level. The following table indicates common input voltage ranges for each logic state.
 
@@ -152,11 +152,33 @@ It's rare for a digital signal to be exactly 0V or V<sub>CC</sub>. Most digital 
 
 <tr>
 
-<th>Supply Voltage (V<sub>CC</sub>)</th>
+<th>
 
-<th>Logic Low (0)</th>
+<p>Supply Voltage (V<sub>CC</sub>)</p>
 
-<th>Logic High (1)</th>
+<p>供电电压 (V<sub>CC</sub>)</p>
+
+</th>
+
+<th>
+
+<p>Logic Low</p>
+
+<p>逻辑低电压</p>
+
+(0)
+
+</th>
+
+<th>
+
+<p>Logic High</p>
+
+<p>逻辑高电压</p>
+
+(1)
+
+</th>
 
 </tr>
 
@@ -212,89 +234,23 @@ It's rare for a digital signal to be exactly 0V or V<sub>CC</sub>. Most digital 
 
 </table>
 
-<table>
-
-<tbody>
-
-<tr>
-
-<th> 供电电压 (V<sub>CC</sub>)</th>
-
-<th>逻辑低电压 (0)</th>
-
-<th>逻辑高电压 (1)</th>
-
-</tr>
-
-<tr>
-
-<td>
-
-5V
-
-[TTL](https://en.wikipedia.org/wiki/Transistor%E2%80%93transistor_logic) 
-
-</td>
-
-<td>< 0.8V</td>
-
-<td>> 2.0V</td>
-
-</tr>
-
-<tr>
-
-<td>
-
-3.3V 
-
-[CMOS](https://en.wikipedia.org/wiki/CMOS) 
-
-</td>
-
-<td>< 0.8V</td>
-
-<td>> 2.0V</td>
-
-</tr>
-
-<tr>
-
-<td>
-
-1.8V 
-
-[CMOS](https://en.wikipedia.org/wiki/CMOS) 
-
-</td>
-
-<td>< 0.6V</td>
-
-<td>> 1.2V</td>
-
-</tr>
-
-</tbody>
-
-</table>
-
 Peripherals typically use digital I/O in a few common ways:
 
 外设通常通过以下几种方式使用数字 I/O:
 
 *   **Stable state**: Single on/off state mapped to a stable high or low value.
 
-*   **稳定状态**: 单一的开/关状态 变到一个稳定的高或低压。
+    **稳定状态**: 单一的开/关状态 变到一个稳定的高或低压。
     ![""](../images/digital-1.png)
 
 *   **Pulse train**: Series of digital signal pulses with variable frequency and width transmitted continuously over time.
 
-*   **脉冲序列**: 一连串带可变频率和带宽的持续数字脉冲。
+    **脉冲序列**: 一连串带可变频率和带宽的持续数字脉冲。
     ![""](../images/digital-2.png)
 
 *   **Serial communication**: Series of digital 1s and 0s representing individual bits of a binary number.
 
-*   **串行通信**: 一系列的 0 和 1 代表分别代表一个二进制数的某一位。
+    **串行通信**: 一系列的 0 和 1 代表分别代表一个二进制数的某一位。
     ![""](../images/digital-3.png)
 
 For more information on analog and digital I/O, see [Sensors and Transducers](http://www.electronics-tutorials.ws/io/io_1.html) and [Binary Numbers](http://www.electronics-tutorials.ws/binary/bin_1.html).

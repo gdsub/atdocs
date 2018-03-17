@@ -1,0 +1,5 @@
+{
+  "plugins": [
+    "translator@~0.1.0"
+  ]
+}
