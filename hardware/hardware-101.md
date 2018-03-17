@@ -152,11 +152,33 @@ It's rare for a digital signal to be exactly 0V or V<sub>CC</sub>. Most digital 
 
 <tr>
 
-<th>Supply Voltage (V<sub>CC</sub>)</th>
+<th>
 
-<th>Logic Low (0)</th>
+<p>Supply Voltage (V<sub>CC</sub>)</p>
 
-<th>Logic High (1)</th>
+<p>供电电压 (V<sub>CC</sub>)</p>
+
+</th>
+
+<th>
+
+<p>Logic Low</p>
+
+<p>逻辑低电压</p>
+
+(0)
+
+</th>
+
+<th>
+
+<p>Logic High</p>
+
+<p>逻辑高电压</p>
+
+(1)
+
+</th>
 
 </tr>
 
@@ -199,72 +221,6 @@ It's rare for a digital signal to be exactly 0V or V<sub>CC</sub>. Most digital 
 1.8V 
 
 [CMOS](https://en.wikipedia.org/wiki/CMOS)
-
-</td>
-
-<td>< 0.6V</td>
-
-<td>> 1.2V</td>
-
-</tr>
-
-</tbody>
-
-</table>
-
-<table>
-
-<tbody>
-
-<tr>
-
-<th> 供电电压 (V<sub>CC</sub>)</th>
-
-<th>逻辑低电压 (0)</th>
-
-<th>逻辑高电压 (1)</th>
-
-</tr>
-
-<tr>
-
-<td>
-
-5V
-
-[TTL](https://en.wikipedia.org/wiki/Transistor%E2%80%93transistor_logic) 
-
-</td>
-
-<td>< 0.8V</td>
-
-<td>> 2.0V</td>
-
-</tr>
-
-<tr>
-
-<td>
-
-3.3V 
-
-[CMOS](https://en.wikipedia.org/wiki/CMOS) 
-
-</td>
-
-<td>< 0.8V</td>
-
-<td>> 2.0V</td>
-
-</tr>
-
-<tr>
-
-<td>
-
-1.8V 
-
-[CMOS](https://en.wikipedia.org/wiki/CMOS) 
 
 </td>
 
